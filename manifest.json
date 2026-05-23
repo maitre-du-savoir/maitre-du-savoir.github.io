@@ -1,0 +1,18 @@
+{
+  "name": "Maître du Savoir",
+  "short_name": "Maîtres",
+  "description": "Quiz éducatif gamifié pour collégiens",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0520",
+  "theme_color": "#3b1c6e",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
