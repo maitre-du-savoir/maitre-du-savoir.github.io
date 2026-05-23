@@ -92,6 +92,72 @@ button{cursor:pointer;font-family:'Ubuntu',sans-serif}
 </style>
 </head>
 <body>
+<div id="pin-overlay" style="position:fixed;inset:0;z-index:9999;background:linear-gradient(160deg,#1a0a3d 0%,#3b1c6e 50%,#4c2a8a 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px">
+  <div style="text-align:center">
+    <div style="font-size:52px;margin-bottom:10px">&#11088;</div>
+    <div style="color:#FFD700;font-size:30px;font-family:'Boogaloo',cursive">Les Ma&#238;tres du Savoir</div>
+    <div style="color:rgba(255,255,255,0.55);font-size:14px;margin-top:8px;font-family:'Ubuntu',sans-serif">Entrez le code d&#39;acc&#232;s</div>
+  </div>
+  <div id="pin-dots" style="display:flex;gap:18px;margin:4px 0"></div>
+  <div id="pin-grid" style="display:grid;grid-template-columns:repeat(3,72px);gap:12px"></div>
+  <div id="pin-err" style="color:#ff6b6b;font-size:13px;font-family:'Ubuntu',sans-serif;opacity:0;transition:opacity .3s;height:18px">Code incorrect</div>
+</div>
+<style>
+.pdot{width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.35);transition:all .15s}
+.pdot.on{background:#FFD700;border-color:#FFD700;box-shadow:0 0 12px rgba(255,215,0,.6)}
+.pbtn{width:72px;height:72px;border-radius:50%;border:2px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:white;font-size:26px;font-family:'Boogaloo',cursive;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .1s}
+.pbtn:active,.pbtn:hover{background:rgba(255,255,255,.22);transform:scale(.93)}
+.pbtn.del{border-color:rgba(255,100,100,.35);background:rgba(255,100,100,.08);font-size:20px}
+@keyframes pshake{0%,100%{transform:translateX(0)}25%{transform:translateX(-12px)}50%{transform:translateX(12px)}75%{transform:translateX(-8px)}}
+.shake{animation:pshake .4s ease}
+</style>
+<script>
+(function(){
+  var CODE='1234';/* <- MODIFIER LE CODE ICI */
+  var ov=document.getElementById('pin-overlay');
+  if(localStorage.getItem('pin_v')===CODE){ov.style.display='none';return;}
+  var dotsEl=document.getElementById('pin-dots');
+  for(var i=0;i<4;i++){var d=document.createElement('div');d.className='pdot';dotsEl.appendChild(d);}
+  var gridEl=document.getElementById('pin-grid');
+  var keys=[{v:'1'},{v:'2'},{v:'3'},{v:'4'},{v:'5'},{v:'6'},{v:'7'},{v:'8'},{v:'9'},{v:'',hide:true},{v:'0'},{v:'DEL',label:'⌫',del:true}];
+  keys.forEach(function(k){
+    var b=document.createElement('button');
+    b.className='pbtn'+(k.del?' del':'');
+    if(k.hide){b.style.cssText='visibility:hidden';}else{b.textContent=k.label||k.v;}
+    b.dataset.val=k.v;
+    b.dataset.del=k.del?'1':'';
+    b.addEventListener('click',function(){
+      if(this.dataset.del){val=val.slice(0,-1);}
+      else if(val.length<4){val+=this.dataset.val;}
+      update();
+    });
+    gridEl.appendChild(b);
+  });
+  var val='';
+  function update(){
+    dotsEl.querySelectorAll('.pdot').forEach(function(d,i){d.classList.toggle('on',i<val.length);});
+    if(val.length===4){validate();}
+  }
+  function validate(){
+    if(val===CODE){
+      localStorage.setItem('pin_v',CODE);
+      ov.style.transition='opacity .4s';ov.style.opacity='0';
+      setTimeout(function(){ov.style.display='none';},420);
+    }else{
+      var err=document.getElementById('pin-err');
+      err.style.opacity='1';
+      ov.classList.add('shake');
+      setTimeout(function(){
+        val='';
+        dotsEl.querySelectorAll('.pdot').forEach(function(d){d.classList.remove('on');});
+        ov.classList.remove('shake');
+        setTimeout(function(){err.style.opacity='0';},800);
+      },450);
+    }
+  }
+})();
+</script>
+
 <div id="app"></div>
 <nav id="static-nav" style="display:none">
   <img id="nav-bg" src="" alt="">
@@ -533,13 +599,13 @@ async function deleteProfile(pid){
 ═══════════════════════════════════════════════════ */
 function uqKey(){return'acad_uq_'+(G?G._pid:'x')+'_'+qcfg.subject+'_'+(qcfg.chapter||'').slice(0,20).replace(/\s/g,'_')}
 function getUsedQ(){try{return JSON.parse(localStorage.getItem(uqKey())||'[]');}catch(e){return[]}}
-function markUsedQ(q){const k=uqKey(),u=getUsedQ(),h=(q.question||'').slice(0,40);if(!u.includes(h))u.push(h);try{localStorage.setItem(k,JSON.stringify(u.slice(-80)));}catch(e){}}
-function unmarkUsedQ(q){const k=uqKey(),u=getUsedQ(),h=(q.question||'').slice(0,40);const nu=u.filter(x=>x!==h);try{localStorage.setItem(k,JSON.stringify(nu));}catch(e){}}
+function markUsedQ(q){const k=uqKey(),u=getUsedQ(),h=(q.q||q.question||'').slice(0,40);if(!u.includes(h))u.push(h);try{localStorage.setItem(k,JSON.stringify(u.slice(-80)));}catch(e){}}
+function unmarkUsedQ(q){const k=uqKey(),u=getUsedQ(),h=(q.q||q.question||'').slice(0,40);const nu=u.filter(x=>x!==h);try{localStorage.setItem(k,JSON.stringify(nu));}catch(e){}}
 // Questions ratées — réapparaissent au prochain quiz du même chapitre
 function fqKey(){return'acad_fq_'+(G?G._pid:'x')+'_'+qcfg.subject+'_'+(qcfg.chapter||'').slice(0,20).replace(/\s/g,'_')}
 function getFailedQ(){try{return JSON.parse(localStorage.getItem(fqKey())||'[]');}catch(e){return[]}}
-function addFailedQ(q){const k=fqKey(),f=getFailedQ(),h=(q.question||'').slice(0,40);if(!f.includes(h))f.push(h);try{localStorage.setItem(k,JSON.stringify(f.slice(-40)));}catch(e){}}
-function removeFailedQ(q){const k=fqKey(),f=getFailedQ(),h=(q.question||'').slice(0,40);const nf=f.filter(x=>x!==h);try{localStorage.setItem(k,JSON.stringify(nf));}catch(e){}}
+function addFailedQ(q){const k=fqKey(),f=getFailedQ(),h=(q.q||q.question||'').slice(0,40);if(!f.includes(h))f.push(h);try{localStorage.setItem(k,JSON.stringify(f.slice(-40)));}catch(e){}}
+function removeFailedQ(q){const k=fqKey(),f=getFailedQ(),h=(q.q||q.question||'').slice(0,40);const nf=f.filter(x=>x!==h);try{localStorage.setItem(k,JSON.stringify(nf));}catch(e){}}
 
 /* ═══════════════════════════════════════════════════
    DÉBLOCAGE PERSO
@@ -956,7 +1022,8 @@ async function launchQuiz(){
 }
 function getLocalQuestions(){
   const mat=qcfg.subject,chapLabel=qcfg.chapter,diff=qcfg.diff,count=qcfg.count;
-  const qbMat=QBANK[mat]||[];
+  const matMap={'physique-chimie':'physique','histoire-geo':'histgeo','arts-plastiques':'arts'};
+  const qbMat=QBANK[matMap[mat]||mat]||[];
   let chapQ=[];
   const ch=qbMat.find(c=>c.label===chapLabel||c.id===chapLabel);
   if(ch)chapQ=ch.questions||[];else qbMat.forEach(c=>chapQ=chapQ.concat(c.questions||[]));
@@ -1070,7 +1137,7 @@ function checkText(inp,q){
   if(!inp||inp.trim().length<2)return false;
   const n=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()
     .replace(/['\u2019\u2018]/g,' ').replace(/[-\u2013\u2014]/g,' ')
-    .replace(/[\u00d7]/g,'').replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').trim();
+    .replace(/[\u00d7]/g,'').replace(/[^a-z0-9\s/]/g,'').replace(/\s+/g,' ').replace(/(\d) (\d{3})(?!\d)/g,'$1$2').replace(/(\d) (\d{3})(?!\d)/g,'$1$2').trim();
   const strip=s=>s.replace(/^(le|la|les|l|un|une|des|der|die|das|ein|eine|den|dem)\s+/i,'');
   const ni=n(inp),na=n(q.answer||'');
   const nis=strip(ni),nas=strip(na);
@@ -1078,7 +1145,7 @@ function checkText(inp,q){
   if(ni.length>=3&&na.includes(ni)&&ni.length/na.length>=0.5)return true;
   if(nis.length>=3&&nas.includes(nis)&&nis.length/nas.length>=0.5)return true;
   if(ni.length>=4&&ni.includes(na)&&na.length/ni.length>=0.5)return true;
-  if(q.variants&&q.variants.some(v=>{const nv=n(v),nvs=strip(nv);return nv===ni||nvs===nis||(ni.length>=3&&nv.includes(ni)&&ni.length/nv.length>=0.5);}))return true;
+  const allV=[...(q.variants||[]),...(q.tolerance||[])];if(allV.length&&allV.some(v=>{const nv=n(v),nvs=strip(nv);return nv===ni||nvs===nis||(ni.length>=3&&nv.includes(ni)&&ni.length/nv.length>=0.5);}))return true;
   const ni2=ni.match(/\d+/g)||[],na2=na.match(/\d+/g)||[];
   if(ni2.length>=2&&ni2.length===na2.length&&ni2.every((v,i)=>v===na2[i]))return true;
   const words=nis.split(/\s+/).filter(w=>w.length>3);
@@ -1093,6 +1160,8 @@ function checkText(inp,q){
   // Tolérance 1 faute pour mots >=4 caractères
   if(nas.length>=4&&lev(nis,nas)<=1)return true;
   if(nis.length>=4&&lev(nis,nas)<=1)return true;
+  // Abreviations grammaticales : CCL→CC de lieu, CCM→CC de maniere, COD, COI, GN..
+  if(ni.length>=2&&ni.length<=6){const stopW=['de','du','d','en','a','au','aux','le','la','les','l','un','une'];const initials=na.split(/\s+/).filter(w=>w.length>0&&!stopW.includes(w)).map(w=>w[0]).join('');if(ni===initials||initials.startsWith(ni))return true;}
   return false;
 }
 function lev(a,b){
@@ -1132,12 +1201,9 @@ function finishQuiz(){
   if(isPerfect)G.stats.perfectQuiz=(G.stats.perfectQuiz||0)+1;
   if(qcfg.diff==='difficile')G.stats.hardQuiz=(G.stats.hardQuiz||0)+1;
   const f=FA[qcfg.fi],oldNv=G.familles[f.id].nv;
-  const minOk=Math.ceil(qcfg.count*0.8);
-  if((qstate.correctCount||0)>=minOk){
-    G.familles[f.id].t++;G.familles[f.id].m[qcfg.subject]=(G.familles[f.id].m[qcfg.subject]||0)+1;
-    // [Les challenges boss sont gérés via les écrans dédiés, pas via les quiz normaux]
-  }
-  qstate.countedForProgress=(qstate.correctCount||0)>=minOk;
+  G.familles[f.id].t++;G.familles[f.id].m[qcfg.subject]=(G.familles[f.id].m[qcfg.subject]||0)+1;
+  // [Les challenges boss sont gérés via les écrans dédiés, pas via les quiz normaux]
+  qstate.countedForProgress=true;
   if(!G.stats.histMatiere)G.stats.histMatiere=[];
   G.stats.histMatiere.push(qcfg.subject);
   if(G.stats.histMatiere.length>10)G.stats.histMatiere=G.stats.histMatiere.slice(-10);
@@ -1853,6 +1919,7 @@ function renderQuiz(){
   else if(q.type==='texte'){
     qHTML='<div style="font-size:16px;font-weight:500;color:#1F1A14;line-height:1.55;margin-bottom:16px">'+q.question+'</div>'
       +'<input id="ti" type="text" placeholder="Ta réponse..." autocomplete="off"'+(qstate.answered?' disabled value="'+qstate.textGiven+'"':'')+' style="width:100%;border:2px solid '+(qstate.answered?qstate.isCorrect?'#059669':'#DC2626':f.c)+';border-radius:12px;padding:12px 16px;font-size:16px;background:'+(qstate.answered?qstate.isCorrect?'#D1FAE5':'#FEE2E2':'white')+';color:'+(qstate.answered?qstate.isCorrect?'#065F46':'#991B1B':'#1F1A14')+';outline:none">'
+      +(qcfg.subject==='maths'&&!qstate.answered?'<div style="font-size:11px;color:#6B7280;margin-top:7px">\ud83d\udca1 Fractions&nbsp;: <b>3/4</b> &mdash; Grands nombres avec espace&nbsp;: <b>47&nbsp;300</b></div>':'')
       +(!qstate.answered?'<button data-a="validate" style="width:100%;margin-top:10px;background:linear-gradient(160deg,'+f.c+','+f.dk+');border:none;border-radius:12px;padding:13px;font-family:Boogaloo,cursive;font-size:17px;color:white;cursor:pointer">Valider \u2713</button>':'');
   }
   /* ORDRE */
