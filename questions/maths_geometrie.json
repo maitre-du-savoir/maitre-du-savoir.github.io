@@ -22,9 +22,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Un segment est une partie d'une droite délimitée par deux points.",
-          "ans": true,
-          "hint": "Le segment [AB] est la partie de la droite (AB) comprise entre A et B, extrémités incluses.",
+          "q": "Un segment est une partie d'une droite délimitée par un seul point.",
+          "ans": false,
+          "hint": "Faux ! Un segment est délimité par DEUX points (ses extrémités). C'est la demi-droite qui n'a qu'une extrémité (son origine).",
           "difficulty": "easy"
         },
         {
@@ -113,9 +113,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Le milieu M de [AB] vérifie AM = MB.",
-          "ans": true,
-          "hint": "Le milieu partage le segment en deux parties égales : AM = MB = AB/2.",
+          "q": "Le milieu M de [AB] vérifie AM = 2 × MB.",
+          "ans": false,
+          "hint": "Faux ! Le milieu M vérifie AM = MB (distances égales), pas AM = 2 × MB. On a AM = MB = AB/2.",
           "difficulty": "medium"
         },
         {
@@ -312,9 +312,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Dans un rectangle, les côtés opposés sont parallèles.",
-          "ans": true,
-          "hint": "Un rectangle a 4 angles droits et ses côtés opposés sont parallèles et égaux.",
+          "q": "Dans un rectangle, tous les côtés sont perpendiculaires entre eux.",
+          "ans": false,
+          "hint": "Faux ! Dans un rectangle, ce sont les côtés ADJACENTS (consécutifs) qui sont perpendiculaires. Les côtés opposés sont parallèles.",
           "difficulty": "easy"
         },
         {
@@ -355,9 +355,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Si d1 ⊥ d2 et d1 ⊥ d3, alors d2 || d3.",
-          "ans": true,
-          "hint": "Deux droites perpendiculaires à une même droite sont parallèles entre elles.",
+          "q": "Si d1 ⊥ d2 et d1 ⊥ d3, alors d2 ⊥ d3.",
+          "ans": false,
+          "hint": "Faux ! Deux droites perpendiculaires à une même droite sont PARALLÈLES entre elles (pas perpendiculaires). Donc d2 || d3.",
           "difficulty": "medium"
         },
         {
@@ -405,14 +405,10 @@
           "difficulty": "medium"
         },
         {
-          "type": "texte",
-          "q": "Une droite horizontale et une droite verticale sont-elles perpendiculaires ? Oui/Non",
-          "answer": "oui",
-          "hint": "Horizontale et verticale forment un angle de 90° → perpendiculaires.",
-          "tolerance": [
-            "oui",
-            "Oui"
-          ],
+          "type": "vrai_faux",
+          "q": "Une droite horizontale et une droite verticale sont perpendiculaires.",
+          "ans": true,
+          "hint": "Vrai ! Horizontale et verticale forment un angle de 90° → perpendiculaires.",
           "difficulty": "medium"
         },
         {
@@ -448,14 +444,10 @@
           "difficulty": "hard"
         },
         {
-          "type": "texte",
-          "q": "Vrai ou faux : la médiatrice d'un segment est perpendiculaire au segment et passe par son milieu.",
-          "answer": "vrai",
-          "hint": "La médiatrice est perpendiculaire au segment en son milieu. C'est sa définition.",
-          "tolerance": [
-            "vrai",
-            "Vrai"
-          ],
+          "type": "vrai_faux",
+          "q": "La médiatrice d'un segment est perpendiculaire au segment et passe par son milieu.",
+          "ans": true,
+          "hint": "Vrai ! La médiatrice est perpendiculaire au segment en son milieu. C'est sa définition.",
           "difficulty": "hard"
         },
         {
@@ -548,9 +540,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Un angle aigu mesure strictement moins de 90°.",
-          "ans": true,
-          "hint": "Aigu : 0° < angle < 90°.",
+          "q": "Un angle aigu mesure strictement moins de 180°.",
+          "ans": false,
+          "hint": "Faux ! Un angle aigu mesure strictement moins de 90° (pas 180°). Un angle entre 90° et 180° est obtus.",
           "difficulty": "easy"
         },
         {
@@ -603,9 +595,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Deux angles supplémentaires ont une somme de 180°.",
-          "ans": true,
-          "hint": "Supplémentaires : somme = 180°. Complémentaires : somme = 90°.",
+          "q": "Deux angles supplémentaires ont une somme de 90°.",
+          "ans": false,
+          "hint": "Faux ! Deux angles supplémentaires ont une somme de 180°. Ce sont les angles COMPLÉMENTAIRES qui ont une somme de 90°.",
           "difficulty": "medium"
         },
         {
@@ -645,9 +637,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Deux droites sécantes forment 4 angles dont deux paires d'angles opposés égaux.",
-          "ans": true,
-          "hint": "Angles opposés par le sommet sont égaux. Les angles adjacents sont supplémentaires.",
+          "q": "Deux droites sécantes forment 4 angles tous égaux entre eux.",
+          "ans": false,
+          "hint": "Faux ! Les 4 angles ne sont pas tous égaux. Il y a deux paires d'angles opposés égaux, mais les angles adjacents sont supplémentaires (somme 180°), donc différents sauf si les droites sont perpendiculaires.",
           "difficulty": "medium"
         },
         {
@@ -664,14 +656,10 @@
           "difficulty": "medium"
         },
         {
-          "type": "texte",
-          "q": "Un angle mesure 230°. Est-il un angle rentrant (réflex) ? Oui/Non",
-          "answer": "oui",
-          "hint": "Angle rentrant : entre 180° et 360°. 230° > 180° → oui.",
-          "tolerance": [
-            "oui",
-            "Oui"
-          ],
+          "type": "vrai_faux",
+          "q": "Un angle mesurant 230° est un angle rentrant (réflex).",
+          "ans": true,
+          "hint": "Vrai ! Un angle rentrant est entre 180° et 360°. 230° > 180° → c'est bien un angle rentrant.",
           "difficulty": "hard"
         },
         {
@@ -738,9 +726,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Un triangle isocèle possède exactement deux côtés égaux.",
-          "ans": true,
-          "hint": "Isocèle : 2 côtés égaux et une base différente.",
+          "q": "Un triangle isocèle possède exactement trois côtés égaux.",
+          "ans": false,
+          "hint": "Faux ! Un triangle avec trois côtés égaux est ÉQUILATÉRAL. Un triangle isocèle en a exactement deux côtés égaux (et une base différente).",
           "difficulty": "easy"
         },
         {
@@ -757,15 +745,11 @@
           "difficulty": "easy"
         },
         {
-          "type": "texte",
+          "type": "qcm",
           "q": "Quels sont les angles d'un triangle équilatéral ?",
-          "answer": "60° chacun",
+          "opts": ["45° chacun", "60° chacun", "90° chacun", "30° chacun"],
+          "ans": 1,
           "hint": "3 côtés égaux → 3 angles égaux. 180° ÷ 3 = 60°.",
-          "tolerance": [
-            "60° chacun",
-            "60°",
-            "60° ; 60° ; 60°"
-          ],
           "difficulty": "easy"
         },
         {
@@ -836,9 +820,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Un triangle équilatéral est aussi isocèle.",
-          "ans": true,
-          "hint": "Équilatéral (3 côtés égaux) vérifie a fortiori la condition isocèle (au moins 2 côtés égaux).",
+          "q": "Un triangle isocèle est forcément équilatéral.",
+          "ans": false,
+          "hint": "Faux ! Un triangle isocèle a 2 côtés égaux mais pas nécessairement 3. C'est l'équilatéral qui est un cas particulier d'isocèle (3 côtés égaux → a fortiori 2 égaux).",
           "difficulty": "medium"
         },
         {
@@ -855,14 +839,10 @@
           "difficulty": "medium"
         },
         {
-          "type": "texte",
-          "q": "Triangle avec côtés 5 cm, 12 cm, 13 cm. Est-il rectangle ? Oui/Non",
-          "answer": "oui",
-          "hint": "5²+12²=25+144=169=13². Théorème de Pythagore vérifié → rectangle.",
-          "tolerance": [
-            "oui",
-            "Oui"
-          ],
+          "type": "vrai_faux",
+          "q": "Un triangle avec côtés 5 cm, 12 cm et 13 cm est rectangle.",
+          "ans": true,
+          "hint": "Vrai ! 5²+12²=25+144=169=13². Le théorème de Pythagore est vérifié → triangle rectangle.",
           "difficulty": "medium"
         },
         {
@@ -928,14 +908,10 @@
           "difficulty": "hard"
         },
         {
-          "type": "texte",
-          "q": "Peut-on avoir un triangle avec angles 100° et 90° ? Oui/Non",
-          "answer": "non",
-          "hint": "100°+90°=190° > 180°. Impossible.",
-          "tolerance": [
-            "non",
-            "Non"
-          ],
+          "type": "vrai_faux",
+          "q": "Un triangle peut avoir deux angles de 100° et 90°.",
+          "ans": false,
+          "hint": "Faux ! 100°+90°=190° > 180°. La somme des angles dépasse 180°, c'est impossible.",
           "difficulty": "hard"
         },
         {
@@ -1081,9 +1057,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Les diagonales d'un losange se coupent perpendiculairement en leur milieu.",
-          "ans": true,
-          "hint": "Losange : diagonales perpendiculaires se coupant en leur milieu (mais pas nécessairement égales).",
+          "q": "Les diagonales d'un losange se coupent perpendiculairement et sont de même longueur.",
+          "ans": false,
+          "hint": "Faux ! Les diagonales d'un losange se coupent perpendiculairement en leur milieu, mais elles ne sont PAS nécessairement égales. Elles sont égales seulement si le losange est un carré.",
           "difficulty": "medium"
         },
         {
@@ -1112,9 +1088,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Un carré est à la fois un losange et un rectangle.",
-          "ans": true,
-          "hint": "Carré = losange (4 côtés égaux) ET rectangle (4 angles droits).",
+          "q": "Un carré est un losange mais pas un rectangle.",
+          "ans": false,
+          "hint": "Faux ! Un carré est À LA FOIS un losange (4 côtés égaux) ET un rectangle (4 angles droits). Il réunit les propriétés des deux figures.",
           "difficulty": "medium"
         },
         {
@@ -1256,9 +1232,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Le diamètre est la plus grande corde d'un cercle.",
-          "ans": true,
-          "hint": "Le diamètre passe par le centre → c'est la plus longue corde possible.",
+          "q": "Le rayon est la plus grande corde d'un cercle.",
+          "ans": false,
+          "hint": "Faux ! Le rayon n'est pas une corde (il va du centre à un point du cercle, donc ne relie pas deux points du cercle). La plus grande corde est le DIAMÈTRE.",
           "difficulty": "easy"
         },
         {
@@ -1354,9 +1330,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Un demi-cercle est délimité par un diamètre et un arc.",
-          "ans": true,
-          "hint": "Le diamètre divise le cercle en 2 demi-cercles, chacun délimité par un diamètre et un arc.",
+          "q": "Un demi-cercle est délimité par deux rayons et un arc.",
+          "ans": false,
+          "hint": "Faux ! Un demi-cercle est délimité par un DIAMÈTRE et un arc (la moitié de la circonférence). Deux rayons délimitent un secteur de cercle, pas un demi-cercle.",
           "difficulty": "medium"
         },
         {
@@ -1415,14 +1391,10 @@
           "difficulty": "hard"
         },
         {
-          "type": "texte",
-          "q": "Deux cercles de rayon 4 cm ont leurs centres distants de 6 cm. Sont-ils sécants ? Oui/Non",
-          "answer": "oui",
-          "hint": "Sécants si |r1−r2| < d < r1+r2. Ici 0 < 6 < 8. Oui.",
-          "tolerance": [
-            "oui",
-            "Oui"
-          ],
+          "type": "vrai_faux",
+          "q": "Deux cercles de rayon 4 cm dont les centres sont distants de 6 cm sont sécants.",
+          "ans": true,
+          "hint": "Vrai ! Deux cercles sont sécants si |r1−r2| < d < r1+r2. Ici : |4−4|=0 < 6 < 4+4=8.",
           "difficulty": "hard"
         },
         {
@@ -1471,9 +1443,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Un carré possède 4 axes de symétrie.",
-          "ans": true,
-          "hint": "2 axes passant par les milieux des côtés opposés + 2 axes diagonaux = 4 axes.",
+          "q": "Un carré possède seulement 2 axes de symétrie.",
+          "ans": false,
+          "hint": "Faux ! Un carré possède 4 axes de symétrie : 2 passant par les milieux des côtés opposés + 2 axes diagonaux = 4 axes.",
           "difficulty": "easy"
         },
         {
@@ -1552,21 +1524,18 @@
           "difficulty": "medium"
         },
         {
-          "type": "texte",
-          "q": "Symétrique du point A(3, 0) par rapport à l'axe des ordonnées ?",
-          "answer": "(-3, 0)",
-          "hint": "Symétrie par rapport à l'axe y : (x,y) → (−x,y). A(3,0) → A'(−3,0).",
-          "tolerance": [
-            "(-3, 0)",
-            "(-3,0)"
-          ],
+          "type": "qcm",
+          "q": "Quel est le symétrique du point A(3, 0) par rapport à l'axe des ordonnées (axe y) ?",
+          "opts": ["(3, 0)", "(-3, 0)", "(0, 3)", "(0, -3)"],
+          "ans": 1,
+          "hint": "Symétrie par rapport à l'axe y : (x, y) → (−x, y). A(3, 0) → A'(−3, 0).",
           "difficulty": "medium"
         },
         {
           "type": "vrai_faux",
-          "q": "Le symétrique d'un segment est un segment de même longueur.",
-          "ans": true,
-          "hint": "La symétrie conserve les distances.",
+          "q": "Le symétrique d'un segment est un segment deux fois plus long que l'original.",
+          "ans": false,
+          "hint": "Faux ! La symétrie conserve les distances : le symétrique d'un segment est un segment de MÊME longueur.",
           "difficulty": "medium"
         },
         {
@@ -1583,22 +1552,23 @@
           "difficulty": "medium"
         },
         {
-          "type": "texte",
+          "type": "qcm",
           "q": "1ère étape pour construire le symétrique de M par rapport à d ?",
-          "answer": "tracer la perpendiculaire à d passant par M",
-          "hint": "On trace la perpendiculaire à d passant par M, puis on reporte la distance de l'autre côté.",
-          "tolerance": [
-            "tracer la perpendiculaire",
-            "perpendiculaire à d",
-            "perpendiculaire"
+          "opts": [
+            "Tracer une droite parallèle à d passant par M",
+            "Tracer la perpendiculaire à d passant par M",
+            "Marquer le milieu de [Md]",
+            "Reporter la distance MM' de l'autre côté"
           ],
+          "ans": 1,
+          "hint": "On trace d'abord la perpendiculaire à d passant par M, puis on reporte la distance de l'autre côté.",
           "difficulty": "medium"
         },
         {
           "type": "vrai_faux",
-          "q": "Le symétrique d'une droite || à l'axe est une droite || à l'axe.",
-          "ans": true,
-          "hint": "La symétrie conserve le parallélisme.",
+          "q": "Le symétrique d'une droite perpendiculaire à l'axe est une droite parallèle à l'axe.",
+          "ans": false,
+          "hint": "Faux ! Le symétrique d'une droite perpendiculaire à l'axe reste perpendiculaire à l'axe (la symétrie conserve la perpendicularité). Et le symétrique d'une droite parallèle à l'axe reste parallèle à l'axe.",
           "difficulty": "medium"
         },
         {
@@ -1657,14 +1627,10 @@
           "difficulty": "hard"
         },
         {
-          "type": "texte",
-          "q": "Le symétrique d'un triangle équilatéral est-il équilatéral ? Oui/Non",
-          "answer": "oui",
-          "hint": "La symétrie conserve longueurs et angles → le symétrique est équilatéral.",
-          "tolerance": [
-            "oui",
-            "Oui"
-          ],
+          "type": "vrai_faux",
+          "q": "Le symétrique d'un triangle équilatéral par rapport à un axe est aussi équilatéral.",
+          "ans": true,
+          "hint": "Vrai ! La symétrie axiale conserve les longueurs et les angles → le symétrique d'un triangle équilatéral est bien équilatéral.",
           "difficulty": "hard"
         },
         {
@@ -1732,15 +1698,16 @@
           "difficulty": "easy"
         },
         {
-          "type": "texte",
+          "type": "qcm",
           "q": "Différence principale entre pyramide et prisme ?",
-          "answer": "base et sommet",
-          "hint": "Pyramide : base + un sommet. Prisme : deux bases parallèles reliées par des rectangles.",
-          "tolerance": [
-            "base et sommet",
-            "apex",
-            "sommet unique"
+          "opts": [
+            "La pyramide a des faces courbes, le prisme en a pas",
+            "La pyramide a une seule base et un sommet ; le prisme a deux bases parallèles",
+            "Le prisme a un sommet pointu, la pyramide a deux bases",
+            "Ils sont identiques, seul le nom change"
           ],
+          "ans": 1,
+          "hint": "Pyramide : une base polygonale + un sommet. Prisme : deux bases parallèles reliées par des rectangles.",
           "difficulty": "easy"
         },
         {
@@ -1812,9 +1779,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Volume d'un cube de côté a : V = a³.",
-          "ans": true,
-          "hint": "V = a × a × a = a³.",
+          "q": "Volume d'un cube de côté a : V = 6a².",
+          "ans": false,
+          "hint": "Faux ! 6a² est l'aire totale du patron (surface du cube), pas son volume. Le volume d'un cube est V = a³ (côté au cube).",
           "difficulty": "medium"
         },
         {
@@ -1843,9 +1810,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Les prismes droits ont des faces latérales rectangulaires.",
-          "ans": true,
-          "hint": "Dans un prisme DROIT, les faces latérales sont des rectangles perpendiculaires aux bases.",
+          "q": "Les prismes droits ont des faces latérales triangulaires.",
+          "ans": false,
+          "hint": "Faux ! Dans un prisme DROIT, les faces latérales sont des RECTANGLES (perpendiculaires aux bases). Les faces triangulaires sont les caractéristiques des pyramides, pas des prismes.",
           "difficulty": "medium"
         },
         {
@@ -1903,14 +1870,11 @@
           "difficulty": "hard"
         },
         {
-          "type": "texte",
-          "q": "Prisme hexagonal : faces, arêtes, sommets ?",
-          "answer": "8 ; 18 ; 12",
-          "hint": "Faces : 2×6+6=8? Non : 2 hexagones + 6 rectangles = 8. Sommets : 12. Arêtes : 6+6+6=18.",
-          "tolerance": [
-            "8 ; 18 ; 12",
-            "8, 18, 12"
-          ],
+          "type": "qcm",
+          "q": "Prisme hexagonal : combien de faces, arêtes et sommets ?",
+          "opts": ["6 faces ; 12 arêtes ; 8 sommets", "8 faces ; 18 arêtes ; 12 sommets", "8 faces ; 12 arêtes ; 18 sommets", "6 faces ; 18 arêtes ; 12 sommets"],
+          "ans": 1,
+          "hint": "2 hexagones + 6 rectangles = 8 faces. Sommets : 12. Arêtes : 6+6+6=18.",
           "difficulty": "hard"
         },
         {
@@ -2039,14 +2003,11 @@
           "difficulty": "medium"
         },
         {
-          "type": "texte",
-          "q": "Pour le patron du cylindre de rayon r, quelle est la longueur du rectangle ?",
-          "answer": "2πr",
-          "hint": "Le rectangle représente la surface latérale. Sa longueur = circonférence = 2πr.",
-          "tolerance": [
-            "2πr",
-            "2 × π × r"
-          ],
+          "type": "qcm",
+          "q": "Pour le patron du cylindre de rayon r, quelle est la longueur du rectangle central ?",
+          "opts": ["πr²", "2πr", "πr", "2r"],
+          "ans": 1,
+          "hint": "Le rectangle représente la surface latérale dépliée. Sa longueur = circonférence du cercle = 2πr.",
           "difficulty": "medium"
         },
         {
@@ -2081,9 +2042,9 @@
         },
         {
           "type": "vrai_faux",
-          "q": "Le patron d'un cône comprend un disque et un secteur de cercle.",
-          "ans": true,
-          "hint": "Patron du cône : 1 disque (base) + 1 secteur angulaire (surface latérale déployée).",
+          "q": "Le patron d'un cône comprend deux disques et un secteur de cercle.",
+          "ans": false,
+          "hint": "Faux ! Le patron du cône comprend UN seul disque (la base circulaire) et UN secteur de cercle (la surface latérale déployée). Le cylindre, lui, en a deux disques.",
           "difficulty": "medium"
         },
         {

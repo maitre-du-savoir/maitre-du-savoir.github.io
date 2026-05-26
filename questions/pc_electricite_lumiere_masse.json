@@ -7,26 +7,255 @@
       "label": "Circuits électriques : composants et schémas",
       "section": "Circuits électriques",
       "questions": [
-        {"type":"qcm","q":"Quel est le rôle d'un générateur dans un circuit électrique ?","opts":["Consommer de l'énergie","Fournir l'énergie électrique (source de tension)","Stopper le courant","Mesurer l'intensité"],"ans":1,"hint":"Le générateur (pile, batterie, alternateur) fournit l'énergie électrique. Il convertit une énergie (chimique, mécanique...) en énergie électrique.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un interrupteur ouvert laisse passer le courant électrique.","ans":false,"hint":"Un interrupteur OUVERT interrompt le circuit → le courant ne passe pas. Interrupteur FERMÉ → circuit continu → courant passe.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment s'appelle la valeur qui mesure la quantité de courant qui circule dans un circuit ?","opts":["La tension (V)","L'intensité (A)","La résistance (Ω)","La puissance (W)"],"ans":1,"hint":"L'intensité électrique (I) se mesure en ampères (A) avec un ampèremètre. La tension (U) en volts (V) avec un voltmètre.","difficulty":"easy"},
-        {"type":"texte","q":"Quel instrument mesure la tension électrique (différence de potentiel) ?","answer":"voltmètre","hint":"Le voltmètre mesure la tension (U) en volts (V). Il se branche en DÉRIVATION (en parallèle). L'ampèremètre mesure l'intensité (en série).","tolerance":["voltmètre","le voltmètre"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Dans un circuit en série, le courant est le même en tout point du circuit.","ans":true,"hint":"Circuit série : les composants se suivent sur un seul chemin → même intensité partout. Contraire : circuit en dérivation (plusieurs chemins).","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'un récepteur dans un circuit électrique ?","opts":["Un composant qui produit de l'électricité","Un composant qui utilise l'énergie électrique (lampe, moteur, résistance)","Un composant qui mesure la tension","Un composant qui stocke l'électricité"],"ans":1,"hint":"Récepteur = consommateur d'énergie électrique. Il convertit l'énergie électrique en lumière (lampe), chaleur (résistance), mouvement (moteur)...","difficulty":"easy"},
-        {"type":"texte","q":"Quel est le symbole de l'unité d'intensité électrique ?","answer":"A","hint":"L'intensité se mesure en ampères, symbole A (en l'honneur du physicien André-Marie Ampère). 1 A = 1 coulomb par seconde.","tolerance":["A","ampère","amperes","amp"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque composant électrique à son symbole ou rôle.","pairs":[{"g":"Générateur (pile)","d":"Fournit la tension (énergie)"},{"g":"Lampe","d":"Convertit l'énergie en lumière et chaleur"},{"g":"Interrupteur","d":"Ouvre ou ferme le circuit"},{"g":"Résistance","d":"Limite l'intensité du courant"}],"hint":"Ces quatre composants de base permettent de construire et analyser la plupart des circuits électriques simples.","difficulty":"medium"},
-        {"type":"texte","q":"Dans un circuit en dérivation, que se passe-t-il si une des lampes grille (circuit ouvert) ?","answer":"les autres s'allument encore","hint":"Circuit dérivation : chaque composant est sur un chemin indépendant → si une lampe grille, les autres continuent de fonctionner.","tolerance":["les autres s'allument encore","les autres continuent","les autres fonctionnent","elles s'allument quand même"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Dans un circuit en série, si une lampe grille, toutes les lampes s'éteignent.","ans":true,"hint":"Série : un seul chemin → si un composant est en circuit ouvert (lampe grillée), le circuit est interrompu → plus de courant → toutes les lampes s'éteignent.","difficulty":"medium"},
-        {"type":"qcm","q":"Un ampèremètre se branche :","opts":["En dérivation (parallèle)","En série sur le circuit","N'importe comment","Il ne se branche pas dans le circuit"],"ans":1,"hint":"Ampèremètre EN SÉRIE (sur le chemin du courant). Voltmètre EN DÉRIVATION (aux bornes du composant mesuré).","difficulty":"medium"},
-        {"type":"texte","q":"Quelle est la différence entre un circuit en série et un circuit en dérivation ?","answer":"série : un chemin ; dérivation : plusieurs chemins","hint":"Série : composants les uns à la suite des autres (un seul chemin). Dérivation : composants sur des branches parallèles (plusieurs chemins).","tolerance":["série : un chemin","dérivation : plusieurs chemins","série = un chemin, dérivation = plusieurs","branchements différents"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quelle est l'unité de la tension électrique ?","opts":["Ampère (A)","Ohm (Ω)","Volt (V)","Watt (W)"],"ans":2,"hint":"Tension = Volt (V), en l'honneur d'Alessandro Volta (inventeur de la pile). Intensité = Ampère (A). Résistance = Ohm (Ω).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les installations électriques domestiques en France fonctionnent avec une tension de 230 V (courant alternatif).","ans":true,"hint":"En France et en Europe : 230 V, 50 Hz (courant alternatif). USA : 120 V, 60 Hz. Le courant des piles est continu (1,5 V ou 9 V...).","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le schéma normalisé qui représente un circuit électrique avec des symboles ?","answer":"schéma électrique","hint":"Le schéma électrique utilise des symboles normalisés (pile, lampe, interrupteur...) pour représenter un circuit de façon claire et universelle.","tolerance":["schéma électrique","schéma de circuit","schéma normalisé","schéma"],"difficulty":"medium"},
-        {"type":"qcm","q":"Laquelle de ces affirmations sur le courant électrique est vraie ?","opts":["Le courant va du + vers le - dans les générateurs","Le courant conventionnel va du + vers le - à l'extérieur du générateur","Les électrons vont du + vers le -","Le courant et les électrons vont dans le même sens"],"ans":1,"hint":"Convention : courant conventionnel va de + à - à l'extérieur du générateur. Les électrons (charges négatives) vont en sens inverse (de - à +).","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Une résistance en série avec une lampe réduit l'intensité dans le circuit et donc la luminosité de la lampe.","ans":true,"hint":"Résistance en série → augmente la résistance totale → réduit l'intensité (U constant) → lampe moins brillante. Loi d'Ohm : I = U/R.","difficulty":"hard"},
-        {"type":"texte","q":"Quelle loi exprime la relation entre tension, intensité et résistance dans un circuit : U = R × I ?","answer":"loi d'Ohm","hint":"La loi d'Ohm : U = R × I (tension = résistance × intensité). Georg Simon Ohm (1827). L'unité de résistance est l'ohm (Ω).","tolerance":["loi d'Ohm","loi d'ohm","loi de ohm"],"difficulty":"hard"},
-        {"type":"qcm","q":"Une résistance de 10 Ω est traversée par un courant de 2 A. Quelle est la tension à ses bornes ?","opts":["5 V","20 V","12 V","8 V"],"ans":1,"hint":"U = R × I = 10 × 2 = 20 V. (Loi d'Ohm)","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque grandeur électrique à son unité et son instrument de mesure.","pairs":[{"g":"Tension (U)","d":"Volt (V) — voltmètre en dérivation"},{"g":"Intensité (I)","d":"Ampère (A) — ampèremètre en série"},{"g":"Résistance (R)","d":"Ohm (Ω) — ohmmètre"},{"g":"Puissance (P)","d":"Watt (W) — P = U × I"}],"hint":"Ces quatre grandeurs sont fondamentales en électricité. La loi d'Ohm (U = RI) et la loi de puissance (P = UI) les relient.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quel est le rôle d'un générateur dans un circuit électrique ?",
+          "opts": [
+            "Consommer de l'énergie",
+            "Fournir l'énergie électrique (source de tension)",
+            "Stopper le courant",
+            "Mesurer l'intensité"
+          ],
+          "ans": 1,
+          "hint": "Le générateur (pile, batterie, alternateur) fournit l'énergie électrique. Il convertit une énergie (chimique, mécanique...) en énergie électrique.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un interrupteur ouvert laisse passer le courant électrique.",
+          "ans": false,
+          "hint": "Un interrupteur OUVERT interrompt le circuit → le courant ne passe pas. Interrupteur FERMÉ → circuit continu → courant passe.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la valeur qui mesure la quantité de courant qui circule dans un circuit ?",
+          "opts": [
+            "La tension (V)",
+            "L'intensité (A)",
+            "La résistance (Ω)",
+            "La puissance (W)"
+          ],
+          "ans": 1,
+          "hint": "L'intensité électrique (I) se mesure en ampères (A) avec un ampèremètre. La tension (U) en volts (V) avec un voltmètre.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel instrument mesure la tension électrique (différence de potentiel) ?",
+          "answer": "voltmètre",
+          "hint": "Le voltmètre mesure la tension (U) en volts (V). Il se branche en DÉRIVATION (en parallèle). L'ampèremètre mesure l'intensité (en série).",
+          "tolerance": [
+            "voltmètre",
+            "le voltmètre"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans un circuit en série, l'intensité est différente aux bornes de chaque composant.",
+          "ans": false,
+          "hint": "Faux ! En série, il n'y a qu'un seul chemin pour le courant → l'intensité est identique en tout point du circuit. C'est en dérivation que l'intensité se divise.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un récepteur dans un circuit électrique ?",
+          "opts": [
+            "Un composant qui produit de l'électricité",
+            "Un composant qui utilise l'énergie électrique (lampe, moteur, résistance)",
+            "Un composant qui mesure la tension",
+            "Un composant qui stocke l'électricité"
+          ],
+          "ans": 1,
+          "hint": "Récepteur = consommateur d'énergie électrique. Il convertit l'énergie électrique en lumière (lampe), chaleur (résistance), mouvement (moteur)...",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel est le symbole de l'unité d'intensité électrique ?",
+          "answer": "A",
+          "hint": "L'intensité se mesure en ampères, symbole A (en l'honneur du physicien André-Marie Ampère). 1 A = 1 coulomb par seconde.",
+          "tolerance": [
+            "A",
+            "ampère",
+            "amperes",
+            "amp"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque composant électrique à son symbole ou rôle.",
+          "pairs": [
+            {
+              "g": "Générateur (pile)",
+              "d": "Fournit la tension (énergie)"
+            },
+            {
+              "g": "Lampe",
+              "d": "Convertit l'énergie en lumière et chaleur"
+            },
+            {
+              "g": "Interrupteur",
+              "d": "Ouvre ou ferme le circuit"
+            },
+            {
+              "g": "Résistance",
+              "d": "Limite l'intensité du courant"
+            }
+          ],
+          "hint": "Ces quatre composants de base permettent de construire et analyser la plupart des circuits électriques simples.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un circuit en dérivation, que se passe-t-il si une des lampes grille (circuit ouvert) ?",
+          "opts": [
+            "Toutes les lampes s'éteignent",
+            "Les autres lampes continuent de fonctionner normalement",
+            "Le générateur s'arrête",
+            "L'intensité dans les autres branches diminue de moitié"
+          ],
+          "ans": 1,
+          "hint": "Circuit dérivation : chaque composant est sur un chemin indépendant → si une lampe grille, les autres continuent de fonctionner.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans un circuit en série, si une lampe grille, toutes les lampes s'éteignent.",
+          "ans": true,
+          "hint": "Série : un seul chemin → si un composant est en circuit ouvert (lampe grillée), le circuit est interrompu → plus de courant → toutes les lampes s'éteignent.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un ampèremètre se branche :",
+          "opts": [
+            "En dérivation (parallèle)",
+            "En série sur le circuit",
+            "N'importe comment",
+            "Il ne se branche pas dans le circuit"
+          ],
+          "ans": 1,
+          "hint": "Ampèremètre EN SÉRIE (sur le chemin du courant). Voltmètre EN DÉRIVATION (aux bornes du composant mesuré).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la différence entre un circuit en série et un circuit en dérivation ?",
+          "opts": [
+            "En série les composants sont plus nombreux qu'en dérivation",
+            "En série il y a un seul chemin pour le courant ; en dérivation il y en a plusieurs",
+            "En série la tension est plus élevée ; en dérivation elle est plus faible",
+            "Aucune différence, ce sont deux noms pour la même chose"
+          ],
+          "ans": 1,
+          "hint": "Série : composants les uns à la suite des autres (un seul chemin). Dérivation : composants sur des branches parallèles (plusieurs chemins).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est l'unité de la tension électrique ?",
+          "opts": [
+            "Ampère (A)",
+            "Ohm (Ω)",
+            "Volt (V)",
+            "Watt (W)"
+          ],
+          "ans": 2,
+          "hint": "Tension = Volt (V), en l'honneur d'Alessandro Volta (inventeur de la pile). Intensité = Ampère (A). Résistance = Ohm (Ω).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les installations électriques domestiques en France fonctionnent avec une tension de 110 V, comme aux États-Unis.",
+          "ans": false,
+          "hint": "Faux ! En France et en Europe, la tension du réseau domestique est 230 V (50 Hz). Aux États-Unis, c'est 120 V (60 Hz).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le schéma normalisé qui représente un circuit électrique avec des symboles ?",
+          "answer": "schéma électrique",
+          "hint": "Le schéma électrique utilise des symboles normalisés (pile, lampe, interrupteur...) pour représenter un circuit de façon claire et universelle.",
+          "tolerance": [
+            "schéma électrique",
+            "schéma de circuit",
+            "schéma normalisé",
+            "schéma"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Laquelle de ces affirmations sur le courant électrique est vraie ?",
+          "opts": [
+            "Le courant va du + vers le - dans les générateurs",
+            "Le courant conventionnel va du + vers le - à l'extérieur du générateur",
+            "Les électrons vont du + vers le -",
+            "Le courant et les électrons vont dans le même sens"
+          ],
+          "ans": 1,
+          "hint": "Convention : courant conventionnel va de + à - à l'extérieur du générateur. Les électrons (charges négatives) vont en sens inverse (de - à +).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Une résistance en série avec une lampe réduit l'intensité dans le circuit et donc la luminosité de la lampe.",
+          "ans": true,
+          "hint": "Résistance en série → augmente la résistance totale → réduit l'intensité (U constant) → lampe moins brillante. Loi d'Ohm : I = U/R.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle loi exprime la relation entre tension, intensité et résistance dans un circuit : U = R × I ?",
+          "answer": "loi d'Ohm",
+          "hint": "La loi d'Ohm : U = R × I (tension = résistance × intensité). Georg Simon Ohm (1827). L'unité de résistance est l'ohm (Ω).",
+          "tolerance": [
+            "loi d'Ohm",
+            "loi d'ohm",
+            "loi de ohm"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Une résistance de 10 Ω est traversée par un courant de 2 A. Quelle est la tension à ses bornes ?",
+          "opts": [
+            "5 V",
+            "20 V",
+            "12 V",
+            "8 V"
+          ],
+          "ans": 1,
+          "hint": "U = R × I = 10 × 2 = 20 V. (Loi d'Ohm)",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque grandeur électrique à son unité et son instrument de mesure.",
+          "pairs": [
+            {
+              "g": "Tension (U)",
+              "d": "Volt (V) — voltmètre en dérivation"
+            },
+            {
+              "g": "Intensité (I)",
+              "d": "Ampère (A) — ampèremètre en série"
+            },
+            {
+              "g": "Résistance (R)",
+              "d": "Ohm (Ω) — ohmmètre"
+            },
+            {
+              "g": "Puissance (P)",
+              "d": "Watt (W) — P = U × I"
+            }
+          ],
+          "hint": "Ces quatre grandeurs sont fondamentales en électricité. La loi d'Ohm (U = RI) et la loi de puissance (P = UI) les relient.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -34,26 +263,256 @@
       "label": "Circuits en série et en dérivation",
       "section": "Circuits électriques",
       "questions": [
-        {"type":"qcm","q":"Dans un circuit en série avec deux lampes, quelle est la tension aux bornes de chaque lampe si la tension totale est 6 V et les lampes sont identiques ?","opts":["6 V","3 V","2 V","0 V"],"ans":1,"hint":"Série : la tension se divise entre les récepteurs. Si deux lampes identiques → U₁ = U₂ = 6/2 = 3 V chacune.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"En dérivation, chaque branche reçoit la même tension que le générateur.","ans":true,"hint":"Circuit dérivation : toutes les branches sont directement connectées aux bornes du générateur → même tension (U_branche = U_générateur).","difficulty":"easy"},
-        {"type":"qcm","q":"Comment les installations électriques domestiques (prises, lampes) sont-elles branchées ?","opts":["En série","En dérivation (parallèle)","En série et dérivation selon les pièces","Elles ne sont pas dans un circuit"],"ans":1,"hint":"Les appareils domestiques sont en dérivation : chaque appareil reçoit 230 V et fonctionne indépendamment des autres.","difficulty":"easy"},
-        {"type":"texte","q":"Dans un circuit en dérivation, l'intensité totale fournie par le générateur est égale à quoi ?","answer":"la somme des intensités dans chaque branche","hint":"Loi des nœuds : I_total = I₁ + I₂ + ... La somme des intensités arrivant à un nœud = somme des intensités repartant.","tolerance":["la somme des intensités dans chaque branche","somme des courants de chaque branche","I1 + I2","la somme des courants"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Dans un circuit en série, l'intensité est identique partout dans le circuit.","ans":true,"hint":"Loi de l'intensité en série : I est le même partout (un seul chemin pour le courant). En dérivation : l'intensité se divise aux nœuds.","difficulty":"easy"},
-        {"type":"qcm","q":"Deux résistances de 4 Ω chacune sont branchées en série. Quelle est leur résistance équivalente ?","opts":["2 Ω","4 Ω","8 Ω","16 Ω"],"ans":2,"hint":"En série : R_total = R₁ + R₂ = 4 + 4 = 8 Ω. Les résistances s'additionnent.","difficulty":"easy"},
-        {"type":"texte","q":"Dans un circuit en série avec une pile de 9 V et trois lampes identiques, quelle tension reçoit chaque lampe ?","answer":"3","hint":"Série : tension totale se divise également entre lampes identiques. U_lampe = 9/3 = 3 V.","tolerance":["3","3 V","trois volts"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque propriété à son type de circuit.","pairs":[{"g":"Même intensité partout","d":"Série"},{"g":"Même tension pour chaque branche","d":"Dérivation"},{"g":"Si un composant grille, tout s'arrête","d":"Série"},{"g":"Les composants fonctionnent indépendamment","d":"Dérivation"}],"hint":"Ces propriétés caractérisent les deux types de circuits. En pratique, la dérivation est préférée pour les usages domestiques.","difficulty":"medium"},
-        {"type":"texte","q":"Deux résistances de 6 Ω chacune sont branchées en dérivation. Quelle est leur résistance équivalente ?","answer":"3","hint":"En dérivation : 1/R_total = 1/R₁ + 1/R₂ = 1/6 + 1/6 = 2/6 → R_total = 3 Ω. En dérivation, la résistance équivalente est INFÉRIEURE à chaque résistance.","tolerance":["3","3 Ω","3 ohms"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Dans une dérivation, ajouter plus de branches augmente l'intensité totale fournie par le générateur.","ans":true,"hint":"Dérivation : chaque nouvelle branche consomme du courant → I_total augmente. La tension reste constante mais la pile se vide plus vite.","difficulty":"medium"},
-        {"type":"qcm","q":"Un circuit comprend une pile de 12 V et deux lampes en dérivation, chacune ayant une résistance de 24 Ω. Quelle est l'intensité totale ?","opts":["0,5 A","1 A","2 A","12 A"],"ans":1,"hint":"I dans chaque branche = U/R = 12/24 = 0,5 A. Total = 0,5 + 0,5 = 1 A.","difficulty":"medium"},
-        {"type":"texte","q":"Quelle loi affirme que la somme des tensions dans une maille d'un circuit est nulle (somme des tensions = tension du générateur) ?","answer":"loi des mailles","hint":"Loi des mailles (Kirchhoff) : dans une maille fermée, la somme algébrique des tensions est nulle. U_générateur = U₁ + U₂ + ... en série.","tolerance":["loi des mailles","loi de Kirchhoff des mailles","Kirchhoff","loi des tensions"],"difficulty":"medium"},
-        {"type":"qcm","q":"Un circuit série a une pile de 6 V et deux lampes. La lampe L1 a une tension de 4 V. Quelle est la tension aux bornes de L2 ?","opts":["6 V","4 V","2 V","10 V"],"ans":2,"hint":"Loi des mailles : U_pile = U_L1 + U_L2 → 6 = 4 + U_L2 → U_L2 = 2 V.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"En dérivation, deux lampes identiques brillent moins fort que la même lampe seule sur le même générateur.","ans":false,"hint":"En dérivation : chaque lampe reçoit la même tension que le générateur → même luminosité qu'une lampe seule. C'est en série qu'elles brillent moins.","difficulty":"medium"},
-        {"type":"texte","q":"Dans une installation domestique, un disjoncteur saute quand trop d'appareils sont branchés. Pourquoi ?","answer":"intensité trop élevée","hint":"Dérivation : chaque appareil consomme du courant → I_total augmente. Le disjoncteur protège le câblage en coupant le circuit si I dépasse un seuil.","tolerance":["intensité trop élevée","trop de courant","surcharge électrique","intensité maximale dépassée"],"difficulty":"medium"},
-        {"type":"qcm","q":"Trois résistances de 6 Ω chacune sont en série. Quelle est la résistance équivalente ?","opts":["2 Ω","6 Ω","18 Ω","3 Ω"],"ans":2,"hint":"Série : R_total = R₁ + R₂ + R₃ = 6 + 6 + 6 = 18 Ω.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Un voltmètre idéal a une résistance infinie car il ne doit pas laisser passer de courant.","ans":true,"hint":"Le voltmètre se branche en dérivation → s'il laissait passer du courant, il perturberait le circuit. Un voltmètre idéal a R = ∞ (résistance infinie).","difficulty":"hard"},
-        {"type":"texte","q":"Un ampèremètre idéal a une résistance nulle. Pourquoi ?","answer":"pour ne pas perturber le circuit","hint":"L'ampèremètre est en série → il doit avoir une résistance nulle pour ne pas modifier l'intensité qu'il mesure. R_ampèremètre → 0 Ω idéalement.","tolerance":["pour ne pas perturber le circuit","résistance nulle","ne pas modifier l'intensité","R = 0"],"difficulty":"hard"},
-        {"type":"qcm","q":"Dans un circuit série R₁ = 10 Ω, R₂ = 5 Ω alimenté par 15 V, quelle est l'intensité ?","opts":["3 A","1 A","5 A","0,5 A"],"ans":1,"hint":"R_total = 10 + 5 = 15 Ω. I = U/R = 15/15 = 1 A.","difficulty":"hard"},
-        {"type":"appariement","q":"Applique les lois des circuits aux situations suivantes.","pairs":[{"g":"Série : U_total = 12V, U1 = 8V","d":"U2 = 12 - 8 = 4 V (loi des mailles)"},{"g":"Dérivation : I1=0,5A, I2=0,3A","d":"I_total = 0,5 + 0,3 = 0,8 A (loi des nœuds)"},{"g":"Série : R1=4Ω, R2=6Ω","d":"R_eq = 4 + 6 = 10 Ω"},{"g":"Dérivation : R1=R2=12Ω","d":"R_eq = 6 Ω"}],"hint":"Ces calculs appliquent les lois de Kirchhoff (mailles et nœuds) aux circuits série et dérivation.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Dans un circuit en série avec deux lampes, quelle est la tension aux bornes de chaque lampe si la tension totale est 6 V et les lampes sont identiques ?",
+          "opts": [
+            "6 V",
+            "3 V",
+            "2 V",
+            "0 V"
+          ],
+          "ans": 1,
+          "hint": "Série : la tension se divise entre les récepteurs. Si deux lampes identiques → U₁ = U₂ = 6/2 = 3 V chacune.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "En dérivation, chaque branche reçoit la même tension que le générateur.",
+          "ans": true,
+          "hint": "Circuit dérivation : toutes les branches sont directement connectées aux bornes du générateur → même tension (U_branche = U_générateur).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment les installations électriques domestiques (prises, lampes) sont-elles branchées ?",
+          "opts": [
+            "En série",
+            "En dérivation (parallèle)",
+            "En série et dérivation selon les pièces",
+            "Elles ne sont pas dans un circuit"
+          ],
+          "ans": 1,
+          "hint": "Les appareils domestiques sont en dérivation : chaque appareil reçoit 230 V et fonctionne indépendamment des autres.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un circuit en dérivation, l'intensité totale fournie par le générateur est égale à :",
+          "opts": [
+            "L'intensité de la branche la plus longue",
+            "La somme des intensités dans chaque branche",
+            "L'intensité de la branche qui consomme le plus",
+            "La moitié de l'intensité de chaque branche"
+          ],
+          "ans": 1,
+          "hint": "Loi des nœuds : I_total = I₁ + I₂ + ... La somme des intensités arrivant à un nœud = somme des intensités repartant.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans un circuit en série, l'intensité est identique partout dans le circuit.",
+          "ans": true,
+          "hint": "Loi de l'intensité en série : I est le même partout (un seul chemin pour le courant). En dérivation : l'intensité se divise aux nœuds.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Deux résistances de 4 Ω chacune sont branchées en série. Quelle est leur résistance équivalente ?",
+          "opts": [
+            "2 Ω",
+            "4 Ω",
+            "8 Ω",
+            "16 Ω"
+          ],
+          "ans": 2,
+          "hint": "En série : R_total = R₁ + R₂ = 4 + 4 = 8 Ω. Les résistances s'additionnent.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Dans un circuit en série avec une pile de 9 V et trois lampes identiques, quelle tension reçoit chaque lampe ?",
+          "answer": "3",
+          "hint": "Série : tension totale se divise également entre lampes identiques. U_lampe = 9/3 = 3 V.",
+          "tolerance": [
+            "3",
+            "3 V",
+            "trois volts"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque propriété à son type de circuit.",
+          "pairs": [
+            {
+              "g": "Même intensité partout",
+              "d": "Série"
+            },
+            {
+              "g": "Même tension pour chaque branche",
+              "d": "Dérivation"
+            },
+            {
+              "g": "Si un composant grille, tout s'arrête",
+              "d": "Série"
+            },
+            {
+              "g": "Les composants fonctionnent indépendamment",
+              "d": "Dérivation"
+            }
+          ],
+          "hint": "Ces propriétés caractérisent les deux types de circuits. En pratique, la dérivation est préférée pour les usages domestiques.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Deux résistances de 6 Ω chacune sont branchées en dérivation. Quelle est leur résistance équivalente ?",
+          "answer": "3",
+          "hint": "En dérivation : 1/R_total = 1/R₁ + 1/R₂ = 1/6 + 1/6 = 2/6 → R_total = 3 Ω. En dérivation, la résistance équivalente est INFÉRIEURE à chaque résistance.",
+          "tolerance": [
+            "3",
+            "3 Ω",
+            "3 ohms"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans une dérivation, ajouter plus de branches n'a aucun effet sur l'intensité totale fournie par le générateur.",
+          "ans": false,
+          "hint": "Faux ! En dérivation, chaque nouvelle branche consomme du courant → I_total augmente. La tension reste constante mais la pile se vide plus vite.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un circuit comprend une pile de 12 V et deux lampes en dérivation, chacune ayant une résistance de 24 Ω. Quelle est l'intensité totale ?",
+          "opts": [
+            "0,5 A",
+            "1 A",
+            "2 A",
+            "12 A"
+          ],
+          "ans": 1,
+          "hint": "I dans chaque branche = U/R = 12/24 = 0,5 A. Total = 0,5 + 0,5 = 1 A.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle loi affirme que la somme des tensions dans une maille d'un circuit est nulle (somme des tensions = tension du générateur) ?",
+          "answer": "loi des mailles",
+          "hint": "Loi des mailles (Kirchhoff) : dans une maille fermée, la somme algébrique des tensions est nulle. U_générateur = U₁ + U₂ + ... en série.",
+          "tolerance": [
+            "loi des mailles",
+            "loi de Kirchhoff des mailles",
+            "Kirchhoff",
+            "loi des tensions"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un circuit série a une pile de 6 V et deux lampes. La lampe L1 a une tension de 4 V. Quelle est la tension aux bornes de L2 ?",
+          "opts": [
+            "6 V",
+            "4 V",
+            "2 V",
+            "10 V"
+          ],
+          "ans": 2,
+          "hint": "Loi des mailles : U_pile = U_L1 + U_L2 → 6 = 4 + U_L2 → U_L2 = 2 V.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "En dérivation, deux lampes identiques brillent moins fort que la même lampe seule sur le même générateur.",
+          "ans": false,
+          "hint": "En dérivation : chaque lampe reçoit la même tension que le générateur → même luminosité qu'une lampe seule. C'est en série qu'elles brillent moins.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans une installation domestique, un disjoncteur saute quand trop d'appareils sont branchés. Pourquoi ?",
+          "opts": [
+            "Car la tension devient trop faible",
+            "Car l'intensité totale dépasse le seuil de sécurité du disjoncteur",
+            "Car les appareils consomment trop de watts en même temps",
+            "Car le câblage ne peut pas transporter plusieurs tensions différentes"
+          ],
+          "ans": 1,
+          "hint": "Dérivation : chaque appareil consomme du courant → I_total augmente. Le disjoncteur protège le câblage en coupant le circuit si I dépasse un seuil.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Trois résistances de 6 Ω chacune sont en série. Quelle est la résistance équivalente ?",
+          "opts": [
+            "2 Ω",
+            "6 Ω",
+            "18 Ω",
+            "3 Ω"
+          ],
+          "ans": 2,
+          "hint": "Série : R_total = R₁ + R₂ + R₃ = 6 + 6 + 6 = 18 Ω.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un voltmètre idéal a une résistance infinie car il ne doit pas laisser passer de courant.",
+          "ans": true,
+          "hint": "Le voltmètre se branche en dérivation → s'il laissait passer du courant, il perturberait le circuit. Un voltmètre idéal a R = ∞ (résistance infinie).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Un ampèremètre idéal a une résistance nulle. Pourquoi ?",
+          "opts": [
+            "Pour laisser passer la plus grande tension possible",
+            "Pour ne pas modifier l'intensité qu'il mesure et ne pas perturber le circuit",
+            "Pour consommer un maximum d'énergie",
+            "Pour pouvoir se brancher en dérivation"
+          ],
+          "ans": 1,
+          "hint": "L'ampèremètre est en série → il doit avoir une résistance nulle pour ne pas modifier l'intensité qu'il mesure. R_ampèremètre → 0 Ω idéalement.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un circuit série R₁ = 10 Ω, R₂ = 5 Ω alimenté par 15 V, quelle est l'intensité ?",
+          "opts": [
+            "3 A",
+            "1 A",
+            "5 A",
+            "0,5 A"
+          ],
+          "ans": 1,
+          "hint": "R_total = 10 + 5 = 15 Ω. I = U/R = 15/15 = 1 A.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Applique les lois des circuits aux situations suivantes.",
+          "pairs": [
+            {
+              "g": "Série : U_total = 12V, U1 = 8V",
+              "d": "U2 = 12 - 8 = 4 V (loi des mailles)"
+            },
+            {
+              "g": "Dérivation : I1=0,5A, I2=0,3A",
+              "d": "I_total = 0,5 + 0,3 = 0,8 A (loi des nœuds)"
+            },
+            {
+              "g": "Série : R1=4Ω, R2=6Ω",
+              "d": "R_eq = 4 + 6 = 10 Ω"
+            },
+            {
+              "g": "Dérivation : R1=R2=12Ω",
+              "d": "R_eq = 6 Ω"
+            }
+          ],
+          "hint": "Ces calculs appliquent les lois de Kirchhoff (mailles et nœuds) aux circuits série et dérivation.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -61,26 +520,257 @@
       "label": "Sécurité électrique et dangers du courant",
       "section": "Circuits électriques",
       "questions": [
-        {"type":"qcm","q":"Quel est le danger principal du courant électrique pour le corps humain ?","opts":["Brûlures uniquement","Électrocution : arrêt du cœur, brûlures internes, tetanisation des muscles","Il n'est pas dangereux","Uniquement si on touche les fils"],"ans":1,"hint":"L'électrocution : arrêt du cœur (fibrillation ventriculaire), tétanisation musculaire (impossibilité de lâcher), brûlures internes et externes.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un courant de 50 mA (0,05 A) traversant le cœur peut être mortel.","ans":true,"hint":"Seuils dangereux : 10 mA → picotements, 30 mA → tétanisation, 50-100 mA → fibrillation cardiaque potentiellement mortelle.","difficulty":"easy"},
-        {"type":"qcm","q":"Pourquoi les câbles électriques sont-ils recouverts d'une gaine en plastique ?","opts":["Pour les décorer","Pour isoler les conducteurs et prévenir les courts-circuits et électrocutions","Pour les rendre plus solides","Pour les rendre invisibles"],"ans":1,"hint":"Le plastique est un isolant électrique. La gaine protège des courts-circuits et empêche le contact accidentel avec les conducteurs sous tension.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on la connexion accidentelle de deux conducteurs de potentiels différents (ex : fil + et fil -) ?","answer":"court-circuit","hint":"Court-circuit : connexion directe + et - → intensité très élevée → échauffement → incendie. Protégé par fusible ou disjoncteur.","tolerance":["court-circuit","un court-circuit","court circuit"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La règle de sécurité principale avec l'électricité est de couper le courant avant d'intervenir.","ans":true,"hint":"Toujours couper le disjoncteur (ou débrancher) avant toute intervention sur une installation électrique. Utiliser des outils isolants.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'un fusible ?","opts":["Un composant qui augmente l'intensité","Un composant qui fond et coupe le circuit si l'intensité dépasse une valeur limite","Un composant qui mesure la tension","Un générateur de secours"],"ans":1,"hint":"Le fusible contient un fil métallique fin qui fond (s'interrompt) si l'intensité dépasse le calibre → protège le circuit. Remplacé par les disjoncteurs.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle le contact à basse résistance entre un conducteur électrique et la terre, utilisé comme protection de sécurité ?","answer":"mise à la terre","hint":"La mise à la terre (masse) : en cas de défaut (carcasse sous tension), le courant s'écoule vers la Terre via le câble vert/jaune → déclenchement du disjoncteur.","tolerance":["mise à la terre","la terre","mise à la masse","liaison à la terre"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque dispositif de sécurité à sa fonction.","pairs":[{"g":"Fusible","d":"Se fond si I > calibre → coupe le circuit"},{"g":"Disjoncteur différentiel","d":"Détecte un courant de fuite vers la terre → coupe"},{"g":"Prise de terre","d":"Écoule les courants de défaut vers le sol"},{"g":"Interrupteur différentiel","d":"Protège les personnes contre les électrocutions"}],"hint":"Ces dispositifs forment le système de protection des installations électriques domestiques contre les surcharges et les électrocutions.","difficulty":"medium"},
-        {"type":"texte","q":"Pourquoi ne faut-il pas utiliser d'appareils électriques dans une salle de bains (sauf basse tension) ?","answer":"l'eau est conductrice","hint":"L'eau (surtout avec des sels dissous) est conductrice. En milieu humide, le risque d'électrocution est multiplié → normes strictes en salle de bains.","tolerance":["l'eau est conductrice","l'humidité","risque d'électrocution","l'eau conduit le courant"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Un oiseau posé sur un fil électrique à haute tension n'est pas électrocuté car il ne touche qu'un seul fil.","ans":true,"hint":"L'électrocution nécessite deux points de contact à potentiels différents (+ et -). L'oiseau sur un seul fil est au même potentiel que le fil → pas de courant.","difficulty":"medium"},
-        {"type":"qcm","q":"Quel geste est INTERDIT en cas d'incendie d'origine électrique ?","opts":["Couper le courant","Utiliser un extincteur CO₂","Utiliser de l'eau pour éteindre","Appeler les pompiers"],"ans":2,"hint":"L'eau est conductrice → jet d'eau sur feu électrique → électrocution du sauveteur ! Utiliser des extincteurs CO₂ ou à poudre, et couper le courant.","difficulty":"medium"},
-        {"type":"texte","q":"À quelle tension commence-t-on à parler de basse tension dangereuse selon les normes de sécurité ?","answer":"50","hint":"Selon les normes : tension < 50 V AC = très basse tension (TBT) considérée sûre en conditions normales. Au-delà → danger d'électrocution.","tolerance":["50","50 V","50 volts","cinquante"],"difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi les électriciens portent-ils des gants et utilisent des outils à manches isolés ?","opts":["Pour être à la mode","Pour ne pas laisser d'empreintes","Pour s'isoler électriquement et éviter le passage du courant à travers leur corps","Pour se protéger du chaud"],"ans":2,"hint":"Les gants en caoutchouc et les manches en plastique sont des isolants → empêchent le courant de traverser le corps de l'électricien.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le corps humain est un bon conducteur électrique (résistance de quelques centaines à quelques milliers d'ohms).","ans":true,"hint":"Résistance du corps : 1 000 à 100 000 Ω selon état (peau sèche ou mouillée). Sous 230 V → I = 0,23 à 0,002 A, potentiellement dangereux.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le coefficient multiplicateur de la résistance du corps humain qui diminue dangereusement quand la peau est mouillée ?","answer":"résistance cutanée","hint":"La résistance cutanée (peau) chute quand la peau est mouillée → même tension → courant plus fort → danger augmenté en environnement humide.","tolerance":["résistance cutanée","résistance de la peau","résistance cutanée"],"difficulty":"hard"},
-        {"type":"qcm","q":"Les lignes à haute tension transportent l'électricité à des centaines de kilovolts. Pourquoi ?","opts":["Pour impressionner","Pour transporter l'énergie avec des pertes minimales (P_perte = R × I²)","Car c'est plus facile à produire","Car les poteaux sont très hauts"],"ans":1,"hint":"Haute tension → faible intensité (P = U×I constant) → pertes par effet Joule (R×I²) très réduites → transport plus efficace sur de grandes distances.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Un disjoncteur différentiel 30 mA coupe le circuit si le courant de fuite dépasse 30 mA.","ans":true,"hint":"Le disjoncteur différentiel 30 mA détecte une différence entre courant allant et courant revenant → fuite → coupe en < 30 ms. Protection essentielle contre l'électrocution.","difficulty":"hard"},
-        {"type":"texte","q":"Pourquoi les prises électriques en France ont-elles une broche de terre (3ème fiche ronde) ?","answer":"protéger contre les défauts d'isolement","hint":"La prise de terre (borne verte/jaune) protège : si un appareil a un défaut d'isolement (boîtier sous tension), le courant s'écoule vers la terre → déclenchement du différentiel.","tolerance":["protéger contre les défauts d'isolement","évacuer les courants de défaut","sécurité","protection des personnes"],"difficulty":"hard"},
-        {"type":"qcm","q":"Le danger d'électrocution dépend principalement de :","opts":["La couleur du fil","La tension ET l'intensité ET le trajet dans le corps ET la durée","Uniquement de la tension","Uniquement de l'intensité"],"ans":1,"hint":"L'électrocution dépend de : I (intensité), U (tension), durée du contact, trajet dans le corps (cœur = mortel), état de la peau (sèche/mouillée).","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque règle de sécurité à la situation à laquelle elle s'applique.","pairs":[{"g":"Ne jamais toucher les fils dénudés","d":"Risque d'électrocution directe"},{"g":"Ne pas surcharger les prises","d":"Risque de court-circuit et d'incendie"},{"g":"Couper le courant avant intervention","d":"Travaux électriques"},{"g":"Pas d'appareils électriques près de l'eau","d":"Salle de bains, piscine, cuisine humide"}],"hint":"Ces règles de sécurité sont des obligations légales dans les installations domestiques et commerciales.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quel est le danger principal du courant électrique pour le corps humain ?",
+          "opts": [
+            "Brûlures uniquement",
+            "Électrocution : arrêt du cœur, brûlures internes, tetanisation des muscles",
+            "Il n'est pas dangereux",
+            "Uniquement si on touche les fils"
+          ],
+          "ans": 1,
+          "hint": "L'électrocution : arrêt du cœur (fibrillation ventriculaire), tétanisation musculaire (impossibilité de lâcher), brûlures internes et externes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un courant de 1 mA (0,001 A) traversant le cœur est suffisant pour provoquer une fibrillation cardiaque mortelle.",
+          "ans": false,
+          "hint": "Faux ! 1 mA est à peine perceptible. La fibrillation cardiaque potentiellement mortelle nécessite 50 à 100 mA. À 10 mA, on ressent des picotements ; à 30 mA, une tétanisation musculaire.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les câbles électriques sont-ils recouverts d'une gaine en plastique ?",
+          "opts": [
+            "Pour les décorer",
+            "Pour isoler les conducteurs et prévenir les courts-circuits et électrocutions",
+            "Pour les rendre plus solides",
+            "Pour les rendre invisibles"
+          ],
+          "ans": 1,
+          "hint": "Le plastique est un isolant électrique. La gaine protège des courts-circuits et empêche le contact accidentel avec les conducteurs sous tension.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la connexion accidentelle de deux conducteurs de potentiels différents (ex : fil + et fil -) ?",
+          "answer": "court-circuit",
+          "hint": "Court-circuit : connexion directe + et - → intensité très élevée → échauffement → incendie. Protégé par fusible ou disjoncteur.",
+          "tolerance": [
+            "court-circuit",
+            "un court-circuit",
+            "court circuit"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La règle de sécurité principale avec l'électricité est de couper le courant avant d'intervenir.",
+          "ans": true,
+          "hint": "Toujours couper le disjoncteur (ou débrancher) avant toute intervention sur une installation électrique. Utiliser des outils isolants.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un fusible ?",
+          "opts": [
+            "Un composant qui augmente l'intensité",
+            "Un composant qui fond et coupe le circuit si l'intensité dépasse une valeur limite",
+            "Un composant qui mesure la tension",
+            "Un générateur de secours"
+          ],
+          "ans": 1,
+          "hint": "Le fusible contient un fil métallique fin qui fond (s'interrompt) si l'intensité dépasse le calibre → protège le circuit. Remplacé par les disjoncteurs.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la connexion entre un conducteur électrique et la terre, utilisée comme protection de sécurité dans les installations ?",
+          "opts": [
+            "Court-circuit",
+            "Mise à la terre",
+            "Fusible",
+            "Dérivation de sécurité"
+          ],
+          "ans": 1,
+          "hint": "La mise à la terre : en cas de défaut (carcasse métallique sous tension), le courant s'écoule vers la Terre via le câble vert/jaune → déclenchement du disjoncteur différentiel → protection des personnes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque dispositif de sécurité à sa fonction.",
+          "pairs": [
+            {
+              "g": "Fusible",
+              "d": "Se fond si I > calibre → coupe le circuit"
+            },
+            {
+              "g": "Disjoncteur différentiel",
+              "d": "Détecte un courant de fuite vers la terre → coupe"
+            },
+            {
+              "g": "Prise de terre",
+              "d": "Écoule les courants de défaut vers le sol"
+            },
+            {
+              "g": "Interrupteur différentiel",
+              "d": "Protège les personnes contre les électrocutions"
+            }
+          ],
+          "hint": "Ces dispositifs forment le système de protection des installations électriques domestiques contre les surcharges et les électrocutions.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi ne faut-il pas utiliser d'appareils électriques dans une salle de bains (sauf basse tension) ?",
+          "opts": [
+            "Car l'humidité abîme les appareils électroniques",
+            "Car l'eau est conductrice et augmente le risque d'électrocution",
+            "Car les prises sont de tailles différentes",
+            "Car le courant alternatif est plus dangereux sous la douche"
+          ],
+          "ans": 1,
+          "hint": "L'eau (surtout avec des sels dissous) est conductrice. En milieu humide, le risque d'électrocution est multiplié → normes strictes en salle de bains.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un oiseau posé sur un fil électrique à haute tension n'est pas électrocuté car il ne touche qu'un seul fil.",
+          "ans": true,
+          "hint": "L'électrocution nécessite deux points de contact à potentiels différents (+ et -). L'oiseau sur un seul fil est au même potentiel que le fil → pas de courant.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel geste est INTERDIT en cas d'incendie d'origine électrique ?",
+          "opts": [
+            "Couper le courant",
+            "Utiliser un extincteur CO₂",
+            "Utiliser de l'eau pour éteindre",
+            "Appeler les pompiers"
+          ],
+          "ans": 2,
+          "hint": "L'eau est conductrice → jet d'eau sur feu électrique → électrocution du sauveteur ! Utiliser des extincteurs CO₂ ou à poudre, et couper le courant.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "À quelle tension commence-t-on à parler de basse tension dangereuse selon les normes de sécurité ?",
+          "answer": "50",
+          "hint": "Selon les normes : tension < 50 V AC = très basse tension (TBT) considérée sûre en conditions normales. Au-delà → danger d'électrocution.",
+          "tolerance": [
+            "50",
+            "50 V",
+            "50 volts",
+            "cinquante"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les électriciens portent-ils des gants et utilisent des outils à manches isolés ?",
+          "opts": [
+            "Pour être à la mode",
+            "Pour ne pas laisser d'empreintes",
+            "Pour s'isoler électriquement et éviter le passage du courant à travers leur corps",
+            "Pour se protéger du chaud"
+          ],
+          "ans": 2,
+          "hint": "Les gants en caoutchouc et les manches en plastique sont des isolants → empêchent le courant de traverser le corps de l'électricien.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le corps humain est un excellent isolant électrique : sa peau sèche empêche totalement le passage du courant.",
+          "ans": false,
+          "hint": "Faux ! Le corps humain est un conducteur électrique (résistance 1 000 à 100 000 Ω). La peau sèche offre une certaine résistance, mais sous 230 V, un courant dangereux peut quand même traverser le corps.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle propriété de la peau diminue dangereusement quand elle est mouillée, augmentant le risque d'électrocution ?",
+          "opts": [
+            "Sa conductivité thermique",
+            "Sa résistance électrique (résistance cutanée)",
+            "Son épaisseur",
+            "Sa pigmentation"
+          ],
+          "ans": 1,
+          "hint": "La résistance électrique de la peau (résistance cutanée) chute fortement quand elle est mouillée → même tension → courant bien plus intense → danger d'électrocution multiplié.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Les lignes à haute tension transportent l'électricité à des centaines de kilovolts. Pourquoi ?",
+          "opts": [
+            "Pour impressionner",
+            "Pour transporter l'énergie avec des pertes minimales (P_perte = R × I²)",
+            "Car c'est plus facile à produire",
+            "Car les poteaux sont très hauts"
+          ],
+          "ans": 1,
+          "hint": "Haute tension → faible intensité (P = U×I constant) → pertes par effet Joule (R×I²) très réduites → transport plus efficace sur de grandes distances.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un disjoncteur différentiel 30 mA coupe le circuit si le courant de fuite dépasse 30 mA.",
+          "ans": true,
+          "hint": "Le disjoncteur différentiel 30 mA détecte une différence entre courant allant et courant revenant → fuite → coupe en < 30 ms. Protection essentielle contre l'électrocution.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les prises électriques en France ont-elles une broche de terre (3ème fiche ronde) ?",
+          "opts": [
+            "Pour augmenter la tension disponible",
+            "Pour protéger les personnes en cas de défaut d'isolement (boîtier sous tension)",
+            "Pour éviter que la prise ne chauffe",
+            "Pour permettre d'utiliser des appareils de 380 V"
+          ],
+          "ans": 1,
+          "hint": "La prise de terre (borne verte/jaune) protège : si un appareil a un défaut d'isolement (boîtier sous tension), le courant s'écoule vers la terre → déclenchement du différentiel.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Le danger d'électrocution dépend principalement de :",
+          "opts": [
+            "La couleur du fil",
+            "La tension ET l'intensité ET le trajet dans le corps ET la durée",
+            "Uniquement de la tension",
+            "Uniquement de l'intensité"
+          ],
+          "ans": 1,
+          "hint": "L'électrocution dépend de : I (intensité), U (tension), durée du contact, trajet dans le corps (cœur = mortel), état de la peau (sèche/mouillée).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque règle de sécurité à la situation à laquelle elle s'applique.",
+          "pairs": [
+            {
+              "g": "Ne jamais toucher les fils dénudés",
+              "d": "Risque d'électrocution directe"
+            },
+            {
+              "g": "Ne pas surcharger les prises",
+              "d": "Risque de court-circuit et d'incendie"
+            },
+            {
+              "g": "Couper le courant avant intervention",
+              "d": "Travaux électriques"
+            },
+            {
+              "g": "Pas d'appareils électriques près de l'eau",
+              "d": "Salle de bains, piscine, cuisine humide"
+            }
+          ],
+          "hint": "Ces règles de sécurité sont des obligations légales dans les installations domestiques et commerciales.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -88,26 +778,257 @@
       "label": "Sources de lumière et propagation",
       "section": "Lumière",
       "questions": [
-        {"type":"qcm","q":"Quelle est la différence entre une source primaire et une source secondaire de lumière ?","opts":["La source primaire est plus lumineuse","La source primaire produit sa propre lumière ; la source secondaire réfléchit la lumière reçue","La source secondaire est plus loin","La source primaire est de couleur blanche uniquement"],"ans":1,"hint":"Source primaire : produit sa propre lumière (Soleil, lampe, bougie). Source secondaire : réfléchit la lumière qu'elle reçoit (Lune, planètes, objets éclairés).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La Lune est une source secondaire de lumière car elle réfléchit la lumière du Soleil.","ans":true,"hint":"La Lune ne produit pas sa propre lumière. Elle réfléchit environ 12% de la lumière solaire qu'elle reçoit.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment se propage la lumière dans un milieu homogène transparent ?","opts":["En courbes","En ligne droite","En spirale","De façon aléatoire"],"ans":1,"hint":"Propagation rectiligne de la lumière dans un milieu homogène (air, eau, verre uniformes). C'est la base de l'optique géométrique.","difficulty":"easy"},
-        {"type":"texte","q":"Donne la vitesse approximative de la lumière dans le vide.","answer":"300 000","hint":"La lumière se propage à 299 792 km/s ≈ 300 000 km/s dans le vide. C'est la vitesse maximale dans l'univers (symbole c).","tolerance":["300 000","300000","3×10⁸","3.10^8","299 792"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La lumière se propage instantanément : on voit un éclair immédiatement.","ans":false,"hint":"La lumière a une vitesse finie (300 000 km/s). La lumière du Soleil met ~8 minutes pour nous atteindre. On voit l'éclair avant d'entendre le tonnerre car la lumière est bien plus rapide que le son.","difficulty":"easy"},
-        {"type":"qcm","q":"Lequel de ces objets est une source primaire de lumière ?","opts":["La Lune","Un miroir","Une lampe à incandescence allumée","Un livre blanc éclairé"],"ans":2,"hint":"La lampe allumée produit sa propre lumière (conversion d'énergie électrique → lumière). La Lune, le miroir et le livre réfléchissent la lumière.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle l'unité de mesure de la vitesse de la lumière utilisée en astronomie pour mesurer les distances ?","answer":"année-lumière","hint":"Une année-lumière (al) = distance parcourue par la lumière en 1 an ≈ 9 460 milliards de km. Utilisée pour mesurer les distances entre étoiles.","tolerance":["année-lumière","année lumière","al","light-year"],"difficulty":"easy"},
-        {"type":"appariement","q":"Classe ces objets en sources primaires ou secondaires de lumière.","pairs":[{"g":"Soleil","d":"Source primaire (produit sa lumière par fusion nucléaire)"},{"g":"Lune","d":"Source secondaire (réfléchit la lumière solaire)"},{"g":"Lampe LED allumée","d":"Source primaire (conversion électrique)"},{"g":"Miroir éclairé","d":"Source secondaire (réfléchit la lumière)"}],"hint":"La distinction source primaire/secondaire est fondamentale en optique pour comprendre comment on voit les objets.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on le modèle qui représente la lumière par un trait rectiligne indiquant sa direction de propagation ?","answer":"rayon lumineux","hint":"Le rayon lumineux est un modèle géométrique représentant la direction de propagation de la lumière. Il est toujours rectiligne dans un milieu homogène.","tolerance":["rayon lumineux","rayon de lumière","faisceau lumineux"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La lumière visible est une forme de rayonnement électromagnétique.","ans":true,"hint":"La lumière visible fait partie du spectre électromagnétique. Les autres formes : UV, IR, rayons X, ondes radio... se propagent toutes à la même vitesse dans le vide.","difficulty":"medium"},
-        {"type":"qcm","q":"Combien de temps met la lumière du Soleil pour atteindre la Terre (distance ≈ 150 millions de km) ?","opts":["1 seconde","8 minutes","1 heure","1 an"],"ans":1,"hint":"t = d/v = 150 000 000 km / 300 000 km/s = 500 s ≈ 8 min 20 s. La lumière du Soleil qu'on voit maintenant a quitté le Soleil il y a 8 minutes.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle un objet qui laisse passer la lumière sans que l'on distingue les objets derrière lui ?","answer":"translucide","hint":"Translucide : laisse passer la lumière mais diffuse → image floue (verre dépoli, papier calque). Transparent : laisse passer la lumière sans diffusion. Opaque : bloque la lumière.","tolerance":["translucide","un objet translucide","semi-transparent"],"difficulty":"medium"},
-        {"type":"qcm","q":"La lumière change de direction quand elle passe d'un milieu à un autre (air → eau). Ce phénomène s'appelle :","opts":["Réflexion","Diffraction","Réfraction","Absorption"],"ans":2,"hint":"Réfraction : changement de direction de la lumière à l'interface de deux milieux transparents différents. Ex : bâton qui semble courbé dans l'eau.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"On peut voir un objet qui n'émet pas de lumière car il réfléchit la lumière vers nos yeux.","ans":true,"hint":"Les objets non lumineux (source secondaire) nous envoient de la lumière réfléchie → nos yeux captent cette lumière → on voit l'objet.","difficulty":"medium"},
-        {"type":"texte","q":"Quelle propriété de la lumière est utilisée par les fibres optiques pour transmettre des données à grande vitesse ?","answer":"propagation rectiligne","hint":"Les fibres optiques guident la lumière par réflexion totale interne → la lumière reste dans la fibre. Permet la transmission de données à la vitesse de la lumière.","tolerance":["propagation rectiligne","réflexion totale interne","propagation de la lumière","guidage par réflexion"],"difficulty":"medium"},
-        {"type":"qcm","q":"La lumière visible perçue par nos yeux correspond à des longueurs d'onde comprises entre :","opts":["1 nm et 100 nm","380 nm et 780 nm","1 mm et 10 mm","1 m et 10 m"],"ans":1,"hint":"La lumière visible : longueurs d'onde de 380 nm (violet) à 780 nm (rouge). UV < visible < IR.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Dans l'espace (vide), la lumière ne peut pas se propager car il n'y a pas de milieu matériel.","ans":false,"hint":"La lumière (onde électromagnétique) se propage dans le vide, contrairement au son (onde mécanique). C'est pourquoi on entend les explosions dans les films spatiaux, mais pas en réalité.","difficulty":"hard"},
-        {"type":"texte","q":"L'étoile la plus proche du Soleil est Alpha du Centaure à 4,24 années-lumière. Que signifie cela ?","answer":"la lumière met 4 ans et 3 mois pour nous parvenir","hint":"4,24 années-lumière = la lumière met 4,24 ans pour parcourir cette distance. Ce qu'on voit d'Alpha du Centaure date de 4,24 ans.","tolerance":["la lumière met 4 ans","4 ans et demi","la lumière est partie il y a 4 ans","distance de 4,24 ans de lumière"],"difficulty":"hard"},
-        {"type":"qcm","q":"Pourquoi le bâton plongé dans l'eau semble-t-il courbé à l'interface eau/air ?","opts":["Car l'eau courbe le bâton","Car la lumière change de direction (réfraction) en passant de l'eau à l'air","Car l'eau réfléchit le bâton","Car l'œil est déformé par l'eau"],"ans":1,"hint":"Réfraction : la lumière change de vitesse et de direction en passant de l'eau (plus dense) à l'air. L'œil interprète les rayons comme venant en ligne droite → illusion.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque phénomène optique à son explication.","pairs":[{"g":"Réflexion","d":"La lumière rebondit sur une surface (miroir)"},{"g":"Réfraction","d":"La lumière change de direction en changeant de milieu"},{"g":"Absorption","d":"La lumière est convertie en chaleur par le matériau"},{"g":"Diffusion","d":"La lumière est dispersée dans toutes les directions (nuage, lait)"}],"hint":"Ces quatre phénomènes décrivent ce qui arrive à la lumière lorsqu'elle rencontre un objet ou une surface.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelle est la différence entre une source primaire et une source secondaire de lumière ?",
+          "opts": [
+            "La source primaire est plus lumineuse",
+            "La source primaire produit sa propre lumière ; la source secondaire réfléchit la lumière reçue",
+            "La source secondaire est plus loin",
+            "La source primaire est de couleur blanche uniquement"
+          ],
+          "ans": 1,
+          "hint": "Source primaire : produit sa propre lumière (Soleil, lampe, bougie). Source secondaire : réfléchit la lumière qu'elle reçoit (Lune, planètes, objets éclairés).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La Lune est une source primaire de lumière : elle produit sa propre lumière par réactions nucléaires.",
+          "ans": false,
+          "hint": "Faux ! La Lune est une source secondaire de lumière : elle ne produit pas sa propre lumière, elle réfléchit environ 12 % de la lumière solaire qu'elle reçoit. C'est le Soleil qui est une source primaire (fusion nucléaire).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment se propage la lumière dans un milieu homogène transparent ?",
+          "opts": [
+            "En courbes",
+            "En ligne droite",
+            "En spirale",
+            "De façon aléatoire"
+          ],
+          "ans": 1,
+          "hint": "Propagation rectiligne de la lumière dans un milieu homogène (air, eau, verre uniformes). C'est la base de l'optique géométrique.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Donne la vitesse approximative de la lumière dans le vide.",
+          "answer": "300 000",
+          "hint": "La lumière se propage à 299 792 km/s ≈ 300 000 km/s dans le vide. C'est la vitesse maximale dans l'univers (symbole c).",
+          "tolerance": [
+            "300 000",
+            "300000",
+            "3×10⁸",
+            "3.10^8",
+            "299 792"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La lumière se propage instantanément : on voit un éclair immédiatement.",
+          "ans": false,
+          "hint": "La lumière a une vitesse finie (300 000 km/s). La lumière du Soleil met ~8 minutes pour nous atteindre. On voit l'éclair avant d'entendre le tonnerre car la lumière est bien plus rapide que le son.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces objets est une source primaire de lumière ?",
+          "opts": [
+            "La Lune",
+            "Un miroir",
+            "Une lampe à incandescence allumée",
+            "Un livre blanc éclairé"
+          ],
+          "ans": 2,
+          "hint": "La lampe allumée produit sa propre lumière (conversion d'énergie électrique → lumière). La Lune, le miroir et le livre réfléchissent la lumière.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle l'unité de mesure de la vitesse de la lumière utilisée en astronomie pour mesurer les distances ?",
+          "answer": "année-lumière",
+          "hint": "Une année-lumière (al) = distance parcourue par la lumière en 1 an ≈ 9 460 milliards de km. Utilisée pour mesurer les distances entre étoiles.",
+          "tolerance": [
+            "année-lumière",
+            "année lumière",
+            "al",
+            "light-year"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Classe ces objets en sources primaires ou secondaires de lumière.",
+          "pairs": [
+            {
+              "g": "Soleil",
+              "d": "Source primaire (produit sa lumière par fusion nucléaire)"
+            },
+            {
+              "g": "Lune",
+              "d": "Source secondaire (réfléchit la lumière solaire)"
+            },
+            {
+              "g": "Lampe LED allumée",
+              "d": "Source primaire (conversion électrique)"
+            },
+            {
+              "g": "Miroir éclairé",
+              "d": "Source secondaire (réfléchit la lumière)"
+            }
+          ],
+          "hint": "La distinction source primaire/secondaire est fondamentale en optique pour comprendre comment on voit les objets.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le modèle qui représente la lumière par un trait rectiligne indiquant sa direction de propagation ?",
+          "answer": "rayon lumineux",
+          "hint": "Le rayon lumineux est un modèle géométrique représentant la direction de propagation de la lumière. Il est toujours rectiligne dans un milieu homogène.",
+          "tolerance": [
+            "rayon lumineux",
+            "rayon de lumière",
+            "faisceau lumineux"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La lumière visible est une forme de rayonnement électromagnétique.",
+          "ans": true,
+          "hint": "La lumière visible fait partie du spectre électromagnétique. Les autres formes : UV, IR, rayons X, ondes radio... se propagent toutes à la même vitesse dans le vide.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Combien de temps met la lumière du Soleil pour atteindre la Terre (distance ≈ 150 millions de km) ?",
+          "opts": [
+            "1 seconde",
+            "8 minutes",
+            "1 heure",
+            "1 an"
+          ],
+          "ans": 1,
+          "hint": "t = d/v = 150 000 000 km / 300 000 km/s = 500 s ≈ 8 min 20 s. La lumière du Soleil qu'on voit maintenant a quitté le Soleil il y a 8 minutes.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle un objet qui laisse passer la lumière sans que l'on distingue les objets derrière lui ?",
+          "answer": "translucide",
+          "hint": "Translucide : laisse passer la lumière mais diffuse → image floue (verre dépoli, papier calque). Transparent : laisse passer la lumière sans diffusion. Opaque : bloque la lumière.",
+          "tolerance": [
+            "translucide",
+            "un objet translucide",
+            "semi-transparent"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La lumière change de direction quand elle passe d'un milieu à un autre (air → eau). Ce phénomène s'appelle :",
+          "opts": [
+            "Réflexion",
+            "Diffraction",
+            "Réfraction",
+            "Absorption"
+          ],
+          "ans": 2,
+          "hint": "Réfraction : changement de direction de la lumière à l'interface de deux milieux transparents différents. Ex : bâton qui semble courbé dans l'eau.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "On peut voir un objet qui n'émet pas de lumière car il réfléchit la lumière vers nos yeux.",
+          "ans": true,
+          "hint": "Les objets non lumineux (source secondaire) nous envoient de la lumière réfléchie → nos yeux captent cette lumière → on voit l'objet.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle propriété de la lumière est exploitée par les fibres optiques pour transmettre des données à grande vitesse ?",
+          "opts": [
+            "Sa capacité à se courber",
+            "Sa propagation rectiligne et la réflexion totale interne",
+            "Sa couleur",
+            "Sa chaleur"
+          ],
+          "ans": 1,
+          "hint": "Les fibres optiques guident la lumière par réflexion totale interne : la lumière rebondit indéfiniment à l'intérieur de la fibre sans en sortir, permettant la transmission rapide de données.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La lumière visible perçue par nos yeux correspond à des longueurs d'onde comprises entre :",
+          "opts": [
+            "1 nm et 100 nm",
+            "380 nm et 780 nm",
+            "1 mm et 10 mm",
+            "1 m et 10 m"
+          ],
+          "ans": 1,
+          "hint": "La lumière visible : longueurs d'onde de 380 nm (violet) à 780 nm (rouge). UV < visible < IR.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans l'espace (vide), la lumière ne peut pas se propager car il n'y a pas de milieu matériel.",
+          "ans": false,
+          "hint": "La lumière (onde électromagnétique) se propage dans le vide, contrairement au son (onde mécanique). C'est pourquoi on entend les explosions dans les films spatiaux, mais pas en réalité.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "L'étoile la plus proche du Soleil est Alpha du Centaure à 4,24 années-lumière. Que signifie cela ?",
+          "opts": [
+            "L'étoile est vieille de 4,24 milliards d'années",
+            "La lumière met 4,24 ans pour parcourir la distance qui nous sépare d'elle",
+            "L'étoile est 4,24 fois plus grande que le Soleil",
+            "L'étoile tourne autour du Soleil en 4,24 ans"
+          ],
+          "ans": 1,
+          "hint": "4,24 années-lumière = la lumière met 4,24 ans pour parcourir cette distance. Ce qu'on voit d'Alpha du Centaure date de 4,24 ans.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi le bâton plongé dans l'eau semble-t-il courbé à l'interface eau/air ?",
+          "opts": [
+            "Car l'eau courbe le bâton",
+            "Car la lumière change de direction (réfraction) en passant de l'eau à l'air",
+            "Car l'eau réfléchit le bâton",
+            "Car l'œil est déformé par l'eau"
+          ],
+          "ans": 1,
+          "hint": "Réfraction : la lumière change de vitesse et de direction en passant de l'eau (plus dense) à l'air. L'œil interprète les rayons comme venant en ligne droite → illusion.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque phénomène optique à son explication.",
+          "pairs": [
+            {
+              "g": "Réflexion",
+              "d": "La lumière rebondit sur une surface (miroir)"
+            },
+            {
+              "g": "Réfraction",
+              "d": "La lumière change de direction en changeant de milieu"
+            },
+            {
+              "g": "Absorption",
+              "d": "La lumière est convertie en chaleur par le matériau"
+            },
+            {
+              "g": "Diffusion",
+              "d": "La lumière est dispersée dans toutes les directions (nuage, lait)"
+            }
+          ],
+          "hint": "Ces quatre phénomènes décrivent ce qui arrive à la lumière lorsqu'elle rencontre un objet ou une surface.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -115,26 +1036,257 @@
       "label": "Ombres, éclipses et dispersion de la lumière",
       "section": "Lumière",
       "questions": [
-        {"type":"qcm","q":"Qu'est-ce qu'une ombre propre ?","opts":["L'ombre projetée sur le sol","La zone non éclairée de l'objet lui-même","L'ombre portée sur un écran","L'ombre dans un nuage"],"ans":1,"hint":"Ombre propre : partie non éclairée de l'objet lui-même (face opposée à la source). Ombre portée : ombre projetée sur une surface (mur, sol).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Une éclipse de Soleil se produit quand la Lune se place entre la Terre et le Soleil.","ans":true,"hint":"Éclipse solaire : Lune entre Terre et Soleil → ombre de la Lune sur la Terre. Totale (totalité de l'ombre), partielle ou annulaire.","difficulty":"easy"},
-        {"type":"qcm","q":"Pourquoi les ombres sont-elles allongées le soir par rapport à midi ?","opts":["Car le Soleil est plus loin","Car le Soleil est bas → rayons rasants → ombres longues","Car le sol est différent","Car les objets grandissent"],"ans":1,"hint":"Soleil bas = rayons solaires presque horizontaux → ombres très allongées. Soleil au zénith (midi) = rayons verticaux → ombres courtes.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la zone de demi-ombre qui entoure l'ombre totale (dite ombre de l'ombre) ?","answer":"pénombre","hint":"La pénombre est la zone partiellement éclairée entre l'ombre totale (plus aucune lumière directe) et la lumière pleine. Dans la pénombre, la source est partiellement masquée.","tolerance":["pénombre","la pénombre","zone de pénombre"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Une éclipse de Lune se produit quand la Terre se place entre le Soleil et la Lune.","ans":true,"hint":"Éclipse lunaire : Terre entre Soleil et Lune → ombre de la Terre sur la Lune. La Lune entre dans l'ombre de la Terre → Lune rousse (couleur due à l'atmosphère).","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que la dispersion de la lumière par un prisme ?","opts":["La lumière est absorbée par le prisme","La lumière blanche est décomposée en un spectre de couleurs (arc-en-ciel)","La lumière est amplifiée","La lumière est renvoyée en arrière"],"ans":1,"hint":"Dispersion : le prisme (ou les gouttes d'eau dans l'arc-en-ciel) décompose la lumière blanche en ses couleurs composantes (rouge → violet).","difficulty":"easy"},
-        {"type":"texte","q":"Quelles sont les 7 couleurs visibles dans un arc-en-ciel, de la plus longue à la plus courte longueur d'onde ?","answer":"rouge orange jaune vert bleu indigo violet","hint":"ROYGBIV en anglais : Rouge, Orange, Jaune, Vert, Bleu, Indigo, Violet. Rouge = plus grande longueur d'onde (780 nm). Violet = plus courte (380 nm).","tolerance":["rouge orange jaune vert bleu indigo violet","rouge, orange, jaune, vert, bleu, indigo, violet","ROYGBIV"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque type d'éclipse à sa configuration Soleil/Terre/Lune.","pairs":[{"g":"Éclipse totale de Soleil","d":"Lune entre Soleil et Terre, ombre totale sur Terre"},{"g":"Éclipse partielle de Soleil","d":"Pénombre de la Lune sur la Terre"},{"g":"Éclipse totale de Lune","d":"Terre entre Soleil et Lune, Lune dans ombre terrestre"},{"g":"Éclipse partielle de Lune","d":"Lune dans la pénombre de la Terre"}],"hint":"Les éclipses se produisent lors des alignements Soleil-Terre-Lune. Elles n'ont pas lieu chaque mois car les orbites sont inclinées.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on le phénomène qui crée un arc-en-ciel : réfraction et réflexion de la lumière dans les gouttes d'eau ?","answer":"dispersion","hint":"L'arc-en-ciel : réfraction à l'entrée + réflexion interne + réfraction à la sortie des gouttes → dispersion → couleurs séparées visibles dans le ciel.","tolerance":["dispersion","la dispersion","réfraction et dispersion"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Lors d'une éclipse solaire totale, on peut voir la couronne solaire (atmosphère du Soleil) car le disque lunaire cache le Soleil.","ans":true,"hint":"La couronne solaire (atmosphère externe, très chaude : 1-2 million°C) n'est visible à l'œil nu que lors d'une éclipse totale du Soleil.","difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi le ciel est-il bleu ?","opts":["Car l'air est bleu","Car la lumière bleue est plus diffusée par les molécules d'air (diffusion Rayleigh) que les autres couleurs","Car le sol réfléchit le bleu","Car l'œil voit naturellement bleu"],"ans":1,"hint":"Diffusion Rayleigh : la lumière bleue (courte longueur d'onde) est plus diffusée par les molécules d'air → le ciel paraît bleu dans toutes les directions.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle l'instrument optique utilisant un prisme ou un réseau de diffraction pour décomposer la lumière et analyser sa composition ?","answer":"spectroscope","hint":"Le spectroscope (ou spectrographe) décompose la lumière → spectre. Utilisé pour analyser la composition des étoiles à partir de leur lumière.","tolerance":["spectroscope","spectrographe","spectromètre"],"difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi le Soleil semble-t-il rouge/orange au coucher du soleil ?","opts":["Car le Soleil change de couleur","Car la lumière traverse plus d'atmosphère → lumière bleue diffusée → rouge prédomine","Car l'atmosphère filtre l'UV","Car le Soleil est plus froid le soir"],"ans":1,"hint":"Coucher de Soleil : la lumière traverse plus d'atmosphère → plus de diffusion du bleu → il reste surtout le rouge et l'orange → teintes chaudes.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Un prisme sépare la lumière blanche car chaque couleur est réfractée d'un angle légèrement différent.","ans":true,"hint":"Chaque longueur d'onde (couleur) a un indice de réfraction légèrement différent dans le verre → angle de déviation différent → séparation des couleurs.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle l'ensemble des rayonnements électromagnétiques classés par fréquence ou longueur d'onde ?","answer":"spectre électromagnétique","hint":"Spectre EM : ondes radio → micro-ondes → IR → visible → UV → rayons X → rayons γ. La lumière visible n'est qu'une infime partie.","tolerance":["spectre électromagnétique","spectre des ondes électromagnétiques","spectre EM"],"difficulty":"medium"},
-        {"type":"qcm","q":"Lors d'une éclipse annulaire de Soleil, la Lune semble entourée d'un anneau brillant. Pourquoi ?","opts":["La Lune est transparente","La Lune est trop petite (ou trop loin) pour couvrir entièrement le Soleil → anneau lumineux visible","La couronne solaire est visible","L'atmosphère lunaire diffuse la lumière"],"ans":1,"hint":"Éclipse annulaire : Lune à l'apogée (plus loin) → plus petite → ne couvre pas entièrement le Soleil → anneau de feu autour de la Lune.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La lumière infrarouge (IR) est invisible à l'œil nu mais peut être détectée par des caméras thermiques.","ans":true,"hint":"L'IR (longueur d'onde > 780 nm) est invisible pour l'œil humain mais est émis par tout corps chaud. Caméra thermique : imagerie IR pour détecter chaleur.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le phénomène où la lumière est bloquée par un objet opaque, créant une zone d'ombre derrière lui ?","answer":"occultation","hint":"L'occultation (ou interception de la lumière) : propagation rectiligne → un objet opaque crée une zone d'ombre. Principe utilisé pour comprendre les éclipses.","tolerance":["occultation","ombre","interception de la lumière","formation de l'ombre"],"difficulty":"hard"},
-        {"type":"qcm","q":"Les rayons UV du Soleil sont dangereux car :","opts":["Ils sont visibles et aveuglants","Ils ont une énergie élevée pouvant endommager l'ADN des cellules (coups de soleil, cancers)","Ils produisent du froid","Ils ne pénètrent pas la peau"],"ans":1,"hint":"Les UV (longueur d'onde < 380 nm) ont une haute énergie → cassent les liaisons de l'ADN → mutations → coups de soleil, vieillissement, cancers cutanés.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque type de rayonnement électromagnétique à son application courante.","pairs":[{"g":"Rayons X","d":"Radiographie médicale"},{"g":"Micro-ondes","d":"Four à micro-ondes, Wi-Fi"},{"g":"Infrarouge","d":"Télécommande, caméra thermique"},{"g":"Ultraviolet","d":"Stérilisation, bronzage, florescence"}],"hint":"Chaque type de rayonnement EM a des propriétés et des applications spécifiques liées à son énergie et sa longueur d'onde.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une ombre propre ?",
+          "opts": [
+            "L'ombre projetée sur le sol",
+            "La zone non éclairée de l'objet lui-même",
+            "L'ombre portée sur un écran",
+            "L'ombre dans un nuage"
+          ],
+          "ans": 1,
+          "hint": "Ombre propre : partie non éclairée de l'objet lui-même (face opposée à la source). Ombre portée : ombre projetée sur une surface (mur, sol).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Une éclipse de Soleil se produit quand la Terre se place entre la Lune et le Soleil.",
+          "ans": false,
+          "hint": "Faux ! C'est l'inverse : lors d'une éclipse solaire, la Lune se place entre la Terre et le Soleil → l'ombre de la Lune se projette sur la Terre. Quand la Terre est entre le Soleil et la Lune, c'est une éclipse de Lune.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les ombres sont-elles allongées le soir par rapport à midi ?",
+          "opts": [
+            "Car le Soleil est plus loin",
+            "Car le Soleil est bas → rayons rasants → ombres longues",
+            "Car le sol est différent",
+            "Car les objets grandissent"
+          ],
+          "ans": 1,
+          "hint": "Soleil bas = rayons solaires presque horizontaux → ombres très allongées. Soleil au zénith (midi) = rayons verticaux → ombres courtes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la zone de demi-ombre qui entoure l'ombre totale (dite ombre de l'ombre) ?",
+          "answer": "pénombre",
+          "hint": "La pénombre est la zone partiellement éclairée entre l'ombre totale (plus aucune lumière directe) et la lumière pleine. Dans la pénombre, la source est partiellement masquée.",
+          "tolerance": [
+            "pénombre",
+            "penombre",
+            "la pénombre",
+            "zone de pénombre"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Une éclipse de Lune se produit quand la Terre se place entre le Soleil et la Lune.",
+          "ans": true,
+          "hint": "Éclipse lunaire : Terre entre Soleil et Lune → ombre de la Terre sur la Lune. La Lune entre dans l'ombre de la Terre → Lune rousse (couleur due à l'atmosphère).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la dispersion de la lumière par un prisme ?",
+          "opts": [
+            "La lumière est absorbée par le prisme",
+            "La lumière blanche est décomposée en un spectre de couleurs (arc-en-ciel)",
+            "La lumière est amplifiée",
+            "La lumière est renvoyée en arrière"
+          ],
+          "ans": 1,
+          "hint": "Dispersion : le prisme (ou les gouttes d'eau dans l'arc-en-ciel) décompose la lumière blanche en ses couleurs composantes (rouge → violet).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un arc-en-ciel, quelle est la couleur qui a la plus grande longueur d'onde ?",
+          "opts": [
+            "Le violet",
+            "Le vert",
+            "Le jaune",
+            "Le rouge"
+          ],
+          "ans": 3,
+          "hint": "ROYGBIV en anglais : Rouge, Orange, Jaune, Vert, Bleu, Indigo, Violet. Rouge = plus grande longueur d'onde (780 nm). Violet = plus courte (380 nm).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque type d'éclipse à sa configuration Soleil/Terre/Lune.",
+          "pairs": [
+            {
+              "g": "Éclipse totale de Soleil",
+              "d": "Lune entre Soleil et Terre, ombre totale sur Terre"
+            },
+            {
+              "g": "Éclipse partielle de Soleil",
+              "d": "Pénombre de la Lune sur la Terre"
+            },
+            {
+              "g": "Éclipse totale de Lune",
+              "d": "Terre entre Soleil et Lune, Lune dans ombre terrestre"
+            },
+            {
+              "g": "Éclipse partielle de Lune",
+              "d": "Lune dans la pénombre de la Terre"
+            }
+          ],
+          "hint": "Les éclipses se produisent lors des alignements Soleil-Terre-Lune. Elles n'ont pas lieu chaque mois car les orbites sont inclinées.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le phénomène qui crée un arc-en-ciel : réfraction et réflexion de la lumière dans les gouttes d'eau ?",
+          "answer": "dispersion",
+          "hint": "L'arc-en-ciel : réfraction à l'entrée + réflexion interne + réfraction à la sortie des gouttes → dispersion → couleurs séparées visibles dans le ciel.",
+          "tolerance": [
+            "dispersion",
+            "la dispersion",
+            "réfraction et dispersion"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Lors d'une éclipse solaire totale, on peut voir la couronne solaire (atmosphère du Soleil) car le disque lunaire cache le Soleil.",
+          "ans": true,
+          "hint": "La couronne solaire (atmosphère externe, très chaude : 1-2 million°C) n'est visible à l'œil nu que lors d'une éclipse totale du Soleil.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi le ciel est-il bleu ?",
+          "opts": [
+            "Car l'air est bleu",
+            "Car la lumière bleue est plus diffusée par les molécules d'air (diffusion Rayleigh) que les autres couleurs",
+            "Car le sol réfléchit le bleu",
+            "Car l'œil voit naturellement bleu"
+          ],
+          "ans": 1,
+          "hint": "Diffusion Rayleigh : la lumière bleue (courte longueur d'onde) est plus diffusée par les molécules d'air → le ciel paraît bleu dans toutes les directions.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle l'instrument qui utilise un prisme ou un réseau pour décomposer la lumière et analyser sa composition ?",
+          "opts": [
+            "Un télescope",
+            "Un microscope",
+            "Un spectroscope",
+            "Un stroboscope"
+          ],
+          "ans": 2,
+          "hint": "Le spectroscope (ou spectrographe) décompose la lumière en ses longueurs d'onde → spectre. Utilisé pour identifier la composition chimique des étoiles.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi le Soleil semble-t-il rouge/orange au coucher du soleil ?",
+          "opts": [
+            "Car le Soleil change de couleur",
+            "Car la lumière traverse plus d'atmosphère → lumière bleue diffusée → rouge prédomine",
+            "Car l'atmosphère filtre l'UV",
+            "Car le Soleil est plus froid le soir"
+          ],
+          "ans": 1,
+          "hint": "Coucher de Soleil : la lumière traverse plus d'atmosphère → plus de diffusion du bleu → il reste surtout le rouge et l'orange → teintes chaudes.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un prisme sépare la lumière blanche car il absorbe toutes les couleurs sauf une qu'il laisse passer.",
+          "ans": false,
+          "hint": "Faux ! Le prisme sépare la lumière blanche par réfraction : chaque longueur d'onde (couleur) est réfractée d'un angle légèrement différent → toutes les couleurs émergent, séparées selon leur longueur d'onde.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on l'ensemble des rayonnements électromagnétiques classés par longueur d'onde (des ondes radio aux rayons gamma) ?",
+          "opts": [
+            "L'arc-en-ciel électrique",
+            "Le spectre électromagnétique",
+            "Le spectre sonore",
+            "La gamme lumineuse"
+          ],
+          "ans": 1,
+          "hint": "Le spectre électromagnétique : ondes radio → micro-ondes → infrarouge → visible → UV → rayons X → rayons γ. La lumière visible n'en est qu'une infime partie.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Lors d'une éclipse annulaire de Soleil, la Lune semble entourée d'un anneau brillant. Pourquoi ?",
+          "opts": [
+            "La Lune est transparente",
+            "La Lune est trop petite (ou trop loin) pour couvrir entièrement le Soleil → anneau lumineux visible",
+            "La couronne solaire est visible",
+            "L'atmosphère lunaire diffuse la lumière"
+          ],
+          "ans": 1,
+          "hint": "Éclipse annulaire : Lune à l'apogée (plus loin) → plus petite → ne couvre pas entièrement le Soleil → anneau de feu autour de la Lune.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La lumière infrarouge (IR) est invisible à l'œil nu mais peut être détectée par des caméras thermiques.",
+          "ans": true,
+          "hint": "L'IR (longueur d'onde > 780 nm) est invisible pour l'œil humain mais est émis par tout corps chaud. Caméra thermique : imagerie IR pour détecter chaleur.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le phénomène où la lumière est bloquée par un objet opaque, créant une zone d'ombre derrière lui ?",
+          "opts": [
+            "La réfraction",
+            "La diffusion",
+            "L'occultation",
+            "L'absorption"
+          ],
+          "ans": 2,
+          "hint": "L'occultation : la lumière se propage en ligne droite → un objet opaque intercepte les rayons → zone d'ombre. Ce principe explique les ombres et les éclipses.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Les rayons UV du Soleil sont dangereux car :",
+          "opts": [
+            "Ils sont visibles et aveuglants",
+            "Ils ont une énergie élevée pouvant endommager l'ADN des cellules (coups de soleil, cancers)",
+            "Ils produisent du froid",
+            "Ils ne pénètrent pas la peau"
+          ],
+          "ans": 1,
+          "hint": "Les UV (longueur d'onde < 380 nm) ont une haute énergie → cassent les liaisons de l'ADN → mutations → coups de soleil, vieillissement, cancers cutanés.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque type de rayonnement électromagnétique à son application courante.",
+          "pairs": [
+            {
+              "g": "Rayons X",
+              "d": "Radiographie médicale"
+            },
+            {
+              "g": "Micro-ondes",
+              "d": "Four à micro-ondes, Wi-Fi"
+            },
+            {
+              "g": "Infrarouge",
+              "d": "Télécommande, caméra thermique"
+            },
+            {
+              "g": "Ultraviolet",
+              "d": "Stérilisation, bronzage, florescence"
+            }
+          ],
+          "hint": "Chaque type de rayonnement EM a des propriétés et des applications spécifiques liées à son énergie et sa longueur d'onde.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -142,26 +1294,259 @@
       "label": "Masse, volume et masse volumique",
       "section": "Masse et volume",
       "questions": [
-        {"type":"qcm","q":"Quel instrument utilise-t-on pour mesurer la masse d'un objet ?","opts":["Éprouvette graduée","Balance","Thermomètre","Règle"],"ans":1,"hint":"La balance (électronique ou à plateaux) mesure la masse en kilogrammes (kg) ou grammes (g). L'éprouvette mesure le volume.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La masse et le poids sont deux grandeurs identiques.","ans":false,"hint":"Masse (kg) : quantité de matière, constante partout dans l'univers. Poids (N) : force gravitationnelle, varie selon l'endroit (Lune : 6× moins de poids mais même masse).","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle est l'unité du Système International pour la masse ?","opts":["Le gramme (g)","Le kilogramme (kg)","La tonne (t)","L'once (oz)"],"ans":1,"hint":"L'unité SI de masse est le kilogramme (kg). 1 kg = 1 000 g. L'ancienne référence était le prototype international du kilogramme à Sèvres (France).","difficulty":"easy"},
-        {"type":"texte","q":"Comment mesure-t-on le volume d'un liquide en laboratoire ?","answer":"éprouvette graduée","hint":"L'éprouvette graduée (cylindre de verre/plastique gradué) mesure le volume d'un liquide en mL (millilitres) ou en cm³.","tolerance":["éprouvette graduée","une éprouvette","éprouvette","fiole jaugée","pipette"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"1 mL est équivalent à 1 cm³.","ans":true,"hint":"1 mL = 1 cm³. 1 L = 1 000 mL = 1 000 cm³ = 1 dm³. Ces conversions sont fondamentales en laboratoire.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que la masse volumique d'un corps ?","opts":["La masse divisée par le volume","La volume divisé par la masse","La masse multipliée par le volume","La masse d'un litre uniquement"],"ans":0,"hint":"Masse volumique ρ = m/V. Unité : kg/m³ ou g/cm³. L'eau : 1 000 kg/m³ = 1 g/cm³. Le fer : 7 800 kg/m³.","difficulty":"easy"},
-        {"type":"texte","q":"Quelle est la masse volumique de l'eau pure à 4°C (en g/cm³) ?","answer":"1","hint":"L'eau pure à 4°C a une masse volumique de 1 g/cm³ = 1 000 kg/m³. C'est la valeur de référence. Au-dessus ou en dessous de 4°C : légèrement moins dense.","tolerance":["1","1 g/cm³","1g/cm3","1000 kg/m³"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque matériau à son ordre de grandeur de masse volumique.","pairs":[{"g":"Liège","d":"~200 kg/m³ (flotte sur l'eau)"},{"g":"Eau","d":"1 000 kg/m³"},{"g":"Aluminium","d":"~2 700 kg/m³"},{"g":"Fer","d":"~7 800 kg/m³"}],"hint":"La masse volumique détermine si un objet flotte (ρ < 1 000 kg/m³) ou coule (ρ > 1 000 kg/m³) dans l'eau.","difficulty":"medium"},
-        {"type":"texte","q":"Un bloc de métal a une masse de 540 g et un volume de 200 cm³. Quelle est sa masse volumique ?","answer":"2,7","hint":"ρ = m/V = 540/200 = 2,7 g/cm³. C'est la masse volumique de l'aluminium.","tolerance":["2,7","2.7","2,7 g/cm³","2700 kg/m³"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Un corps flotte dans l'eau si sa masse volumique est inférieure à 1 g/cm³.","ans":true,"hint":"Flottaison : ρ_objet < ρ_liquide → flotte. ρ_objet > ρ_liquide → coule. Principe d'Archimède.","difficulty":"medium"},
-        {"type":"qcm","q":"Comment mesure-t-on le volume d'un objet irrégulier (caillou) avec une éprouvette ?","opts":["On le pèse","On le plonge dans l'eau : V_objet = V_final - V_initial (déplacement d'eau)","On le mesure avec une règle","On calcule avec une formule"],"ans":1,"hint":"Méthode de déplacement d'eau : V_objet = volume d'eau déplacé = V₂ - V₁. Ex : éprouvette à 100 mL + caillou → 135 mL → caillou = 35 cm³.","difficulty":"medium"},
-        {"type":"texte","q":"Quelle formule relie la masse (m), le volume (V) et la masse volumique (ρ) ?","answer":"ρ = m / V","hint":"ρ = m/V (masse volumique = masse / volume). D'où : m = ρ × V et V = m/ρ. Unité : g/cm³ ou kg/m³.","tolerance":["ρ = m / V","m = ρ × V","rho = m/V","densité = masse/volume"],"difficulty":"medium"},
-        {"type":"qcm","q":"Un objet de masse 200 g est plongé dans l'eau. Le volume d'eau monte de 80 mL. L'objet flotte ou coule ?","opts":["Flotte","Coule","Reste en suspension","Impossible à dire"],"ans":1,"hint":"ρ = m/V = 200 g / 80 cm³ = 2,5 g/cm³ > 1 g/cm³ (eau) → l'objet coule.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La masse volumique d'un corps dépend de sa forme, pas de sa nature chimique.","ans":false,"hint":"La masse volumique est une propriété de la nature chimique du matériau, pas de sa forme. 1 kg de fer a la même ρ qu'un clou en fer.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on la poussée exercée par un liquide sur un objet immergé, égale au poids du fluide déplacé ?","answer":"poussée d'Archimède","hint":"Poussée d'Archimède : F_A = ρ_liquide × g × V_immergé. Si F_A > poids → flotte. Si F_A < poids → coule. Archimède (287-212 av. J.-C.).","tolerance":["poussée d'Archimède","la poussée d'Archimède","principe d'Archimède"],"difficulty":"medium"},
-        {"type":"qcm","q":"La densité d'un corps est définie par rapport à :","opts":["L'eau","L'air","Le mercure","La température"],"ans":0,"hint":"Densité = rapport de la masse volumique du corps à celle de l'eau (ρ_eau = 1 g/cm³). Densité = ρ_corps / ρ_eau. Sans unité.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Un bateau en acier flotte malgré que l'acier soit plus dense que l'eau car il contient beaucoup d'air (masse volumique apparente < 1).","ans":true,"hint":"La masse volumique moyenne du bateau (acier + air) est inférieure à 1 g/cm³ → il flotte. S'il est troué et se remplit d'eau → ρ_moy augmente → coule.","difficulty":"hard"},
-        {"type":"texte","q":"Un liquide A a une masse volumique de 0,8 g/cm³ et un liquide B a une masse volumique de 1,2 g/cm³. Lequel est au-dessus de l'autre quand on les mélange (sans agiter) ?","answer":"A","hint":"Liquide moins dense (A, 0,8 g/cm³) flotte sur le liquide plus dense (B, 1,2 g/cm³). Ex : huile (ρ ≈ 0,9) flotte sur l'eau (ρ = 1).","tolerance":["A","le liquide A","A (0,8 g/cm3)","le moins dense"],"difficulty":"hard"},
-        {"type":"qcm","q":"Un objet a une masse de 150 g et une masse volumique de 3 g/cm³. Quel est son volume ?","opts":["450 cm³","50 cm³","0,02 cm³","5 cm³"],"ans":1,"hint":"V = m/ρ = 150/3 = 50 cm³.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque corps à sa masse volumique approximative et sa propriété dans l'eau.","pairs":[{"g":"Glace (H₂O solide)","d":"0,92 g/cm³ → flotte (9/10 sous l'eau)"},{"g":"Or (Au)","d":"19,3 g/cm³ → coule très vite"},{"g":"Huile végétale","d":"0,9 g/cm³ → flotte sur l'eau"},{"g":"Béton","d":"2,4 g/cm³ → coule"}],"hint":"Ces exemples illustrent comment la masse volumique détermine le comportement dans l'eau (flottaison ou naufrage).","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quel instrument utilise-t-on pour mesurer la masse d'un objet ?",
+          "opts": [
+            "Éprouvette graduée",
+            "Balance",
+            "Thermomètre",
+            "Règle"
+          ],
+          "ans": 1,
+          "hint": "La balance (électronique ou à plateaux) mesure la masse en kilogrammes (kg) ou grammes (g). L'éprouvette mesure le volume.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La masse et le poids sont deux grandeurs identiques.",
+          "ans": false,
+          "hint": "Masse (kg) : quantité de matière, constante partout dans l'univers. Poids (N) : force gravitationnelle, varie selon l'endroit (Lune : 6× moins de poids mais même masse).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est l'unité du Système International pour la masse ?",
+          "opts": [
+            "Le gramme (g)",
+            "Le kilogramme (kg)",
+            "La tonne (t)",
+            "L'once (oz)"
+          ],
+          "ans": 1,
+          "hint": "L'unité SI de masse est le kilogramme (kg). 1 kg = 1 000 g. L'ancienne référence était le prototype international du kilogramme à Sèvres (France).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment mesure-t-on le volume d'un liquide en laboratoire ?",
+          "answer": "éprouvette graduée",
+          "hint": "L'éprouvette graduée (cylindre de verre/plastique gradué) mesure le volume d'un liquide en mL (millilitres) ou en cm³.",
+          "tolerance": [
+            "éprouvette graduée",
+            "une éprouvette",
+            "éprouvette",
+            "fiole jaugée",
+            "pipette"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "1 mL est équivalent à 1 cm³.",
+          "ans": true,
+          "hint": "1 mL = 1 cm³. 1 L = 1 000 mL = 1 000 cm³ = 1 dm³. Ces conversions sont fondamentales en laboratoire.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la masse volumique d'un corps ?",
+          "opts": [
+            "La masse divisée par le volume",
+            "La volume divisé par la masse",
+            "La masse multipliée par le volume",
+            "La masse d'un litre uniquement"
+          ],
+          "ans": 0,
+          "hint": "Masse volumique ρ = m/V. Unité : kg/m³ ou g/cm³. L'eau : 1 000 kg/m³ = 1 g/cm³. Le fer : 7 800 kg/m³.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle est la masse volumique de l'eau pure à 4°C (en g/cm³) ?",
+          "answer": "1",
+          "hint": "L'eau pure à 4°C a une masse volumique de 1 g/cm³ = 1 000 kg/m³. C'est la valeur de référence. Au-dessus ou en dessous de 4°C : légèrement moins dense.",
+          "tolerance": [
+            "1",
+            "1 g/cm³",
+            "1g/cm3",
+            "1000 kg/m³"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque matériau à son ordre de grandeur de masse volumique.",
+          "pairs": [
+            {
+              "g": "Liège",
+              "d": "~200 kg/m³ (flotte sur l'eau)"
+            },
+            {
+              "g": "Eau",
+              "d": "1 000 kg/m³"
+            },
+            {
+              "g": "Aluminium",
+              "d": "~2 700 kg/m³"
+            },
+            {
+              "g": "Fer",
+              "d": "~7 800 kg/m³"
+            }
+          ],
+          "hint": "La masse volumique détermine si un objet flotte (ρ < 1 000 kg/m³) ou coule (ρ > 1 000 kg/m³) dans l'eau.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Un bloc de métal a une masse de 540 g et un volume de 200 cm³. Quelle est sa masse volumique ?",
+          "answer": "2,7",
+          "hint": "ρ = m/V = 540/200 = 2,7 g/cm³. C'est la masse volumique de l'aluminium.",
+          "tolerance": [
+            "2,7",
+            "2.7",
+            "2,7 g/cm³",
+            "2700 kg/m³"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un corps flotte dans l'eau si sa masse volumique est inférieure à 1 g/cm³.",
+          "ans": true,
+          "hint": "Flottaison : ρ_objet < ρ_liquide → flotte. ρ_objet > ρ_liquide → coule. Principe d'Archimède.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment mesure-t-on le volume d'un objet irrégulier (caillou) avec une éprouvette ?",
+          "opts": [
+            "On le pèse",
+            "On le plonge dans l'eau : V_objet = V_final - V_initial (déplacement d'eau)",
+            "On le mesure avec une règle",
+            "On calcule avec une formule"
+          ],
+          "ans": 1,
+          "hint": "Méthode de déplacement d'eau : V_objet = volume d'eau déplacé = V₂ - V₁. Ex : éprouvette à 100 mL + caillou → 135 mL → caillou = 35 cm³.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle formule relie la masse (m), le volume (V) et la masse volumique (ρ) ?",
+          "answer": "ρ = m / V",
+          "hint": "ρ = m/V (masse volumique = masse / volume). D'où : m = ρ × V et V = m/ρ. Unité : g/cm³ ou kg/m³.",
+          "tolerance": [
+            "ρ = m / V",
+            "m = ρ × V",
+            "rho = m/V",
+            "densité = masse/volume"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un objet de masse 200 g est plongé dans l'eau. Le volume d'eau monte de 80 mL. L'objet flotte ou coule ?",
+          "opts": [
+            "Flotte",
+            "Coule",
+            "Reste en suspension",
+            "Impossible à dire"
+          ],
+          "ans": 1,
+          "hint": "ρ = m/V = 200 g / 80 cm³ = 2,5 g/cm³ > 1 g/cm³ (eau) → l'objet coule.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La masse volumique d'un corps dépend de sa forme, pas de sa nature chimique.",
+          "ans": false,
+          "hint": "La masse volumique est une propriété de la nature chimique du matériau, pas de sa forme. 1 kg de fer a la même ρ qu'un clou en fer.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on la poussée exercée par un liquide sur un objet immergé, égale au poids du fluide déplacé ?",
+          "opts": [
+            "Force gravitationnelle",
+            "Poussée d'Archimède",
+            "Tension superficielle",
+            "Force de viscosité"
+          ],
+          "ans": 1,
+          "hint": "Poussée d'Archimède (F_A = ρ_liquide × g × V_immergé) : si F_A > poids → flotte ; si F_A < poids → coule. Archimède (287-212 av. J.-C.) a découvert ce principe dans son bain.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La densité d'un corps est définie par rapport à :",
+          "opts": [
+            "L'eau",
+            "L'air",
+            "Le mercure",
+            "La température"
+          ],
+          "ans": 0,
+          "hint": "Densité = rapport de la masse volumique du corps à celle de l'eau (ρ_eau = 1 g/cm³). Densité = ρ_corps / ρ_eau. Sans unité.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un bateau en acier coule inévitablement car l'acier est plus dense que l'eau.",
+          "ans": false,
+          "hint": "Faux ! Un bateau en acier flotte car sa masse volumique moyenne (acier + air) est inférieure à 1 g/cm³. Si l'eau envahit le bateau, la masse volumique moyenne augmente et le bateau coule.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Un liquide A a une masse volumique de 0,8 g/cm³ et un liquide B a une masse volumique de 1,2 g/cm³. Lequel est au-dessus de l'autre quand on les mélange (sans agiter) ?",
+          "answer": "A",
+          "hint": "Liquide moins dense (A, 0,8 g/cm³) flotte sur le liquide plus dense (B, 1,2 g/cm³). Ex : huile (ρ ≈ 0,9) flotte sur l'eau (ρ = 1).",
+          "tolerance": [
+            "A",
+            "le liquide A",
+            "A (0,8 g/cm3)",
+            "le moins dense"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Un objet a une masse de 150 g et une masse volumique de 3 g/cm³. Quel est son volume ?",
+          "opts": [
+            "450 cm³",
+            "50 cm³",
+            "0,02 cm³",
+            "5 cm³"
+          ],
+          "ans": 1,
+          "hint": "V = m/ρ = 150/3 = 50 cm³.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque corps à sa masse volumique approximative et sa propriété dans l'eau.",
+          "pairs": [
+            {
+              "g": "Glace (H₂O solide)",
+              "d": "0,92 g/cm³ → flotte (9/10 sous l'eau)"
+            },
+            {
+              "g": "Or (Au)",
+              "d": "19,3 g/cm³ → coule très vite"
+            },
+            {
+              "g": "Huile végétale",
+              "d": "0,9 g/cm³ → flotte sur l'eau"
+            },
+            {
+              "g": "Béton",
+              "d": "2,4 g/cm³ → coule"
+            }
+          ],
+          "hint": "Ces exemples illustrent comment la masse volumique détermine le comportement dans l'eau (flottaison ou naufrage).",
+          "difficulty": "hard"
+        }
       ]
     }
   ]

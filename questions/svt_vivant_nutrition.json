@@ -7,26 +7,254 @@
       "label": "Caractéristiques du vivant",
       "section": "Le vivant",
       "questions": [
-        {"type":"qcm","q":"Laquelle de ces caractéristiques EST commune à tous les êtres vivants ?","opts":["Se déplacer","Se reproduire","Avoir des racines","Respirer uniquement de l'oxygène"],"ans":1,"hint":"Tous les êtres vivants se reproduisent (même de façon asexuée). Le déplacement et les racines ne sont pas universels.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La nutrition est une caractéristique commune à tous les êtres vivants.","ans":true,"hint":"Tous les êtres vivants se nourrissent pour obtenir l'énergie nécessaire à leur fonctionnement (même les plantes par photosynthèse).","difficulty":"easy"},
-        {"type":"qcm","q":"Parmi ces exemples, lequel est un être vivant ?","opts":["Une pierre","Un champignon","Une flamme","Un cristal de sel"],"ans":1,"hint":"Le champignon est un être vivant (respire, se nourrit, se reproduit, grandit). La flamme brûle mais n'est pas vivante.","difficulty":"easy"},
-        {"type":"ordre","q":"Range ces étapes du cycle de vie d'un être vivant dans l'ordre logique.","items":["Naissance","Croissance","Reproduction","Mort"],"hint":"Tout être vivant naît, grandit (croissance), se reproduit puis meurt. C'est le cycle universel de la vie.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un être vivant est fait d'au moins une cellule.","ans":true,"hint":"La cellule est l'unité de base du vivant. Les bactéries sont unicellulaires (1 cellule). L'homme possède environ 37 000 milliards de cellules.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on la capacité d'un être vivant à répondre aux changements de son environnement ?","answer":"sensibilité","hint":"La sensibilité (ou irritabilité) est la capacité de réagir aux stimuli de l'environnement (lumière, chaleur, toucher...).","tolerance":["sensibilité","irritabilité","réactivité"],"difficulty":"easy"},
-        {"type":"qcm","q":"Laquelle de ces propriétés distingue le vivant du non-vivant ?","opts":["Être solide ou liquide","Avoir une organisation cellulaire et un métabolisme","Avoir une couleur","Être visible à l'œil nu"],"ans":1,"hint":"Le vivant est organisé en cellules et possède un métabolisme (ensemble des réactions chimiques du vivant). Le non-vivant n'a pas ces caractéristiques.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque fonction vitale à sa définition.","pairs":[{"g":"Nutrition","d":"Absorber des substances pour produire de l'énergie"},{"g":"Reproduction","d":"Créer de nouveaux individus semblables à soi"},{"g":"Croissance","d":"Augmentation de taille et de masse"},{"g":"Excrétion","d":"Éliminer les déchets du métabolisme"}],"hint":"Ces quatre fonctions vitales sont communes à tous les êtres vivants, même si les mécanismes varient.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle l'ensemble des réactions chimiques qui se produisent dans un être vivant pour maintenir la vie ?","answer":"métabolisme","hint":"Le métabolisme regroupe toutes les réactions chimiques cellulaires : anabolisme (construction) et catabolisme (dégradation).","tolerance":["métabolisme","le métabolisme"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les virus sont des êtres vivants car ils se reproduisent.","ans":false,"hint":"Les virus ne sont pas considérés comme des êtres vivants : ils n'ont pas de cellule, pas de métabolisme propre. Ils ont besoin d'une cellule hôte pour se reproduire.","difficulty":"medium"},
-        {"type":"qcm","q":"La mort est une caractéristique du vivant car :","opts":["Elle n'arrive qu'aux animaux","Elle est la conclusion inévitable du cycle de vie","Elle est due uniquement aux maladies","Elle ne touche pas les plantes"],"ans":1,"hint":"La mort est universelle chez les êtres vivants. Elle fait partie du cycle de vie de tout organisme.","difficulty":"medium"},
-        {"type":"texte","q":"Donne deux exemples d'êtres vivants qui ne se déplacent pas.","answer":"plantes","hint":"Les plantes et les champignons ne se déplacent pas. Certains animaux comme les coraux et les éponges sont aussi fixés.","tolerance":["plantes","champignons","algues","coraux","éponges"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que l'homéostasie ?","opts":["La reproduction asexuée","La capacité d'un organisme à maintenir un équilibre interne stable malgré les variations externes","La croissance incontrôlée des cellules","L'élimination des déchets"],"ans":1,"hint":"L'homéostasie = maintien de l'équilibre interne (température, pH, taux de glucose...) face aux variations de l'environnement.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les êtres vivants ont tous une durée de vie limitée.","ans":true,"hint":"La mort est universelle chez les êtres vivants. Même les organismes les plus longévifs (certains arbres : 5 000 ans) finissent par mourir.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on le processus par lequel les plantes fabriquent leur propre nourriture à partir de lumière et de CO₂ ?","answer":"photosynthèse","hint":"La photosynthèse : 6CO₂ + 6H₂O + lumière → glucose + 6O₂. C'est la nutrition des plantes (autotrophes).","tolerance":["photosynthèse","la photosynthèse"],"difficulty":"medium"},
-        {"type":"qcm","q":"Les champignons se nourrissent en :","opts":["Fabriquant leur nourriture avec la lumière (photosynthèse)","Absorbant des matières organiques du milieu (hétérotrophes)","Chassant des proies","Buvant de l'eau uniquement"],"ans":1,"hint":"Les champignons sont hétérotrophes : ils décomposent la matière organique morte et l'absorbent. Ils ne font pas de photosynthèse.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La reproduction est la seule fonction vitale indispensable à la survie de l'individu.","ans":false,"hint":"La nutrition, la respiration et l'excrétion sont indispensables à la survie de chaque individu. La reproduction assure la survie de l'espèce, pas de l'individu.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle un organisme capable de fabriquer sa propre matière organique à partir de matière minérale ?","answer":"autotrophe","hint":"Autotrophe (du grec autos = soi-même, trophe = nourriture) : les plantes et algues sont autotrophes via la photosynthèse.","tolerance":["autotrophe","organisme autotrophe","producteur"],"difficulty":"hard"},
-        {"type":"qcm","q":"Lequel de ces phénomènes n'est PAS une caractéristique du vivant ?","opts":["Croissance","Combustion spontanée","Nutrition","Reproduction"],"ans":1,"hint":"La combustion est une réaction chimique non biologique. Les caractéristiques du vivant sont : nutrition, reproduction, croissance, excrétion, sensibilité.","difficulty":"hard"},
-        {"type":"appariement","q":"Classe ces organismes selon leur mode de nutrition.","pairs":[{"g":"Plante verte","d":"Autotrophe (photosynthèse)"},{"g":"Lion","d":"Hétérotrophe (consomme de la viande)"},{"g":"Champignon","d":"Hétérotrophe (décompose la matière)"},{"g":"Algue verte","d":"Autotrophe (photosynthèse)"}],"hint":"Autotrophes : fabriquent leur matière organique. Hétérotrophes : consomment de la matière organique déjà formée.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Laquelle de ces caractéristiques EST commune à tous les êtres vivants ?",
+          "opts": [
+            "Se déplacer",
+            "Se reproduire",
+            "Avoir des racines",
+            "Respirer uniquement de l'oxygène"
+          ],
+          "ans": 1,
+          "hint": "Tous les êtres vivants se reproduisent (même de façon asexuée). Le déplacement et les racines ne sont pas universels.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La nutrition est une caractéristique commune à tous les êtres vivants.",
+          "ans": true,
+          "hint": "Tous les êtres vivants se nourrissent pour obtenir l'énergie nécessaire à leur fonctionnement (même les plantes par photosynthèse).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Parmi ces exemples, lequel est un être vivant ?",
+          "opts": [
+            "Une pierre",
+            "Un champignon",
+            "Une flamme",
+            "Un cristal de sel"
+          ],
+          "ans": 1,
+          "hint": "Le champignon est un être vivant (respire, se nourrit, se reproduit, grandit). La flamme brûle mais n'est pas vivante.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "ordre",
+          "q": "Range ces étapes du cycle de vie d'un être vivant dans l'ordre logique.",
+          "items": [
+            "Naissance",
+            "Croissance",
+            "Reproduction",
+            "Mort"
+          ],
+          "hint": "Tout être vivant naît, grandit (croissance), se reproduit puis meurt. C'est le cycle universel de la vie.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Tout être vivant est obligatoirement composé de plusieurs cellules.",
+          "ans": false,
+          "hint": "Faux ! Certains êtres vivants sont unicellulaires (une seule cellule), comme les bactéries ou les paramécies. L'être vivant est fait d'AU MOINS UNE cellule.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la capacité d'un être vivant à répondre aux changements de son environnement ?",
+          "answer": "sensibilité",
+          "hint": "La sensibilité (ou irritabilité) est la capacité de réagir aux stimuli de l'environnement (lumière, chaleur, toucher...).",
+          "tolerance": [
+            "sensibilité",
+            "irritabilité",
+            "réactivité"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Laquelle de ces propriétés distingue le vivant du non-vivant ?",
+          "opts": [
+            "Être solide ou liquide",
+            "Avoir une organisation cellulaire et un métabolisme",
+            "Avoir une couleur",
+            "Être visible à l'œil nu"
+          ],
+          "ans": 1,
+          "hint": "Le vivant est organisé en cellules et possède un métabolisme (ensemble des réactions chimiques du vivant). Le non-vivant n'a pas ces caractéristiques.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque fonction vitale à sa définition.",
+          "pairs": [
+            {
+              "g": "Nutrition",
+              "d": "Absorber des substances pour produire de l'énergie"
+            },
+            {
+              "g": "Reproduction",
+              "d": "Créer de nouveaux individus semblables à soi"
+            },
+            {
+              "g": "Croissance",
+              "d": "Augmentation de taille et de masse"
+            },
+            {
+              "g": "Excrétion",
+              "d": "Éliminer les déchets du métabolisme"
+            }
+          ],
+          "hint": "Ces quatre fonctions vitales sont communes à tous les êtres vivants, même si les mécanismes varient.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle l'ensemble des réactions chimiques qui se produisent dans un être vivant pour maintenir la vie ?",
+          "answer": "métabolisme",
+          "hint": "Le métabolisme regroupe toutes les réactions chimiques cellulaires : anabolisme (construction) et catabolisme (dégradation).",
+          "tolerance": [
+            "métabolisme",
+            "metabolisme",
+            "le métabolisme"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les virus sont des êtres vivants car ils se reproduisent.",
+          "ans": false,
+          "hint": "Les virus ne sont pas considérés comme des êtres vivants : ils n'ont pas de cellule, pas de métabolisme propre. Ils ont besoin d'une cellule hôte pour se reproduire.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La mort est une caractéristique du vivant car :",
+          "opts": [
+            "Elle n'arrive qu'aux animaux",
+            "Elle est la conclusion inévitable du cycle de vie",
+            "Elle est due uniquement aux maladies",
+            "Elle ne touche pas les plantes"
+          ],
+          "ans": 1,
+          "hint": "La mort est universelle chez les êtres vivants. Elle fait partie du cycle de vie de tout organisme.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Donne deux exemples d'êtres vivants qui ne se déplacent pas.",
+          "answer": "plantes",
+          "hint": "Les plantes et les champignons ne se déplacent pas. Certains animaux comme les coraux et les éponges sont aussi fixés.",
+          "tolerance": [
+            "plantes",
+            "champignons",
+            "algues",
+            "coraux",
+            "éponges"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'homéostasie ?",
+          "opts": [
+            "La reproduction asexuée",
+            "La capacité d'un organisme à maintenir un équilibre interne stable malgré les variations externes",
+            "La croissance incontrôlée des cellules",
+            "L'élimination des déchets"
+          ],
+          "ans": 1,
+          "hint": "L'homéostasie = maintien de l'équilibre interne (température, pH, taux de glucose...) face aux variations de l'environnement.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les êtres vivants ont tous une durée de vie limitée.",
+          "ans": true,
+          "hint": "La mort est universelle chez les êtres vivants. Même les organismes les plus longévifs (certains arbres : 5 000 ans) finissent par mourir.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le processus par lequel les plantes fabriquent leur propre nourriture à partir de lumière et de CO₂ ?",
+          "answer": "photosynthèse",
+          "hint": "La photosynthèse : 6CO₂ + 6H₂O + lumière → glucose + 6O₂. C'est la nutrition des plantes (autotrophes).",
+          "tolerance": [
+            "photosynthèse",
+            "la photosynthèse"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Les champignons se nourrissent en :",
+          "opts": [
+            "Fabriquant leur nourriture avec la lumière (photosynthèse)",
+            "Absorbant des matières organiques du milieu (hétérotrophes)",
+            "Chassant des proies",
+            "Buvant de l'eau uniquement"
+          ],
+          "ans": 1,
+          "hint": "Les champignons sont hétérotrophes : ils décomposent la matière organique morte et l'absorbent. Ils ne font pas de photosynthèse.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La reproduction est la seule fonction vitale indispensable à la survie de l'individu.",
+          "ans": false,
+          "hint": "La nutrition, la respiration et l'excrétion sont indispensables à la survie de chaque individu. La reproduction assure la survie de l'espèce, pas de l'individu.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on un organisme capable de fabriquer sa propre matière organique à partir de matière minérale (eau, CO₂, sels) ?",
+          "opts": [
+            "Hétérotrophe",
+            "Parasite",
+            "Autotrophe",
+            "Décomposeur"
+          ],
+          "ans": 2,
+          "hint": "Autotrophe = se nourrit seul (autos = soi-même). Les plantes et algues sont autotrophes via la photosynthèse. Les animaux sont hétérotrophes (consomment de la matière organique).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces phénomènes n'est PAS une caractéristique du vivant ?",
+          "opts": [
+            "Croissance",
+            "Combustion spontanée",
+            "Nutrition",
+            "Reproduction"
+          ],
+          "ans": 1,
+          "hint": "La combustion est une réaction chimique non biologique. Les caractéristiques du vivant sont : nutrition, reproduction, croissance, excrétion, sensibilité.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Classe ces organismes selon leur mode de nutrition.",
+          "pairs": [
+            {
+              "g": "Plante verte",
+              "d": "Autotrophe (photosynthèse)"
+            },
+            {
+              "g": "Lion",
+              "d": "Hétérotrophe (consomme de la viande)"
+            },
+            {
+              "g": "Champignon",
+              "d": "Hétérotrophe (décompose la matière)"
+            },
+            {
+              "g": "Algue verte",
+              "d": "Autotrophe (photosynthèse)"
+            }
+          ],
+          "hint": "Autotrophes : fabriquent leur matière organique. Hétérotrophes : consomment de la matière organique déjà formée.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -34,26 +262,254 @@
       "label": "La cellule : animale et végétale",
       "section": "Le vivant",
       "questions": [
-        {"type":"qcm","q":"Qui a inventé le microscope et observé les premières cellules au XVIIe siècle ?","opts":["Darwin","Pasteur","Robert Hooke","Lavoisier"],"ans":2,"hint":"Robert Hooke (1665) observe des cellules mortes de liège au microscope et leur donne leur nom (cellula = petite chambre en latin).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Toutes les cellules possèdent une membrane plasmique.","ans":true,"hint":"La membrane plasmique est commune à toutes les cellules (animales, végétales, bactériennes). Elle délimite la cellule et contrôle les échanges.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle structure n'est PAS présente dans une cellule animale ?","opts":["Noyau","Mitochondrie","Paroi cellulaire","Membrane plasmique"],"ans":2,"hint":"La paroi cellulaire (en cellulose) est caractéristique des cellules végétales. Les cellules animales n'en ont pas.","difficulty":"easy"},
-        {"type":"texte","q":"Quel organite de la cellule végétale contient la chlorophylle et assure la photosynthèse ?","answer":"chloroplaste","hint":"Le chloroplaste est l'organite des cellules végétales qui contient la chlorophylle (pigment vert) et réalise la photosynthèse.","tolerance":["chloroplaste","chloroplastes","les chloroplastes"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Le noyau contient l'ADN (information génétique) de la cellule.","ans":true,"hint":"Le noyau est le centre de contrôle de la cellule. Il contient les chromosomes, eux-mêmes composés d'ADN.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment appelle-t-on la grande vacuole remplie de sève que possèdent les cellules végétales adultes ?","opts":["Chloroplaste","Vacuole","Noyau","Mitochondrie"],"ans":1,"hint":"La vacuole centrale est une grande structure remplie de sève cellulaire, caractéristique des cellules végétales adultes.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la substance gélatineuse qui remplit la cellule entre le noyau et la membrane ?","answer":"cytoplasme","hint":"Le cytoplasme est la substance semi-liquide qui remplit la cellule. Les organites y baignent.","tolerance":["cytoplasme","le cytoplasme"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque organite cellulaire à sa fonction.","pairs":[{"g":"Noyau","d":"Contient l'ADN, centre de contrôle"},{"g":"Mitochondrie","d":"Production d'énergie (respiration cellulaire)"},{"g":"Chloroplaste","d":"Photosynthèse (cellules végétales)"},{"g":"Membrane plasmique","d":"Délimite la cellule, contrôle les échanges"}],"hint":"Ces quatre éléments sont essentiels à la vie cellulaire. Seuls le chloroplaste et la paroi sont absents des cellules animales.","difficulty":"medium"},
-        {"type":"texte","q":"Quelle est la principale différence de structure entre une cellule animale et une cellule végétale ?","answer":"paroi cellulaire","hint":"La cellule végétale possède : paroi en cellulose, chloroplastes, grande vacuole. La cellule animale n'a aucun de ces trois éléments.","tolerance":["paroi cellulaire","paroi en cellulose","paroi","chloroplastes","vacuole"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les mitochondries produisent l'énergie utilisable par la cellule (ATP) grâce à la respiration cellulaire.","ans":true,"hint":"Les mitochondries oxydent le glucose en présence d'O₂ pour produire de l'ATP (énergie). Présentes dans toutes les cellules eucaryotes.","difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'un organisme unicellulaire ?","opts":["Un organisme sans noyau","Un organisme composé d'une seule cellule","Un organisme microscopique","Un organisme sans membrane"],"ans":1,"hint":"Unicellulaire = une seule cellule. Ex : bactérie, paramécie, levure. Pluricellulaire = plusieurs cellules. Ex : humain, plante.","difficulty":"medium"},
-        {"type":"texte","q":"De quoi est faite la paroi cellulaire des végétaux ?","answer":"cellulose","hint":"La paroi des cellules végétales est faite de cellulose (polysaccharide). Elle donne rigidité et forme à la cellule.","tolerance":["cellulose","de cellulose","la cellulose"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quelle est la taille approximative d'une cellule animale typique ?","opts":["1 mm","10 μm (micromètres)","1 cm","1 nm"],"ans":1,"hint":"Une cellule typique mesure environ 10 à 100 μm (micromètres). Il faut un microscope optique pour les voir.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les bactéries sont des cellules procaryotes (sans vrai noyau), contrairement aux cellules animales et végétales (eucaryotes).","ans":true,"hint":"Procaryotes (bactéries) : ADN libre dans le cytoplasme, pas de noyau membranaire. Eucaryotes : noyau entouré d'une membrane.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le processus par lequel une cellule se divise en deux cellules filles identiques ?","answer":"mitose","hint":"La mitose est la division cellulaire normale. La méiose est la division qui produit les gamètes (cellules reproductrices).","tolerance":["mitose","la mitose","division cellulaire"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quel rôle joue la membrane plasmique ?","opts":["Fabriquer de l'énergie","Délimiter la cellule et réguler les échanges avec l'extérieur","Stocker l'ADN","Réaliser la photosynthèse"],"ans":1,"hint":"La membrane plasmique est une barrière semi-perméable : elle laisse passer certaines molécules et en bloque d'autres.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Les ribosomes sont des organites qui synthétisent les protéines à partir de l'information contenue dans l'ARN.","ans":true,"hint":"Les ribosomes traduisent l'ARN messager en protéines. Présents dans toutes les cellules (procaryotes et eucaryotes).","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la cellule végétale contenant des chloroplastes qui réalise la photosynthèse dans les feuilles ?","answer":"cellule du mésophylle","hint":"Les cellules du mésophylle (parenchyme chlorophyllien) de la feuille contiennent les chloroplastes et font la photosynthèse.","tolerance":["cellule du mésophylle","cellule chlorophyllienne","cellule végétale","parenchyme"],"difficulty":"hard"},
-        {"type":"qcm","q":"Pourquoi les plantes ont-elles besoin de la chlorophylle ?","opts":["Pour respirer","Pour capter l'énergie lumineuse nécessaire à la photosynthèse","Pour absorber l'eau","Pour produire des graines"],"ans":1,"hint":"La chlorophylle (pigment vert) absorbe l'énergie lumineuse (rouge et bleu) et la convertit en énergie chimique pour la photosynthèse.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque élément à la cellule (animale, végétale ou les deux).","pairs":[{"g":"Noyau","d":"Animale et végétale"},{"g":"Chloroplaste","d":"Végétale uniquement"},{"g":"Paroi en cellulose","d":"Végétale uniquement"},{"g":"Mitochondrie","d":"Animale et végétale"}],"hint":"Les cellules animales et végétales partagent de nombreux organites, mais les végétales ont en plus : paroi, chloroplastes, grande vacuole.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Qui a inventé le microscope et observé les premières cellules au XVIIe siècle ?",
+          "opts": [
+            "Darwin",
+            "Pasteur",
+            "Robert Hooke",
+            "Lavoisier"
+          ],
+          "ans": 2,
+          "hint": "Robert Hooke (1665) observe des cellules mortes de liège au microscope et leur donne leur nom (cellula = petite chambre en latin).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Toutes les cellules possèdent une membrane plasmique.",
+          "ans": true,
+          "hint": "La membrane plasmique est commune à toutes les cellules (animales, végétales, bactériennes). Elle délimite la cellule et contrôle les échanges.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle structure n'est PAS présente dans une cellule animale ?",
+          "opts": [
+            "Noyau",
+            "Mitochondrie",
+            "Paroi cellulaire",
+            "Membrane plasmique"
+          ],
+          "ans": 2,
+          "hint": "La paroi cellulaire (en cellulose) est caractéristique des cellules végétales. Les cellules animales n'en ont pas.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel organite de la cellule végétale contient la chlorophylle et assure la photosynthèse ?",
+          "answer": "chloroplaste",
+          "hint": "Le chloroplaste est l'organite des cellules végétales qui contient la chlorophylle (pigment vert) et réalise la photosynthèse.",
+          "tolerance": [
+            "chloroplaste",
+            "chloroplastes",
+            "les chloroplastes"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le noyau contient l'ADN (information génétique) de la cellule.",
+          "ans": true,
+          "hint": "Le noyau est le centre de contrôle de la cellule. Il contient les chromosomes, eux-mêmes composés d'ADN.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on la grande vacuole remplie de sève que possèdent les cellules végétales adultes ?",
+          "opts": [
+            "Chloroplaste",
+            "Vacuole",
+            "Noyau",
+            "Mitochondrie"
+          ],
+          "ans": 1,
+          "hint": "La vacuole centrale est une grande structure remplie de sève cellulaire, caractéristique des cellules végétales adultes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la substance gélatineuse qui remplit la cellule entre le noyau et la membrane ?",
+          "answer": "cytoplasme",
+          "hint": "Le cytoplasme est la substance semi-liquide qui remplit la cellule. Les organites y baignent.",
+          "tolerance": [
+            "cytoplasme",
+            "le cytoplasme"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque organite cellulaire à sa fonction.",
+          "pairs": [
+            {
+              "g": "Noyau",
+              "d": "Contient l'ADN, centre de contrôle"
+            },
+            {
+              "g": "Mitochondrie",
+              "d": "Production d'énergie (respiration cellulaire)"
+            },
+            {
+              "g": "Chloroplaste",
+              "d": "Photosynthèse (cellules végétales)"
+            },
+            {
+              "g": "Membrane plasmique",
+              "d": "Délimite la cellule, contrôle les échanges"
+            }
+          ],
+          "hint": "Ces quatre éléments sont essentiels à la vie cellulaire. Seuls le chloroplaste et la paroi sont absents des cellules animales.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle est la principale différence de structure entre une cellule animale et une cellule végétale ?",
+          "answer": "paroi cellulaire",
+          "hint": "La cellule végétale possède : paroi en cellulose, chloroplastes, grande vacuole. La cellule animale n'a aucun de ces trois éléments.",
+          "tolerance": [
+            "paroi cellulaire",
+            "paroi en cellulose",
+            "paroi",
+            "chloroplastes",
+            "vacuole"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les chloroplastes produisent l'énergie (ATP) utilisée par toutes les cellules grâce à la respiration cellulaire.",
+          "ans": false,
+          "hint": "Faux ! Ce sont les MITOCHONDRIES qui produisent l'ATP par respiration cellulaire. Les chloroplastes, présents uniquement dans les cellules végétales, assurent la photosynthèse.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un organisme unicellulaire ?",
+          "opts": [
+            "Un organisme sans noyau",
+            "Un organisme composé d'une seule cellule",
+            "Un organisme microscopique",
+            "Un organisme sans membrane"
+          ],
+          "ans": 1,
+          "hint": "Unicellulaire = une seule cellule. Ex : bactérie, paramécie, levure. Pluricellulaire = plusieurs cellules. Ex : humain, plante.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "De quoi est faite la paroi cellulaire des végétaux ?",
+          "answer": "cellulose",
+          "hint": "La paroi des cellules végétales est faite de cellulose (polysaccharide). Elle donne rigidité et forme à la cellule.",
+          "tolerance": [
+            "cellulose",
+            "de cellulose",
+            "la cellulose"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la taille approximative d'une cellule animale typique ?",
+          "opts": [
+            "1 mm",
+            "10 μm (micromètres)",
+            "1 cm",
+            "1 nm"
+          ],
+          "ans": 1,
+          "hint": "Une cellule typique mesure environ 10 à 100 μm (micromètres). Il faut un microscope optique pour les voir.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les bactéries sont des cellules eucaryotes comme les cellules animales, car elles possèdent un noyau membranaire.",
+          "ans": false,
+          "hint": "Faux ! Les bactéries sont des PROCARYOTES : leur ADN est libre dans le cytoplasme, sans noyau membranaire. Les cellules animales et végétales sont eucaryotes (avec un vrai noyau).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le processus par lequel une cellule se divise en deux cellules filles identiques ?",
+          "answer": "mitose",
+          "hint": "La mitose est la division cellulaire normale. La méiose est la division qui produit les gamètes (cellules reproductrices).",
+          "tolerance": [
+            "mitose",
+            "la mitose",
+            "division cellulaire"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel rôle joue la membrane plasmique ?",
+          "opts": [
+            "Fabriquer de l'énergie",
+            "Délimiter la cellule et réguler les échanges avec l'extérieur",
+            "Stocker l'ADN",
+            "Réaliser la photosynthèse"
+          ],
+          "ans": 1,
+          "hint": "La membrane plasmique est une barrière semi-perméable : elle laisse passer certaines molécules et en bloque d'autres.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les ribosomes sont des organites qui synthétisent l'ADN à partir de l'information contenue dans les protéines.",
+          "ans": false,
+          "hint": "Faux ! Les ribosomes synthétisent des PROTÉINES (pas de l'ADN) à partir de l'ARN messager. L'ADN est répliqué dans le noyau, pas par les ribosomes.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la cellule végétale contenant des chloroplastes qui réalise la photosynthèse dans les feuilles ?",
+          "opts": [
+            "La cellule épidermique",
+            "La cellule du mésophylle",
+            "La cellule racinaire",
+            "La cellule de garde"
+          ],
+          "ans": 1,
+          "hint": "Les cellules du mésophylle (parenchyme chlorophyllien) de la feuille contiennent les chloroplastes et font la photosynthèse.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les plantes ont-elles besoin de la chlorophylle ?",
+          "opts": [
+            "Pour respirer",
+            "Pour capter l'énergie lumineuse nécessaire à la photosynthèse",
+            "Pour absorber l'eau",
+            "Pour produire des graines"
+          ],
+          "ans": 1,
+          "hint": "La chlorophylle (pigment vert) absorbe l'énergie lumineuse (rouge et bleu) et la convertit en énergie chimique pour la photosynthèse.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque élément à la cellule (animale, végétale ou les deux).",
+          "pairs": [
+            {
+              "g": "Noyau",
+              "d": "Animale et végétale"
+            },
+            {
+              "g": "Chloroplaste",
+              "d": "Végétale uniquement"
+            },
+            {
+              "g": "Paroi en cellulose",
+              "d": "Végétale uniquement"
+            },
+            {
+              "g": "Mitochondrie",
+              "d": "Animale et végétale"
+            }
+          ],
+          "hint": "Les cellules animales et végétales partagent de nombreux organites, mais les végétales ont en plus : paroi, chloroplastes, grande vacuole.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -61,26 +517,256 @@
       "label": "Classification du vivant",
       "section": "Le vivant",
       "questions": [
-        {"type":"qcm","q":"Combien de grands règnes du vivant reconnaît-on classiquement en SVT de 6ème ?","opts":["2 (animaux et plantes)","3 (animaux, plantes, champignons)","5 (animaux, plantes, champignons, protistes, bactéries)","7"],"ans":2,"hint":"En 6ème, on distingue généralement 5 règnes : Animaux, Végétaux, Champignons, Protistes, Bactéries (Monères).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La classification du vivant regroupe les organismes selon leurs ressemblances et leurs liens de parenté.","ans":true,"hint":"La classification phylogénétique regroupe les organismes selon leurs caractères dérivés partagés (hérités d'un ancêtre commun).","difficulty":"easy"},
-        {"type":"qcm","q":"À quel groupe appartiennent les baleines ?","opts":["Poissons","Reptiles","Mammifères","Amphibiens"],"ans":2,"hint":"La baleine est un mammifère marin : elle respire à l'air, allaite ses petits, est à sang chaud. Comme tous les cétacés.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la science qui étudie la classification des êtres vivants ?","answer":"taxonomie","hint":"La taxonomie (ou systématique) est la science qui classe les êtres vivants. Elle utilise des niveaux hiérarchiques : règne, embranchement, classe, ordre, famille, genre, espèce.","tolerance":["taxonomie","taxinomie","systématique","classification"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les champignons font partie du règne végétal car ils ressemblent aux plantes.","ans":false,"hint":"Les champignons constituent leur propre règne (Fungi). Ils ne font pas de photosynthèse et se nourrissent comme des hétérotrophes.","difficulty":"easy"},
-        {"type":"qcm","q":"Quel critère principal permet de distinguer les vertébrés des invertébrés ?","opts":["Leur taille","La présence ou l'absence d'une colonne vertébrale","Leur capacité à voler","Leur mode d'alimentation"],"ans":1,"hint":"Vertébrés : possèdent un squelette interne avec une colonne vertébrale. Invertébrés : sans colonne vertébrale (insectes, vers, mollusques...).","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on le niveau le plus précis de la classification, qui regroupe les individus pouvant se reproduire entre eux ?","answer":"espèce","hint":"L'espèce est l'unité de base de la classification. Les individus d'une même espèce peuvent se reproduire et avoir des descendants fertiles.","tolerance":["espèce","l'espèce","species"],"difficulty":"easy"},
-        {"type":"appariement","q":"Classe ces animaux dans leur groupe de vertébrés.","pairs":[{"g":"Saumon","d":"Poisson"},{"g":"Grenouille","d":"Amphibien"},{"g":"Vipère","d":"Reptile"},{"g":"Mésange","d":"Oiseau"}],"hint":"Les 5 classes de vertébrés : poissons, amphibiens, reptiles, oiseaux, mammifères. Chacune a des caractères propres.","difficulty":"medium"},
-        {"type":"texte","q":"Donne deux caractères communs à tous les mammifères.","answer":"allaitement","hint":"Mammifères : présence de mamelles (allaitement), corps couvert de poils, sang chaud, vivipares (pour la plupart).","tolerance":["allaitement","poils","sang chaud","mammelles","vivipares"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les arthropodes (insectes, araignées, crustacés) sont des invertébrés possédant un squelette externe (exosquelette).","ans":true,"hint":"Les arthropodes ont un exosquelette (carapace) articulé. Insectes (6 pattes), araignées (8 pattes), crustacés (10 pattes ou plus).","difficulty":"medium"},
-        {"type":"qcm","q":"Combien de pattes possèdent les insectes ?","opts":["4","6","8","10"],"ans":1,"hint":"Insectes = 6 pattes (3 paires). Araignées = 8 pattes. Crustacés = 10 pattes et plus. C'est un critère de classification.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le nom scientifique d'un être vivant composé de deux mots latins (genre et espèce) ?","answer":"nomenclature binomiale","hint":"Nomenclature binomiale de Linné : Homo sapiens (genre Homo, espèce sapiens). Panthera leo (lion). Toujours en italique ou souligné.","tolerance":["nomenclature binomiale","nom scientifique","binôme","binomial"],"difficulty":"medium"},
-        {"type":"qcm","q":"Le nom scientifique du chat domestique est Felis catus. Que signifie 'Felis' ?","opts":["L'espèce","Le genre","La famille","L'ordre"],"ans":1,"hint":"Dans la nomenclature binomiale, le premier mot (avec majuscule) est le genre, le second est l'espèce.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les oiseaux et les reptiles partagent un ancêtre commun (les dinosaures) et sont donc phylogénétiquement proches.","ans":true,"hint":"Les oiseaux sont des dinosaures théropodes. Phylogénétiquement, les oiseaux sont plus proches des crocodiles que les lézards ne le sont des crocodiles.","difficulty":"medium"},
-        {"type":"texte","q":"À quel groupe d'invertébrés appartient l'escargot ? (mollusques, arthropodes, annélides...)","answer":"mollusques","hint":"L'escargot est un mollusque gastéropode (comme la pieuvre, la moule, la limace). Corps mou, souvent protégé par une coquille.","tolerance":["mollusques","mollusque","gastéropodes"],"difficulty":"medium"},
-        {"type":"qcm","q":"Les angiospermes sont des plantes qui :","opts":["N'ont pas de fleurs","Produisent des graines enfermées dans un fruit","Vivent uniquement dans l'eau","Font partie des champignons"],"ans":1,"hint":"Angiospermes = plantes à fleurs dont les graines sont enfermées dans un fruit. Elles constituent la majorité des plantes terrestres.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Un arbre à classification phylogénétique montre les liens de parenté entre les organismes.","ans":true,"hint":"L'arbre phylogénétique (cladogramme) représente les relations de parenté entre espèces, basées sur des caractères partagés dérivés.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le groupe rassemblant tous les organismes dont le corps est composé d'une seule cellule ?","answer":"protistes","hint":"Les protistes (ou protoctistes) sont des eucaryotes unicellulaires : paramécie, amibes, algues unicellulaires, euglènes.","tolerance":["protistes","protoctistes","unicellulaires"],"difficulty":"hard"},
-        {"type":"qcm","q":"Parmi ces organismes, lequel n'est PAS un mammifère ?","opts":["Dauphin","Chauve-souris","Autruche","Baleine"],"ans":2,"hint":"L'autruche est un oiseau (aves). Le dauphin, la chauve-souris et la baleine sont tous des mammifères.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque critère à la classe de vertébrés qu'il caractérise.","pairs":[{"g":"Corps couvert de plumes","d":"Oiseaux"},{"g":"Peau nue, vie larvaire aquatique","d":"Amphibiens"},{"g":"Corps couvert d'écailles, ectotherme","d":"Reptiles"},{"g":"Mamelles, pelage, endotherme","d":"Mammifères"}],"hint":"Ces critères permettent de distinguer les cinq classes de vertébrés. Un critère peut être partagé par plusieurs classes.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Combien de grands règnes du vivant reconnaît-on classiquement en SVT de 6ème ?",
+          "opts": [
+            "2 (animaux et plantes)",
+            "3 (animaux, plantes, champignons)",
+            "5 (animaux, plantes, champignons, protistes, bactéries)",
+            "7"
+          ],
+          "ans": 2,
+          "hint": "En 6ème, on distingue généralement 5 règnes : Animaux, Végétaux, Champignons, Protistes, Bactéries (Monères).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La classification du vivant regroupe les organismes selon leurs ressemblances et leurs liens de parenté.",
+          "ans": true,
+          "hint": "La classification phylogénétique regroupe les organismes selon leurs caractères dérivés partagés (hérités d'un ancêtre commun).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "À quel groupe appartiennent les baleines ?",
+          "opts": [
+            "Poissons",
+            "Reptiles",
+            "Mammifères",
+            "Amphibiens"
+          ],
+          "ans": 2,
+          "hint": "La baleine est un mammifère marin : elle respire à l'air, allaite ses petits, est à sang chaud. Comme tous les cétacés.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la science qui étudie et établit la classification des êtres vivants ?",
+          "opts": [
+            "L'écologie",
+            "La génétique",
+            "La taxonomie",
+            "La physiologie"
+          ],
+          "ans": 2,
+          "hint": "La taxonomie (ou systématique) classe les êtres vivants selon leurs caractères. Elle utilise les niveaux : règne, embranchement, classe, ordre, famille, genre, espèce.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les champignons font partie du règne végétal car ils ressemblent aux plantes.",
+          "ans": false,
+          "hint": "Les champignons constituent leur propre règne (Fungi). Ils ne font pas de photosynthèse et se nourrissent comme des hétérotrophes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel critère principal permet de distinguer les vertébrés des invertébrés ?",
+          "opts": [
+            "Leur taille",
+            "La présence ou l'absence d'une colonne vertébrale",
+            "Leur capacité à voler",
+            "Leur mode d'alimentation"
+          ],
+          "ans": 1,
+          "hint": "Vertébrés : possèdent un squelette interne avec une colonne vertébrale. Invertébrés : sans colonne vertébrale (insectes, vers, mollusques...).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le niveau le plus précis de la classification, qui regroupe les individus pouvant se reproduire entre eux ?",
+          "answer": "espèce",
+          "hint": "L'espèce est l'unité de base de la classification. Les individus d'une même espèce peuvent se reproduire et avoir des descendants fertiles.",
+          "tolerance": [
+            "espèce",
+            "l'espèce",
+            "species"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Classe ces animaux dans leur groupe de vertébrés.",
+          "pairs": [
+            {
+              "g": "Saumon",
+              "d": "Poisson"
+            },
+            {
+              "g": "Grenouille",
+              "d": "Amphibien"
+            },
+            {
+              "g": "Vipère",
+              "d": "Reptile"
+            },
+            {
+              "g": "Mésange",
+              "d": "Oiseau"
+            }
+          ],
+          "hint": "Les 5 classes de vertébrés : poissons, amphibiens, reptiles, oiseaux, mammifères. Chacune a des caractères propres.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Parmi ces propositions, laquelle indique deux caractères communs à tous les mammifères ?",
+          "opts": [
+            "Plumes et sang froid",
+            "Poils et allaitement des petits (mamelles)",
+            "Écailles et œufs",
+            "Nageoires et respiration branchiale"
+          ],
+          "ans": 1,
+          "hint": "Les deux caractères définissant les mammifères : présence de poils et d'appendices mammaires (allaitement). La plupart sont aussi vivipares et à sang chaud.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les arthropodes (insectes, araignées, crustacés) sont des vertébrés car ils possèdent un squelette interne.",
+          "ans": false,
+          "hint": "Faux ! Les arthropodes sont des INVERTÉBRÉS (sans colonne vertébrale) possédant un squelette EXTERNE (exosquelette = carapace articulée).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Combien de pattes possèdent les insectes ?",
+          "opts": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "ans": 1,
+          "hint": "Insectes = 6 pattes (3 paires). Araignées = 8 pattes. Crustacés = 10 pattes et plus. C'est un critère de classification.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le système qui donne à chaque être vivant un nom scientifique en deux mots latins (genre + espèce) ?",
+          "opts": [
+            "La classification phylogénétique",
+            "La nomenclature binomiale",
+            "Le code taxonomique",
+            "La systématique"
+          ],
+          "ans": 1,
+          "hint": "La nomenclature binomiale de Linné : Homo sapiens (genre Homo, espèce sapiens). Panthera leo = le lion. Toujours écrit en italique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Le nom scientifique du chat domestique est Felis catus. Que signifie 'Felis' ?",
+          "opts": [
+            "L'espèce",
+            "Le genre",
+            "La famille",
+            "L'ordre"
+          ],
+          "ans": 1,
+          "hint": "Dans la nomenclature binomiale, le premier mot (avec majuscule) est le genre, le second est l'espèce.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les oiseaux et les reptiles partagent un ancêtre commun (les dinosaures) et sont donc phylogénétiquement proches.",
+          "ans": true,
+          "hint": "Les oiseaux sont des dinosaures théropodes. Phylogénétiquement, les oiseaux sont plus proches des crocodiles que les lézards ne le sont des crocodiles.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "À quel groupe d'invertébrés appartient l'escargot ? (mollusques, arthropodes, annélides...)",
+          "answer": "mollusques",
+          "hint": "L'escargot est un mollusque gastéropode (comme la pieuvre, la moule, la limace). Corps mou, souvent protégé par une coquille.",
+          "tolerance": [
+            "mollusques",
+            "mollusque",
+            "gastéropodes"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Les angiospermes sont des plantes qui :",
+          "opts": [
+            "N'ont pas de fleurs",
+            "Produisent des graines enfermées dans un fruit",
+            "Vivent uniquement dans l'eau",
+            "Font partie des champignons"
+          ],
+          "ans": 1,
+          "hint": "Angiospermes = plantes à fleurs dont les graines sont enfermées dans un fruit. Elles constituent la majorité des plantes terrestres.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un arbre à classification phylogénétique montre les liens de parenté entre les organismes.",
+          "ans": true,
+          "hint": "L'arbre phylogénétique (cladogramme) représente les relations de parenté entre espèces, basées sur des caractères partagés dérivés.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le groupe rassemblant les eucaryotes unicellulaires comme la paramécie, l'amibe ou l'euglène ?",
+          "opts": [
+            "Les bactéries",
+            "Les champignons",
+            "Les protistes",
+            "Les archées"
+          ],
+          "ans": 2,
+          "hint": "Les protistes (ou protoctistes) sont des eucaryotes unicellulaires : paramécie, amibes, algues unicellulaires, euglènes. Ni animaux, ni végétaux, ni champignons.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Parmi ces organismes, lequel n'est PAS un mammifère ?",
+          "opts": [
+            "Dauphin",
+            "Chauve-souris",
+            "Autruche",
+            "Baleine"
+          ],
+          "ans": 2,
+          "hint": "L'autruche est un oiseau (aves). Le dauphin, la chauve-souris et la baleine sont tous des mammifères.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque critère à la classe de vertébrés qu'il caractérise.",
+          "pairs": [
+            {
+              "g": "Corps couvert de plumes",
+              "d": "Oiseaux"
+            },
+            {
+              "g": "Peau nue, vie larvaire aquatique",
+              "d": "Amphibiens"
+            },
+            {
+              "g": "Corps couvert d'écailles, ectotherme",
+              "d": "Reptiles"
+            },
+            {
+              "g": "Mamelles, pelage, endotherme",
+              "d": "Mammifères"
+            }
+          ],
+          "hint": "Ces critères permettent de distinguer les cinq classes de vertébrés. Un critère peut être partagé par plusieurs classes.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -88,26 +774,260 @@
       "label": "Biodiversité : notion, espèces, écosystèmes",
       "section": "Le vivant",
       "questions": [
-        {"type":"qcm","q":"Que signifie le terme 'biodiversité' ?","opts":["La diversité des roches","La diversité du vivant (espèces, gènes, écosystèmes)","La diversité des minéraux","La diversité des océans"],"ans":1,"hint":"Biodiversité = diversité biologique : diversité des espèces, des gènes au sein des espèces, et des écosystèmes.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La Terre abrite environ 8 à 10 millions d'espèces, dont la plupart n'ont pas encore été décrites par les scientifiques.","ans":true,"hint":"On estime entre 8 et 10 millions d'espèces sur Terre, mais seulement ~1,8 million ont été officiellement décrites et nommées.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'un écosystème ?","opts":["Un ensemble d'espèces sans leur milieu","L'ensemble formé par les êtres vivants d'un milieu et leur environnement non vivant","Un seul organisme complexe","Un type de paysage uniquement"],"ans":1,"hint":"Écosystème = biocénose (êtres vivants) + biotope (milieu physique). Ex : la forêt, l'étang, la prairie, l'océan.","difficulty":"easy"},
-        {"type":"texte","q":"Donne un exemple d'écosystème naturel.","answer":"forêt","hint":"Exemples d'écosystèmes naturels : forêt, prairie, étang, récif corallien, désert, rivière, toundra...","tolerance":["forêt","étang","prairie","récif","océan","rivière","lac","désert"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La destruction des habitats naturels est la principale cause d'extinction des espèces.","ans":true,"hint":"La déforestation, l'urbanisation, l'agriculture intensive détruisent les habitats → 1ère cause mondiale de perte de biodiversité.","difficulty":"easy"},
-        {"type":"qcm","q":"Lequel de ces facteurs est une menace majeure pour la biodiversité ?","opts":["L'augmentation des parcs naturels","L'espèce invasive introduite dans un milieu","La création de réserves marines","La reforestation"],"ans":1,"hint":"Les espèces invasives (introduites hors de leur milieu naturel) concurrencent et éliminent les espèces locales. Ex : rat musqué, frelon asiatique.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on le dénombrement des êtres vivants présents dans un milieu donné ?","answer":"inventaire","hint":"L'inventaire de la biodiversité ou recensement : comptage des espèces présentes dans un milieu (transect, carrés d'échantillonnage).","tolerance":["inventaire","recensement","biodénombrement","comptage"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque niveau de biodiversité à sa définition.","pairs":[{"g":"Diversité des espèces","d":"Nombre d'espèces différentes dans un milieu"},{"g":"Diversité génétique","d":"Variété des gènes au sein d'une même espèce"},{"g":"Diversité des écosystèmes","d":"Variété des milieux de vie sur Terre"},{"g":"Diversité fonctionnelle","d":"Diversité des rôles écologiques des espèces"}],"hint":"La biodiversité s'exprime à trois niveaux principaux : spécifique (espèces), génétique et écosystémique.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on la disparition définitive d'une espèce ?","answer":"extinction","hint":"L'extinction est la disparition de tous les individus d'une espèce. Le dodo, le mammouth sont des espèces éteintes.","tolerance":["extinction","l'extinction","disparition"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les récifs coralliens abritent environ 25% de toutes les espèces marines connues.","ans":true,"hint":"Les récifs coralliens sont les écosystèmes marins les plus riches en biodiversité, malgré leur faible superficie (~0,1% des océans).","difficulty":"medium"},
-        {"type":"qcm","q":"Une espèce endémique est une espèce :","opts":["Qui vit dans plusieurs pays","Qui n'existe que dans une région géographique précise","Qui est en voie d'extinction","Qui a été introduite par l'homme"],"ans":1,"hint":"Endémique = propre à un territoire limité. Le panda géant (Chine), l'aye-aye (Madagascar) sont des espèces endémiques.","difficulty":"medium"},
-        {"type":"texte","q":"Quel est le nom de la liste rouge mondiale recensant les espèces menacées d'extinction ?","answer":"liste rouge de l'UICN","hint":"La liste rouge de l'UICN (Union Internationale pour la Conservation de la Nature) classe les espèces selon leur risque d'extinction.","tolerance":["liste rouge de l'UICN","liste rouge UICN","UICN","liste rouge"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'une espèce clé de voûte ?","opts":["Une espèce très ancienne","Une espèce dont la disparition entraînerait l'effondrement de l'écosystème","Une espèce protégée par la loi","Une espèce invasive"],"ans":1,"hint":"L'espèce clé de voûte (keystone species) joue un rôle crucial dans l'équilibre de son écosystème. Ex : le loup dans Yellowstone.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le changement climatique est une cause de la perte de biodiversité.","ans":true,"hint":"Le réchauffement climatique modifie les habitats, les cycles saisonniers et les répartitions géographiques des espèces → perte de biodiversité.","difficulty":"medium"},
-        {"type":"texte","q":"Quel biome tropical est le plus riche en biodiversité sur Terre ?","answer":"forêt tropicale humide","hint":"La forêt tropicale humide (Amazonie, Bassin du Congo, Bornéo) abrite ~50% des espèces terrestres connues sur ~6% des terres.","tolerance":["forêt tropicale humide","forêt tropicale","forêt équatoriale","Amazonie"],"difficulty":"medium"},
-        {"type":"qcm","q":"L'abeille domestique est essentielle à la biodiversité car elle :","opts":["Produit du miel consommé par les humains","Assure la pollinisation de nombreuses plantes à fleurs","Chasse les espèces invasives","Fertilise les sols"],"ans":1,"hint":"Les abeilles pollinisent ~75% des cultures alimentaires mondiales. Leur déclin menace directement la production alimentaire et la biodiversité végétale.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"On parle de 6ème extinction de masse car les extinctions actuelles sont causées par les activités humaines, à une vitesse inédite.","ans":true,"hint":"Le taux d'extinction actuel est 100 à 1000 fois supérieur au taux naturel. C'est la 6ème crise d'extinction, la première causée par une espèce vivante.","difficulty":"hard"},
-        {"type":"texte","q":"Comment appelle-t-on un organisme qui vit dans les deux milieux (eau et terre) au cours de sa vie (ex : grenouille) ?","answer":"amphibien","hint":"Les amphibiens (grenouilles, salamandres) vivent en milieu aquatique (larve têtard) puis terrestre (adulte). Ils respirent par branchies puis poumons.","tolerance":["amphibien","amphibiens","les amphibiens"],"difficulty":"hard"},
-        {"type":"qcm","q":"Lequel de ces services écosystémiques est rendu par les forêts ?","opts":["Production de plastique","Épuration de l'eau, séquestration du CO₂, régulation du climat","Production de pétrole","Fabrication de médicaments uniquement"],"ans":1,"hint":"Services écosystémiques des forêts : épuration de l'eau, stockage de carbone, régulation du climat, fourniture de bois, habitat pour la faune.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque menace à son impact sur la biodiversité.","pairs":[{"g":"Déforestation","d":"Destruction des habitats → extinction d'espèces"},{"g":"Pollution des eaux","d":"Mort des espèces aquatiques"},{"g":"Espèces invasives","d":"Concurrence et élimination des espèces locales"},{"g":"Surpêche","d":"Effondrement des populations de poissons"}],"hint":"Ces quatre menaces sont parmi les principales causes de la crise de biodiversité actuelle.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Que signifie le terme 'biodiversité' ?",
+          "opts": [
+            "La diversité des roches",
+            "La diversité du vivant (espèces, gènes, écosystèmes)",
+            "La diversité des minéraux",
+            "La diversité des océans"
+          ],
+          "ans": 1,
+          "hint": "Biodiversité = diversité biologique : diversité des espèces, des gènes au sein des espèces, et des écosystèmes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La Terre abrite environ 8 à 10 millions d'espèces, dont la plupart n'ont pas encore été décrites par les scientifiques.",
+          "ans": true,
+          "hint": "On estime entre 8 et 10 millions d'espèces sur Terre, mais seulement ~1,8 million ont été officiellement décrites et nommées.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un écosystème ?",
+          "opts": [
+            "Un ensemble d'espèces sans leur milieu",
+            "L'ensemble formé par les êtres vivants d'un milieu et leur environnement non vivant",
+            "Un seul organisme complexe",
+            "Un type de paysage uniquement"
+          ],
+          "ans": 1,
+          "hint": "Écosystème = biocénose (êtres vivants) + biotope (milieu physique). Ex : la forêt, l'étang, la prairie, l'océan.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Donne un exemple d'écosystème naturel.",
+          "answer": "forêt",
+          "hint": "Exemples d'écosystèmes naturels : forêt, prairie, étang, récif corallien, désert, rivière, toundra...",
+          "tolerance": [
+            "forêt",
+            "étang",
+            "prairie",
+            "récif",
+            "océan",
+            "rivière",
+            "lac",
+            "désert"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La destruction des habitats naturels est la principale cause d'extinction des espèces.",
+          "ans": true,
+          "hint": "La déforestation, l'urbanisation, l'agriculture intensive détruisent les habitats → 1ère cause mondiale de perte de biodiversité.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces facteurs est une menace majeure pour la biodiversité ?",
+          "opts": [
+            "L'augmentation des parcs naturels",
+            "L'espèce invasive introduite dans un milieu",
+            "La création de réserves marines",
+            "La reforestation"
+          ],
+          "ans": 1,
+          "hint": "Les espèces invasives (introduites hors de leur milieu naturel) concurrencent et éliminent les espèces locales. Ex : rat musqué, frelon asiatique.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le dénombrement des êtres vivants présents dans un milieu donné ?",
+          "answer": "inventaire",
+          "hint": "L'inventaire de la biodiversité ou recensement : comptage des espèces présentes dans un milieu (transect, carrés d'échantillonnage).",
+          "tolerance": [
+            "inventaire",
+            "recensement",
+            "biodénombrement",
+            "comptage"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque niveau de biodiversité à sa définition.",
+          "pairs": [
+            {
+              "g": "Diversité des espèces",
+              "d": "Nombre d'espèces différentes dans un milieu"
+            },
+            {
+              "g": "Diversité génétique",
+              "d": "Variété des gènes au sein d'une même espèce"
+            },
+            {
+              "g": "Diversité des écosystèmes",
+              "d": "Variété des milieux de vie sur Terre"
+            },
+            {
+              "g": "Diversité fonctionnelle",
+              "d": "Diversité des rôles écologiques des espèces"
+            }
+          ],
+          "hint": "La biodiversité s'exprime à trois niveaux principaux : spécifique (espèces), génétique et écosystémique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la disparition définitive d'une espèce ?",
+          "answer": "extinction",
+          "hint": "L'extinction est la disparition de tous les individus d'une espèce. Le dodo, le mammouth sont des espèces éteintes.",
+          "tolerance": [
+            "extinction",
+            "l'extinction",
+            "disparition"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les récifs coralliens n'abritent qu'environ 5% des espèces marines car ils occupent une très faible superficie des océans.",
+          "ans": false,
+          "hint": "Faux ! Bien qu'ils occupent ~0,1% des océans, les récifs coralliens abritent environ 25% de toutes les espèces marines connues. Ce sont les écosystèmes marins les plus riches en biodiversité.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Une espèce endémique est une espèce :",
+          "opts": [
+            "Qui vit dans plusieurs pays",
+            "Qui n'existe que dans une région géographique précise",
+            "Qui est en voie d'extinction",
+            "Qui a été introduite par l'homme"
+          ],
+          "ans": 1,
+          "hint": "Endémique = propre à un territoire limité. Le panda géant (Chine), l'aye-aye (Madagascar) sont des espèces endémiques.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel est le nom de la liste mondiale recensant les espèces menacées d'extinction ?",
+          "opts": [
+            "La liste verte de l'UNESCO",
+            "La liste rouge de l'UICN",
+            "Le registre mondial de la FAO",
+            "Le catalogue de l'OMS"
+          ],
+          "ans": 1,
+          "hint": "La liste rouge de l'UICN (Union Internationale pour la Conservation de la Nature) classe les espèces selon leur risque d'extinction.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une espèce clé de voûte ?",
+          "opts": [
+            "Une espèce très ancienne",
+            "Une espèce dont la disparition entraînerait l'effondrement de l'écosystème",
+            "Une espèce protégée par la loi",
+            "Une espèce invasive"
+          ],
+          "ans": 1,
+          "hint": "L'espèce clé de voûte (keystone species) joue un rôle crucial dans l'équilibre de son écosystème. Ex : le loup dans Yellowstone.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le changement climatique est une cause de la perte de biodiversité.",
+          "ans": true,
+          "hint": "Le réchauffement climatique modifie les habitats, les cycles saisonniers et les répartitions géographiques des espèces → perte de biodiversité.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel biome tropical est le plus riche en biodiversité sur Terre ?",
+          "opts": [
+            "La savane africaine",
+            "La forêt tropicale humide",
+            "La taïga sibérienne",
+            "La toundra arctique"
+          ],
+          "ans": 1,
+          "hint": "La forêt tropicale humide (Amazonie, Bassin du Congo, Bornéo) abrite ~50% des espèces terrestres connues sur ~6% des terres.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "L'abeille domestique est essentielle à la biodiversité car elle :",
+          "opts": [
+            "Produit du miel consommé par les humains",
+            "Assure la pollinisation de nombreuses plantes à fleurs",
+            "Chasse les espèces invasives",
+            "Fertilise les sols"
+          ],
+          "ans": 1,
+          "hint": "Les abeilles pollinisent ~75% des cultures alimentaires mondiales. Leur déclin menace directement la production alimentaire et la biodiversité végétale.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "On parle de 6ème extinction de masse pour désigner la crise actuelle de biodiversité, causée par les activités humaines.",
+          "ans": true,
+          "hint": "On parle bien de la 6ème extinction de masse (et non la 5ème). La 5ème extinction a éliminé les dinosaures il y a 66 millions d'années. La 6ème est en cours, à une vitesse 100 à 1000 fois supérieure au taux naturel d'extinction.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on un organisme qui vit dans les deux milieux (eau et terre) au cours de sa vie (ex : grenouille) ?",
+          "answer": "amphibien",
+          "hint": "Les amphibiens (grenouilles, salamandres) vivent en milieu aquatique (larve têtard) puis terrestre (adulte). Ils respirent par branchies puis poumons.",
+          "tolerance": [
+            "amphibien",
+            "amphibiens",
+            "les amphibiens"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces services écosystémiques est rendu par les forêts ?",
+          "opts": [
+            "Production de plastique",
+            "Épuration de l'eau, séquestration du CO₂, régulation du climat",
+            "Production de pétrole",
+            "Fabrication de médicaments uniquement"
+          ],
+          "ans": 1,
+          "hint": "Services écosystémiques des forêts : épuration de l'eau, stockage de carbone, régulation du climat, fourniture de bois, habitat pour la faune.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque menace à son impact sur la biodiversité.",
+          "pairs": [
+            {
+              "g": "Déforestation",
+              "d": "Destruction des habitats → extinction d'espèces"
+            },
+            {
+              "g": "Pollution des eaux",
+              "d": "Mort des espèces aquatiques"
+            },
+            {
+              "g": "Espèces invasives",
+              "d": "Concurrence et élimination des espèces locales"
+            },
+            {
+              "g": "Surpêche",
+              "d": "Effondrement des populations de poissons"
+            }
+          ],
+          "hint": "Ces quatre menaces sont parmi les principales causes de la crise de biodiversité actuelle.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -115,26 +1035,252 @@
       "label": "Nutriments et tube digestif",
       "section": "Nutrition et digestion",
       "questions": [
-        {"type":"qcm","q":"Lequel de ces éléments n'est PAS un nutriment ?","opts":["Glucides","Lipides","Protéines","Cellulose"],"ans":3,"hint":"La cellulose est une fibre alimentaire non digestible. Les nutriments sont : glucides, lipides, protéines, vitamines, minéraux, eau.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les glucides sont la principale source d'énergie rapide pour l'organisme.","ans":true,"hint":"Les glucides (sucres) sont la principale source d'énergie de l'organisme. Le glucose est le carburant des cellules.","difficulty":"easy"},
-        {"type":"qcm","q":"Dans quel ordre les aliments passent-ils dans le tube digestif ?","opts":["Bouche → estomac → intestin grêle → gros intestin","Bouche → intestin → estomac → œsophage","Bouche → foie → estomac → intestin","Œsophage → bouche → estomac → intestin"],"ans":0,"hint":"Tube digestif : bouche → pharynx → œsophage → estomac → intestin grêle → gros intestin (côlon) → rectum → anus.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle le long tube (6 à 7 m) où se font la digestion et l'absorption des nutriments ?","answer":"intestin grêle","hint":"L'intestin grêle (~6-7m) est le lieu principal de la digestion et de l'absorption. Sa paroi est couverte de villosités.","tolerance":["intestin grêle","l'intestin grêle","intestin"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'estomac produit de l'acide chlorhydrique qui participe à la digestion des protéines.","ans":true,"hint":"Le suc gastrique (pH 2-3) contient de l'HCl et la pepsine (enzyme) qui commencent la digestion des protéines.","difficulty":"easy"},
-        {"type":"qcm","q":"À quoi servent les lipides dans l'organisme ?","opts":["Source d'énergie uniquement","Source d'énergie, constitution des membranes cellulaires, transport de vitamines liposolubles","Uniquement pour les muscles","Uniquement pour le cerveau"],"ans":1,"hint":"Les lipides (graisses) servent à : stocker l'énergie, constituer les membranes, transporter les vitamines A, D, E, K et fabriquer certaines hormones.","difficulty":"easy"},
-        {"type":"texte","q":"Quel organe du corps humain produit la bile qui participe à la digestion des graisses ?","answer":"foie","hint":"Le foie produit la bile, stockée dans la vésicule biliaire et déversée dans l'intestin grêle pour émulsionner les graisses.","tolerance":["foie","le foie"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque nutriment à son rôle principal dans l'organisme.","pairs":[{"g":"Glucides","d":"Source d'énergie rapide (sucres)"},{"g":"Protéines","d":"Construction et réparation des tissus"},{"g":"Lipides","d":"Réserve d'énergie, membranes cellulaires"},{"g":"Vitamines","d":"Régulation des fonctions biologiques"}],"hint":"Chaque nutriment a des fonctions spécifiques. Un régime équilibré doit apporter tous ces nutriments en proportions adaptées.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la transformation mécanique et chimique des aliments en nutriments absorbables ?","answer":"digestion","hint":"La digestion = dégradation mécanique (mastication, brassage) + chimique (enzymes) des aliments → nutriments assimilables.","tolerance":["digestion","la digestion"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les villosités intestinales augmentent la surface d'absorption de l'intestin grêle.","ans":true,"hint":"Les villosités et microvillosités de l'intestin grêle portent la surface d'absorption à environ 200 m² (= un terrain de tennis).","difficulty":"medium"},
-        {"type":"qcm","q":"Quel rôle joue le pancréas dans la digestion ?","opts":["Il absorbe les nutriments","Il produit des enzymes digestives qui dégradent les glucides, protéines et lipides","Il stocke la bile","Il produit de l'acide chlorhydrique"],"ans":1,"hint":"Le pancréas exocrine sécrète le suc pancréatique dans l'intestin grêle : amylase (glucides), protéases, lipase (graisses).","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le passage des nutriments de l'intestin grêle vers le sang ?","answer":"absorption intestinale","hint":"L'absorption intestinale : les nutriments (glucose, acides aminés, acides gras) traversent la paroi de l'intestin grêle vers le sang ou la lymphe.","tolerance":["absorption intestinale","absorption","absorption des nutriments"],"difficulty":"medium"},
-        {"type":"qcm","q":"Dans quelle partie du tube digestif l'eau est-elle principalement réabsorbée ?","opts":["Estomac","Intestin grêle","Gros intestin (côlon)","Bouche"],"ans":2,"hint":"Le gros intestin (côlon) réabsorbe l'eau et les minéraux. Les matières non digestibles forment les selles.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La salive contient une enzyme (l'amylase salivaire) qui commence la digestion de l'amidon dès la bouche.","ans":true,"hint":"L'amylase salivaire (ptyaline) dégrade l'amidon en maltose dès la bouche. C'est la première étape chimique de la digestion.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle les contractions musculaires qui font avancer les aliments dans le tube digestif ?","answer":"péristaltisme","hint":"Le péristaltisme = contractions rythmiques des muscles lisses de la paroi du tube digestif qui propulsent les aliments.","tolerance":["péristaltisme","mouvements péristaltiques","contractions péristaltiques"],"difficulty":"medium"},
-        {"type":"qcm","q":"Les enzymes digestives sont des :","opts":["Vitamines","Minéraux","Protéines qui accélèrent les réactions chimiques de digestion","Hormones"],"ans":2,"hint":"Les enzymes sont des protéines catalytiques : elles accélèrent les réactions chimiques sans être consommées. Les enzymes digestives dégradent les macromolécules.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le duodénum est la première partie de l'intestin grêle, où arrivent les sécrétions du foie et du pancréas.","ans":true,"hint":"Le duodénum (25 cm) reçoit le bol alimentaire gastrique, la bile (foie) et le suc pancréatique. C'est là que la digestion chimique est la plus intense.","difficulty":"hard"},
-        {"type":"texte","q":"Quelle maladie nutritionnelle résulte d'un manque chronique de protéines et d'énergie dans l'alimentation ?","answer":"malnutrition","hint":"La malnutrition (kwashiorkor pour le manque de protéines, marasme pour le manque global) affecte des millions d'enfants dans les pays en développement.","tolerance":["malnutrition","dénutrition","kwashiorkor","sous-alimentation"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce que l'indice de masse corporelle (IMC) ?","opts":["La masse en kg","Le rapport masse/taille² (kg/m²) indicateur du statut pondéral","Le tour de taille","Le taux de graisse corporelle"],"ans":1,"hint":"IMC = masse (kg) / taille² (m²). Normal : 18,5-25. < 18,5 : insuffisance pondérale. > 25 : surpoids. > 30 : obésité.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque organe digestif à sa principale fonction.","pairs":[{"g":"Bouche","d":"Mastication, insalivation, début de la digestion"},{"g":"Estomac","d":"Brassage et digestion acide des protéines"},{"g":"Intestin grêle","d":"Digestion et absorption des nutriments"},{"g":"Gros intestin","d":"Réabsorption de l'eau, formation des selles"}],"hint":"Le tube digestif est une chaîne de traitement : chaque organe a une fonction précise dans la transformation des aliments.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Lequel de ces éléments n'est PAS un nutriment ?",
+          "opts": [
+            "Glucides",
+            "Lipides",
+            "Protéines",
+            "Cellulose"
+          ],
+          "ans": 3,
+          "hint": "La cellulose est une fibre alimentaire non digestible. Les nutriments sont : glucides, lipides, protéines, vitamines, minéraux, eau.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les lipides sont la principale source d'énergie rapide pour l'organisme.",
+          "ans": false,
+          "hint": "Faux ! Les GLUCIDES (sucres) sont la principale source d'énergie RAPIDE. Les lipides constituent une réserve d'énergie utilisée sur le long terme.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans quel ordre les aliments passent-ils dans le tube digestif ?",
+          "opts": [
+            "Bouche → estomac → intestin grêle → gros intestin",
+            "Bouche → intestin → estomac → œsophage",
+            "Bouche → foie → estomac → intestin",
+            "Œsophage → bouche → estomac → intestin"
+          ],
+          "ans": 0,
+          "hint": "Tube digestif : bouche → pharynx → œsophage → estomac → intestin grêle → gros intestin (côlon) → rectum → anus.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le long tube (6 à 7 m) où se font la digestion et l'absorption des nutriments ?",
+          "answer": "intestin grêle",
+          "hint": "L'intestin grêle (~6-7m) est le lieu principal de la digestion et de l'absorption. Sa paroi est couverte de villosités.",
+          "tolerance": [
+            "intestin grêle",
+            "l'intestin grêle",
+            "intestin"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'estomac produit de l'acide chlorhydrique qui participe à la digestion des protéines.",
+          "ans": true,
+          "hint": "Le suc gastrique (pH 2-3) contient de l'HCl et la pepsine (enzyme) qui commencent la digestion des protéines.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "À quoi servent les lipides dans l'organisme ?",
+          "opts": [
+            "Source d'énergie uniquement",
+            "Source d'énergie, constitution des membranes cellulaires, transport de vitamines liposolubles",
+            "Uniquement pour les muscles",
+            "Uniquement pour le cerveau"
+          ],
+          "ans": 1,
+          "hint": "Les lipides (graisses) servent à : stocker l'énergie, constituer les membranes, transporter les vitamines A, D, E, K et fabriquer certaines hormones.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel organe du corps humain produit la bile qui participe à la digestion des graisses ?",
+          "answer": "foie",
+          "hint": "Le foie produit la bile, stockée dans la vésicule biliaire et déversée dans l'intestin grêle pour émulsionner les graisses.",
+          "tolerance": [
+            "foie",
+            "le foie"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque nutriment à son rôle principal dans l'organisme.",
+          "pairs": [
+            {
+              "g": "Glucides",
+              "d": "Source d'énergie rapide (sucres)"
+            },
+            {
+              "g": "Protéines",
+              "d": "Construction et réparation des tissus"
+            },
+            {
+              "g": "Lipides",
+              "d": "Réserve d'énergie, membranes cellulaires"
+            },
+            {
+              "g": "Vitamines",
+              "d": "Régulation des fonctions biologiques"
+            }
+          ],
+          "hint": "Chaque nutriment a des fonctions spécifiques. Un régime équilibré doit apporter tous ces nutriments en proportions adaptées.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la transformation mécanique et chimique des aliments en nutriments absorbables ?",
+          "answer": "digestion",
+          "hint": "La digestion = dégradation mécanique (mastication, brassage) + chimique (enzymes) des aliments → nutriments assimilables.",
+          "tolerance": [
+            "digestion",
+            "la digestion"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les villosités intestinales servent à protéger la paroi de l'intestin grêle contre l'acidité.",
+          "ans": false,
+          "hint": "Faux ! Les villosités intestinales servent à AUGMENTER LA SURFACE D'ABSORPTION (~200 m² = un terrain de tennis). C'est le mucus (dans l'estomac) qui protège contre l'acidité.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel rôle joue le pancréas dans la digestion ?",
+          "opts": [
+            "Il absorbe les nutriments",
+            "Il produit des enzymes digestives qui dégradent les glucides, protéines et lipides",
+            "Il stocke la bile",
+            "Il produit de l'acide chlorhydrique"
+          ],
+          "ans": 1,
+          "hint": "Le pancréas exocrine sécrète le suc pancréatique dans l'intestin grêle : amylase (glucides), protéases, lipase (graisses).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le passage des nutriments de l'intestin grêle vers le sang ?",
+          "answer": "absorption intestinale",
+          "hint": "L'absorption intestinale : les nutriments (glucose, acides aminés, acides gras) traversent la paroi de l'intestin grêle vers le sang ou la lymphe.",
+          "tolerance": [
+            "absorption intestinale",
+            "absorption",
+            "absorption des nutriments"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans quelle partie du tube digestif l'eau est-elle principalement réabsorbée ?",
+          "opts": [
+            "Estomac",
+            "Intestin grêle",
+            "Gros intestin (côlon)",
+            "Bouche"
+          ],
+          "ans": 2,
+          "hint": "Le gros intestin (côlon) réabsorbe l'eau et les minéraux. Les matières non digestibles forment les selles.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La salive contient une enzyme (l'amylase salivaire) qui commence la digestion de l'amidon dès la bouche.",
+          "ans": true,
+          "hint": "L'amylase salivaire (ptyaline) dégrade l'amidon en maltose dès la bouche. C'est la première étape chimique de la digestion.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appellent les contractions musculaires rythmiques qui font avancer les aliments dans le tube digestif ?",
+          "opts": [
+            "Les contractions cardiaques",
+            "Le péristaltisme",
+            "La mastication",
+            "La déglutition"
+          ],
+          "ans": 1,
+          "hint": "Le péristaltisme = vagues de contractions des muscles lisses du tube digestif qui propulsent les aliments de l'œsophage jusqu'au rectum.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Les enzymes digestives sont des :",
+          "opts": [
+            "Vitamines",
+            "Minéraux",
+            "Protéines qui accélèrent les réactions chimiques de digestion",
+            "Hormones"
+          ],
+          "ans": 2,
+          "hint": "Les enzymes sont des protéines catalytiques : elles accélèrent les réactions chimiques sans être consommées. Les enzymes digestives dégradent les macromolécules.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le duodénum est la première partie de l'intestin grêle, où arrivent les sécrétions du foie et du pancréas.",
+          "ans": true,
+          "hint": "Le duodénum (25 cm) reçoit le bol alimentaire gastrique, la bile (foie) et le suc pancréatique. C'est là que la digestion chimique est la plus intense.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle maladie nutritionnelle résulte d'un manque chronique de protéines et d'énergie dans l'alimentation ?",
+          "answer": "malnutrition",
+          "hint": "La malnutrition (kwashiorkor pour le manque de protéines, marasme pour le manque global) affecte des millions d'enfants dans les pays en développement.",
+          "tolerance": [
+            "malnutrition",
+            "dénutrition",
+            "kwashiorkor",
+            "sous-alimentation"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'indice de masse corporelle (IMC) ?",
+          "opts": [
+            "La masse en kg",
+            "Le rapport masse/taille² (kg/m²) indicateur du statut pondéral",
+            "Le tour de taille",
+            "Le taux de graisse corporelle"
+          ],
+          "ans": 1,
+          "hint": "IMC = masse (kg) / taille² (m²). Normal : 18,5-25. < 18,5 : insuffisance pondérale. > 25 : surpoids. > 30 : obésité.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque organe digestif à sa principale fonction.",
+          "pairs": [
+            {
+              "g": "Bouche",
+              "d": "Mastication, insalivation, début de la digestion"
+            },
+            {
+              "g": "Estomac",
+              "d": "Brassage et digestion acide des protéines"
+            },
+            {
+              "g": "Intestin grêle",
+              "d": "Digestion et absorption des nutriments"
+            },
+            {
+              "g": "Gros intestin",
+              "d": "Réabsorption de l'eau, formation des selles"
+            }
+          ],
+          "hint": "Le tube digestif est une chaîne de traitement : chaque organe a une fonction précise dans la transformation des aliments.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -142,26 +1288,253 @@
       "label": "Sang, circulation et respiration",
       "section": "Nutrition et digestion",
       "questions": [
-        {"type":"qcm","q":"Quel est le rôle principal du sang ?","opts":["Uniquement transporter l'oxygène","Transporter les nutriments, l'O₂, les déchets et les défenses immunitaires","Uniquement lutter contre les infections","Uniquement réguler la température"],"ans":1,"hint":"Le sang transporte : O₂ (hémoglobine), nutriments (glucose, acides aminés), déchets (CO₂, urée), hormones, cellules immunitaires.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Le cœur est un muscle creux qui pompe le sang dans tout le corps.","ans":true,"hint":"Le cœur (muscle cardiaque) bat environ 70 fois par minute au repos, propulsant 5 litres de sang par minute.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment s'appelle le vaisseau sanguin qui transporte le sang du cœur vers les organes ?","opts":["Veine","Artère","Capillaire","Lymphatique"],"ans":1,"hint":"Artère : sang du cœur → organes (riche en O₂ sauf l'artère pulmonaire). Veine : sang des organes → cœur (riche en CO₂ sauf veine pulmonaire).","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle le pigment rouge des globules rouges qui transporte l'oxygène ?","answer":"hémoglobine","hint":"L'hémoglobine est une protéine contenant du fer (Fe) qui fixe l'O₂ dans les poumons et le libère dans les tissus.","tolerance":["hémoglobine","l'hémoglobine"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les artères ont des parois plus épaisses que les veines car elles supportent une pression plus élevée.","ans":true,"hint":"Les artères (haute pression, paroi épaisse et musclée) vs veines (basse pression, paroi mince, valvules pour éviter le reflux).","difficulty":"easy"},
-        {"type":"qcm","q":"Les échanges gazeux (O₂/CO₂) entre le sang et l'air se font dans :","opts":["La trachée","Les bronches","Les alvéoles pulmonaires","La bouche"],"ans":2,"hint":"Les alvéoles pulmonaires (~300 millions, surface ~70m²) sont les sites des échanges gazeux entre l'air et le sang.","difficulty":"easy"},
-        {"type":"texte","q":"Quel gaz entre dans les poumons lors de l'inspiration ?","answer":"oxygène","hint":"À l'inspiration : O₂ entre dans les poumons. À l'expiration : CO₂ sort. L'air contient 21% d'O₂ et 0,04% de CO₂.","tolerance":["oxygène","l'oxygène","O2","O₂","dioxygène"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque composant du sang à sa fonction.","pairs":[{"g":"Globules rouges (érythrocytes)","d":"Transport de l'oxygène (hémoglobine)"},{"g":"Globules blancs (leucocytes)","d":"Défense immunitaire"},{"g":"Plaquettes (thrombocytes)","d":"Coagulation du sang"},{"g":"Plasma","d":"Transport des nutriments et déchets (liquide)"}],"hint":"Le sang est un tissu liquide composé de cellules (globules) et de plasma. Chaque composant a une fonction précise.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la circulation du sang entre le cœur et les poumons ?","answer":"petite circulation","hint":"Petite circulation (pulmonaire) : cœur droit → poumons → cœur gauche. Grande circulation : cœur gauche → corps → cœur droit.","tolerance":["petite circulation","circulation pulmonaire","circulation pulmonaire ou petite circulation"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Un adulte au repos a une fréquence cardiaque d'environ 60-80 battements par minute.","ans":true,"hint":"Fréquence cardiaque normale au repos : 60-100 bpm. Elle augmente à l'effort (peut atteindre 200 bpm chez un sportif).","difficulty":"medium"},
-        {"type":"qcm","q":"Que mesure la tension artérielle (pression artérielle) ?","opts":["La vitesse du sang","La force exercée par le sang sur les parois des artères","La quantité de globules rouges","La fréquence cardiaque"],"ans":1,"hint":"La tension artérielle = pression du sang dans les artères. Valeur normale : ~120/80 mmHg (systolique/diastolique).","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la maladie des artères où des dépôts (plaques) réduisent leur diamètre, risquant l'infarctus ?","answer":"athérosclérose","hint":"L'athérosclérose = accumulation de plaques d'athérome (graisses, cholestérol) dans les artères → risque de thrombose, infarctus, AVC.","tolerance":["athérosclérose","artériosclérose"],"difficulty":"medium"},
-        {"type":"qcm","q":"Lors d'un effort physique, la fréquence respiratoire :","opts":["Diminue","Reste constante","Augmente","S'arrête brièvement"],"ans":2,"hint":"À l'effort : les muscles ont besoin de plus d'O₂ et produisent plus de CO₂ → accélération de la respiration (hyperpnée).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La trachée se divise en deux bronches qui pénètrent chacune dans un poumon.","ans":true,"hint":"Trachée → deux bronches souches → bronches → bronchioles → alvéoles. C'est l'arbre bronchique.","difficulty":"medium"},
-        {"type":"texte","q":"Quelle maladie respiratoire chronique se caractérise par un rétrécissement des bronches et des crises d'étouffement ?","answer":"asthme","hint":"L'asthme : inflammation et rétrécissement réversible des bronches → difficulté respiratoire, sifflement. Déclenchée par allergènes, effort, pollution.","tolerance":["asthme","l'asthme"],"difficulty":"medium"},
-        {"type":"qcm","q":"Le CO₂ produit par les cellules est éliminé comment ?","opts":["Par les reins","Par la transpiration","Par les poumons lors de l'expiration","Par le foie"],"ans":2,"hint":"Le CO₂ (déchet de la respiration cellulaire) est transporté par le sang vers les poumons et éliminé lors de l'expiration.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La respiration cellulaire se produit dans les mitochondries et consomme de l'O₂ pour libérer de l'énergie à partir du glucose.","ans":true,"hint":"Respiration cellulaire : glucose + O₂ → CO₂ + H₂O + énergie (ATP). C'est l'inverse de la photosynthèse.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le muscle situé sous les poumons dont la contraction provoque l'inspiration ?","answer":"diaphragme","hint":"Le diaphragme (muscle en forme de dôme) se contracte et s'aplatit → augmentation du volume thoracique → entrée d'air (inspiration).","tolerance":["diaphragme","le diaphragme"],"difficulty":"hard"},
-        {"type":"qcm","q":"Combien de litres de sang le cœur pompe-t-il en une journée environ ?","opts":["50 litres","500 litres","7 000 litres","70 000 litres"],"ans":2,"hint":"5L/min × 60min × 24h ≈ 7 200 litres par jour. Le cœur bat ~100 000 fois par jour.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque trajet à la circulation correspondante.","pairs":[{"g":"Cœur gauche → aorte → corps → veines caves → cœur droit","d":"Grande circulation (systémique)"},{"g":"Cœur droit → artères pulmonaires → poumons → veines pulmonaires → cœur gauche","d":"Petite circulation (pulmonaire)"},{"g":"Intestin → foie → cœur","d":"Circulation porte hépatique"},{"g":"Sang riche en O₂","d":"Dans les artères de la grande circulation"}],"hint":"Le système cardiovasculaire comporte deux circuits : pulmonaire (cœur-poumons) et systémique (cœur-corps).","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quel est le rôle principal du sang ?",
+          "opts": [
+            "Uniquement transporter l'oxygène",
+            "Transporter les nutriments, l'O₂, les déchets et les défenses immunitaires",
+            "Uniquement lutter contre les infections",
+            "Uniquement réguler la température"
+          ],
+          "ans": 1,
+          "hint": "Le sang transporte : O₂ (hémoglobine), nutriments (glucose, acides aminés), déchets (CO₂, urée), hormones, cellules immunitaires.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le cœur est un muscle creux qui pompe le sang dans tout le corps.",
+          "ans": true,
+          "hint": "Le cœur (muscle cardiaque) bat environ 70 fois par minute au repos, propulsant 5 litres de sang par minute.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le vaisseau sanguin qui transporte le sang du cœur vers les organes ?",
+          "opts": [
+            "Veine",
+            "Artère",
+            "Capillaire",
+            "Lymphatique"
+          ],
+          "ans": 1,
+          "hint": "Artère : sang du cœur → organes (riche en O₂ sauf l'artère pulmonaire). Veine : sang des organes → cœur (riche en CO₂ sauf veine pulmonaire).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le pigment rouge des globules rouges qui transporte l'oxygène ?",
+          "answer": "hémoglobine",
+          "hint": "L'hémoglobine est une protéine contenant du fer (Fe) qui fixe l'O₂ dans les poumons et le libère dans les tissus.",
+          "tolerance": [
+            "hémoglobine",
+            "hemoglobine",
+            "l'hémoglobine"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les veines ont des parois plus épaisses que les artères car elles contiennent plus de sang.",
+          "ans": false,
+          "hint": "Faux ! Ce sont les ARTÈRES qui ont des parois plus épaisses car elles supportent une forte pression. Les veines ont une paroi mince et des valvules pour éviter le reflux.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Les échanges gazeux (O₂/CO₂) entre le sang et l'air se font dans :",
+          "opts": [
+            "La trachée",
+            "Les bronches",
+            "Les alvéoles pulmonaires",
+            "La bouche"
+          ],
+          "ans": 2,
+          "hint": "Les alvéoles pulmonaires (~300 millions, surface ~70m²) sont les sites des échanges gazeux entre l'air et le sang.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel gaz entre dans les poumons lors de l'inspiration ?",
+          "answer": "oxygène",
+          "hint": "À l'inspiration : O₂ entre dans les poumons. À l'expiration : CO₂ sort. L'air contient 21% d'O₂ et 0,04% de CO₂.",
+          "tolerance": [
+            "oxygène",
+            "l'oxygène",
+            "O2",
+            "O₂",
+            "dioxygène"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque composant du sang à sa fonction.",
+          "pairs": [
+            {
+              "g": "Globules rouges (érythrocytes)",
+              "d": "Transport de l'oxygène (hémoglobine)"
+            },
+            {
+              "g": "Globules blancs (leucocytes)",
+              "d": "Défense immunitaire"
+            },
+            {
+              "g": "Plaquettes (thrombocytes)",
+              "d": "Coagulation du sang"
+            },
+            {
+              "g": "Plasma",
+              "d": "Transport des nutriments et déchets (liquide)"
+            }
+          ],
+          "hint": "Le sang est un tissu liquide composé de cellules (globules) et de plasma. Chaque composant a une fonction précise.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la circulation du sang entre le cœur et les poumons ?",
+          "answer": "petite circulation",
+          "hint": "Petite circulation (pulmonaire) : cœur droit → poumons → cœur gauche. Grande circulation : cœur gauche → corps → cœur droit.",
+          "tolerance": [
+            "petite circulation",
+            "circulation pulmonaire",
+            "circulation pulmonaire ou petite circulation"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un adulte au repos a une fréquence cardiaque d'environ 60-80 battements par minute.",
+          "ans": true,
+          "hint": "Fréquence cardiaque normale au repos : 60-100 bpm. Elle augmente à l'effort (peut atteindre 200 bpm chez un sportif).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Que mesure la tension artérielle (pression artérielle) ?",
+          "opts": [
+            "La vitesse du sang",
+            "La force exercée par le sang sur les parois des artères",
+            "La quantité de globules rouges",
+            "La fréquence cardiaque"
+          ],
+          "ans": 1,
+          "hint": "La tension artérielle = pression du sang dans les artères. Valeur normale : ~120/80 mmHg (systolique/diastolique).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la maladie des artères où des dépôts de graisses (plaques) réduisent leur diamètre, risquant l'infarctus ?",
+          "opts": [
+            "L'hypertension artérielle",
+            "L'anémie",
+            "L'athérosclérose",
+            "La thrombose veineuse"
+          ],
+          "ans": 2,
+          "hint": "L'athérosclérose = accumulation de plaques d'athérome (graisses, cholestérol) dans les parois artérielles → rétrécissement → risque d'infarctus ou d'AVC.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Lors d'un effort physique, la fréquence respiratoire :",
+          "opts": [
+            "Diminue",
+            "Reste constante",
+            "Augmente",
+            "S'arrête brièvement"
+          ],
+          "ans": 2,
+          "hint": "À l'effort : les muscles ont besoin de plus d'O₂ et produisent plus de CO₂ → accélération de la respiration (hyperpnée).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La trachée se divise en trois bronches correspondant aux trois lobes pulmonaires.",
+          "ans": false,
+          "hint": "Faux ! La trachée se divise en DEUX bronches souches, une pour chaque poumon. Les bronches se ramifient ensuite en bronchioles puis en alvéoles.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle maladie respiratoire chronique se caractérise par un rétrécissement des bronches et des crises d'étouffement ?",
+          "answer": "asthme",
+          "hint": "L'asthme : inflammation et rétrécissement réversible des bronches → difficulté respiratoire, sifflement. Déclenchée par allergènes, effort, pollution.",
+          "tolerance": [
+            "asthme",
+            "l'asthme"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Le CO₂ produit par les cellules est éliminé comment ?",
+          "opts": [
+            "Par les reins",
+            "Par la transpiration",
+            "Par les poumons lors de l'expiration",
+            "Par le foie"
+          ],
+          "ans": 2,
+          "hint": "Le CO₂ (déchet de la respiration cellulaire) est transporté par le sang vers les poumons et éliminé lors de l'expiration.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La respiration cellulaire se produit dans le noyau et produit du glucose à partir de CO₂ et d'eau.",
+          "ans": false,
+          "hint": "Faux ! La respiration cellulaire se produit dans les MITOCHONDRIES et consomme du glucose + O₂ pour produire CO₂ + H₂O + énergie (ATP). C'est l'inverse de la photosynthèse.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le muscle situé sous les poumons dont la contraction provoque l'inspiration ?",
+          "answer": "diaphragme",
+          "hint": "Le diaphragme (muscle en forme de dôme) se contracte et s'aplatit → augmentation du volume thoracique → entrée d'air (inspiration).",
+          "tolerance": [
+            "diaphragme",
+            "le diaphragme"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Combien de litres de sang le cœur pompe-t-il en une journée environ ?",
+          "opts": [
+            "50 litres",
+            "500 litres",
+            "7 000 litres",
+            "70 000 litres"
+          ],
+          "ans": 2,
+          "hint": "5L/min × 60min × 24h ≈ 7 200 litres par jour. Le cœur bat ~100 000 fois par jour.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque trajet à la circulation correspondante.",
+          "pairs": [
+            {
+              "g": "Cœur gauche → aorte → corps → veines caves → cœur droit",
+              "d": "Grande circulation (systémique)"
+            },
+            {
+              "g": "Cœur droit → artères pulmonaires → poumons → veines pulmonaires → cœur gauche",
+              "d": "Petite circulation (pulmonaire)"
+            },
+            {
+              "g": "Intestin → foie → cœur",
+              "d": "Circulation porte hépatique"
+            },
+            {
+              "g": "Sang riche en O₂",
+              "d": "Dans les artères de la grande circulation"
+            }
+          ],
+          "hint": "Le système cardiovasculaire comporte deux circuits : pulmonaire (cœur-poumons) et systémique (cœur-corps).",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -169,26 +1542,253 @@
       "label": "Digestion : mécanismes et absorption intestinale",
       "section": "Nutrition et digestion",
       "questions": [
-        {"type":"qcm","q":"La digestion mécanique (broyage des aliments) se fait principalement dans :","opts":["L'estomac et l'intestin grêle uniquement","La bouche (mastication) et l'estomac (brassage)","Le foie","Le pancréas"],"ans":1,"hint":"Digestion mécanique : mastication (bouche, dents) + brassage gastrique (estomac, muscles). Réduit les aliments en petits fragments.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les enzymes digestives sont spécifiques : chacune ne dégrade qu'un type de molécule.","ans":true,"hint":"Spécificité enzymatique : l'amylase dégrade l'amidon, la lipase les graisses, les protéases les protéines. Clé/serrure.","difficulty":"easy"},
-        {"type":"qcm","q":"En quoi les protéines sont-elles dégradées lors de la digestion ?","opts":["En glucose","En acides gras","En acides aminés","En glycérol"],"ans":2,"hint":"Protéines → acides aminés (digestion). Glucides → glucose. Lipides → acides gras + glycérol.","difficulty":"easy"},
-        {"type":"texte","q":"En quoi les glucides complexes (amidon) sont-ils dégradés lors de la digestion ?","answer":"glucose","hint":"Amidon → maltose (amylase salivaire/pancréatique) → glucose (maltase). Le glucose est le sucre absorbable par l'intestin.","tolerance":["glucose","sucres simples","monosaccharides"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'absorption intestinale se fait principalement dans l'intestin grêle grâce à ses villosités.","ans":true,"hint":"Les villosités et microvillosités (bordure en brosse) de l'intestin grêle multiplient la surface d'absorption (~200 m²).","difficulty":"easy"},
-        {"type":"qcm","q":"Comment les graisses digérées (acides gras) passent-elles de l'intestin dans l'organisme ?","opts":["Directement dans le sang comme le glucose","Via le système lymphatique (chyle) puis dans le sang","Par les reins","Par le foie directement"],"ans":1,"hint":"Les acides gras sont absorbés dans les capillaires lymphatiques (chylifères) de l'intestin → lymphe (chyle) → sang.","difficulty":"easy"},
-        {"type":"texte","q":"Quel enzyme pancréatique dégrade les lipides (graisses) dans l'intestin grêle ?","answer":"lipase","hint":"La lipase pancréatique (et la lipase linguale) dégradent les lipides en acides gras et glycérol dans l'intestin grêle.","tolerance":["lipase","la lipase","lipase pancréatique"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque macronutriment à ses produits de digestion finaux.","pairs":[{"g":"Glucides (amidon)","d":"Glucose"},{"g":"Protéines","d":"Acides aminés"},{"g":"Lipides (graisses)","d":"Acides gras + glycérol"},{"g":"Eau","d":"Eau (absorbée sans transformation)"}],"hint":"Ces produits finaux de la digestion sont les molécules assez petites pour traverser la paroi intestinale et passer dans le sang.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la transformation des aliments en bol alimentaire dans la bouche ?","answer":"mastication","hint":"La mastication (dents) + insalivation (salive, enzyme) transforment les aliments en bol alimentaire avant déglutition.","tolerance":["mastication","la mastication","broyage","mâchage"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les glucides simples (glucose, fructose) ne nécessitent pas de digestion avant d'être absorbés.","ans":true,"hint":"Les monosaccharides (glucose, fructose, galactose) sont déjà sous forme absorbable. Les polysaccharides (amidon) doivent d'abord être digérés.","difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi le pH acide de l'estomac (pH 2) est-il important ?","opts":["Pour diluer les aliments","Pour activer les enzymes digestives gastriques et tuer les bactéries","Pour augmenter la vitesse de digestion uniquement","Pour produire de la bile"],"ans":1,"hint":"Le HCl gastrique : active le pepsinogène en pepsine (digestion des protéines), tue les bactéries de l'alimentation.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la couche de mucus qui protège la paroi de l'estomac de son propre acide ?","answer":"mucus","hint":"Le mucus (sécrétion des cellules mucipares) tapisse la paroi gastrique et la protège de l'autodigestion par HCl et la pepsine.","tolerance":["mucus","le mucus","couche de mucus"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'un sphincter dans le tube digestif ?","opts":["Un type de villosité","Un muscle en anneau qui contrôle le passage entre deux compartiments","Un type d'enzyme","Une glande digestive"],"ans":1,"hint":"Les sphincters (œsophagien inférieur, pylorique, iléo-cæcal, anal) sont des muscles annulaires qui régulent le flux alimentaire.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le foie joue un rôle dans la digestion (bile) mais aussi dans le métabolisme (transformation du glucose, détoxification).","ans":true,"hint":"Le foie est multifonctionnel : production de bile, glycogénolyse, néoglucogenèse, synthèse protéique, détoxification de l'alcool et des médicaments.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la substance amère verdâtre produite par le foie qui émulsionné les graisses dans l'intestin ?","answer":"bile","hint":"La bile (foie → vésicule biliaire → duodénum) émulsifie les graisses (comme un détergent) pour faciliter l'action de la lipase.","tolerance":["bile","la bile"],"difficulty":"medium"},
-        {"type":"qcm","q":"La maladie du reflux gastro-œsophagien (RGO) est causée par :","opts":["Un manque de lipase","Le reflux de l'acide gastrique dans l'œsophage","Un manque d'absorption intestinale","Une infection bactérienne de l'intestin"],"ans":1,"hint":"Le RGO : remontée d'acide gastrique dans l'œsophage (qui n'a pas de protection muqueuse) → brûlures d'estomac (pyrosis).","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le microbiome intestinal (flore intestinale) joue un rôle important dans la digestion et l'immunité.","ans":true,"hint":"Le microbiote intestinal (~38 000 milliards de bactéries) participe à la digestion des fibres, à la synthèse de vitamines et au bon fonctionnement du système immunitaire.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le mouvement réflexe qui propulse le bol alimentaire de la bouche à l'estomac en 3-4 secondes ?","answer":"déglutition","hint":"La déglutition : réflexe complexe coordonnant la fermeture du larynx (épiglotte) et la contraction du pharynx pour avaler sans fausse route.","tolerance":["déglutition","la déglutition","avaler"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce que la cellulose et quel est son rôle dans l'alimentation ?","opts":["Un sucre rapide absorbé dans l'intestin","Une fibre non digestible qui facilite le transit intestinal","Une protéine végétale","Un type de lipide végétal"],"ans":1,"hint":"La cellulose est un polysaccharide végétal non digestible. Elle forme les fibres alimentaires : stimule le péristaltisme, prévient la constipation.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque étape de la digestion à sa localisation.","pairs":[{"g":"Début de la digestion de l'amidon","d":"Bouche (amylase salivaire)"},{"g":"Digestion des protéines","d":"Estomac (pepsine + HCl)"},{"g":"Digestion complète et absorption","d":"Intestin grêle (enzymes pancréatiques + bile)"},{"g":"Réabsorption de l'eau","d":"Gros intestin (côlon)"}],"hint":"La digestion est un processus progressif : chaque segment du tube digestif a une spécialisation fonctionnelle.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "La digestion mécanique (broyage des aliments) se fait principalement dans :",
+          "opts": [
+            "L'estomac et l'intestin grêle uniquement",
+            "La bouche (mastication) et l'estomac (brassage)",
+            "Le foie",
+            "Le pancréas"
+          ],
+          "ans": 1,
+          "hint": "Digestion mécanique : mastication (bouche, dents) + brassage gastrique (estomac, muscles). Réduit les aliments en petits fragments.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les enzymes digestives sont spécifiques : chacune ne dégrade qu'un type de molécule.",
+          "ans": true,
+          "hint": "Spécificité enzymatique : l'amylase dégrade l'amidon, la lipase les graisses, les protéases les protéines. Clé/serrure.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "En quoi les protéines sont-elles dégradées lors de la digestion ?",
+          "opts": [
+            "En glucose",
+            "En acides gras",
+            "En acides aminés",
+            "En glycérol"
+          ],
+          "ans": 2,
+          "hint": "Protéines → acides aminés (digestion). Glucides → glucose. Lipides → acides gras + glycérol.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "En quoi les glucides complexes (amidon) sont-ils dégradés lors de la digestion ?",
+          "answer": "glucose",
+          "hint": "Amidon → maltose (amylase salivaire/pancréatique) → glucose (maltase). Le glucose est le sucre absorbable par l'intestin.",
+          "tolerance": [
+            "glucose",
+            "sucres simples",
+            "monosaccharides"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'absorption des nutriments se fait principalement dans le gros intestin grâce à ses villosités.",
+          "ans": false,
+          "hint": "Faux ! L'absorption des nutriments se fait dans l'INTESTIN GRÊLE grâce à ses villosités (~200 m² de surface). Le gros intestin, lui, réabsorbe principalement l'eau.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment les graisses digérées (acides gras) passent-elles de l'intestin dans l'organisme ?",
+          "opts": [
+            "Directement dans le sang comme le glucose",
+            "Via le système lymphatique (chyle) puis dans le sang",
+            "Par les reins",
+            "Par le foie directement"
+          ],
+          "ans": 1,
+          "hint": "Les acides gras sont absorbés dans les capillaires lymphatiques (chylifères) de l'intestin → lymphe (chyle) → sang.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel enzyme pancréatique dégrade les lipides (graisses) dans l'intestin grêle ?",
+          "answer": "lipase",
+          "hint": "La lipase pancréatique (et la lipase linguale) dégradent les lipides en acides gras et glycérol dans l'intestin grêle.",
+          "tolerance": [
+            "lipase",
+            "la lipase",
+            "lipase pancréatique"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque macronutriment à ses produits de digestion finaux.",
+          "pairs": [
+            {
+              "g": "Glucides (amidon)",
+              "d": "Glucose"
+            },
+            {
+              "g": "Protéines",
+              "d": "Acides aminés"
+            },
+            {
+              "g": "Lipides (graisses)",
+              "d": "Acides gras + glycérol"
+            },
+            {
+              "g": "Eau",
+              "d": "Eau (absorbée sans transformation)"
+            }
+          ],
+          "hint": "Ces produits finaux de la digestion sont les molécules assez petites pour traverser la paroi intestinale et passer dans le sang.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la transformation des aliments en bol alimentaire dans la bouche ?",
+          "answer": "mastication",
+          "hint": "La mastication (dents) + insalivation (salive, enzyme) transforment les aliments en bol alimentaire avant déglutition.",
+          "tolerance": [
+            "mastication",
+            "la mastication",
+            "broyage",
+            "mâchage"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les glucides simples (glucose, fructose) ne nécessitent pas de digestion avant d'être absorbés.",
+          "ans": true,
+          "hint": "Les monosaccharides (glucose, fructose, galactose) sont déjà sous forme absorbable. Les polysaccharides (amidon) doivent d'abord être digérés.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi le pH acide de l'estomac (pH 2) est-il important ?",
+          "opts": [
+            "Pour diluer les aliments",
+            "Pour activer les enzymes digestives gastriques et tuer les bactéries",
+            "Pour augmenter la vitesse de digestion uniquement",
+            "Pour produire de la bile"
+          ],
+          "ans": 1,
+          "hint": "Le HCl gastrique : active le pepsinogène en pepsine (digestion des protéines), tue les bactéries de l'alimentation.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la couche de mucus qui protège la paroi de l'estomac de son propre acide ?",
+          "answer": "mucus",
+          "hint": "Le mucus (sécrétion des cellules mucipares) tapisse la paroi gastrique et la protège de l'autodigestion par HCl et la pepsine.",
+          "tolerance": [
+            "mucus",
+            "le mucus",
+            "couche de mucus"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un sphincter dans le tube digestif ?",
+          "opts": [
+            "Un type de villosité",
+            "Un muscle en anneau qui contrôle le passage entre deux compartiments",
+            "Un type d'enzyme",
+            "Une glande digestive"
+          ],
+          "ans": 1,
+          "hint": "Les sphincters (œsophagien inférieur, pylorique, iléo-cæcal, anal) sont des muscles annulaires qui régulent le flux alimentaire.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le foie produit des enzymes digestives qui décomposent les glucides et les protéines dans l'intestin.",
+          "ans": false,
+          "hint": "Faux ! Le foie produit la BILE (qui émulsifie les graisses), mais ce sont les enzymes du PANCRÉAS qui dégradent les glucides, protéines et lipides dans l'intestin.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la substance amère verdâtre produite par le foie qui émulsionné les graisses dans l'intestin ?",
+          "answer": "bile",
+          "hint": "La bile (foie → vésicule biliaire → duodénum) émulsifie les graisses (comme un détergent) pour faciliter l'action de la lipase.",
+          "tolerance": [
+            "bile",
+            "la bile"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La maladie du reflux gastro-œsophagien (RGO) est causée par :",
+          "opts": [
+            "Un manque de lipase",
+            "Le reflux de l'acide gastrique dans l'œsophage",
+            "Un manque d'absorption intestinale",
+            "Une infection bactérienne de l'intestin"
+          ],
+          "ans": 1,
+          "hint": "Le RGO : remontée d'acide gastrique dans l'œsophage (qui n'a pas de protection muqueuse) → brûlures d'estomac (pyrosis).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le microbiome intestinal (flore intestinale) est entièrement composé de bactéries pathogènes nuisibles à la santé.",
+          "ans": false,
+          "hint": "Faux ! Le microbiote intestinal (~38 000 milliards de bactéries) joue un rôle BÉNÉFIQUE : il participe à la digestion des fibres, à la synthèse de vitamines et au bon fonctionnement du système immunitaire.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le mouvement réflexe qui propulse le bol alimentaire de la bouche vers l'estomac en quelques secondes ?",
+          "opts": [
+            "La mastication",
+            "Le péristaltisme",
+            "La déglutition",
+            "La rumination"
+          ],
+          "ans": 2,
+          "hint": "La déglutition : réflexe complexe qui coordonne la fermeture du larynx (épiglotte) et la contraction du pharynx pour avaler sans fausse route.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la cellulose et quel est son rôle dans l'alimentation ?",
+          "opts": [
+            "Un sucre rapide absorbé dans l'intestin",
+            "Une fibre non digestible qui facilite le transit intestinal",
+            "Une protéine végétale",
+            "Un type de lipide végétal"
+          ],
+          "ans": 1,
+          "hint": "La cellulose est un polysaccharide végétal non digestible. Elle forme les fibres alimentaires : stimule le péristaltisme, prévient la constipation.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque étape de la digestion à sa localisation.",
+          "pairs": [
+            {
+              "g": "Début de la digestion de l'amidon",
+              "d": "Bouche (amylase salivaire)"
+            },
+            {
+              "g": "Digestion des protéines",
+              "d": "Estomac (pepsine + HCl)"
+            },
+            {
+              "g": "Digestion complète et absorption",
+              "d": "Intestin grêle (enzymes pancréatiques + bile)"
+            },
+            {
+              "g": "Réabsorption de l'eau",
+              "d": "Gros intestin (côlon)"
+            }
+          ],
+          "hint": "La digestion est un processus progressif : chaque segment du tube digestif a une spécialisation fonctionnelle.",
+          "difficulty": "hard"
+        }
       ]
     }
   ]

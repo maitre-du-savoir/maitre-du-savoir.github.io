@@ -7,26 +7,257 @@
       "label": "États de la matière : solide, liquide, gaz",
       "section": "États de la matière",
       "questions": [
-        {"type":"qcm","q":"Combien y a-t-il d'états de la matière classiquement étudiés en 6ème ?","opts":["2","3","4","5"],"ans":1,"hint":"Les 3 états classiques : solide, liquide, gaz (+ le plasma, 4ème état moins étudié en collège).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un solide a une forme propre et un volume propre.","ans":true,"hint":"Solide : forme propre (rigide, ne coule pas) + volume propre (incompressible). Liquide : volume propre mais pas de forme propre. Gaz : ni forme ni volume propres.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle est la propriété caractéristique d'un liquide ?","opts":["Forme propre et volume propre","Pas de forme propre mais volume propre","Pas de forme propre ni de volume propre","Forme rigide et volume variable"],"ans":1,"hint":"Liquide : prend la forme du récipient (pas de forme propre) mais son volume reste constant (volume propre).","difficulty":"easy"},
-        {"type":"texte","q":"Donne un exemple de corps à l'état gazeux dans la vie courante.","answer":"air","hint":"Exemples de gaz : air, vapeur d'eau, dioxygène (O₂), azote (N₂), dioxyde de carbone (CO₂), méthane...","tolerance":["air","vapeur d'eau","oxygène","azote","dioxygène","gaz naturel","hélium"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un gaz occupe tout l'espace disponible dans un récipient.","ans":true,"hint":"Le gaz n'a ni forme propre ni volume propre : il occupe tout le volume du récipient qui le contient et est facilement compressible.","difficulty":"easy"},
-        {"type":"qcm","q":"Laquelle de ces propriétés est commune aux liquides ET aux gaz ?","opts":["Ils ont une forme propre","Ils sont incompressibles","Ils sont fluides (coulent ou s'écoulent)","Ils ont un volume propre"],"ans":2,"hint":"Fluides = peuvent s'écouler. Liquides ET gaz sont fluides. Le solide n'est pas fluide. Le liquide a un volume propre, pas le gaz.","difficulty":"easy"},
-        {"type":"texte","q":"Quelle est la propriété d'un solide qui résiste à la compression (ne peut pas être écrasé) ?","answer":"incompressibilité","hint":"Les solides et les liquides sont pratiquement incompressibles (volume quasi constant sous pression). Les gaz, eux, sont compressibles.","tolerance":["incompressibilité","incompressible","résistance à la compression"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque état de la matière à ses propriétés.","pairs":[{"g":"Solide","d":"Forme propre + volume propre + incompressible"},{"g":"Liquide","d":"Pas de forme propre + volume propre + incompressible"},{"g":"Gaz","d":"Pas de forme propre + pas de volume propre + compressible"},{"g":"Eau à 100°C et 1 atm","d":"État gazeux (vapeur)"}],"hint":"Ces propriétés permettent d'identifier l'état physique d'un corps dans les situations de la vie courante.","difficulty":"medium"},
-        {"type":"texte","q":"L'eau est liquide entre 0°C et 100°C à pression normale. Quel est son état en dessous de 0°C ?","answer":"solide","hint":"En dessous de 0°C (à pression normale) : l'eau est solide (glace). Au-dessus de 100°C : vapeur d'eau (gaz).","tolerance":["solide","à l'état solide","glace"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La densité d'un gaz est en général beaucoup plus faible que celle d'un liquide.","ans":true,"hint":"Gaz : molécules très éloignées → faible masse volumique (~1-2 kg/m³). Liquide : ~1 000 kg/m³ (eau). Solide : encore plus dense en général.","difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi une éponge sèche peut-elle être comprimée facilement ?","opts":["Car c'est un liquide","Car elle contient de l'air (gaz compressible) dans ses pores","Car elle est faite d'un matériau mou","Car elle n'a pas de forme propre"],"ans":1,"hint":"L'éponge compressée chasse l'air de ses pores. C'est l'air (gaz) qui est compressible, pas la matière solide de l'éponge elle-même.","difficulty":"medium"},
-        {"type":"texte","q":"Quel est l'état physique du mercure à température ambiante (20°C) ?","answer":"liquide","hint":"Le mercure (métal) est liquide à température ambiante. Il fond à -38,8°C → reste liquide jusqu'à 356,7°C.","tolerance":["liquide","à l'état liquide","état liquide"],"difficulty":"medium"},
-        {"type":"qcm","q":"Lequel de ces exemples montre que les gaz sont compressibles ?","opts":["La glace fond","Le pneu de vélo peut être gonflé à haute pression","L'eau coule dans un tuyau","Le sucre se dissout dans l'eau"],"ans":1,"hint":"Gonfler un pneu : on comprime de l'air dans un volume fixe → la pression augmente. C'est la compressibilité des gaz.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'alcool à brûler est un liquide à température ambiante.","ans":true,"hint":"L'éthanol (alcool à brûler, point de fusion -114°C, point d'ébullition 78°C) est bien liquide à 20°C.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on la propriété d'un corps qui peut s'écouler (liquide ou gaz) ?","answer":"fluidité","hint":"La fluidité est la capacité à s'écouler. Les fluides (liquides + gaz) sont fluides par opposition aux solides rigides.","tolerance":["fluidité","fluide","être fluide"],"difficulty":"medium"},
-        {"type":"qcm","q":"L'air est principalement composé de deux gaz. Lesquels ?","opts":["O₂ et CO₂","N₂ et O₂ (78% azote, 21% dioxygène)","H₂ et O₂","CO₂ et N₂"],"ans":1,"hint":"Air sec : ~78% azote (N₂), ~21% dioxygène (O₂), ~1% argon, ~0,04% CO₂ et traces d'autres gaz.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Un même corps peut exister dans les trois états selon la température et la pression.","ans":true,"hint":"L'eau : glace (solide < 0°C), liquide (0-100°C), vapeur (> 100°C) à pression atmosphérique normale. C'est universel.","difficulty":"hard"},
-        {"type":"texte","q":"Comment appelle-t-on l'état de la matière à très haute température où les atomes sont ionisés (ex : intérieur du Soleil) ?","answer":"plasma","hint":"Le plasma est le 4ème état de la matière : gaz ionisé (électrons arrachés) à très haute température. Soleil, éclairs, aurores boréales.","tolerance":["plasma","le plasma","état plasma"],"difficulty":"hard"},
-        {"type":"qcm","q":"Pourquoi les pneus de voiture peuvent-ils éclater par forte chaleur ?","opts":["Car le caoutchouc fond","Car l'air se dilate avec la chaleur, augmentant la pression interne","Car l'eau dans le pneu se vaporise","Car la chaleur rend le caoutchouc rigide"],"ans":1,"hint":"La chaleur augmente l'agitation des molécules de gaz → augmentation de la pression. Au-delà d'un seuil → éclatement.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque corps à son état physique à 20°C et pression atmosphérique.","pairs":[{"g":"Fer","d":"Solide"},{"g":"Éthanol","d":"Liquide"},{"g":"Dioxygène (O₂)","d":"Gaz"},{"g":"Mercure (Hg)","d":"Liquide"}],"hint":"L'état physique d'un corps à 20°C dépend de ses températures de fusion et d'ébullition.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Combien y a-t-il d'états de la matière classiquement étudiés en 6ème ?",
+          "opts": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "ans": 1,
+          "hint": "Les 3 états classiques : solide, liquide, gaz (+ le plasma, 4ème état moins étudié en collège).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un solide a une forme propre mais pas de volume propre : il s'adapte au volume du récipient.",
+          "ans": false,
+          "hint": "Faux ! Un solide a DEUX propriétés propres : une forme propre ET un volume propre. C'est le LIQUIDE qui a un volume propre mais pas de forme propre (il prend la forme du récipient).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la propriété caractéristique d'un liquide ?",
+          "opts": [
+            "Forme propre et volume propre",
+            "Pas de forme propre mais volume propre",
+            "Pas de forme propre ni de volume propre",
+            "Forme rigide et volume variable"
+          ],
+          "ans": 1,
+          "hint": "Liquide : prend la forme du récipient (pas de forme propre) mais son volume reste constant (volume propre).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Donne un exemple de corps à l'état gazeux dans la vie courante.",
+          "answer": "air",
+          "hint": "Exemples de gaz : air, vapeur d'eau, dioxygène (O₂), azote (N₂), dioxyde de carbone (CO₂), méthane...",
+          "tolerance": [
+            "air",
+            "vapeur d'eau",
+            "oxygène",
+            "azote",
+            "dioxygène",
+            "gaz naturel",
+            "hélium"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un gaz occupe tout l'espace disponible dans un récipient.",
+          "ans": true,
+          "hint": "Le gaz n'a ni forme propre ni volume propre : il occupe tout le volume du récipient qui le contient et est facilement compressible.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Laquelle de ces propriétés est commune aux liquides ET aux gaz ?",
+          "opts": [
+            "Ils ont une forme propre",
+            "Ils sont incompressibles",
+            "Ils sont fluides (coulent ou s'écoulent)",
+            "Ils ont un volume propre"
+          ],
+          "ans": 2,
+          "hint": "Fluides = peuvent s'écouler. Liquides ET gaz sont fluides. Le solide n'est pas fluide. Le liquide a un volume propre, pas le gaz.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on la propriété d'un solide ou d'un liquide qui résiste à la compression et ne peut pas être écrasé ?",
+          "opts": [
+            "La fluidité",
+            "La compressibilité",
+            "L'incompressibilité",
+            "La rigidité"
+          ],
+          "ans": 2,
+          "hint": "Les solides et les liquides sont pratiquement incompressibles : leur volume reste quasi constant sous pression. Les gaz, eux, sont compressibles (on peut les comprimer).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque état de la matière à ses propriétés.",
+          "pairs": [
+            {
+              "g": "Solide",
+              "d": "Forme propre + volume propre + incompressible"
+            },
+            {
+              "g": "Liquide",
+              "d": "Pas de forme propre + volume propre + incompressible"
+            },
+            {
+              "g": "Gaz",
+              "d": "Pas de forme propre + pas de volume propre + compressible"
+            },
+            {
+              "g": "Eau à 100°C et 1 atm",
+              "d": "État gazeux (vapeur)"
+            }
+          ],
+          "hint": "Ces propriétés permettent d'identifier l'état physique d'un corps dans les situations de la vie courante.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "L'eau est liquide entre 0°C et 100°C à pression normale. Quel est son état en dessous de 0°C ?",
+          "answer": "solide",
+          "hint": "En dessous de 0°C (à pression normale) : l'eau est solide (glace). Au-dessus de 100°C : vapeur d'eau (gaz).",
+          "tolerance": [
+            "solide",
+            "à l'état solide",
+            "glace"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La densité d'un gaz est comparable à celle d'un liquide car les molécules ont la même taille.",
+          "ans": false,
+          "hint": "Faux ! La densité d'un gaz est BEAUCOUP PLUS FAIBLE : ~1-2 kg/m³ pour un gaz contre ~1 000 kg/m³ pour l'eau. Les molécules de gaz sont très éloignées les unes des autres.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi une éponge sèche peut-elle être comprimée facilement ?",
+          "opts": [
+            "Car c'est un liquide",
+            "Car elle contient de l'air (gaz compressible) dans ses pores",
+            "Car elle est faite d'un matériau mou",
+            "Car elle n'a pas de forme propre"
+          ],
+          "ans": 1,
+          "hint": "L'éponge compressée chasse l'air de ses pores. C'est l'air (gaz) qui est compressible, pas la matière solide de l'éponge elle-même.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quel est l'état physique du mercure à température ambiante (20°C) ?",
+          "answer": "liquide",
+          "hint": "Le mercure (métal) est liquide à température ambiante. Il fond à -38,8°C → reste liquide jusqu'à 356,7°C.",
+          "tolerance": [
+            "liquide",
+            "à l'état liquide",
+            "état liquide"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces exemples montre que les gaz sont compressibles ?",
+          "opts": [
+            "La glace fond",
+            "Le pneu de vélo peut être gonflé à haute pression",
+            "L'eau coule dans un tuyau",
+            "Le sucre se dissout dans l'eau"
+          ],
+          "ans": 1,
+          "hint": "Gonfler un pneu : on comprime de l'air dans un volume fixe → la pression augmente. C'est la compressibilité des gaz.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'alcool à brûler est un liquide à température ambiante.",
+          "ans": true,
+          "hint": "L'éthanol (alcool à brûler, point de fusion -114°C, point d'ébullition 78°C) est bien liquide à 20°C.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la propriété d'un corps qui peut s'écouler (liquide ou gaz) ?",
+          "answer": "fluidité",
+          "hint": "La fluidité est la capacité à s'écouler. Les fluides (liquides + gaz) sont fluides par opposition aux solides rigides.",
+          "tolerance": [
+            "fluidité",
+            "fluide",
+            "être fluide"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "L'air est principalement composé de deux gaz. Lesquels ?",
+          "opts": [
+            "O₂ et CO₂",
+            "N₂ et O₂ (78% azote, 21% dioxygène)",
+            "H₂ et O₂",
+            "CO₂ et N₂"
+          ],
+          "ans": 1,
+          "hint": "Air sec : ~78% azote (N₂), ~21% dioxygène (O₂), ~1% argon, ~0,04% CO₂ et traces d'autres gaz.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un même corps peut exister dans les trois états selon la température et la pression.",
+          "ans": true,
+          "hint": "L'eau : glace (solide < 0°C), liquide (0-100°C), vapeur (> 100°C) à pression atmosphérique normale. C'est universel.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on l'état de la matière à très haute température où les atomes sont ionisés (ex : intérieur du Soleil) ?",
+          "answer": "plasma",
+          "hint": "Le plasma est le 4ème état de la matière : gaz ionisé (électrons arrachés) à très haute température. Soleil, éclairs, aurores boréales.",
+          "tolerance": [
+            "plasma",
+            "le plasma",
+            "état plasma"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les pneus de voiture peuvent-ils éclater par forte chaleur ?",
+          "opts": [
+            "Car le caoutchouc fond",
+            "Car l'air se dilate avec la chaleur, augmentant la pression interne",
+            "Car l'eau dans le pneu se vaporise",
+            "Car la chaleur rend le caoutchouc rigide"
+          ],
+          "ans": 1,
+          "hint": "La chaleur augmente l'agitation des molécules de gaz → augmentation de la pression. Au-delà d'un seuil → éclatement.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque corps à son état physique à 20°C et pression atmosphérique.",
+          "pairs": [
+            {
+              "g": "Fer",
+              "d": "Solide"
+            },
+            {
+              "g": "Éthanol",
+              "d": "Liquide"
+            },
+            {
+              "g": "Dioxygène (O₂)",
+              "d": "Gaz"
+            },
+            {
+              "g": "Mercure (Hg)",
+              "d": "Liquide"
+            }
+          ],
+          "hint": "L'état physique d'un corps à 20°C dépend de ses températures de fusion et d'ébullition.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -34,26 +265,257 @@
       "label": "Modèle particulaire de la matière",
       "section": "États de la matière",
       "questions": [
-        {"type":"qcm","q":"Selon le modèle particulaire, la matière est composée de :","opts":["Liquide en mouvement","Très petites particules (atomes, molécules) en mouvement permanent","Ondes magnétiques","Vide uniquement"],"ans":1,"hint":"Le modèle particulaire : tout corps est fait de minuscules particules (atomes/molécules) en mouvement permanent (agitation thermique).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Dans un solide, les particules sont très proches et vibrent autour d'une position fixe.","ans":true,"hint":"Solide : particules très proches, liées, en vibration autour d'une position d'équilibre. C'est pourquoi un solide a une forme propre.","difficulty":"easy"},
-        {"type":"qcm","q":"Dans quel état les particules sont-elles les plus éloignées les unes des autres ?","opts":["Solide","Liquide","Gaz","Tous pareil"],"ans":2,"hint":"Gaz : particules très éloignées et en mouvement désordonné rapide. Liquide : particules proches mais mobiles. Solide : particules très proches et quasi fixes.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle le mouvement permanent et désordonné des particules dans la matière ?","answer":"agitation thermique","hint":"L'agitation thermique (ou mouvement brownien) est le mouvement permanent des particules. Elle augmente avec la température.","tolerance":["agitation thermique","agitation moléculaire","mouvement brownien","agitation des particules"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Plus la température est élevée, plus l'agitation des particules est intense.","ans":true,"hint":"La température mesure l'agitation thermique moyenne des particules. À 0 K (-273°C, zéro absolu) : agitation nulle. Plus chaud = plus agité.","difficulty":"easy"},
-        {"type":"qcm","q":"Dans un liquide, les particules :","opts":["Sont fixes","Se déplacent librement et rapidement dans toutes les directions","Sont proches et mobiles, en contact mais sans ordre à longue distance","Sont très éloignées et très rapides"],"ans":2,"hint":"Liquide : particules proches (comme solide) mais mobiles → peut couler. Moins rapides que dans un gaz.","difficulty":"easy"},
-        {"type":"texte","q":"Comment le modèle particulaire explique-t-il que les gaz sont compressibles ?","answer":"espace vide entre les particules","hint":"Dans un gaz, les particules sont très éloignées avec beaucoup d'espace vide entre elles → on peut les rapprocher (compression).","tolerance":["espace vide entre les particules","espace entre particules","grande distance entre particules","les particules sont éloignées"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque état à la description de ses particules selon le modèle particulaire.","pairs":[{"g":"Solide","d":"Particules très proches, ordonnées, vibrent"},{"g":"Liquide","d":"Particules proches, désordonnées, se déplacent"},{"g":"Gaz","d":"Particules très éloignées, mouvement rapide et désordonné"},{"g":"Changement d'état","d":"Réorganisation des particules sans changement de nature"}],"hint":"Le modèle particulaire explique toutes les propriétés macroscopiques de la matière par le comportement des particules.","difficulty":"medium"},
-        {"type":"texte","q":"Comment le modèle particulaire explique-t-il la diffusion d'un parfum dans l'air ?","answer":"mouvement des particules","hint":"Les molécules de parfum (gaz) se déplacent rapidement dans toutes les directions → se mélangent avec les molécules d'air → on sent le parfum à distance.","tolerance":["mouvement des particules","agitation thermique","diffusion des molécules","mouvement des molécules"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Lors d'un changement d'état (ex : fusion), les particules changent de nature chimique.","ans":false,"hint":"Lors d'un changement d'état, les particules ne changent PAS de nature : H₂O reste H₂O en glace, liquide ou vapeur. Seule leur organisation change.","difficulty":"medium"},
-        {"type":"qcm","q":"Comment le modèle particulaire explique-t-il qu'un liquide prend la forme de son récipient ?","opts":["Les particules se transforment","Les particules, mobiles et proches, glissent les unes sur les autres","Les particules se divisent","Les particules disparaissent"],"ans":1,"hint":"Liquide : particules mobiles (contrairement au solide) mais proches (contrairement au gaz) → le liquide s'adapte à la forme du récipient.","difficulty":"medium"},
-        {"type":"texte","q":"Quelle est la plus petite unité de matière qui garde les propriétés chimiques d'un corps pur ?","answer":"molécule","hint":"La molécule est la plus petite unité d'un corps pur conservant ses propriétés chimiques. Ex : H₂O (eau), O₂ (dioxygène). L'atome est encore plus petit.","tolerance":["molécule","atome","l'atome","la molécule"],"difficulty":"medium"},
-        {"type":"qcm","q":"Selon le modèle particulaire, pourquoi les solides ont-ils une forme propre ?","opts":["Car leurs particules sont immobiles et n'interagissent pas","Car leurs particules sont proches, liées et ne peuvent pas se déplacer librement","Car ils n'ont pas de particules","Car leurs particules sont très éloignées"],"ans":1,"hint":"Solide : particules liées par de fortes interactions → ne peuvent pas se déplacer librement → le solide garde sa forme.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le vide intergalactique est un exemple d'espace sans particules de matière.","ans":false,"hint":"Même l'espace intergalactique contient quelques particules (environ 1 atome d'hydrogène par m³). Le vide absolu n'existe pas en pratique.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la force d'attraction qui maintient les particules proches dans un solide ou un liquide ?","answer":"forces intermoléculaires","hint":"Les forces intermoléculaires (de Van der Waals, liaisons hydrogène...) maintiennent la cohésion des solides et liquides. Elles sont négligeables dans les gaz.","tolerance":["forces intermoléculaires","forces de cohésion","interactions intermoléculaires","forces attractives"],"difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi peut-on sentir une fleur sans la toucher ?","opts":["Car la fleur émet de la lumière","Car les molécules odorantes (gaz) se diffusent dans l'air par agitation thermique","Car le nez capte les vibrations","Car les fleurs émettent des ultrasons"],"ans":1,"hint":"Les molécules odorantes volatiles (gaz) s'agitent et se diffusent dans l'air → atteignent les récepteurs olfactifs du nez.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Dans le modèle particulaire, les particules d'un gaz occupent tout le volume du récipient même si elles sont très petites.","ans":true,"hint":"Les particules de gaz se déplacent très rapidement dans toutes les directions → occupent tout le volume disponible. Leur taille propre est négligeable.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le physicien écossais qui a décrit en 1827 le mouvement aléatoire des particules visibles au microscope ?","answer":"Robert Brown","hint":"Robert Brown (1827) a observé des grains de pollen en mouvement aléatoire dans l'eau → mouvement brownien, expliqué par les chocs des molécules d'eau.","tolerance":["Robert Brown","Brown","mouvement brownien"],"difficulty":"hard"},
-        {"type":"qcm","q":"À quelle température minimale théorique l'agitation thermique des particules serait-elle nulle ?","opts":["0°C","100°C","-100°C","-273°C (0 Kelvin)"],"ans":3,"hint":"Le zéro absolu (0 K = -273,15°C) est la température à laquelle l'agitation thermique serait nulle. Jamais atteint en pratique.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque phénomène macroscopique à son explication particulaire.","pairs":[{"g":"Gaz compressible","d":"Beaucoup d'espace vide entre les particules"},{"g":"Liquide s'écoule","d":"Particules mobiles mais proches"},{"g":"Solide résistant","d":"Particules très proches liées fortement"},{"g":"Diffusion d'un gaz","d":"Agitation thermique rapide des particules"}],"hint":"Le modèle particulaire permet d'expliquer TOUTES les propriétés observées macroscopiquement.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Selon le modèle particulaire, la matière est composée de :",
+          "opts": [
+            "Liquide en mouvement",
+            "Très petites particules (atomes, molécules) en mouvement permanent",
+            "Ondes magnétiques",
+            "Vide uniquement"
+          ],
+          "ans": 1,
+          "hint": "Le modèle particulaire : tout corps est fait de minuscules particules (atomes/molécules) en mouvement permanent (agitation thermique).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans un solide, les particules sont très proches et vibrent autour d'une position fixe.",
+          "ans": true,
+          "hint": "Solide : particules très proches, liées, en vibration autour d'une position d'équilibre. C'est pourquoi un solide a une forme propre.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans quel état les particules sont-elles les plus éloignées les unes des autres ?",
+          "opts": [
+            "Solide",
+            "Liquide",
+            "Gaz",
+            "Tous pareil"
+          ],
+          "ans": 2,
+          "hint": "Gaz : particules très éloignées et en mouvement désordonné rapide. Liquide : particules proches mais mobiles. Solide : particules très proches et quasi fixes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le mouvement permanent et désordonné des particules dans la matière ?",
+          "answer": "agitation thermique",
+          "hint": "L'agitation thermique (ou mouvement brownien) est le mouvement permanent des particules. Elle augmente avec la température.",
+          "tolerance": [
+            "agitation thermique",
+            "agitation moléculaire",
+            "mouvement brownien",
+            "agitation des particules"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Plus la température est élevée, moins les particules s'agitent car la chaleur les ralentit.",
+          "ans": false,
+          "hint": "Faux ! C'est l'INVERSE : plus la température est élevée, PLUS l'agitation des particules est intense. À 0 K (-273°C, zéro absolu) : agitation nulle.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un liquide, les particules :",
+          "opts": [
+            "Sont fixes",
+            "Se déplacent librement et rapidement dans toutes les directions",
+            "Sont proches et mobiles, en contact mais sans ordre à longue distance",
+            "Sont très éloignées et très rapides"
+          ],
+          "ans": 2,
+          "hint": "Liquide : particules proches (comme solide) mais mobiles → peut couler. Moins rapides que dans un gaz.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment le modèle particulaire explique-t-il que les gaz sont compressibles ?",
+          "opts": [
+            "Les particules de gaz changent de nature sous pression",
+            "Les particules de gaz sont très éloignées avec beaucoup d'espace vide entre elles, qu'on peut réduire",
+            "Les particules de gaz sont plus légères que celles des solides",
+            "Les particules de gaz n'ont pas de masse"
+          ],
+          "ans": 1,
+          "hint": "Dans un gaz, les particules sont très éloignées avec beaucoup d'espace vide entre elles → on peut les rapprocher en les comprimant, contrairement aux solides et liquides déjà denses.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque état à la description de ses particules selon le modèle particulaire.",
+          "pairs": [
+            {
+              "g": "Solide",
+              "d": "Particules très proches, ordonnées, vibrent"
+            },
+            {
+              "g": "Liquide",
+              "d": "Particules proches, désordonnées, se déplacent"
+            },
+            {
+              "g": "Gaz",
+              "d": "Particules très éloignées, mouvement rapide et désordonné"
+            },
+            {
+              "g": "Changement d'état",
+              "d": "Réorganisation des particules sans changement de nature"
+            }
+          ],
+          "hint": "Le modèle particulaire explique toutes les propriétés macroscopiques de la matière par le comportement des particules.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment le modèle particulaire explique-t-il qu'on peut sentir un parfum à l'autre bout d'une pièce ?",
+          "opts": [
+            "Les ondes sonores transportent les molécules",
+            "Les molécules de parfum se déplacent par agitation thermique et se diffusent dans l'air",
+            "La chaleur corporelle projette les molécules",
+            "Le parfum se transforme en lumière"
+          ],
+          "ans": 1,
+          "hint": "L'agitation thermique des molécules de parfum (gaz) les fait se déplacer rapidement dans toutes les directions → diffusion dans l'air → on perçoit l'odeur à distance.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Lors d'un changement d'état (ex : fusion de la glace), les molécules d'eau (H₂O) restent les mêmes : seule leur organisation change.",
+          "ans": true,
+          "hint": "Un changement d'état n'est pas une transformation chimique : les particules gardent leur nature (H₂O reste H₂O en glace, liquide ou vapeur). Seules les distances et l'organisation entre particules changent.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment le modèle particulaire explique-t-il qu'un liquide prend la forme de son récipient ?",
+          "opts": [
+            "Les particules se transforment",
+            "Les particules, mobiles et proches, glissent les unes sur les autres",
+            "Les particules se divisent",
+            "Les particules disparaissent"
+          ],
+          "ans": 1,
+          "hint": "Liquide : particules mobiles (contrairement au solide) mais proches (contrairement au gaz) → le liquide s'adapte à la forme du récipient.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle est la plus petite unité de matière qui garde les propriétés chimiques d'un corps pur ?",
+          "answer": "molécule",
+          "hint": "La molécule est la plus petite unité d'un corps pur conservant ses propriétés chimiques. Ex : H₂O (eau), O₂ (dioxygène). L'atome est encore plus petit.",
+          "tolerance": [
+            "molécule",
+            "atome",
+            "l'atome",
+            "la molécule"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Selon le modèle particulaire, pourquoi les solides ont-ils une forme propre ?",
+          "opts": [
+            "Car leurs particules sont immobiles et n'interagissent pas",
+            "Car leurs particules sont proches, liées et ne peuvent pas se déplacer librement",
+            "Car ils n'ont pas de particules",
+            "Car leurs particules sont très éloignées"
+          ],
+          "ans": 1,
+          "hint": "Solide : particules liées par de fortes interactions → ne peuvent pas se déplacer librement → le solide garde sa forme.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le vide intergalactique est un exemple d'espace sans particules de matière.",
+          "ans": false,
+          "hint": "Même l'espace intergalactique contient quelques particules (environ 1 atome d'hydrogène par m³). Le vide absolu n'existe pas en pratique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on les forces d'attraction qui maintiennent les particules proches les unes des autres dans un solide ou un liquide ?",
+          "opts": [
+            "Les forces gravitationnelles",
+            "Les forces intermoléculaires",
+            "Les forces électriques externes",
+            "La pression atmosphérique"
+          ],
+          "ans": 1,
+          "hint": "Les forces intermoléculaires (Van der Waals, liaisons hydrogène...) assurent la cohésion des solides et liquides. Dans les gaz, elles sont négligeables car les particules sont trop éloignées.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi peut-on sentir une fleur sans la toucher ?",
+          "opts": [
+            "Car la fleur émet de la lumière",
+            "Car les molécules odorantes (gaz) se diffusent dans l'air par agitation thermique",
+            "Car le nez capte les vibrations",
+            "Car les fleurs émettent des ultrasons"
+          ],
+          "ans": 1,
+          "hint": "Les molécules odorantes volatiles (gaz) s'agitent et se diffusent dans l'air → atteignent les récepteurs olfactifs du nez.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans le modèle particulaire, les particules d'un gaz sont aussi proches les unes des autres que celles d'un liquide.",
+          "ans": false,
+          "hint": "Faux ! Dans un gaz, les particules sont très ÉLOIGNÉES les unes des autres (beaucoup d'espace vide entre elles), contrairement aux liquides et solides où elles sont très proches. C'est pourquoi les gaz sont compressibles.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le physicien écossais qui a décrit en 1827 le mouvement aléatoire des particules visibles au microscope ?",
+          "answer": "Robert Brown",
+          "hint": "Robert Brown (1827) a observé des grains de pollen en mouvement aléatoire dans l'eau → mouvement brownien, expliqué par les chocs des molécules d'eau.",
+          "tolerance": [
+            "Robert Brown",
+            "Brown",
+            "mouvement brownien"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "À quelle température minimale théorique l'agitation thermique des particules serait-elle nulle ?",
+          "opts": [
+            "0°C",
+            "100°C",
+            "-100°C",
+            "-273°C (0 Kelvin)"
+          ],
+          "ans": 3,
+          "hint": "Le zéro absolu (0 K = -273,15°C) est la température à laquelle l'agitation thermique serait nulle. Jamais atteint en pratique.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque phénomène macroscopique à son explication particulaire.",
+          "pairs": [
+            {
+              "g": "Gaz compressible",
+              "d": "Beaucoup d'espace vide entre les particules"
+            },
+            {
+              "g": "Liquide s'écoule",
+              "d": "Particules mobiles mais proches"
+            },
+            {
+              "g": "Solide résistant",
+              "d": "Particules très proches liées fortement"
+            },
+            {
+              "g": "Diffusion d'un gaz",
+              "d": "Agitation thermique rapide des particules"
+            }
+          ],
+          "hint": "Le modèle particulaire permet d'expliquer TOUTES les propriétés observées macroscopiquement.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -61,26 +523,254 @@
       "label": "Changements d'état et températures",
       "section": "États de la matière",
       "questions": [
-        {"type":"qcm","q":"Comment s'appelle le passage de l'état solide à l'état liquide ?","opts":["Vaporisation","Condensation","Fusion","Solidification"],"ans":2,"hint":"Fusion : solide → liquide (à la chaleur). Solidification : liquide → solide. Vaporisation : liquide → gaz. Condensation : gaz → liquide.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La température de fusion de l'eau pure est 0°C à pression atmosphérique normale.","ans":true,"hint":"Eau : fusion à 0°C et ébullition à 100°C (à 1 atm). Ces valeurs servent de référence pour l'échelle Celsius.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment s'appelle le passage de l'état liquide à l'état gazeux ?","opts":["Fusion","Solidification","Vaporisation (ébullition ou évaporation)","Sublimation"],"ans":2,"hint":"Vaporisation : liquide → gaz. Deux formes : ébullition (bullage dans tout le liquide) et évaporation (à la surface, à toute température).","difficulty":"easy"},
-        {"type":"texte","q":"À quelle température l'eau bout-elle à pression atmosphérique normale (au niveau de la mer) ?","answer":"100","hint":"L'eau bout à 100°C (373 K) à pression atmosphérique normale (1 atm). La température diminue en altitude (moindre pression).","tolerance":["100","100°C","cent degrés"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Lors d'un changement d'état, la température reste constante (palier) tant que le changement n'est pas terminé.","ans":true,"hint":"Palier de changement d'état : la température n'augmente pas pendant la fusion ou l'ébullition car l'énergie fournie sert à changer l'état (énergie latente).","difficulty":"easy"},
-        {"type":"qcm","q":"Comment s'appelle le passage directement de l'état solide à l'état gazeux (sans passer par le liquide) ?","opts":["Évaporation","Condensation","Sublimation","Fusion"],"ans":2,"hint":"Sublimation : solide → gaz sans passer par l'état liquide. Ex : glace sèche (CO₂ solide), naphtalène (boules anti-mites), givre qui disparaît.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle le changement d'état inverse de la vaporisation (gaz → liquide) ?","answer":"condensation","hint":"Condensation : gaz → liquide. Ex : buée sur un miroir, rosée le matin, nuages. Inverse de la vaporisation.","tolerance":["condensation","liquéfaction","la condensation"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque changement d'état à son nom.","pairs":[{"g":"Solide → Liquide","d":"Fusion"},{"g":"Liquide → Gaz","d":"Vaporisation"},{"g":"Gaz → Liquide","d":"Condensation"},{"g":"Liquide → Solide","d":"Solidification"}],"hint":"Il y a 6 changements d'état possibles entre les 3 états. Apprends les 6 noms et les conditions (chaleur/froid).","difficulty":"medium"},
-        {"type":"texte","q":"Pendant la fusion de la glace, la température reste constante à 0°C. Comment appelle-t-on ce phénomène ?","answer":"palier de fusion","hint":"Le palier de changement d'état : température constante pendant le changement (toute l'énergie sert au changement d'état, pas à chauffer).","tolerance":["palier de fusion","palier de changement d'état","palier","température constante"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'évaporation se produit uniquement à la température d'ébullition.","ans":false,"hint":"L'évaporation se produit à n'importe quelle température (linge qui sèche à 20°C). L'ébullition est une vaporisation intense dans toute la masse à 100°C.","difficulty":"medium"},
-        {"type":"qcm","q":"Que se passe-t-il au niveau moléculaire lors de la fusion ?","opts":["Les molécules disparaissent","Les liaisons entre molécules s'affaiblissent et les molécules deviennent mobiles","Les molécules se divisent en atomes","Rien ne change"],"ans":1,"hint":"Fusion : l'énergie thermique fournie rompt (partiellement) les liaisons entre particules → elles deviennent mobiles mais restent proches.","difficulty":"medium"},
-        {"type":"texte","q":"La buée sur une vitre froide est formée par quel changement d'état ?","answer":"condensation","hint":"La vapeur d'eau (gaz) de l'air chaud se condensation au contact de la vitre froide → gouttelettes d'eau liquide (buée).","tolerance":["condensation","la condensation"],"difficulty":"medium"},
-        {"type":"qcm","q":"L'ébullition d'un liquide est caractérisée par :","opts":["La disparition du liquide uniquement par sa surface","La formation de bulles de gaz dans tout le volume du liquide","L'augmentation continue de la température","La solidification du liquide"],"ans":1,"hint":"À l'ébullition : bulles de vapeur se forment dans toute la masse du liquide, la température reste constante (palier à 100°C pour l'eau).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La dilatation thermique d'un solide est due à l'augmentation de l'agitation des particules qui s'éloignent légèrement.","ans":true,"hint":"Dilatation : hausse de T → augmentation de l'agitation → particules occupent plus d'espace → le corps se dilate (augmente de volume).","difficulty":"medium"},
-        {"type":"texte","q":"À quelle température le fer fond-il (approximativement) ?","answer":"1538","hint":"Le fer fond à environ 1538°C. Cette valeur élevée explique pourquoi le fer est solide dans nos conditions de vie ordinaires.","tolerance":["1538","1538°C","environ 1500°C","1535"],"difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi des joints de dilatation sont-ils posés sur les ponts et les rails de chemin de fer ?","opts":["Pour décorer","Pour permettre la dilatation thermique sans déformation ni rupture","Pour amortir les chocs des véhicules","Pour éviter la rouille"],"ans":1,"hint":"Les métaux se dilatent en été et se contractent en hiver. Les joints de dilatation laissent de l'espace pour éviter la déformation des structures.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"L'énergie nécessaire pour faire fondre un kilo de glace à 0°C est appelée chaleur latente de fusion.","ans":true,"hint":"Chaleur latente de fusion de la glace : 334 kJ/kg. Cette énergie est absorbée sans hausse de température → palier à 0°C.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le changement d'état inverse de la sublimation (gaz → solide directement) ?","answer":"déposition","hint":"La déposition (ou condensation solide) : gaz → solide directement. Ex : givre sur les vitres (vapeur d'eau → cristaux de glace).","tolerance":["déposition","condensation solide","givrage","givre"],"difficulty":"hard"},
-        {"type":"qcm","q":"Pourquoi l'eau bout-elle à une température plus basse en altitude (sur une montagne) ?","opts":["Car l'air y est plus froid","Car la pression atmosphérique y est plus faible","Car l'eau y est moins pure","Car le soleil y est plus fort"],"ans":1,"hint":"La pression atmosphérique diminue avec l'altitude → le point d'ébullition baisse. Sur l'Everest (~8 800m), l'eau bout à ~70°C.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque exemple de la vie courante à son changement d'état.","pairs":[{"g":"Glace dans un verre qui fond","d":"Fusion"},{"g":"Vapeur d'eau sur une vitre froide","d":"Condensation"},{"g":"Flaque d'eau qui disparaît sous le soleil","d":"Évaporation"},{"g":"Neige carbonique (CO₂) qui disparaît","d":"Sublimation"}],"hint":"Ces exemples quotidiens illustrent les changements d'état et leur direction (vers plus de chaleur ou vers le froid).","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le passage de l'état solide à l'état liquide ?",
+          "opts": [
+            "Vaporisation",
+            "Condensation",
+            "Fusion",
+            "Solidification"
+          ],
+          "ans": 2,
+          "hint": "Fusion : solide → liquide (à la chaleur). Solidification : liquide → solide. Vaporisation : liquide → gaz. Condensation : gaz → liquide.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La température de fusion de l'eau pure est 0°C à pression atmosphérique normale.",
+          "ans": true,
+          "hint": "Eau : fusion à 0°C et ébullition à 100°C (à 1 atm). Ces valeurs servent de référence pour l'échelle Celsius.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le passage de l'état liquide à l'état gazeux ?",
+          "opts": [
+            "Fusion",
+            "Solidification",
+            "Vaporisation (ébullition ou évaporation)",
+            "Sublimation"
+          ],
+          "ans": 2,
+          "hint": "Vaporisation : liquide → gaz. Deux formes : ébullition (bullage dans tout le liquide) et évaporation (à la surface, à toute température).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "À quelle température l'eau bout-elle à pression atmosphérique normale (au niveau de la mer) ?",
+          "answer": "100",
+          "hint": "L'eau bout à 100°C (373 K) à pression atmosphérique normale (1 atm). La température diminue en altitude (moindre pression).",
+          "tolerance": [
+            "100",
+            "100°C",
+            "cent degrés"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Lors d'un changement d'état, la température continue d'augmenter régulièrement car l'énergie fournie chauffe toujours le corps.",
+          "ans": false,
+          "hint": "Faux ! Lors d'un changement d'état, la température reste CONSTANTE (palier). L'énergie fournie sert à changer l'état (rompre les liaisons) et non à chauffer.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le passage directement de l'état solide à l'état gazeux (sans passer par le liquide) ?",
+          "opts": [
+            "Évaporation",
+            "Condensation",
+            "Sublimation",
+            "Fusion"
+          ],
+          "ans": 2,
+          "hint": "Sublimation : solide → gaz sans passer par l'état liquide. Ex : glace sèche (CO₂ solide), naphtalène (boules anti-mites), givre qui disparaît.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le changement d'état inverse de la vaporisation (gaz → liquide) ?",
+          "answer": "condensation",
+          "hint": "Condensation : gaz → liquide. Ex : buée sur un miroir, rosée le matin, nuages. Inverse de la vaporisation.",
+          "tolerance": [
+            "condensation",
+            "liquéfaction",
+            "la condensation"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque changement d'état à son nom.",
+          "pairs": [
+            {
+              "g": "Solide → Liquide",
+              "d": "Fusion"
+            },
+            {
+              "g": "Liquide → Gaz",
+              "d": "Vaporisation"
+            },
+            {
+              "g": "Gaz → Liquide",
+              "d": "Condensation"
+            },
+            {
+              "g": "Liquide → Solide",
+              "d": "Solidification"
+            }
+          ],
+          "hint": "Il y a 6 changements d'état possibles entre les 3 états. Apprends les 6 noms et les conditions (chaleur/froid).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pendant la fusion de la glace, la température reste constante à 0°C. Comment appelle-t-on ce phénomène ?",
+          "opts": [
+            "Point critique",
+            "Palier de changement d'état",
+            "Seuil d'ébullition",
+            "Zone de transition"
+          ],
+          "ans": 1,
+          "hint": "Le palier de changement d'état : la température reste constante car toute l'énergie fournie sert à changer l'état des particules (rompre les liaisons) et non à les chauffer davantage.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'évaporation se produit uniquement à la température d'ébullition.",
+          "ans": false,
+          "hint": "L'évaporation se produit à n'importe quelle température (linge qui sèche à 20°C). L'ébullition est une vaporisation intense dans toute la masse à 100°C.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Que se passe-t-il au niveau moléculaire lors de la fusion ?",
+          "opts": [
+            "Les molécules disparaissent",
+            "Les liaisons entre molécules s'affaiblissent et les molécules deviennent mobiles",
+            "Les molécules se divisent en atomes",
+            "Rien ne change"
+          ],
+          "ans": 1,
+          "hint": "Fusion : l'énergie thermique fournie rompt (partiellement) les liaisons entre particules → elles deviennent mobiles mais restent proches.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "La buée sur une vitre froide est formée par quel changement d'état ?",
+          "answer": "condensation",
+          "hint": "La vapeur d'eau (gaz) de l'air chaud se condensation au contact de la vitre froide → gouttelettes d'eau liquide (buée).",
+          "tolerance": [
+            "condensation",
+            "la condensation"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "L'ébullition d'un liquide est caractérisée par :",
+          "opts": [
+            "La disparition du liquide uniquement par sa surface",
+            "La formation de bulles de gaz dans tout le volume du liquide",
+            "L'augmentation continue de la température",
+            "La solidification du liquide"
+          ],
+          "ans": 1,
+          "hint": "À l'ébullition : bulles de vapeur se forment dans toute la masse du liquide, la température reste constante (palier à 100°C pour l'eau).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La dilatation thermique d'un solide est due à l'augmentation de l'agitation des particules qui s'éloignent légèrement.",
+          "ans": true,
+          "hint": "Dilatation : hausse de T → augmentation de l'agitation → particules occupent plus d'espace → le corps se dilate (augmente de volume).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "À quelle température le fer fond-il (approximativement) ?",
+          "answer": "1538",
+          "hint": "Le fer fond à environ 1538°C. Cette valeur élevée explique pourquoi le fer est solide dans nos conditions de vie ordinaires.",
+          "tolerance": [
+            "1538",
+            "1538°C",
+            "environ 1500°C",
+            "1535"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi des joints de dilatation sont-ils posés sur les ponts et les rails de chemin de fer ?",
+          "opts": [
+            "Pour décorer",
+            "Pour permettre la dilatation thermique sans déformation ni rupture",
+            "Pour amortir les chocs des véhicules",
+            "Pour éviter la rouille"
+          ],
+          "ans": 1,
+          "hint": "Les métaux se dilatent en été et se contractent en hiver. Les joints de dilatation laissent de l'espace pour éviter la déformation des structures.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'énergie nécessaire pour faire fondre un kilo de glace à 0°C est appelée chaleur latente de fusion.",
+          "ans": true,
+          "hint": "Chaleur latente de fusion de la glace : 334 kJ/kg. Cette énergie est absorbée sans hausse de température → palier à 0°C.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le changement d'état inverse de la sublimation, où un gaz passe directement à l'état solide ?",
+          "opts": [
+            "La condensation",
+            "La solidification",
+            "La déposition (condensation solide)",
+            "La précipitation"
+          ],
+          "ans": 2,
+          "hint": "La déposition : gaz → solide directement, sans passer par l'état liquide. Exemple : le givre se forme quand la vapeur d'eau se dépose sous forme de cristaux de glace sur une surface froide.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi l'eau bout-elle à une température plus basse en altitude (sur une montagne) ?",
+          "opts": [
+            "Car l'air y est plus froid",
+            "Car la pression atmosphérique y est plus faible",
+            "Car l'eau y est moins pure",
+            "Car le soleil y est plus fort"
+          ],
+          "ans": 1,
+          "hint": "La pression atmosphérique diminue avec l'altitude → le point d'ébullition baisse. Sur l'Everest (~8 800m), l'eau bout à ~70°C.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque exemple de la vie courante à son changement d'état.",
+          "pairs": [
+            {
+              "g": "Glace dans un verre qui fond",
+              "d": "Fusion"
+            },
+            {
+              "g": "Vapeur d'eau sur une vitre froide",
+              "d": "Condensation"
+            },
+            {
+              "g": "Flaque d'eau qui disparaît sous le soleil",
+              "d": "Évaporation"
+            },
+            {
+              "g": "Neige carbonique (CO₂) qui disparaît",
+              "d": "Sublimation"
+            }
+          ],
+          "hint": "Ces exemples quotidiens illustrent les changements d'état et leur direction (vers plus de chaleur ou vers le froid).",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -88,26 +778,257 @@
       "label": "Corps purs et mélanges",
       "section": "Mélanges et solutions",
       "questions": [
-        {"type":"qcm","q":"Qu'est-ce qu'un corps pur ?","opts":["Un corps sans impuretés d'aucune sorte","Une substance constituée d'une seule espèce chimique","Un corps solide uniquement","Un corps naturel non transformé"],"ans":1,"hint":"Corps pur = une seule espèce chimique (ex : eau distillée H₂O, or pur Au, sucre pur C₁₂H₂₂O₁₁). Un mélange contient plusieurs espèces.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'eau du robinet est un corps pur.","ans":false,"hint":"L'eau du robinet est un mélange : elle contient de l'eau + calcaire + chlore + minéraux dissolved. L'eau distillée (ou déminéralisée) est plus proche d'un corps pur.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'un mélange homogène ?","opts":["Un mélange dont les composants sont séparables à l'œil nu","Un mélange dont la composition est uniforme dans tout le volume (on ne distingue pas les composants)","Un mélange d'eau et d'huile","Un mélange solide uniquement"],"ans":1,"hint":"Mélange homogène : une seule phase visible, composition uniforme. Ex : eau salée, air, alliages métalliques (bronze). Opposé : hétérogène.","difficulty":"easy"},
-        {"type":"texte","q":"Donne un exemple de mélange hétérogène de la vie courante.","answer":"eau et huile","hint":"Mélanges hétérogènes : eau + huile (deux phases), eau + sable, granite (cristaux visibles), lait (émulsion), vinaigrette.","tolerance":["eau et huile","eau et sable","vinaigrette","granite","lait","béton"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'air est un mélange homogène de plusieurs gaz (principalement N₂ et O₂).","ans":true,"hint":"L'air est un mélange gazeux homogène : 78% N₂, 21% O₂, 1% Ar, 0,04% CO₂... On ne peut pas distinguer les composants à l'œil nu.","difficulty":"easy"},
-        {"type":"qcm","q":"Lequel de ces exemples est un corps pur ?","opts":["L'eau de mer","Le jus de fruit","Le lait","Le dioxygène (O₂) pur"],"ans":3,"hint":"Le dioxygène pur (O₂) est un corps pur. L'eau de mer, le jus de fruit et le lait sont des mélanges.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle un mélange constitué de deux liquides non miscibles (qui ne se mélangent pas) comme l'huile et l'eau ?","answer":"émulsion","hint":"Une émulsion est un mélange de deux liquides non miscibles (huile + eau), stabilisé par un émulsifiant (ex : lécithine dans la mayonnaise).","tolerance":["émulsion","une émulsion","mélange hétérogène","liquides non miscibles"],"difficulty":"easy"},
-        {"type":"appariement","q":"Classe ces exemples en corps purs ou mélanges.","pairs":[{"g":"Eau distillée (H₂O)","d":"Corps pur"},{"g":"Eau de mer","d":"Mélange"},{"g":"Or pur (Au)","d":"Corps pur"},{"g":"Granit (quartz + feldspath + mica)","d":"Mélange hétérogène"}],"hint":"Un corps pur ne contient qu'une seule espèce chimique et a des propriétés physiques fixes (température de fusion précise).","difficulty":"medium"},
-        {"type":"texte","q":"Comment reconnaît-on expérimentalement un corps pur d'un mélange par ses températures de changement d'état ?","answer":"température fixe","hint":"Corps pur : température de fusion fixe et précise (ex : glace fond exactement à 0°C). Mélange : plage de température, changement d'état étalé.","tolerance":["température fixe","température précise","température constante","palier net","pas de palier pour un mélange"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'acier est un mélange (alliage) de fer et de carbone principalement.","ans":true,"hint":"L'acier est un alliage (mélange solide homogène) de fer (~98-99%) et de carbone (~0,1-2%). Un alliage est un mélange homogène de métaux.","difficulty":"medium"},
-        {"type":"qcm","q":"Lequel de ces mélanges est homogène ?","opts":["Eau + huile","Sable + eau","Eau + sel dissous","Salade de tomates"],"ans":2,"hint":"Eau + sel dissous = solution aqueuse homogène (transparent, une seule phase). Eau + huile = hétérogène (deux couches).","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle un alliage de cuivre et d'étain, utilisé depuis l'Antiquité ?","answer":"bronze","hint":"Le bronze (alliage Cu + Sn) est l'un des premiers alliages métalliques de l'humanité. Il a donné son nom à l'âge du bronze.","tolerance":["bronze","le bronze"],"difficulty":"medium"},
-        {"type":"qcm","q":"Un mélange hétérogène est composé de :","opts":["Une seule phase","Plusieurs phases distinctes visibles","Un seul corps pur","Deux gaz uniquement"],"ans":1,"hint":"Hétérogène : plusieurs phases visibles (eau + huile : 2 couches, granit : plusieurs minéraux visibles). Homogène : une seule phase apparente.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le lait est un mélange hétérogène qui apparaît blanc et uniforme car les gouttelettes de graisses sont très fines (émulsion).","ans":true,"hint":"Le lait est une émulsion : gouttelettes de graisses dispersées dans l'eau, si fines qu'elles donnent un aspect homogène. Mais c'est bien hétérogène à l'échelle moléculaire.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle un mélange homogène de deux ou plusieurs métaux (ex : bronze, acier, laiton) ?","answer":"alliage","hint":"Un alliage est un mélange homogène de deux métaux ou plus (ou métal + métalloïde). Bronze (Cu+Sn), acier (Fe+C), laiton (Cu+Zn), inox (Fe+Cr+Ni).","tolerance":["alliage","les alliages","un alliage métallique"],"difficulty":"medium"},
-        {"type":"qcm","q":"Comment peut-on distinguer un corps pur d'un mélange sans connaître sa composition ?","opts":["Par sa couleur","Par sa temperature de fusion (corps pur : fixe ; mélange : plage de températures)","Par sa forme","Par sa masse"],"ans":1,"hint":"Corps pur : température de fusion nette et fixe. Mélange : fusion étalée sur une plage de températures (point de fusion non net).","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le sang humain est un mélange hétérogène (plasma + globules rouges + globules blancs + plaquettes).","ans":true,"hint":"Le sang est un mélange hétérogène : plasma (liquide) + cellules (globules rouges, blancs, plaquettes) visibles au microscope.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle un mélange dans lequel de fines particules solides sont en suspension dans un liquide mais ne se dissolvent pas ?","answer":"suspension","hint":"Suspension : particules solides fines en suspension dans un liquide (ex : eau + argile, peinture, certains médicaments). Se dépose si on laisse reposer.","tolerance":["suspension","une suspension"],"difficulty":"hard"},
-        {"type":"qcm","q":"Pourquoi les eaux minérales ont-elles des teneurs en minéraux variables selon leur source ?","opts":["Car elles sont fabriquées différemment","Car l'eau dissout différents minéraux selon la nature des roches qu'elle traverse","Car elles sont colorées artificiellement","Car leur pH est différent"],"ans":1,"hint":"L'eau de pluie (pure) se charge en minéraux (calcium, magnésium...) en traversant les roches. Composition variable selon le terroir.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque terme à sa définition.","pairs":[{"g":"Corps pur","d":"Une seule espèce chimique (ex : H₂O pure)"},{"g":"Mélange homogène","d":"Composition uniforme, une seule phase (ex : eau salée)"},{"g":"Mélange hétérogène","d":"Plusieurs phases distinctes (ex : eau + sable)"},{"g":"Alliage","d":"Mélange homogène de métaux (ex : bronze)"}],"hint":"Ces définitions sont fondamentales pour analyser et classer la matière en chimie.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un corps pur ?",
+          "opts": [
+            "Un corps sans impuretés d'aucune sorte",
+            "Une substance constituée d'une seule espèce chimique",
+            "Un corps solide uniquement",
+            "Un corps naturel non transformé"
+          ],
+          "ans": 1,
+          "hint": "Corps pur = une seule espèce chimique (ex : eau distillée H₂O, or pur Au, sucre pur C₁₂H₂₂O₁₁). Un mélange contient plusieurs espèces.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'eau du robinet est un corps pur.",
+          "ans": false,
+          "hint": "L'eau du robinet est un mélange : elle contient de l'eau + calcaire + chlore + minéraux dissolved. L'eau distillée (ou déminéralisée) est plus proche d'un corps pur.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un mélange homogène ?",
+          "opts": [
+            "Un mélange dont les composants sont séparables à l'œil nu",
+            "Un mélange dont la composition est uniforme dans tout le volume (on ne distingue pas les composants)",
+            "Un mélange d'eau et d'huile",
+            "Un mélange solide uniquement"
+          ],
+          "ans": 1,
+          "hint": "Mélange homogène : une seule phase visible, composition uniforme. Ex : eau salée, air, alliages métalliques (bronze). Opposé : hétérogène.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Donne un exemple de mélange hétérogène de la vie courante.",
+          "answer": "eau et huile",
+          "hint": "Mélanges hétérogènes : eau + huile (deux phases), eau + sable, granite (cristaux visibles), lait (émulsion), vinaigrette.",
+          "tolerance": [
+            "eau et huile",
+            "eau et sable",
+            "vinaigrette",
+            "granite",
+            "lait",
+            "béton"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'air est un mélange hétérogène car ses composants (N₂, O₂, CO₂) sont clairement séparés et visibles.",
+          "ans": false,
+          "hint": "Faux ! L'air est un mélange HOMOGÈNE : les gaz qui le composent (78% N₂, 21% O₂, Ar, CO₂...) sont parfaitement mélangés et indiscernables à l'œil nu.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces exemples est un corps pur ?",
+          "opts": [
+            "L'eau de mer",
+            "Le jus de fruit",
+            "Le lait",
+            "Le dioxygène (O₂) pur"
+          ],
+          "ans": 3,
+          "hint": "Le dioxygène pur (O₂) est un corps pur. L'eau de mer, le jus de fruit et le lait sont des mélanges.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle un mélange constitué de deux liquides non miscibles (qui ne se mélangent pas) comme l'huile et l'eau ?",
+          "answer": "émulsion",
+          "hint": "Une émulsion est un mélange de deux liquides non miscibles (huile + eau), stabilisé par un émulsifiant (ex : lécithine dans la mayonnaise).",
+          "tolerance": [
+            "émulsion",
+            "emulsion",
+            "une émulsion",
+            "mélange hétérogène",
+            "liquides non miscibles"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Classe ces exemples en corps purs ou mélanges.",
+          "pairs": [
+            {
+              "g": "Eau distillée (H₂O)",
+              "d": "Corps pur"
+            },
+            {
+              "g": "Eau de mer",
+              "d": "Mélange"
+            },
+            {
+              "g": "Or pur (Au)",
+              "d": "Corps pur"
+            },
+            {
+              "g": "Granit (quartz + feldspath + mica)",
+              "d": "Mélange hétérogène"
+            }
+          ],
+          "hint": "Un corps pur ne contient qu'une seule espèce chimique et a des propriétés physiques fixes (température de fusion précise).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment reconnaît-on expérimentalement un corps pur d'un mélange par ses températures de changement d'état ?",
+          "answer": "température fixe",
+          "hint": "Corps pur : température de fusion fixe et précise (ex : glace fond exactement à 0°C). Mélange : plage de température, changement d'état étalé.",
+          "tolerance": [
+            "température fixe",
+            "température précise",
+            "température constante",
+            "palier net",
+            "pas de palier pour un mélange"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'acier est un mélange (alliage) de fer et de carbone principalement.",
+          "ans": true,
+          "hint": "L'acier est un alliage (mélange solide homogène) de fer (~98-99%) et de carbone (~0,1-2%). Un alliage est un mélange homogène de métaux.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces mélanges est homogène ?",
+          "opts": [
+            "Eau + huile",
+            "Sable + eau",
+            "Eau + sel dissous",
+            "Salade de tomates"
+          ],
+          "ans": 2,
+          "hint": "Eau + sel dissous = solution aqueuse homogène (transparent, une seule phase). Eau + huile = hétérogène (deux couches).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle un alliage de cuivre et d'étain, utilisé depuis l'Antiquité ?",
+          "answer": "bronze",
+          "hint": "Le bronze (alliage Cu + Sn) est l'un des premiers alliages métalliques de l'humanité. Il a donné son nom à l'âge du bronze.",
+          "tolerance": [
+            "bronze",
+            "le bronze"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un mélange hétérogène est composé de :",
+          "opts": [
+            "Une seule phase",
+            "Plusieurs phases distinctes visibles",
+            "Un seul corps pur",
+            "Deux gaz uniquement"
+          ],
+          "ans": 1,
+          "hint": "Hétérogène : plusieurs phases visibles (eau + huile : 2 couches, granit : plusieurs minéraux visibles). Homogène : une seule phase apparente.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le lait est un mélange hétérogène qui apparaît blanc et uniforme car les gouttelettes de graisses sont très fines (émulsion).",
+          "ans": true,
+          "hint": "Le lait est une émulsion : gouttelettes de graisses dispersées dans l'eau, si fines qu'elles donnent un aspect homogène. Mais c'est bien hétérogène à l'échelle moléculaire.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle un mélange homogène de deux ou plusieurs métaux (ex : bronze, acier, laiton) ?",
+          "answer": "alliage",
+          "hint": "Un alliage est un mélange homogène de deux métaux ou plus (ou métal + métalloïde). Bronze (Cu+Sn), acier (Fe+C), laiton (Cu+Zn), inox (Fe+Cr+Ni).",
+          "tolerance": [
+            "alliage",
+            "les alliages",
+            "un alliage métallique"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment peut-on distinguer un corps pur d'un mélange sans connaître sa composition ?",
+          "opts": [
+            "Par sa couleur",
+            "Par sa temperature de fusion (corps pur : fixe ; mélange : plage de températures)",
+            "Par sa forme",
+            "Par sa masse"
+          ],
+          "ans": 1,
+          "hint": "Corps pur : température de fusion nette et fixe. Mélange : fusion étalée sur une plage de températures (point de fusion non net).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le sang humain est un mélange hétérogène (plasma + globules rouges + globules blancs + plaquettes).",
+          "ans": true,
+          "hint": "Le sang est un mélange hétérogène : plasma (liquide) + cellules (globules rouges, blancs, plaquettes) visibles au microscope.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle un mélange dans lequel de fines particules solides sont en suspension dans un liquide mais ne se dissolvent pas ?",
+          "answer": "suspension",
+          "hint": "Suspension : particules solides fines en suspension dans un liquide (ex : eau + argile, peinture, certains médicaments). Se dépose si on laisse reposer.",
+          "tolerance": [
+            "suspension",
+            "une suspension"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les eaux minérales ont-elles des teneurs en minéraux variables selon leur source ?",
+          "opts": [
+            "Car elles sont fabriquées différemment",
+            "Car l'eau dissout différents minéraux selon la nature des roches qu'elle traverse",
+            "Car elles sont colorées artificiellement",
+            "Car leur pH est différent"
+          ],
+          "ans": 1,
+          "hint": "L'eau de pluie (pure) se charge en minéraux (calcium, magnésium...) en traversant les roches. Composition variable selon le terroir.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque terme à sa définition.",
+          "pairs": [
+            {
+              "g": "Corps pur",
+              "d": "Une seule espèce chimique (ex : H₂O pure)"
+            },
+            {
+              "g": "Mélange homogène",
+              "d": "Composition uniforme, une seule phase (ex : eau salée)"
+            },
+            {
+              "g": "Mélange hétérogène",
+              "d": "Plusieurs phases distinctes (ex : eau + sable)"
+            },
+            {
+              "g": "Alliage",
+              "d": "Mélange homogène de métaux (ex : bronze)"
+            }
+          ],
+          "hint": "Ces définitions sont fondamentales pour analyser et classer la matière en chimie.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -115,26 +1036,254 @@
       "label": "Dissolution, solubilité et saturation",
       "section": "Mélanges et solutions",
       "questions": [
-        {"type":"qcm","q":"Comment s'appelle le résultat de la dissolution d'un soluté dans un solvant ?","opts":["Un mélange hétérogène","Une solution","Un précipité","Un corps pur"],"ans":1,"hint":"Solution = solvant + soluté dissous. Homogène, transparente (souvent). Ex : eau (solvant) + sucre (soluté) = sirop.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'eau est souvent appelée 'solvant universel' car elle dissout de nombreuses substances.","ans":true,"hint":"L'eau est un excellent solvant pour les substances polaires et ioniques (sucre, sel, alcool...). Mais pas pour les huiles ni la cire (substances apolaires).","difficulty":"easy"},
-        {"type":"qcm","q":"Dans une solution aqueuse de sel, quel est le soluté et quel est le solvant ?","opts":["Soluté : eau, solvant : sel","Soluté : sel, solvant : eau","Ils sont tous les deux solvants","Ils sont tous les deux solutés"],"ans":1,"hint":"Soluté = ce qui est dissous (sel NaCl). Solvant = ce dans quoi on dissout (eau H₂O). La solution est le tout.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la quantité maximale de soluté que l'on peut dissoudre dans une quantité donnée de solvant à une température donnée ?","answer":"solubilité","hint":"La solubilité est la quantité maximale d'un soluté que l'on peut dissoudre dans un solvant (g par litre ou g par 100g d'eau) à une température donnée.","tolerance":["solubilité","la solubilité","solubilité maximale"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Une solution saturée est une solution dans laquelle on ne peut plus dissoudre davantage de soluté.","ans":true,"hint":"Solution saturée : à la limite de dissolution. Si on ajoute plus de soluté → il ne se dissout plus et reste comme dépôt au fond.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment la solubilité du sucre dans l'eau varie-t-elle avec la température ?","opts":["Elle diminue","Elle reste constante","Elle augmente","Elle est nulle en dessous de 50°C"],"ans":2,"hint":"Pour la plupart des solides (sucre, sel...) : solubilité augmente avec la température. Pour les gaz (CO₂) : solubilité diminue avec la température.","difficulty":"easy"},
-        {"type":"texte","q":"Qu'appelle-t-on la masse de soluté dissous dans 1 L de solution ?","answer":"concentration","hint":"La concentration massique (g/L) = masse de soluté / volume de solution. Ex : 20 g de sel dans 1 L d'eau = 20 g/L.","tolerance":["concentration","la concentration","concentration massique","titre massique"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque terme à sa définition dans le contexte des solutions.","pairs":[{"g":"Solvant","d":"Corps qui dissout le soluté (ex : eau)"},{"g":"Soluté","d":"Corps dissous dans le solvant (ex : sucre)"},{"g":"Solution","d":"Mélange homogène résultant (solvant + soluté)"},{"g":"Saturation","d":"État où le solvant ne peut plus dissoudre davantage"}],"hint":"Ces termes définissent le vocabulaire de base des solutions en chimie.","difficulty":"medium"},
-        {"type":"texte","q":"Si on dissout 10 g de sel dans 500 mL d'eau, quelle est la concentration massique de la solution ?","answer":"20","hint":"C = masse soluté / volume solution = 10 g / 0,5 L = 20 g/L.","tolerance":["20","20 g/L","20g/L"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'huile ne se dissout pas dans l'eau car ce sont deux substances apolaires et polaires respectivement.","ans":true,"hint":"L'eau est polaire (charges partielles) → dissout les substances polaires et ioniques. L'huile est apolaire → ne se dissout pas dans l'eau (non miscible).","difficulty":"medium"},
-        {"type":"qcm","q":"La solubilité du dioxyde de carbone (CO₂) dans l'eau diminue quand la température augmente. Quelle conséquence pour les boissons gazeuses ?","opts":["Elles deviennent plus gazeuses quand elles sont chaudes","Elles perdent leur CO₂ (se «dégaze») quand elles sont chaudes ou agitées","Le CO₂ se transforme en O₂","La solubilité n'a aucun effet"],"ans":1,"hint":"CO₂ dissous dans l'eau → boisson gazeuse. Chauffée ou agitée → CO₂ se dégage (moins soluble à T élevée). D'où les bulles qui s'échappent.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la méthode qui consiste à chauffer une solution pour faire évaporer le solvant et récupérer le soluté ?","answer":"évaporation","hint":"Évaporation (ou cristallisation par évaporation) : on chauffe → solvant s'évapore → soluté cristallise. Ex : production de sel marin dans les marais salants.","tolerance":["évaporation","cristallisation","évaporation du solvant","évaporation-cristallisation"],"difficulty":"medium"},
-        {"type":"qcm","q":"La concentration en sucre du sirop de sucre est environ 600 g/L. Qu'est-ce que cela signifie ?","opts":["Il y a 600 mL de sucre dans 1L","Pour chaque litre de sirop, on a dissous 600 g de sucre","Le sirop contient 600 types de sucre","La solubilité du sucre est infinie"],"ans":1,"hint":"Concentration massique = 600 g/L → 600 g de sucre par litre de solution.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"On peut accélérer la dissolution en agitant ou en chauffant la solution.","ans":true,"hint":"Agitation : augmente les contacts soluté/solvant. Chauffage : augmente l'agitation thermique → dissolution plus rapide et souvent plus complète.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le phénomène par lequel un soluté dissous reprecipite quand on refroidit une solution chaude saturée ?","answer":"cristallisation","hint":"La cristallisation : une solution saturée chaude refroidie → le soluté en excès precipite sous forme de cristaux. Ex : fabrication du sucre, des sel gemme.","tolerance":["cristallisation","la cristallisation","précipitation"],"difficulty":"medium"},
-        {"type":"qcm","q":"La solubilité du sel (NaCl) dans l'eau à 20°C est environ 360 g/L. Que se passe-t-il si on tente de dissoudre 400 g de sel dans 1 L d'eau ?","opts":["Tout se dissout","400g se dissolvent et la solution devient insaturée","360 g se dissolvent, les 40 g restants forment un dépôt","Le sel précipite entièrement"],"ans":2,"hint":"Au-delà de la solubilité (360 g/L) → saturation. Le soluté excédentaire (40 g) reste non dissous au fond.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La solution obtenue en mélangeant de l'eau et de l'éthanol est une solution non aqueuse car l'éthanol n'est pas ionique.","ans":false,"hint":"L'eau + éthanol forme une solution aqueuse homogène : les deux sont miscibles (tous deux polaires). Une solution non aqueuse utilise un autre solvant que l'eau.","difficulty":"hard"},
-        {"type":"texte","q":"Quelle est la concentration massique d'une solution obtenue en dissolvant 5 g de glucose dans 250 mL d'eau ?","answer":"20","hint":"C = 5 g / 0,250 L = 20 g/L.","tolerance":["20","20 g/L","20g/L"],"difficulty":"hard"},
-        {"type":"qcm","q":"Pourquoi les poissons des mers chaudes (tropicales) ont-ils plus de mal à trouver de l'O₂ dissous que les poissons des mers froides ?","opts":["Car les mers chaudes sont plus salées","Car la solubilité de l'O₂ dans l'eau diminue quand la température augmente","Car les mers froides contiennent plus de plancton","Car les poissons tropicaux respirent différemment"],"ans":1,"hint":"La solubilité des gaz diminue avec la température. Eau froide → plus d'O₂ dissous → meilleure oxygénation. Eau chaude → moins d'O₂ → stress pour les poissons.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque facteur à son effet sur la dissolution.","pairs":[{"g":"Augmentation de température","d":"Augmente la solubilité (pour les solides) et accélère la dissolution"},{"g":"Agitation","d":"Accélère la dissolution (mais ne change pas la solubilité)"},{"g":"Réduction de la taille des grains","d":"Accélère la dissolution (plus de surface de contact)"},{"g":"Ajout d'un soluté au-delà de la solubilité","d":"Formation d'un dépôt (solution saturée)"}],"hint":"La vitesse de dissolution et la quantité maximale dissoute dépendent de plusieurs facteurs indépendants.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le résultat de la dissolution d'un soluté dans un solvant ?",
+          "opts": [
+            "Un mélange hétérogène",
+            "Une solution",
+            "Un précipité",
+            "Un corps pur"
+          ],
+          "ans": 1,
+          "hint": "Solution = solvant + soluté dissous. Homogène, transparente (souvent). Ex : eau (solvant) + sucre (soluté) = sirop.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'eau est appelée 'solvant universel' car elle peut dissoudre absolument toutes les substances, y compris les huiles.",
+          "ans": false,
+          "hint": "Faux ! L'eau dissout les substances polaires et ioniques (sucre, sel...) mais PAS les substances apolaires comme les huiles et les graisses. L'expression 'solvant universel' est donc une approximation.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans une solution aqueuse de sel, quel est le soluté et quel est le solvant ?",
+          "opts": [
+            "Soluté : eau, solvant : sel",
+            "Soluté : sel, solvant : eau",
+            "Ils sont tous les deux solvants",
+            "Ils sont tous les deux solutés"
+          ],
+          "ans": 1,
+          "hint": "Soluté = ce qui est dissous (sel NaCl). Solvant = ce dans quoi on dissout (eau H₂O). La solution est le tout.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la quantité maximale de soluté que l'on peut dissoudre dans une quantité donnée de solvant à une température donnée ?",
+          "answer": "solubilité",
+          "hint": "La solubilité est la quantité maximale d'un soluté que l'on peut dissoudre dans un solvant (g par litre ou g par 100g d'eau) à une température donnée.",
+          "tolerance": [
+            "solubilité",
+            "la solubilité",
+            "solubilité maximale"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Une solution saturée est une solution très concentrée qui peut encore accueillir un peu plus de soluté si on agite.",
+          "ans": false,
+          "hint": "Faux ! Une solution saturée est à la limite maximale de dissolution : on ne peut PLUS dissoudre davantage de soluté. Tout soluté ajouté reste sous forme de dépôt.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment la solubilité du sucre dans l'eau varie-t-elle avec la température ?",
+          "opts": [
+            "Elle diminue",
+            "Elle reste constante",
+            "Elle augmente",
+            "Elle est nulle en dessous de 50°C"
+          ],
+          "ans": 2,
+          "hint": "Pour la plupart des solides (sucre, sel...) : solubilité augmente avec la température. Pour les gaz (CO₂) : solubilité diminue avec la température.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Qu'appelle-t-on la masse de soluté dissous dans 1 L de solution ?",
+          "answer": "concentration",
+          "hint": "La concentration massique (g/L) = masse de soluté / volume de solution. Ex : 20 g de sel dans 1 L d'eau = 20 g/L.",
+          "tolerance": [
+            "concentration",
+            "la concentration",
+            "concentration massique",
+            "titre massique"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque terme à sa définition dans le contexte des solutions.",
+          "pairs": [
+            {
+              "g": "Solvant",
+              "d": "Corps qui dissout le soluté (ex : eau)"
+            },
+            {
+              "g": "Soluté",
+              "d": "Corps dissous dans le solvant (ex : sucre)"
+            },
+            {
+              "g": "Solution",
+              "d": "Mélange homogène résultant (solvant + soluté)"
+            },
+            {
+              "g": "Saturation",
+              "d": "État où le solvant ne peut plus dissoudre davantage"
+            }
+          ],
+          "hint": "Ces termes définissent le vocabulaire de base des solutions en chimie.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Si on dissout 10 g de sel dans 500 mL d'eau, quelle est la concentration massique de la solution ?",
+          "answer": "20",
+          "hint": "C = masse soluté / volume solution = 10 g / 0,5 L = 20 g/L.",
+          "tolerance": [
+            "20",
+            "20 g/L",
+            "20g/L"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'huile ne se dissout pas dans l'eau car ce sont deux substances apolaires et polaires respectivement.",
+          "ans": true,
+          "hint": "L'eau est polaire (charges partielles) → dissout les substances polaires et ioniques. L'huile est apolaire → ne se dissout pas dans l'eau (non miscible).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La solubilité du dioxyde de carbone (CO₂) dans l'eau diminue quand la température augmente. Quelle conséquence pour les boissons gazeuses ?",
+          "opts": [
+            "Elles deviennent plus gazeuses quand elles sont chaudes",
+            "Elles perdent leur CO₂ (se «dégaze») quand elles sont chaudes ou agitées",
+            "Le CO₂ se transforme en O₂",
+            "La solubilité n'a aucun effet"
+          ],
+          "ans": 1,
+          "hint": "CO₂ dissous dans l'eau → boisson gazeuse. Chauffée ou agitée → CO₂ se dégage (moins soluble à T élevée). D'où les bulles qui s'échappent.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la méthode qui consiste à chauffer une solution pour faire évaporer le solvant et récupérer le soluté ?",
+          "answer": "évaporation",
+          "hint": "Évaporation (ou cristallisation par évaporation) : on chauffe → solvant s'évapore → soluté cristallise. Ex : production de sel marin dans les marais salants.",
+          "tolerance": [
+            "évaporation",
+            "cristallisation",
+            "évaporation du solvant",
+            "évaporation-cristallisation"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La concentration en sucre du sirop de sucre est environ 600 g/L. Qu'est-ce que cela signifie ?",
+          "opts": [
+            "Il y a 600 mL de sucre dans 1L",
+            "Pour chaque litre de sirop, on a dissous 600 g de sucre",
+            "Le sirop contient 600 types de sucre",
+            "La solubilité du sucre est infinie"
+          ],
+          "ans": 1,
+          "hint": "Concentration massique = 600 g/L → 600 g de sucre par litre de solution.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "On peut accélérer la dissolution en agitant ou en chauffant la solution.",
+          "ans": true,
+          "hint": "Agitation : augmente les contacts soluté/solvant. Chauffage : augmente l'agitation thermique → dissolution plus rapide et souvent plus complète.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le phénomène par lequel un soluté dissous reprecipite quand on refroidit une solution chaude saturée ?",
+          "answer": "cristallisation",
+          "hint": "La cristallisation : une solution saturée chaude refroidie → le soluté en excès precipite sous forme de cristaux. Ex : fabrication du sucre, des sel gemme.",
+          "tolerance": [
+            "cristallisation",
+            "la cristallisation",
+            "précipitation"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La solubilité du sel (NaCl) dans l'eau à 20°C est environ 360 g/L. Que se passe-t-il si on tente de dissoudre 400 g de sel dans 1 L d'eau ?",
+          "opts": [
+            "Tout se dissout",
+            "400g se dissolvent et la solution devient insaturée",
+            "360 g se dissolvent, les 40 g restants forment un dépôt",
+            "Le sel précipite entièrement"
+          ],
+          "ans": 2,
+          "hint": "Au-delà de la solubilité (360 g/L) → saturation. Le soluté excédentaire (40 g) reste non dissous au fond.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La solution obtenue en mélangeant de l'eau et de l'éthanol est une solution non aqueuse car l'éthanol n'est pas ionique.",
+          "ans": false,
+          "hint": "L'eau + éthanol forme une solution aqueuse homogène : les deux sont miscibles (tous deux polaires). Une solution non aqueuse utilise un autre solvant que l'eau.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle est la concentration massique d'une solution obtenue en dissolvant 5 g de glucose dans 250 mL d'eau ?",
+          "answer": "20",
+          "hint": "C = 5 g / 0,250 L = 20 g/L.",
+          "tolerance": [
+            "20",
+            "20 g/L",
+            "20g/L"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les poissons des mers chaudes (tropicales) ont-ils plus de mal à trouver de l'O₂ dissous que les poissons des mers froides ?",
+          "opts": [
+            "Car les mers chaudes sont plus salées",
+            "Car la solubilité de l'O₂ dans l'eau diminue quand la température augmente",
+            "Car les mers froides contiennent plus de plancton",
+            "Car les poissons tropicaux respirent différemment"
+          ],
+          "ans": 1,
+          "hint": "La solubilité des gaz diminue avec la température. Eau froide → plus d'O₂ dissous → meilleure oxygénation. Eau chaude → moins d'O₂ → stress pour les poissons.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque facteur à son effet sur la dissolution.",
+          "pairs": [
+            {
+              "g": "Augmentation de température",
+              "d": "Augmente la solubilité (pour les solides) et accélère la dissolution"
+            },
+            {
+              "g": "Agitation",
+              "d": "Accélère la dissolution (mais ne change pas la solubilité)"
+            },
+            {
+              "g": "Réduction de la taille des grains",
+              "d": "Accélère la dissolution (plus de surface de contact)"
+            },
+            {
+              "g": "Ajout d'un soluté au-delà de la solubilité",
+              "d": "Formation d'un dépôt (solution saturée)"
+            }
+          ],
+          "hint": "La vitesse de dissolution et la quantité maximale dissoute dépendent de plusieurs facteurs indépendants.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -142,26 +1291,256 @@
       "label": "Techniques de séparation des mélanges",
       "section": "Mélanges et solutions",
       "questions": [
-        {"type":"qcm","q":"Quelle technique permet de séparer un solide non dissous d'un liquide ?","opts":["Distillation","Filtration","Chromatographie","Décantation uniquement"],"ans":1,"hint":"La filtration sépare un solide en suspension d'un liquide en faisant passer le mélange à travers un filtre (papier, tissu, membrane).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La décantation sépare deux liquides non miscibles par différence de densité.","ans":true,"hint":"Décantation : on laisse reposer → le liquide le plus dense se dépose en bas (ou le solide si suspension). Une ampoule à décanter sépare huile et eau.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle technique permet d'obtenir de l'eau pure à partir d'eau salée ?","opts":["Filtration","Décantation","Distillation","Cristallisation"],"ans":2,"hint":"La distillation : on chauffe → l'eau s'évapore → la vapeur se condense dans un réfrigérant → on recueille l'eau distillée pure (le sel reste).","difficulty":"easy"},
-        {"type":"texte","q":"Quelle technique de séparation est utilisée dans les laboratoires pour identifier les composants d'un mélange coloré sur papier ?","answer":"chromatographie","hint":"La chromatographie sur papier : les composants d'un mélange migrent à des vitesses différentes → séparation en taches distinctes.","tolerance":["chromatographie","chromatographie sur papier","CCM"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"On peut filtrer le sel dissous dans l'eau avec un filtre en papier ordinaire.","ans":false,"hint":"Le sel est dissous (molécules de Na⁺ et Cl⁻) → traverse le filtre avec l'eau. La filtration ne sépare que les particules non dissoutes.","difficulty":"easy"},
-        {"type":"qcm","q":"Dans la filtration, que retient le filtre ?","opts":["Le liquide","Les particules solides trop grandes pour passer","Le soluté dissous","Les gaz"],"ans":1,"hint":"Le filtre retient les particules solides > à la taille des pores. Le filtrat (liquide + soluté dissous) passe au travers.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on le liquide qui passe à travers un filtre lors d'une filtration ?","answer":"filtrat","hint":"Le filtrat est la partie liquide qui traverse le filtre. Le résidu est la partie solide retenue sur le filtre.","tolerance":["filtrat","le filtrat"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque technique de séparation à la situation où elle est appropriée.","pairs":[{"g":"Filtration","d":"Séparer un solide en suspension d'un liquide"},{"g":"Distillation","d":"Séparer un soluté dissous de son solvant"},{"g":"Décantation","d":"Séparer deux liquides non miscibles (huile/eau)"},{"g":"Chromatographie","d":"Séparer et identifier les composants d'un mélange"}],"hint":"Le choix de la technique dépend de la nature du mélange et des propriétés de ses composants.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle l'appareil qui permet de réaliser une distillation en condensant les vapeurs ?","answer":"réfrigérant","hint":"Le réfrigérant (ou condenseur) est le tube entouré d'eau froide où la vapeur se refroidit et se condense en liquide.","tolerance":["réfrigérant","condenseur","alambic","réfrigérant à eau"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La chromatographie sur papier est utilisée en forensique pour analyser les encres et identifier des documents falsifiés.","ans":true,"hint":"La chromatographie est très utilisée en forensique : chaque encre a une signature chromatographique spécifique → peut révéler des falsifications.","difficulty":"medium"},
-        {"type":"qcm","q":"La distillation de l'eau de mer pour la rendre potable s'appelle :","opts":["Filtration membranaire","Dessalement","Chloration","Traitement chimique"],"ans":1,"hint":"Le dessalement (distillation ou osmose inverse) permet d'obtenir de l'eau douce à partir d'eau de mer. Utilisé dans les pays arides.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la technique qui sépare des mélanges en utilisant un gaz porteur et un tube rempli de phase stationnaire ?","answer":"chromatographie en phase gazeuse","hint":"La chromatographie en phase gazeuse (CPG) analyse des mélanges gazeux. Utilisée pour contrôler la qualité des parfums, vins, carburants.","tolerance":["chromatographie en phase gazeuse","CPG","chromatographie gazeuse","GC"],"difficulty":"medium"},
-        {"type":"qcm","q":"Comment fonctionne l'osmose inverse pour purifier l'eau ?","opts":["Par chauffage de l'eau","En forçant l'eau à passer à travers une membrane semi-perméable qui retient les sels","Par ajout de produits chimiques","Par agitation rapide"],"ans":1,"hint":"L'osmose inverse : sous pression, l'eau traverse une membrane à pores très fins qui retient les sels, bactéries et molécules. Dessalement et purification.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La centrifugation est une technique qui accélère la sédimentation en faisant tourner le mélange à grande vitesse.","ans":true,"hint":"La centrifugation : la force centrifuge accélère la séparation → les particules plus denses se déposent plus vite au fond du tube (plasma/globules sanguins).","difficulty":"medium"},
-        {"type":"texte","q":"Dans la chromatographie sur papier du jus de betterave, pourquoi les composants se séparent-ils ?","answer":"vitesse de migration différente","hint":"Chaque composant a une affinité différente pour la phase mobile (solvant) et la phase stationnaire (papier) → ils migrent à des vitesses différentes → séparation.","tolerance":["vitesse de migration différente","affinité différente","propriétés différentes","mobilité différente"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quelle technique est utilisée pour séparer le pétrole brut en différentes fractions (essence, kérosène, gazole...) ?","opts":["Filtration","Chromatographie","Distillation fractionnée","Centrifugation"],"ans":2,"hint":"La distillation fractionnée (colonne à distiller) sépare les composants du pétrole selon leur point d'ébullition différent dans les colonnes de raffinage.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La filtration par charbon actif élimine les odeurs et certains polluants organiques de l'eau potable.","ans":true,"hint":"Le charbon actif (très poreux) adsorbe les molécules organiques, chlore, pesticides... C'est une étape dans le traitement de l'eau potable.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la technique qui mesure les propriétés d'absorption de la lumière pour analyser des solutions colorées ?","answer":"spectrophotométrie","hint":"La spectrophotométrie (ou colorimétrie) mesure l'absorbance d'une solution à une longueur d'onde → permet de déterminer la concentration.","tolerance":["spectrophotométrie","colorimétrie","spectroscopie"],"difficulty":"hard"},
-        {"type":"qcm","q":"Pour extraire de la caféine d'une infusion de café avec du dichlorométhane (solvant organique), on utilise :","opts":["La distillation","L'extraction liquide-liquide","La filtration","La centrifugation"],"ans":1,"hint":"L'extraction liquide-liquide : on agite deux solvants non miscibles → le soluté passe préférentiellement dans l'un. Très utilisée en chimie organique.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque technique à son application industrielle.","pairs":[{"g":"Distillation fractionnée","d":"Raffinage du pétrole"},{"g":"Osmose inverse","d":"Dessalement de l'eau de mer"},{"g":"Centrifugation","d":"Séparation des globules rouges du plasma"},{"g":"Chromatographie","d":"Contrôle qualité des médicaments"}],"hint":"Ces techniques de séparation sont des outils fondamentaux de l'industrie chimique, alimentaire et pharmaceutique.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelle technique permet de séparer un solide non dissous d'un liquide ?",
+          "opts": [
+            "Distillation",
+            "Filtration",
+            "Chromatographie",
+            "Décantation uniquement"
+          ],
+          "ans": 1,
+          "hint": "La filtration sépare un solide en suspension d'un liquide en faisant passer le mélange à travers un filtre (papier, tissu, membrane).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La décantation sépare deux liquides non miscibles en faisant passer le mélange à travers un filtre.",
+          "ans": false,
+          "hint": "Faux ! La décantation sépare par DIFFÉRENCE DE DENSITÉ (on laisse reposer, le plus dense se dépose). La FILTRATION utilise un filtre pour retenir les particules solides.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle technique permet d'obtenir de l'eau pure à partir d'eau salée ?",
+          "opts": [
+            "Filtration",
+            "Décantation",
+            "Distillation",
+            "Cristallisation"
+          ],
+          "ans": 2,
+          "hint": "La distillation : on chauffe → l'eau s'évapore → la vapeur se condense dans un réfrigérant → on recueille l'eau distillée pure (le sel reste).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle technique de séparation permet d'identifier les composants d'un mélange coloré en les faisant migrer sur du papier avec un solvant ?",
+          "opts": [
+            "La filtration",
+            "La distillation",
+            "La décantation",
+            "La chromatographie sur papier"
+          ],
+          "ans": 3,
+          "hint": "La chromatographie sur papier : les composants migrent à des vitesses différentes selon leur affinité avec le solvant → séparation en taches distinctes. Utilisée pour analyser des encres, colorants alimentaires...",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "On peut filtrer le sel dissous dans l'eau avec un filtre en papier ordinaire.",
+          "ans": false,
+          "hint": "Le sel est dissous (molécules de Na⁺ et Cl⁻) → traverse le filtre avec l'eau. La filtration ne sépare que les particules non dissoutes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans la filtration, que retient le filtre ?",
+          "opts": [
+            "Le liquide",
+            "Les particules solides trop grandes pour passer",
+            "Le soluté dissous",
+            "Les gaz"
+          ],
+          "ans": 1,
+          "hint": "Le filtre retient les particules solides > à la taille des pores. Le filtrat (liquide + soluté dissous) passe au travers.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le liquide qui passe à travers un filtre lors d'une filtration ?",
+          "answer": "filtrat",
+          "hint": "Le filtrat est la partie liquide qui traverse le filtre. Le résidu est la partie solide retenue sur le filtre.",
+          "tolerance": [
+            "filtrat",
+            "le filtrat"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque technique de séparation à la situation où elle est appropriée.",
+          "pairs": [
+            {
+              "g": "Filtration",
+              "d": "Séparer un solide en suspension d'un liquide"
+            },
+            {
+              "g": "Distillation",
+              "d": "Séparer un soluté dissous de son solvant"
+            },
+            {
+              "g": "Décantation",
+              "d": "Séparer deux liquides non miscibles (huile/eau)"
+            },
+            {
+              "g": "Chromatographie",
+              "d": "Séparer et identifier les composants d'un mélange"
+            }
+          ],
+          "hint": "Le choix de la technique dépend de la nature du mélange et des propriétés de ses composants.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle l'appareil qui refroidit les vapeurs lors d'une distillation pour les transformer en liquide ?",
+          "opts": [
+            "Le ballon chauffant",
+            "Le réfrigérant (condenseur)",
+            "L'erlenmeyer",
+            "Le distillat"
+          ],
+          "ans": 1,
+          "hint": "Le réfrigérant (ou condenseur) est parcouru par de l'eau froide. Les vapeurs qui le traversent se refroidissent et se condensent en liquide récupéré dans un récipient.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La chromatographie sur papier est utilisée en forensique pour analyser les encres et identifier des documents falsifiés.",
+          "ans": true,
+          "hint": "La chromatographie est très utilisée en forensique : chaque encre a une signature chromatographique spécifique → peut révéler des falsifications.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La distillation de l'eau de mer pour la rendre potable s'appelle :",
+          "opts": [
+            "Filtration membranaire",
+            "Dessalement",
+            "Chloration",
+            "Traitement chimique"
+          ],
+          "ans": 1,
+          "hint": "Le dessalement (distillation ou osmose inverse) permet d'obtenir de l'eau douce à partir d'eau de mer. Utilisé dans les pays arides.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la technique qui sépare des mélanges en utilisant un gaz porteur et un tube rempli de phase stationnaire ?",
+          "opts": [
+            "La chromatographie sur couche mince",
+            "La chromatographie en phase gazeuse",
+            "La distillation fractionnée",
+            "L'osmose inverse"
+          ],
+          "ans": 1,
+          "hint": "La chromatographie en phase gazeuse (CPG) analyse des mélanges gazeux. Utilisée pour contrôler la qualité des parfums, vins, carburants.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment fonctionne l'osmose inverse pour purifier l'eau ?",
+          "opts": [
+            "Par chauffage de l'eau",
+            "En forçant l'eau à passer à travers une membrane semi-perméable qui retient les sels",
+            "Par ajout de produits chimiques",
+            "Par agitation rapide"
+          ],
+          "ans": 1,
+          "hint": "L'osmose inverse : sous pression, l'eau traverse une membrane à pores très fins qui retient les sels, bactéries et molécules. Dessalement et purification.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La centrifugation ralentit la sédimentation des particules pour permettre une meilleure homogénéisation du mélange.",
+          "ans": false,
+          "hint": "Faux ! La centrifugation ACCÉLÈRE la sédimentation grâce à la force centrifuge. Les particules plus denses se déposent plus vite au fond (ex : séparation du plasma et des globules sanguins).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans la chromatographie sur papier, pourquoi les composants d'un mélange se séparent-ils ?",
+          "opts": [
+            "Parce qu'ils ont des couleurs différentes",
+            "Parce qu'ils migrent à des vitesses différentes selon leur affinité pour le solvant et le papier",
+            "Parce que le solvant les détruit chimiquement",
+            "Parce qu'ils ont des masses différentes uniquement"
+          ],
+          "ans": 1,
+          "hint": "Chaque composant a une affinité différente pour la phase mobile (solvant) et la phase stationnaire (papier) → ils migrent à des vitesses différentes → séparation.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle technique est utilisée pour séparer le pétrole brut en différentes fractions (essence, kérosène, gazole...) ?",
+          "opts": [
+            "Filtration",
+            "Chromatographie",
+            "Distillation fractionnée",
+            "Centrifugation"
+          ],
+          "ans": 2,
+          "hint": "La distillation fractionnée (colonne à distiller) sépare les composants du pétrole selon leur point d'ébullition différent dans les colonnes de raffinage.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La filtration par charbon actif élimine les odeurs et certains polluants organiques de l'eau potable.",
+          "ans": true,
+          "hint": "Le charbon actif (très poreux) adsorbe les molécules organiques, chlore, pesticides... C'est une étape dans le traitement de l'eau potable.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la technique qui mesure l'absorption de la lumière par une solution colorée pour en déterminer la concentration ?",
+          "opts": [
+            "La chromatographie",
+            "La distillation",
+            "La spectrophotométrie",
+            "La colorimétrie visuelle"
+          ],
+          "ans": 2,
+          "hint": "La spectrophotométrie mesure l'absorbance d'une solution à une longueur d'onde précise → plus la solution est concentrée, plus elle absorbe la lumière. Très utilisée en biologie et chimie analytique.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Pour extraire de la caféine d'une infusion de café avec du dichlorométhane (solvant organique), on utilise :",
+          "opts": [
+            "La distillation",
+            "L'extraction liquide-liquide",
+            "La filtration",
+            "La centrifugation"
+          ],
+          "ans": 1,
+          "hint": "L'extraction liquide-liquide : on agite deux solvants non miscibles → le soluté passe préférentiellement dans l'un. Très utilisée en chimie organique.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque technique à son application industrielle.",
+          "pairs": [
+            {
+              "g": "Distillation fractionnée",
+              "d": "Raffinage du pétrole"
+            },
+            {
+              "g": "Osmose inverse",
+              "d": "Dessalement de l'eau de mer"
+            },
+            {
+              "g": "Centrifugation",
+              "d": "Séparation des globules rouges du plasma"
+            },
+            {
+              "g": "Chromatographie",
+              "d": "Contrôle qualité des médicaments"
+            }
+          ],
+          "hint": "Ces techniques de séparation sont des outils fondamentaux de l'industrie chimique, alimentaire et pharmaceutique.",
+          "difficulty": "hard"
+        }
       ]
     }
   ]
