@@ -7,26 +7,235 @@
       "label": "Tableaux de données",
       "section": "Organisation et gestion de données",
       "questions": [
-        {"type":"qcm","q":"À quoi sert un tableau de données ?","opts":["À faire de beaux dessins","À organiser et présenter des informations de façon lisible","À calculer des opérations","À tracer des graphiques automatiquement"],"ans":1,"hint":"Un tableau de données classe des informations en lignes et colonnes pour faciliter la lecture et la comparaison.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Dans un tableau, les colonnes s'étendent verticalement (de haut en bas).","ans":true,"hint":"Les colonnes sont verticales. Les lignes sont horizontales. Un tableau organise les données en lignes et colonnes.","difficulty":"easy"},
-        {"type":"qcm","q":"Un tableau présente les températures de 5 villes. Lundi: 12, 15, 10, 18, 9. Combien de villes ont une température supérieure à 11° ?","opts":["2","3","4","1"],"ans":1,"hint":"Températures > 11° : 12, 15, 18 → 3 villes.","difficulty":"easy"},
-        {"type":"texte","q":"Un tableau de 3 lignes et 4 colonnes contient combien de cases ?","answer":"12","hint":"Nombre de cases = lignes × colonnes = 3 × 4 = 12 cases.","tolerance":["12","12 cases"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un tableau de données peut contenir à la fois des nombres et des mots.","ans":true,"hint":"Un tableau peut contenir des données numériques (scores, températures) et alphanumériques (noms, catégories).","difficulty":"easy"},
-        {"type":"qcm","q":"Dans un tableau d'effectifs, la colonne 'Effectif' contient :","opts":["Les noms des élèves","Le nombre de fois qu'une valeur apparaît","La valeur maximale","La moyenne"],"ans":1,"hint":"L'effectif d'une valeur = le nombre de fois qu'elle apparaît dans la série de données.","difficulty":"easy"},
-        {"type":"qcm","q":"Un tableau indique les ventes de 3 produits sur 4 mois. Combien de données contient-il (hors entêtes) ?","opts":["7","12","3","4"],"ans":1,"hint":"3 produits × 4 mois = 12 cases de données.","difficulty":"easy"},
-        {"type":"ordre","q":"Pour construire un tableau de données, remets ces étapes dans l'ordre logique.","items":["Collecter les données","Choisir les titres de lignes et colonnes","Remplir le tableau avec les données","Tracer la grille du tableau"],"hint":"Méthode : 1. collecter 2. planifier les titres 3. tracer la grille 4. remplir.","difficulty":"medium"},
-        {"type":"texte","q":"Un tableau de fréquences montre : Rouge 12 fois, Bleu 8 fois, Vert 5 fois. Quel est l'effectif total ?","answer":"25","hint":"Total = 12 + 8 + 5 = 25.","tolerance":["25"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La fréquence d'une valeur est son effectif divisé par l'effectif total.","ans":true,"hint":"Fréquence = effectif / effectif total. Peut s'exprimer en fraction, décimal ou pourcentage.","difficulty":"medium"},
-        {"type":"qcm","q":"Dans un tableau, la valeur 'Bleu' apparaît 8 fois sur 25 au total. Quelle est sa fréquence en % ?","opts":["8%","25%","32%","80%"],"ans":2,"hint":"f = (8/25) × 100 = 32%.","difficulty":"medium"},
-        {"type":"texte","q":"Calcule la fréquence (en %) de la valeur qui apparaît 15 fois sur un total de 60.","answer":"25","hint":"f = (15/60) × 100 = 25%.","tolerance":["25","25%"],"difficulty":"medium"},
-        {"type":"qcm","q":"Un tableau à double entrée croise deux variables. Que lit-on à l'intersection d'une ligne et d'une colonne ?","opts":["Le total général","La valeur correspondant aux deux variables","La valeur maximale","La moyenne"],"ans":1,"hint":"À l'intersection d'une ligne (ex : classe 6A) et d'une colonne (ex : garçons) on lit la valeur correspondante.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Dans un tableau à double entrée, la somme de chaque ligne doit égaler le total de cette ligne.","ans":true,"hint":"Oui, la dernière colonne 'Total' est la somme des valeurs de la ligne. De même pour les colonnes.","difficulty":"medium"},
-        {"type":"texte","q":"Tableau à double entrée. Garçons : 6A=14, 6B=12. Filles : 6A=11, 6B=13. Quel est l'effectif total de la 6A ?","answer":"25","hint":"6A total = garçons 6A + filles 6A = 14 + 11 = 25.","tolerance":["25","25 élèves"],"difficulty":"medium"},
-        {"type":"qcm","q":"Comment appelle-t-on un tableau qui regroupe des données en intervalles (ex : [0;5[, [5;10[...) ?","opts":["Tableau de fréquences simples","Tableau de données groupées (par classes)","Tableau à double entrée","Diagramme"],"ans":1,"hint":"Quand les données sont trop nombreuses, on les regroupe en classes (intervalles). Ex : notes groupées par 5.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La somme de toutes les fréquences relatives d'un tableau est toujours égale à 1 (ou 100%).","ans":true,"hint":"Chaque fréquence = effectif/total. Somme de tous les effectifs = total → somme des fréquences = 1.","difficulty":"hard"},
-        {"type":"texte","q":"Un tableau de notes montre : 8 apparaît 3 fois, 12 apparaît 5 fois, 15 apparaît 2 fois. Quelle est la fréquence de la note 12 en % ?","answer":"50","hint":"Effectif total = 3 + 5 + 2 = 10. Fréquence de 12 = 5/10 = 50%.","tolerance":["50","50%"],"difficulty":"hard"},
-        {"type":"qcm","q":"Dans un sondage de 200 personnes, 45% préfèrent le chocolat. Combien est-ce en nombre de personnes ?","opts":["45","90","100","145"],"ans":1,"hint":"45% de 200 = 0,45 × 200 = 90 personnes.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque terme à sa définition dans l'étude statistique.","pairs":[{"g":"Effectif","d":"Nombre de fois qu'une valeur apparaît"},{"g":"Fréquence","d":"Effectif ÷ effectif total"},{"g":"Population","d":"L'ensemble des individus étudiés"},{"g":"Caractère","d":"La propriété étudiée (ex : couleur des yeux)"}],"hint":"Ces termes fondamentaux de la statistique sont à maîtriser pour lire et produire des tableaux de données.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "À quoi sert un tableau de données ?",
+          "opts": [
+            "À faire de beaux dessins",
+            "À organiser et présenter des informations de façon lisible",
+            "À calculer des opérations",
+            "À tracer des graphiques automatiquement"
+          ],
+          "ans": 1,
+          "hint": "Un tableau de données classe des informations en lignes et colonnes pour faciliter la lecture et la comparaison.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans un tableau, les lignes s'étendent horizontalement (de gauche à droite) et les colonnes verticalement (de haut en bas).",
+          "ans": true,
+          "hint": "Lignes = horizontales (gauche → droite). Colonnes = verticales (haut → bas). Moyen mnémotechnique : une ligne d'horizon est horizontale.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Un tableau présente les températures de 5 villes. Lundi: 12, 15, 10, 18, 9. Combien de villes ont une température supérieure à 11° ?",
+          "opts": [
+            "2",
+            "3",
+            "4",
+            "1"
+          ],
+          "ans": 1,
+          "hint": "Températures > 11° : 12, 15, 18 → 3 villes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Un tableau de 3 lignes et 4 colonnes contient combien de cases ?",
+          "answer": "12",
+          "hint": "Nombre de cases = lignes × colonnes = 3 × 4 = 12 cases.",
+          "tolerance": [
+            "12",
+            "12 cases"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un tableau de données peut contenir à la fois des nombres et des mots.",
+          "ans": true,
+          "hint": "Un tableau peut contenir des données numériques (scores, températures) et alphanumériques (noms, catégories).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un tableau d'effectifs, la colonne 'Effectif' contient :",
+          "opts": [
+            "Les noms des élèves",
+            "Le nombre de fois qu'une valeur apparaît",
+            "La valeur maximale",
+            "La moyenne"
+          ],
+          "ans": 1,
+          "hint": "L'effectif d'une valeur = le nombre de fois qu'elle apparaît dans la série de données.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Un tableau indique les ventes de 3 produits sur 4 mois. Combien de données contient-il (hors entêtes) ?",
+          "opts": [
+            "7",
+            "12",
+            "3",
+            "4"
+          ],
+          "ans": 1,
+          "hint": "3 produits × 4 mois = 12 cases de données.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "ordre",
+          "q": "Pour construire un tableau de données, remets ces étapes dans l'ordre logique.",
+          "items": [
+            "Collecter les données",
+            "Choisir les titres de lignes et colonnes",
+            "Tracer la grille du tableau",
+            "Remplir le tableau avec les données"
+          ],
+          "hint": "Méthode : 1. Collecter les données 2. Choisir les titres 3. Tracer la grille 4. Remplir le tableau.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Un tableau de fréquences montre : Rouge 12 fois, Bleu 8 fois, Vert 5 fois. Quel est l'effectif total ?",
+          "answer": "25",
+          "hint": "Total = 12 + 8 + 5 = 25.",
+          "tolerance": [
+            "25"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La fréquence d'une valeur est son effectif divisé par l'effectif total.",
+          "ans": true,
+          "hint": "Fréquence = effectif / effectif total. Peut s'exprimer en fraction, décimal ou pourcentage.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un tableau, la valeur 'Bleu' apparaît 8 fois sur 25 au total. Quelle est sa fréquence en % ?",
+          "opts": [
+            "8%",
+            "25%",
+            "32%",
+            "80%"
+          ],
+          "ans": 2,
+          "hint": "f = (8/25) × 100 = 32%.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Calcule la fréquence (en %) de la valeur qui apparaît 15 fois sur un total de 60.",
+          "answer": "25",
+          "hint": "f = (15/60) × 100 = 25%.",
+          "tolerance": [
+            "25",
+            "25%"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un tableau à double entrée croise deux variables. Que lit-on à l'intersection d'une ligne et d'une colonne ?",
+          "opts": [
+            "Le total général",
+            "La valeur correspondant aux deux variables",
+            "La valeur maximale",
+            "La moyenne"
+          ],
+          "ans": 1,
+          "hint": "À l'intersection d'une ligne (ex : classe 6A) et d'une colonne (ex : garçons) on lit la valeur correspondante.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans un tableau à double entrée, la somme des totaux de lignes est différente de la somme des totaux de colonnes.",
+          "ans": false,
+          "hint": "Faux ! Les deux sommes sont égales : elles représentent toutes les deux l'effectif total du tableau.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Tableau à double entrée. Garçons : 6A=14, 6B=12. Filles : 6A=11, 6B=13. Quel est l'effectif total de la 6A ?",
+          "answer": "25",
+          "hint": "6A total = garçons 6A + filles 6A = 14 + 11 = 25.",
+          "tolerance": [
+            "25",
+            "25 élèves"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on un tableau qui regroupe des données en intervalles (ex : [0;5[, [5;10[...) ?",
+          "opts": [
+            "Tableau de fréquences simples",
+            "Tableau de données groupées (par classes)",
+            "Tableau à double entrée",
+            "Diagramme"
+          ],
+          "ans": 1,
+          "hint": "Quand les données sont trop nombreuses, on les regroupe en classes (intervalles). Ex : notes groupées par 5.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La somme de toutes les fréquences relatives d'un tableau est toujours égale à 1 (ou 100%).",
+          "ans": true,
+          "hint": "Chaque fréquence = effectif / effectif total. La somme de tous les effectifs = effectif total → somme des fréquences = total/total = 1 = 100%. Toujours.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Un tableau de notes montre : 8 apparaît 3 fois, 12 apparaît 5 fois, 15 apparaît 2 fois. Quelle est la fréquence de la note 12 en % ?",
+          "answer": "50",
+          "hint": "Effectif total = 3 + 5 + 2 = 10. Fréquence de 12 = 5/10 = 50%.",
+          "tolerance": [
+            "50",
+            "50%"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Dans un sondage de 200 personnes, 45% préfèrent le chocolat. Combien est-ce en nombre de personnes ?",
+          "opts": [
+            "45",
+            "90",
+            "100",
+            "145"
+          ],
+          "ans": 1,
+          "hint": "45% de 200 = 0,45 × 200 = 90 personnes.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque terme à sa définition dans l'étude statistique.",
+          "pairs": [
+            {
+              "g": "Effectif",
+              "d": "Nombre de fois qu'une valeur apparaît"
+            },
+            {
+              "g": "Fréquence",
+              "d": "Effectif ÷ effectif total"
+            },
+            {
+              "g": "Population",
+              "d": "L'ensemble des individus étudiés"
+            },
+            {
+              "g": "Caractère",
+              "d": "La propriété étudiée (ex : couleur des yeux)"
+            }
+          ],
+          "hint": "Ces termes fondamentaux de la statistique sont à maîtriser pour lire et produire des tableaux de données.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -34,26 +243,244 @@
       "label": "Diagrammes : barres, circulaires, courbes",
       "section": "Organisation et gestion de données",
       "questions": [
-        {"type":"qcm","q":"Quel type de diagramme utilise des barres de hauteur proportionnelle aux effectifs ?","opts":["Diagramme circulaire","Diagramme en bâtons (barres)","Courbe","Histogramme"],"ans":1,"hint":"Le diagramme en bâtons (barres) représente chaque valeur par une barre dont la hauteur = effectif.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un diagramme circulaire (camembert) représente les données sous forme de secteurs angulaires.","ans":true,"hint":"Le disque est divisé en secteurs proportionnels aux fréquences. L'angle du secteur = fréquence × 360°.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle représentation graphique est la plus adaptée pour montrer l'évolution d'une quantité dans le temps ?","opts":["Diagramme en barres","Diagramme circulaire","Courbe","Tableau"],"ans":2,"hint":"La courbe relie des points dans le temps → montre clairement l'évolution, la progression ou la régression.","difficulty":"easy"},
-        {"type":"texte","q":"Dans un camembert, un secteur représente 25% des données. Quel est l'angle de ce secteur ?","answer":"90","hint":"Angle = fréquence × 360° = 25% × 360° = 0,25 × 360 = 90°.","tolerance":["90","90°"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un diagramme doit toujours avoir un titre et des légendes pour être lisible.","ans":true,"hint":"Un graphique sans titre ni légende ne permet pas d'identifier ce qu'il représente. C'est une règle de présentation.","difficulty":"easy"},
-        {"type":"qcm","q":"Un diagramme en barres montre : Pommes 30, Poires 20, Cerises 10. Quelle part représentent les pommes ?","opts":["1/3","1/2","3/4","2/3"],"ans":1,"hint":"Total = 30 + 20 + 10 = 60. Pommes = 30/60 = 1/2.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Dans un diagramme circulaire, la somme de tous les angles est 360°.","ans":true,"hint":"Le cercle entier = 360°. Chaque secteur est une fraction de 360°. La somme des fractions = 1 → somme des angles = 360°.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque situation à la représentation graphique la plus adaptée.","pairs":[{"g":"Évolution de la température sur un mois","d":"Courbe"},{"g":"Répartition des élèves par matière préférée","d":"Diagramme circulaire"},{"g":"Comparaison des ventes de 5 produits","d":"Diagramme en barres"},{"g":"Distribution des notes d'un contrôle","d":"Diagramme en bâtons ou histogramme"}],"hint":"Le choix du diagramme dépend du type de données (qualitatives/quantitatives) et du message à communiquer.","difficulty":"medium"},
-        {"type":"texte","q":"Un camembert représente les transports utilisés. Bus : 120°, Voiture : 180°, Vélo : 60°. Quel % représente le bus ?","answer":"33,3","hint":"Angle bus = 120° sur 360°. Fréquence = 120/360 = 1/3 ≈ 33,3%.","tolerance":["33,3","33.3","33%","1/3","33,33"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Un histogramme et un diagramme en barres sont identiques.","ans":false,"hint":"Histogramme : les barres sont accolées (données groupées en classes continues). Barres : espace entre elles (données discrètes).","difficulty":"medium"},
-        {"type":"qcm","q":"Une courbe de températures mensuelles montre un pic en juillet. Qu'en déduit-on ?","opts":["Juillet est le mois le plus froid","Juillet est le mois le plus chaud","La température est constante","La courbe est descendante"],"ans":1,"hint":"Un pic (point le plus haut) sur une courbe de températures = valeur maximale = mois le plus chaud.","difficulty":"medium"},
-        {"type":"texte","q":"200 élèves sont interrogés sur leur sport préféré. 60 choisissent le foot. Quel angle représente le foot dans un camembert ?","answer":"108","hint":"Fréquence = 60/200 = 0,3. Angle = 0,3 × 360° = 108°.","tolerance":["108","108°"],"difficulty":"medium"},
-        {"type":"qcm","q":"Lequel de ces graphiques permet de voir si deux quantités évoluent de la même façon ?","opts":["Deux diagrammes circulaires","Une courbe avec deux séries de données","Un tableau","Un diagramme en barres unique"],"ans":1,"hint":"Deux courbes sur le même graphique permettent de comparer leurs évolutions simultanément.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'axe vertical d'un diagramme en barres doit toujours commencer à 0.","ans":true,"hint":"Commencer à zéro permet de comparer les barres sans tromper visuellement. Un axe tronqué peut induire en erreur.","difficulty":"medium"},
-        {"type":"texte","q":"Dans un diagramme, on lit : lundi=15, mardi=22, mercredi=18, jeudi=25, vendredi=20. Quel est l'écart entre le maximum et le minimum ?","answer":"10","hint":"Max = 25 (jeudi), Min = 15 (lundi). Écart = 25 - 15 = 10.","tolerance":["10"],"difficulty":"medium"},
-        {"type":"qcm","q":"Un diagramme circulaire représente les langues parlées dans une école. Français: 180°, Anglais: 90°, Espagnol: 60°, Arabe: 30°. Quelle langue est la plus répandue ?","opts":["Anglais","Espagnol","Français","Arabe"],"ans":2,"hint":"Le plus grand angle (180°) correspond à la plus grande fréquence → le français est le plus représenté.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Pour comparer deux populations de taille différente, il vaut mieux utiliser les fréquences (%) que les effectifs.","ans":true,"hint":"Si classe A = 30 élèves et classe B = 25 élèves, les effectifs bruts ne sont pas directement comparables. Les % permettent la comparaison.","difficulty":"hard"},
-        {"type":"texte","q":"Dans un camembert, Catégorie A = 144°, Catégorie B = 108°, Catégorie C = 108°. Quelle est la fréquence en % de la catégorie A ?","answer":"40","hint":"A / Total = 144/360 = 2/5 = 40%.","tolerance":["40","40%"],"difficulty":"hard"},
-        {"type":"qcm","q":"Une courbe de croissance montre qu'une valeur passe de 100 à 150 en un an. Quelle est l'augmentation en % ?","opts":["50%","150%","25%","75%"],"ans":0,"hint":"Augmentation = (150 - 100)/100 × 100% = 50/100 × 100% = 50%.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque type de diagramme à son inconvénient principal.","pairs":[{"g":"Diagramme circulaire","d":"Difficile à lire quand il y a beaucoup de catégories"},{"g":"Courbe","d":"Inapproprié pour des données non continues dans le temps"},{"g":"Diagramme en barres","d":"Ne montre pas bien les évolutions temporelles"},{"g":"Tableau de données","d":"Moins visuel, plus difficile à interpréter rapidement"}],"hint":"Chaque représentation a ses forces et ses limites. Choisir la bonne représentation est une compétence statistique.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quel type de diagramme utilise des barres de hauteur proportionnelle aux effectifs ?",
+          "opts": [
+            "Diagramme circulaire",
+            "Diagramme en bâtons (barres)",
+            "Courbe",
+            "Histogramme"
+          ],
+          "ans": 1,
+          "hint": "Le diagramme en bâtons (barres) représente chaque valeur par une barre dont la hauteur = effectif.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un diagramme circulaire (camembert) représente les données sous forme de secteurs angulaires.",
+          "ans": true,
+          "hint": "Le disque est divisé en secteurs proportionnels aux fréquences. L'angle du secteur = fréquence × 360°.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle représentation graphique est la plus adaptée pour montrer l'évolution d'une quantité dans le temps ?",
+          "opts": [
+            "Diagramme en barres",
+            "Diagramme circulaire",
+            "Courbe",
+            "Tableau"
+          ],
+          "ans": 2,
+          "hint": "La courbe relie des points dans le temps → montre clairement l'évolution, la progression ou la régression.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Dans un camembert, un secteur représente 25% des données. Quel est l'angle de ce secteur ?",
+          "answer": "90",
+          "hint": "Angle = fréquence × 360° = 25% × 360° = 0,25 × 360 = 90°.",
+          "tolerance": [
+            "90",
+            "90°"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un diagramme n'a pas besoin de titre ni de légende pour être bien présenté.",
+          "ans": false,
+          "hint": "Faux ! Un diagramme DOIT toujours avoir un titre et des légendes pour être lisible. Sans ces éléments, on ne peut pas identifier ce que le graphique représente.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Un diagramme en barres montre : Pommes 30, Poires 20, Cerises 10. Quelle part représentent les pommes ?",
+          "opts": [
+            "1/3",
+            "1/2",
+            "3/4",
+            "2/3"
+          ],
+          "ans": 1,
+          "hint": "Total = 30 + 20 + 10 = 60. Pommes = 30/60 = 1/2.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Dans un diagramme circulaire, la somme de tous les angles est 180°.",
+          "ans": false,
+          "hint": "Faux ! La somme de tous les angles d'un diagramme circulaire est 360° (le tour complet du cercle). 180° représente seulement la moitié d'un cercle.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque situation à la représentation graphique la plus adaptée.",
+          "pairs": [
+            {
+              "g": "Évolution de la température sur un mois",
+              "d": "Courbe"
+            },
+            {
+              "g": "Répartition des élèves par matière préférée",
+              "d": "Diagramme circulaire"
+            },
+            {
+              "g": "Comparaison des ventes de 5 produits",
+              "d": "Diagramme en barres"
+            },
+            {
+              "g": "Distribution des notes d'un contrôle",
+              "d": "Diagramme en bâtons ou histogramme"
+            }
+          ],
+          "hint": "Le choix du diagramme dépend du type de données (qualitatives/quantitatives) et du message à communiquer.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Un camembert représente les transports utilisés. Bus : 120°, Voiture : 180°, Vélo : 60°. Quel % représente le bus ?",
+          "answer": "33,3",
+          "hint": "Angle bus = 120° sur 360°. Fréquence = 120/360 = 1/3 ≈ 33,3%.",
+          "tolerance": [
+            "33,3",
+            "33.3",
+            "33%",
+            "1/3",
+            "33,33"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un histogramme et un diagramme en barres sont identiques.",
+          "ans": false,
+          "hint": "Histogramme : les barres sont accolées (données groupées en classes continues). Barres : espace entre elles (données discrètes).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Une courbe de températures mensuelles montre un pic en juillet. Qu'en déduit-on ?",
+          "opts": [
+            "Juillet est le mois le plus froid",
+            "Juillet est le mois le plus chaud",
+            "La température est constante",
+            "La courbe est descendante"
+          ],
+          "ans": 1,
+          "hint": "Un pic (point le plus haut) sur une courbe de températures = valeur maximale = mois le plus chaud.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "200 élèves sont interrogés sur leur sport préféré. 60 choisissent le foot. Quel angle représente le foot dans un camembert ?",
+          "answer": "108",
+          "hint": "Fréquence = 60/200 = 0,3. Angle = 0,3 × 360° = 108°.",
+          "tolerance": [
+            "108",
+            "108°"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces graphiques permet de voir si deux quantités évoluent de la même façon ?",
+          "opts": [
+            "Deux diagrammes circulaires",
+            "Une courbe avec deux séries de données",
+            "Un tableau",
+            "Un diagramme en barres unique"
+          ],
+          "ans": 1,
+          "hint": "Deux courbes sur le même graphique permettent de comparer leurs évolutions simultanément.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'axe vertical d'un diagramme en barres doit toujours commencer à 0.",
+          "ans": true,
+          "hint": "Commencer à zéro permet de comparer les barres sans tromper visuellement. Un axe tronqué peut induire en erreur.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Dans un diagramme, on lit : lundi=15, mardi=22, mercredi=18, jeudi=25, vendredi=20. Quel est l'écart entre le maximum et le minimum ?",
+          "answer": "10",
+          "hint": "Max = 25 (jeudi), Min = 15 (lundi). Écart = 25 - 15 = 10.",
+          "tolerance": [
+            "10"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un diagramme circulaire représente les langues parlées dans une école. Français: 180°, Anglais: 90°, Espagnol: 60°, Arabe: 30°. Quelle langue est la plus répandue ?",
+          "opts": [
+            "Anglais",
+            "Espagnol",
+            "Français",
+            "Arabe"
+          ],
+          "ans": 2,
+          "hint": "Le plus grand angle (180°) correspond à la plus grande fréquence → le français est le plus représenté.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Pour comparer deux populations de taille différente, il vaut mieux utiliser les fréquences (%) que les effectifs.",
+          "ans": true,
+          "hint": "Si classe A = 30 élèves et classe B = 25 élèves, les effectifs bruts ne sont pas directement comparables. Les % permettent la comparaison.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Dans un camembert, Catégorie A = 144°, Catégorie B = 108°, Catégorie C = 108°. Quelle est la fréquence en % de la catégorie A ?",
+          "answer": "40",
+          "hint": "A / Total = 144/360 = 2/5 = 40%.",
+          "tolerance": [
+            "40",
+            "40%"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Une courbe de croissance montre qu'une valeur passe de 100 à 150 en un an. Quelle est l'augmentation en % ?",
+          "opts": [
+            "50%",
+            "150%",
+            "25%",
+            "75%"
+          ],
+          "ans": 0,
+          "hint": "Augmentation = (150 - 100)/100 × 100% = 50/100 × 100% = 50%.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque type de diagramme à son inconvénient principal.",
+          "pairs": [
+            {
+              "g": "Diagramme circulaire",
+              "d": "Difficile à lire quand il y a beaucoup de catégories"
+            },
+            {
+              "g": "Courbe",
+              "d": "Inapproprié pour des données non continues dans le temps"
+            },
+            {
+              "g": "Diagramme en barres",
+              "d": "Ne montre pas bien les évolutions temporelles"
+            },
+            {
+              "g": "Tableau de données",
+              "d": "Moins visuel, plus difficile à interpréter rapidement"
+            }
+          ],
+          "hint": "Chaque représentation a ses forces et ses limites. Choisir la bonne représentation est une compétence statistique.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -61,26 +488,256 @@
       "label": "Moyenne d'une série statistique",
       "section": "Organisation et gestion de données",
       "questions": [
-        {"type":"qcm","q":"Quelle est la formule de la moyenne d'une série de valeurs ?","opts":["Moyenne = valeur max - valeur min","Moyenne = somme des valeurs / nombre de valeurs","Moyenne = valeur du milieu","Moyenne = valeur la plus fréquente"],"ans":1,"hint":"La moyenne arithmétique = somme de toutes les valeurs divisée par leur nombre.","difficulty":"easy"},
-        {"type":"texte","q":"Calcule la moyenne des notes suivantes : 8, 12, 14, 10, 16.","answer":"12","hint":"Somme = 8+12+14+10+16 = 60. Moyenne = 60 / 5 = 12.","tolerance":["12","12/5","12.0"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La moyenne d'une série est toujours l'une des valeurs de cette série.","ans":false,"hint":"Exemple : notes 8 et 9 → moyenne = 8,5 qui n'est pas dans la série. La moyenne peut ne pas appartenir à la série.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelles sont les 4 notes de Paul : 10, 14, 8, 12. Quelle est sa moyenne ?","opts":["10","11","12","13"],"ans":1,"hint":"Somme = 10+14+8+12 = 44. Moyenne = 44/4 = 11.","difficulty":"easy"},
-        {"type":"texte","q":"Cinq températures relevées : 15, 18, 12, 20, 15. Calcule la moyenne.","answer":"16","hint":"Somme = 15+18+12+20+15 = 80. Moyenne = 80/5 = 16°.","tolerance":["16","16°","16 degrés"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Si tous les termes d'une série augmentent de 3, la moyenne augmente aussi de 3.","ans":true,"hint":"Moyenne(x+3) = (Σ(xi+3))/n = Σxi/n + 3n/n = moyenne + 3. Propriété de linéarité.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'appelle-t-on l'étendue d'une série statistique ?","opts":["La valeur la plus fréquente","La valeur du milieu","La différence entre la valeur maximale et minimale","La somme des valeurs"],"ans":2,"hint":"Étendue = max - min. Mesure la dispersion de la série.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque indicateur statistique à sa définition.","pairs":[{"g":"Moyenne","d":"Somme ÷ nombre de valeurs"},{"g":"Étendue","d":"Valeur max − valeur min"},{"g":"Médiane","d":"Valeur du milieu (série ordonnée)"},{"g":"Mode","d":"Valeur la plus fréquente"}],"hint":"Ces quatre indicateurs résument une série statistique. La moyenne et la médiane mesurent le centre, l'étendue mesure la dispersion.","difficulty":"medium"},
-        {"type":"texte","q":"Calcule la moyenne pondérée : coeff 2 : 14, coeff 3 : 10, coeff 1 : 16.","answer":"12","hint":"Moyenne = (14×2 + 10×3 + 16×1) / (2+3+1) = (28+30+16)/6 = 74/6 ≈ 12,33. Acceptons 12,33 ou 74/6.","tolerance":["12,33","12.33","74/6","12,3"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La médiane d'une série est toujours égale à la moyenne.","ans":false,"hint":"Médiane ≠ moyenne en général. Exemple : 1, 2, 3, 4, 100. Médiane = 3, Moyenne = 22. Une valeur extrême fausse la moyenne.","difficulty":"medium"},
-        {"type":"qcm","q":"La série : 5, 7, 8, 10, 12, 15, 20. Quelle est sa médiane ?","opts":["8","10","12","9"],"ans":1,"hint":"7 valeurs → médiane = 4ème valeur = 10 (série déjà ordonnée).","difficulty":"medium"},
-        {"type":"texte","q":"Calcule la moyenne des températures : 18, 22, 20, 25, 15, 23, 19, 21. Arrondie à l'unité.","answer":"20","hint":"Somme = 163. Moyenne = 163/8 = 20,375 ≈ 20°.","tolerance":["20","20°","20,375","20.375","20,4"],"difficulty":"medium"},
-        {"type":"qcm","q":"Cinq élèves ont des notes : 8, 10, 12, 14, 16. Un 6ème élève rejoint le groupe avec 18. Que devient la moyenne ?","opts":["12","13","14","15"],"ans":1,"hint":"Somme des 5 = 60. + 18 = 78. Moyenne = 78/6 = 13.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Une valeur extrême (très grande ou très petite) influence davantage la moyenne que la médiane.","ans":true,"hint":"La moyenne est sensible aux valeurs extrêmes (outliers). La médiane est plus robuste car elle ne dépend que de la valeur centrale.","difficulty":"medium"},
-        {"type":"texte","q":"Paul a obtenu 9, 11 et 14. Quelle note doit-il avoir au 4ème devoir pour avoir une moyenne de 12 ?","answer":"14","hint":"Somme nécessaire = 12 × 4 = 48. Somme actuelle = 9+11+14 = 34. Note nécessaire = 48 - 34 = 14.","tolerance":["14","14/20","14 sur 20"],"difficulty":"medium"},
-        {"type":"qcm","q":"On multiplie chaque valeur d'une série par 2. Que devient la moyenne ?","opts":["Elle reste la même","Elle double","Elle est divisée par 2","Elle augmente de 2"],"ans":1,"hint":"Moyenne(2xi) = Σ(2xi)/n = 2×Σxi/n = 2 × moyenne. La moyenne double.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Pour 8 valeurs, si la somme est 104, la moyenne est 13.","ans":true,"hint":"Moyenne = 104/8 = 13.","difficulty":"hard"},
-        {"type":"texte","q":"Deux classes de 25 et 30 élèves ont des moyennes de 13 et 11. Quelle est la moyenne globale ?","answer":"11,9","hint":"Somme totale = 25×13 + 30×11 = 325 + 330 = 655. Effectif total = 55. Moyenne = 655/55 = 11,9.","tolerance":["11,9","11.9","655/55"],"difficulty":"hard"},
-        {"type":"qcm","q":"Une série a une étendue de 12 et une valeur minimale de 8. Quelle est la valeur maximale ?","opts":["4","12","20","96"],"ans":2,"hint":"Étendue = max - min → 12 = max - 8 → max = 20.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque série à sa moyenne.","pairs":[{"g":"2, 4, 6, 8, 10","d":"6"},{"g":"1, 1, 2, 3, 3","d":"2"},{"g":"10, 20, 30","d":"20"},{"g":"5, 5, 5, 5","d":"5"}],"hint":"Calcule : Σ/n pour chaque série.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelle est la formule de la moyenne d'une série de valeurs ?",
+          "opts": [
+            "Moyenne = valeur max - valeur min",
+            "Moyenne = somme des valeurs / nombre de valeurs",
+            "Moyenne = valeur du milieu",
+            "Moyenne = valeur la plus fréquente"
+          ],
+          "ans": 1,
+          "hint": "La moyenne arithmétique = somme de toutes les valeurs divisée par leur nombre.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Calcule la moyenne des notes suivantes : 8, 12, 14, 10, 16.",
+          "answer": "12",
+          "hint": "Somme = 8+12+14+10+16 = 60. Moyenne = 60 / 5 = 12.",
+          "tolerance": [
+            "12",
+            "12/5",
+            "12.0"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La moyenne d'une série est toujours l'une des valeurs de cette série.",
+          "ans": false,
+          "hint": "Exemple : notes 8 et 9 → moyenne = 8,5 qui n'est pas dans la série. La moyenne peut ne pas appartenir à la série.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelles sont les 4 notes de Paul : 10, 14, 8, 12. Quelle est sa moyenne ?",
+          "opts": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          "ans": 1,
+          "hint": "Somme = 10+14+8+12 = 44. Moyenne = 44/4 = 11.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Cinq températures relevées : 15, 18, 12, 20, 15. Calcule la moyenne.",
+          "answer": "16",
+          "hint": "Somme = 15+18+12+20+15 = 80. Moyenne = 80/5 = 16°.",
+          "tolerance": [
+            "16",
+            "16°",
+            "16 degrés"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Si tous les termes d'une série augmentent de 3, la moyenne augmente aussi de 3.",
+          "ans": true,
+          "hint": "Moyenne(x+3) = (Σ(xi+3))/n = Σxi/n + 3n/n = moyenne + 3. Propriété de linéarité.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'appelle-t-on l'étendue d'une série statistique ?",
+          "opts": [
+            "La valeur la plus fréquente",
+            "La valeur du milieu",
+            "La différence entre la valeur maximale et minimale",
+            "La somme des valeurs"
+          ],
+          "ans": 2,
+          "hint": "Étendue = max - min. Mesure la dispersion de la série.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque indicateur statistique à sa définition.",
+          "pairs": [
+            {
+              "g": "Moyenne",
+              "d": "Somme ÷ nombre de valeurs"
+            },
+            {
+              "g": "Étendue",
+              "d": "Valeur max − valeur min"
+            },
+            {
+              "g": "Médiane",
+              "d": "Valeur du milieu (série ordonnée)"
+            },
+            {
+              "g": "Mode",
+              "d": "Valeur la plus fréquente"
+            }
+          ],
+          "hint": "Ces quatre indicateurs résument une série statistique. La moyenne et la médiane mesurent le centre, l'étendue mesure la dispersion.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Calcule la moyenne pondérée : coeff 2 : 14, coeff 3 : 10, coeff 1 : 16.",
+          "answer": "12,33",
+          "hint": "Moyenne = (14×2 + 10×3 + 16×1) / (2+3+1) = (28+30+16)/6 = 74/6 ≈ 12,33.",
+          "tolerance": [
+            "12,33",
+            "12.33",
+            "74/6",
+            "12,3",
+            "12,34"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La médiane d'une série est toujours égale à la moyenne.",
+          "ans": false,
+          "hint": "Médiane ≠ moyenne en général. Exemple : 1, 2, 3, 4, 100. Médiane = 3, Moyenne = 22. Une valeur extrême fausse la moyenne.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La série : 5, 7, 8, 10, 12, 15, 20. Quelle est sa médiane ?",
+          "opts": [
+            "8",
+            "10",
+            "12",
+            "9"
+          ],
+          "ans": 1,
+          "hint": "7 valeurs → médiane = 4ème valeur = 10 (série déjà ordonnée).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Calcule la moyenne des températures : 18, 22, 20, 25, 15, 23, 19, 21. Arrondie à l'unité.",
+          "answer": "20",
+          "hint": "Somme = 163. Moyenne = 163/8 = 20,375 ≈ 20°.",
+          "tolerance": [
+            "20",
+            "20°",
+            "20,375",
+            "20.375",
+            "20,4"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Cinq élèves ont des notes : 8, 10, 12, 14, 16. Un 6ème élève rejoint le groupe avec 18. Que devient la moyenne ?",
+          "opts": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "ans": 1,
+          "hint": "Somme des 5 = 60. + 18 = 78. Moyenne = 78/6 = 13.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Une valeur extrême (très grande ou très petite) influence davantage la moyenne que la médiane.",
+          "ans": true,
+          "hint": "La moyenne est sensible aux valeurs extrêmes (outliers). La médiane est plus robuste car elle ne dépend que de la valeur centrale.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Paul a obtenu 9, 11 et 14. Quelle note doit-il avoir au 4ème devoir pour avoir une moyenne de 12 ?",
+          "answer": "14",
+          "hint": "Somme nécessaire = 12 × 4 = 48. Somme actuelle = 9+11+14 = 34. Note nécessaire = 48 - 34 = 14.",
+          "tolerance": [
+            "14",
+            "14/20",
+            "14 sur 20"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "On multiplie chaque valeur d'une série par 2. Que devient la moyenne ?",
+          "opts": [
+            "Elle reste la même",
+            "Elle double",
+            "Elle est divisée par 2",
+            "Elle augmente de 2"
+          ],
+          "ans": 1,
+          "hint": "Moyenne(2xi) = Σ(2xi)/n = 2×Σxi/n = 2 × moyenne. La moyenne double.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Pour 8 valeurs, si la somme est 104, la moyenne est 14.",
+          "ans": false,
+          "hint": "Faux ! Moyenne = somme / nombre de valeurs = 104 / 8 = 13, pas 14. (14 × 8 = 112, pas 104.)",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Deux classes de 25 et 30 élèves ont des moyennes de 13 et 11. Quelle est la moyenne globale ?",
+          "answer": "11,9",
+          "hint": "Somme totale = 25×13 + 30×11 = 325 + 330 = 655. Effectif total = 55. Moyenne = 655/55 = 11,9.",
+          "tolerance": [
+            "11,9",
+            "11.9",
+            "655/55"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Une série a une étendue de 12 et une valeur minimale de 8. Quelle est la valeur maximale ?",
+          "opts": [
+            "4",
+            "12",
+            "20",
+            "96"
+          ],
+          "ans": 2,
+          "hint": "Étendue = max - min → 12 = max - 8 → max = 20.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque série à sa moyenne.",
+          "pairs": [
+            {
+              "g": "2, 4, 6, 8, 10",
+              "d": "6"
+            },
+            {
+              "g": "1, 1, 2, 3, 3",
+              "d": "2"
+            },
+            {
+              "g": "10, 20, 30",
+              "d": "20"
+            },
+            {
+              "g": "5, 5, 5, 5",
+              "d": "5"
+            }
+          ],
+          "hint": "Calcule : Σ/n pour chaque série.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -88,26 +745,259 @@
       "label": "Notion de hasard et probabilité",
       "section": "Organisation et gestion de données",
       "questions": [
-        {"type":"qcm","q":"Qu'est-ce qu'une expérience aléatoire ?","opts":["Une expérience dont on connaît à l'avance le résultat","Une expérience dont le résultat est imprévisible","Une expérience qui réussit toujours","Une expérience en laboratoire"],"ans":1,"hint":"Aléatoire = dû au hasard. On ne peut pas prédire avec certitude le résultat avant de le connaître.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Lancer un dé équilibré à 6 faces est une expérience aléatoire.","ans":true,"hint":"On ne peut pas prédire quelle face apparaîtra. C'est une expérience aléatoire classique.","difficulty":"easy"},
-        {"type":"qcm","q":"On lance un dé équilibré (6 faces). Quelle est la probabilité d'obtenir un 4 ?","opts":["1/4","1/6","4/6","1/2"],"ans":1,"hint":"Dé équilibré : chaque face a la même probabilité = 1/6. Il y a 1 résultat favorable (le 4) sur 6 possibles.","difficulty":"easy"},
-        {"type":"texte","q":"On tire une carte dans un jeu de 32 cartes. Quelle est la probabilité de tirer un as ? (il y en a 4)","answer":"1/8","hint":"P(as) = 4/32 = 1/8.","tolerance":["1/8","4/32","0,125","0.125"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Une probabilité ne peut jamais être supérieure à 1.","ans":true,"hint":"La probabilité est toujours entre 0 (impossible) et 1 (certain). P = 0 : impossible. P = 1 : certain.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle est la probabilité d'un événement impossible ?","opts":["1","0,5","0","Indéfinie"],"ans":2,"hint":"P(impossible) = 0. P(certain) = 1. Toute probabilité est comprise entre 0 et 1.","difficulty":"easy"},
-        {"type":"qcm","q":"On tire au hasard une bille dans un sac de 5 rouges et 3 bleues. Quelle est la probabilité de tirer une bleue ?","opts":["3/5","5/8","3/8","5/3"],"ans":2,"hint":"Total = 5 + 3 = 8 billes. Billes bleues = 3. P(bleue) = 3/8.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque événement à sa probabilité.","pairs":[{"g":"Obtenir 7 sur un dé à 6 faces","d":"0 (impossible)"},{"g":"Obtenir un nombre pair sur un dé (2,4,6)","d":"1/2"},{"g":"Tirer une carte rouge dans un jeu de 32 (16 rouges)","d":"1/2"},{"g":"Obtenir face sur une pièce équilibrée","d":"1/2"}],"hint":"P = résultats favorables / résultats possibles. Si l'événement est impossible P=0, si certain P=1.","difficulty":"medium"},
-        {"type":"texte","q":"On lance une pièce de monnaie. Quelle est la probabilité d'obtenir 'pile' ?","answer":"1/2","hint":"Pièce équilibrée : 2 résultats possibles (pile/face), chacun avec probabilité 1/2.","tolerance":["1/2","0,5","0.5","50%"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Si on lance 10 fois une pièce et qu'on obtient 10 fois 'face', la probabilité d'obtenir 'pile' au lancer suivant est plus grande que 1/2.","ans":false,"hint":"Erreur classique : les lancers sont indépendants. La probabilité reste toujours 1/2 à chaque lancer.","difficulty":"medium"},
-        {"type":"qcm","q":"On tire une bille dans un sac : 4 rouges, 3 bleues, 3 vertes. Quelle est la probabilité de ne pas tirer de rouge ?","opts":["4/10","3/10","6/10","1/10"],"ans":2,"hint":"P(pas rouge) = 1 - P(rouge) = 1 - 4/10 = 6/10 = 3/5.","difficulty":"medium"},
-        {"type":"texte","q":"On tire une carte d'un jeu de 32. Quelle est la probabilité d'obtenir un cœur ? (8 cœurs sur 32)","answer":"1/4","hint":"P = 8/32 = 1/4.","tolerance":["1/4","8/32","0,25","0.25","25%"],"difficulty":"medium"},
-        {"type":"qcm","q":"Si P(A) = 0,7, quelle est la probabilité que A ne se réalise pas ?","opts":["0,7","0,3","1,7","0"],"ans":1,"hint":"P(non-A) = 1 - P(A) = 1 - 0,7 = 0,3. Les probabilités d'un événement et de son contraire somment à 1.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La fréquence expérimentale d'un événement se rapproche de sa probabilité théorique quand le nombre d'essais est grand.","ans":true,"hint":"Loi des grands nombres : plus on répète l'expérience, plus la fréquence observée se rapproche de la probabilité théorique.","difficulty":"medium"},
-        {"type":"texte","q":"On lance un dé à 6 faces. Quelle est la probabilité d'obtenir un nombre strictement supérieur à 4 ?","answer":"1/3","hint":"Résultats favorables : 5 et 6 → 2 résultats. P = 2/6 = 1/3.","tolerance":["1/3","2/6","0,33","0.33"],"difficulty":"medium"},
-        {"type":"qcm","q":"On tire une bille dans un sac de 12. P(rouge) = 1/4. Combien y a-t-il de billes rouges ?","opts":["4","3","6","1"],"ans":1,"hint":"P = rouges/12 = 1/4 → rouges = 12/4 = 3.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Si on lance deux dés, la probabilité d'obtenir une somme de 7 est plus grande que la probabilité d'une somme de 12.","ans":true,"hint":"Somme 7 : (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 cas. Somme 12 : (6,6) = 1 cas. P(7) = 6/36 > P(12) = 1/36.","difficulty":"hard"},
-        {"type":"texte","q":"On tire 2 billes d'un sac de 5 rouges et 5 bleues (avec remise). Quelle est la probabilité d'obtenir deux rouges ?","answer":"1/4","hint":"P(rouge) = 5/10 = 1/2. Avec remise : P(rouge et rouge) = 1/2 × 1/2 = 1/4.","tolerance":["1/4","0,25","0.25","25%"],"difficulty":"hard"},
-        {"type":"qcm","q":"Un événement a une probabilité de 2/3. Si on répète l'expérience 90 fois, combien de fois environ cet événement se réalisera-t-il ?","opts":["30","45","60","90"],"ans":2,"hint":"Fréquence espérée = P × n = 2/3 × 90 = 60 fois.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque probabilité à l'événement correspondant sur un dé à 6 faces.","pairs":[{"g":"P = 1/6","d":"Obtenir exactement 3"},{"g":"P = 1/2","d":"Obtenir un nombre pair"},{"g":"P = 1/3","d":"Obtenir un multiple de 3"},{"g":"P = 0","d":"Obtenir 7"}],"hint":"Dé 6 faces : pairs = {2,4,6}, multiples de 3 = {3,6}, 7 est impossible.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une expérience aléatoire ?",
+          "opts": [
+            "Une expérience dont on connaît à l'avance le résultat",
+            "Une expérience dont le résultat est imprévisible",
+            "Une expérience qui réussit toujours",
+            "Une expérience en laboratoire"
+          ],
+          "ans": 1,
+          "hint": "Aléatoire = dû au hasard. On ne peut pas prédire avec certitude le résultat avant de le connaître.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Lancer un dé équilibré à 6 faces n'est pas une expérience aléatoire car le résultat dépend de la force du lancer.",
+          "ans": false,
+          "hint": "Faux ! C'est bien une expérience ALÉATOIRE : on ne peut pas prédire quelle face apparaîtra, quel que soit le lancer. Le hasard est complet.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "On lance un dé équilibré (6 faces). Quelle est la probabilité d'obtenir un 4 ?",
+          "opts": [
+            "1/4",
+            "1/6",
+            "4/6",
+            "1/2"
+          ],
+          "ans": 1,
+          "hint": "Dé équilibré : chaque face a la même probabilité = 1/6. Il y a 1 résultat favorable (le 4) sur 6 possibles.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "On tire une carte dans un jeu de 32 cartes. Quelle est la probabilité de tirer un as ? (il y en a 4)",
+          "answer": "1/8",
+          "hint": "P(as) = 4/32 = 1/8.",
+          "tolerance": [
+            "1/8",
+            "4/32",
+            "0,125",
+            "0.125"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Une probabilité ne peut jamais être supérieure à 1.",
+          "ans": true,
+          "hint": "La probabilité est toujours entre 0 (impossible) et 1 (certain). P = 0 : impossible. P = 1 : certain.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la probabilité d'un événement impossible ?",
+          "opts": [
+            "1",
+            "0,5",
+            "0",
+            "Indéfinie"
+          ],
+          "ans": 2,
+          "hint": "P(impossible) = 0. P(certain) = 1. Toute probabilité est comprise entre 0 et 1.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "On tire au hasard une bille dans un sac de 5 rouges et 3 bleues. Quelle est la probabilité de tirer une bleue ?",
+          "opts": [
+            "3/5",
+            "5/8",
+            "3/8",
+            "5/3"
+          ],
+          "ans": 2,
+          "hint": "Total = 5 + 3 = 8 billes. Billes bleues = 3. P(bleue) = 3/8.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque événement à sa probabilité.",
+          "pairs": [
+            {
+              "g": "Obtenir 7 sur un dé à 6 faces",
+              "d": "0 (impossible)"
+            },
+            {
+              "g": "Obtenir un nombre pair sur un dé (2,4,6)",
+              "d": "1/2"
+            },
+            {
+              "g": "Tirer une carte rouge dans un jeu de 32 (16 rouges)",
+              "d": "1/2"
+            },
+            {
+              "g": "Obtenir face sur une pièce équilibrée",
+              "d": "1/2"
+            }
+          ],
+          "hint": "P = résultats favorables / résultats possibles. Si l'événement est impossible P=0, si certain P=1.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "On lance une pièce de monnaie. Quelle est la probabilité d'obtenir 'pile' ?",
+          "answer": "1/2",
+          "hint": "Pièce équilibrée : 2 résultats possibles (pile/face), chacun avec probabilité 1/2.",
+          "tolerance": [
+            "1/2",
+            "0,5",
+            "0.5",
+            "50%"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Si on lance 10 fois une pièce et qu'on obtient 10 fois 'face', la probabilité d'obtenir 'pile' au lancer suivant est plus grande que 1/2.",
+          "ans": false,
+          "hint": "Erreur classique : les lancers sont indépendants. La probabilité reste toujours 1/2 à chaque lancer.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "On tire une bille dans un sac : 4 rouges, 3 bleues, 3 vertes. Quelle est la probabilité de ne pas tirer de rouge ?",
+          "opts": [
+            "4/10",
+            "3/10",
+            "6/10",
+            "1/10"
+          ],
+          "ans": 2,
+          "hint": "P(pas rouge) = 1 - P(rouge) = 1 - 4/10 = 6/10 = 3/5.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "On tire une carte d'un jeu de 32. Quelle est la probabilité d'obtenir un cœur ? (8 cœurs sur 32)",
+          "answer": "1/4",
+          "hint": "P = 8/32 = 1/4.",
+          "tolerance": [
+            "1/4",
+            "8/32",
+            "0,25",
+            "0.25",
+            "25%"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Si P(A) = 0,7, quelle est la probabilité que A ne se réalise pas ?",
+          "opts": [
+            "0,7",
+            "0,3",
+            "1,7",
+            "0"
+          ],
+          "ans": 1,
+          "hint": "P(non-A) = 1 - P(A) = 1 - 0,7 = 0,3. Les probabilités d'un événement et de son contraire somment à 1.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La fréquence expérimentale d'un événement s'éloigne de sa probabilité théorique quand le nombre d'essais est grand.",
+          "ans": false,
+          "hint": "Faux ! C'est l'inverse : selon la loi des grands nombres, plus on répète l'expérience, plus la fréquence observée se RAPPROCHE de la probabilité théorique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "On lance un dé à 6 faces. Quelle est la probabilité d'obtenir un nombre strictement supérieur à 4 ?",
+          "answer": "1/3",
+          "hint": "Résultats favorables : 5 et 6 → 2 résultats. P = 2/6 = 1/3.",
+          "tolerance": [
+            "1/3",
+            "2/6",
+            "0,33",
+            "0.33"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "On tire une bille dans un sac de 12. P(rouge) = 1/4. Combien y a-t-il de billes rouges ?",
+          "opts": [
+            "4",
+            "3",
+            "6",
+            "1"
+          ],
+          "ans": 1,
+          "hint": "P = rouges/12 = 1/4 → rouges = 12/4 = 3.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Si on lance deux dés, la probabilité d'obtenir une somme de 7 est plus grande que la probabilité d'une somme de 12.",
+          "ans": true,
+          "hint": "Somme 7 : (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 cas. Somme 12 : (6,6) = 1 cas. P(7) = 6/36 > P(12) = 1/36.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "On tire 2 billes d'un sac de 5 rouges et 5 bleues (avec remise). Quelle est la probabilité d'obtenir deux rouges ?",
+          "answer": "1/4",
+          "hint": "P(rouge) = 5/10 = 1/2. Avec remise : P(rouge et rouge) = 1/2 × 1/2 = 1/4.",
+          "tolerance": [
+            "1/4",
+            "0,25",
+            "0.25",
+            "25%"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Un événement a une probabilité de 2/3. Si on répète l'expérience 90 fois, combien de fois environ cet événement se réalisera-t-il ?",
+          "opts": [
+            "30",
+            "45",
+            "60",
+            "90"
+          ],
+          "ans": 2,
+          "hint": "Fréquence espérée = P × n = 2/3 × 90 = 60 fois.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque probabilité à l'événement correspondant sur un dé à 6 faces.",
+          "pairs": [
+            {
+              "g": "P = 1/6",
+              "d": "Obtenir exactement 3"
+            },
+            {
+              "g": "P = 1/2",
+              "d": "Obtenir un nombre pair"
+            },
+            {
+              "g": "P = 1/3",
+              "d": "Obtenir un multiple de 3"
+            },
+            {
+              "g": "P = 0",
+              "d": "Obtenir 7"
+            }
+          ],
+          "hint": "Dé 6 faces : pairs = {2,4,6}, multiples de 3 = {3,6}, 7 est impossible.",
+          "difficulty": "hard"
+        }
       ]
     }
   ]

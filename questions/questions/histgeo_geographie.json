@@ -7,26 +7,253 @@
       "label": "La Terre : géoïde, continents, océans, coordonnées",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Combien y a-t-il de continents sur Terre ?","opts":["5","6","7","8"],"ans":2,"hint":"Les 7 continents : Afrique, Amérique du Nord, Amérique du Sud, Antarctique, Asie, Europe, Océanie (selon la convention française).","difficulty":"easy"},
-        {"type":"texte","q":"Quel est le plus grand océan du monde ?","answer":"Pacifique","hint":"L'océan Pacifique est le plus grand (165 millions de km²), suivi de l'Atlantique, de l'Indien, de l'Arctique et de l'Antarctique.","tolerance":["Pacifique","l'océan Pacifique","océan Pacifique"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La Terre est une sphère parfaite.","ans":false,"hint":"La Terre est un géoïde : légèrement aplatie aux pôles et renflée à l'équateur. Sa forme exacte est irrégulière.","difficulty":"easy"},
-        {"type":"qcm","q":"Quel est le plus grand continent ?","opts":["Afrique","Amérique","Europe","Asie"],"ans":3,"hint":"L'Asie est le plus grand continent (44 millions de km²) et le plus peuplé (~4,7 milliards d'habitants).","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on les lignes imaginaires qui font le tour de la Terre parallèlement à l'équateur ?","answer":"parallèles","hint":"Les parallèles sont des cercles imaginaires parallèles à l'équateur. L'équateur est le parallèle 0°.","tolerance":["parallèles","les parallèles","parallèle"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Le méridien de Greenwich (0°) passe par l'Angleterre.","ans":true,"hint":"Le méridien de Greenwich (0° de longitude) passe par l'observatoire de Greenwich, à Londres, Angleterre.","difficulty":"easy"},
-        {"type":"qcm","q":"Les coordonnées géographiques d'un point sont données par :","opts":["Sa longueur et sa largeur","Sa latitude et sa longitude","Son altitude et sa latitude","Sa distance à l'équateur en km"],"ans":1,"hint":"Latitude (nord/sud par rapport à l'équateur, en °) + Longitude (est/ouest par rapport au méridien de Greenwich, en °).","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque océan à sa position sur le globe.","pairs":[{"g":"Océan Pacifique","d":"Entre Asie/Océanie et Amériques"},{"g":"Océan Atlantique","d":"Entre Amériques et Europe/Afrique"},{"g":"Océan Indien","d":"Entre Afrique, Inde et Australie"},{"g":"Océan Arctique","d":"Autour du pôle Nord"}],"hint":"La connaissance de la localisation des océans est fondamentale en géographie.","difficulty":"medium"},
-        {"type":"texte","q":"Qu'est-ce que la latitude de l'équateur ?","answer":"0°","hint":"L'équateur est le parallèle 0°. Il partage la Terre en hémisphère Nord et hémisphère Sud.","tolerance":["0°","0 degrés","zéro degré"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'Afrique est traversée par l'équateur en son milieu.","ans":true,"hint":"L'équateur traverse l'Afrique centrale (Kenya, Congo, Gabon...), la divisant en deux hémisphères.","difficulty":"medium"},
-        {"type":"qcm","q":"Un point se situe à 45°N et 2°E. Il est dans l'hémisphère :","opts":["Sud et Ouest","Nord et Ouest","Nord et Est","Sud et Est"],"ans":2,"hint":"45°N = hémisphère Nord. 2°E = à l'est du méridien de Greenwich. Ce point correspond approximativement à la France centrale.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on les lignes imaginaires reliant les pôles Nord et Sud ?","answer":"méridiens","hint":"Les méridiens sont des demi-cercles reliant le pôle Nord au pôle Sud. Le méridien de référence est celui de Greenwich (0°).","tolerance":["méridiens","les méridiens","méridien"],"difficulty":"medium"},
-        {"type":"qcm","q":"Combien d'océans compte-t-on sur Terre (selon la convention actuelle) ?","opts":["4","5","6","3"],"ans":1,"hint":"5 océans : Pacifique, Atlantique, Indien, Arctique (ou Glacial Arctique) et Austral (ou Antarctique, reconnu en 2000).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les parallèles et les méridiens forment un quadrillage appelé la grille géographique (ou graticule).","ans":true,"hint":"La grille géographique permet de localiser précisément tout point sur Terre par ses coordonnées (lat. + long.).","difficulty":"medium"},
-        {"type":"texte","q":"Quel est le continent le moins peuplé (hors Antarctique) ?","answer":"Océanie","hint":"L'Océanie (Australie, Nouvelle-Zélande, Polynésie...) est le continent le moins peuplé : environ 44 millions d'habitants.","tolerance":["Océanie","l'Océanie","Australie/Océanie"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que l'hémisphère boréal ?","opts":["La moitié méridionale de la Terre","La moitié septentrionale (au nord de l'équateur)","La partie est du globe","La région polaire"],"ans":1,"hint":"Boréal = nord. Hémisphère boréal = moitié nord de la Terre (au nord de l'équateur). Austral = sud.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La majeure partie des terres émergées se trouve dans l'hémisphère Nord.","ans":true,"hint":"L'hémisphère Nord concentre ~68% des terres. L'hémisphère Sud est majoritairement océanique.","difficulty":"hard"},
-        {"type":"texte","q":"Quelle ligne de latitude à 23°26' Nord marque la limite de la zone où le Soleil est au zénith en été ?","answer":"tropique du Cancer","hint":"Le Tropique du Cancer (23°26'N) est la latitude maximale où le Soleil peut être à la verticale (solstice d'été).","tolerance":["tropique du Cancer","Tropique du Cancer"],"difficulty":"hard"},
-        {"type":"qcm","q":"Un point est à 90°S. Il correspond à :","opts":["L'équateur","Le pôle Nord","Le pôle Sud","Le tropique du Capricorne"],"ans":2,"hint":"90°S = latitude maximale vers le Sud = pôle Sud (Antarctique). 90°N = pôle Nord.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque terme géographique à sa définition.","pairs":[{"g":"Latitude","d":"Distance angulaire au nord ou au sud de l'équateur"},{"g":"Longitude","d":"Distance angulaire à l'est ou à l'ouest du méridien 0°"},{"g":"Méridien","d":"Demi-cercle reliant les deux pôles"},{"g":"Parallèle","d":"Cercle parallèle à l'équateur"}],"hint":"La maîtrise de ces termes est essentielle pour utiliser les coordonnées géographiques.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Combien y a-t-il de continents sur Terre ?",
+          "opts": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "ans": 2,
+          "hint": "Les 7 continents : Afrique, Amérique du Nord, Amérique du Sud, Antarctique, Asie, Europe, Océanie (selon la convention française).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel est le plus grand océan du monde ?",
+          "answer": "Pacifique",
+          "hint": "L'océan Pacifique est le plus grand (165 millions de km²), suivi de l'Atlantique, de l'Indien, de l'Arctique et de l'Antarctique.",
+          "tolerance": [
+            "Pacifique",
+            "l'océan Pacifique",
+            "océan Pacifique"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La Terre est une sphère parfaite.",
+          "ans": false,
+          "hint": "La Terre est un géoïde : légèrement aplatie aux pôles et renflée à l'équateur. Sa forme exacte est irrégulière.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel est le plus grand continent ?",
+          "opts": [
+            "Afrique",
+            "Amérique",
+            "Europe",
+            "Asie"
+          ],
+          "ans": 3,
+          "hint": "L'Asie est le plus grand continent (44 millions de km²) et le plus peuplé (~4,7 milliards d'habitants).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on les lignes imaginaires qui font le tour de la Terre parallèlement à l'équateur ?",
+          "answer": "parallèles",
+          "hint": "Les parallèles sont des cercles imaginaires parallèles à l'équateur. L'équateur est le parallèle 0°.",
+          "tolerance": [
+            "parallèles",
+            "les parallèles",
+            "parallèle"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le méridien de Greenwich (0°) passe par l'Angleterre, à l'observatoire de Greenwich près de Londres.",
+          "ans": true,
+          "hint": "Le méridien de Greenwich (0°) traverse effectivement l'Angleterre à Greenwich, qui a donné son nom à ce méridien de référence mondial.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Les coordonnées géographiques d'un point sont données par :",
+          "opts": [
+            "Sa longueur et sa largeur",
+            "Sa latitude et sa longitude",
+            "Son altitude et sa latitude",
+            "Sa distance à l'équateur en km"
+          ],
+          "ans": 1,
+          "hint": "Latitude (nord/sud par rapport à l'équateur, en °) + Longitude (est/ouest par rapport au méridien de Greenwich, en °).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque océan à sa position sur le globe.",
+          "pairs": [
+            {
+              "g": "Océan Pacifique",
+              "d": "Entre Asie/Océanie et Amériques"
+            },
+            {
+              "g": "Océan Atlantique",
+              "d": "Entre Amériques et Europe/Afrique"
+            },
+            {
+              "g": "Océan Indien",
+              "d": "Entre Afrique, Inde et Australie"
+            },
+            {
+              "g": "Océan Arctique",
+              "d": "Autour du pôle Nord"
+            }
+          ],
+          "hint": "La connaissance de la localisation des océans est fondamentale en géographie.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Qu'est-ce que la latitude de l'équateur ?",
+          "answer": "0°",
+          "hint": "L'équateur est le parallèle 0°. Il partage la Terre en hémisphère Nord et hémisphère Sud.",
+          "tolerance": [
+            "0°",
+            "0 degrés",
+            "zéro degré"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'Afrique est traversée par l'équateur en son milieu.",
+          "ans": true,
+          "hint": "L'équateur traverse l'Afrique centrale (Kenya, Congo, Gabon...), la divisant en deux hémisphères.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Un point se situe à 45°N et 2°E. Il est dans l'hémisphère :",
+          "opts": [
+            "Sud et Ouest",
+            "Nord et Ouest",
+            "Nord et Est",
+            "Sud et Est"
+          ],
+          "ans": 2,
+          "hint": "45°N = hémisphère Nord. 2°E = à l'est du méridien de Greenwich. Ce point correspond approximativement à la France centrale.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on les lignes imaginaires reliant les pôles Nord et Sud ?",
+          "answer": "méridiens",
+          "hint": "Les méridiens sont des demi-cercles reliant le pôle Nord au pôle Sud. Le méridien de référence est celui de Greenwich (0°).",
+          "tolerance": [
+            "méridiens",
+            "les méridiens",
+            "méridien"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Combien d'océans compte-t-on sur Terre (selon la convention actuelle) ?",
+          "opts": [
+            "4",
+            "5",
+            "6",
+            "3"
+          ],
+          "ans": 1,
+          "hint": "5 océans : Pacifique, Atlantique, Indien, Arctique (ou Glacial Arctique) et Austral (ou Antarctique, reconnu en 2000).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les parallèles et les méridiens forment un quadrillage appelé l'isohypse.",
+          "ans": false,
+          "hint": "Faux ! Ce quadrillage s'appelle la grille géographique (ou graticule). Les isohypses sont des courbes de niveau sur une carte topographique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quel est le continent le moins peuplé (hors Antarctique) ?",
+          "answer": "Océanie",
+          "hint": "L'Océanie (Australie, Nouvelle-Zélande, Polynésie...) est le continent le moins peuplé : environ 44 millions d'habitants.",
+          "tolerance": [
+            "Océanie",
+            "l'Océanie",
+            "Australie/Océanie"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'hémisphère boréal ?",
+          "opts": [
+            "La moitié méridionale de la Terre",
+            "La moitié septentrionale (au nord de l'équateur)",
+            "La partie est du globe",
+            "La région polaire"
+          ],
+          "ans": 1,
+          "hint": "Boréal = nord. Hémisphère boréal = moitié nord de la Terre (au nord de l'équateur). Austral = sud.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La majeure partie des terres émergées se trouve dans l'hémisphère Nord.",
+          "ans": true,
+          "hint": "L'hémisphère Nord concentre ~68% des terres. L'hémisphère Sud est majoritairement océanique.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle ligne de latitude à 23°26' Nord marque la limite de la zone où le Soleil est au zénith en été ?",
+          "opts": [
+            "Le tropique du Capricorne",
+            "Le cercle polaire arctique",
+            "Le tropique du Cancer",
+            "L'équateur"
+          ],
+          "ans": 2,
+          "hint": "Le Tropique du Cancer (23°26'N) est la latitude maximale où le Soleil peut être à la verticale (solstice d'été).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Un point est à 90°S. Il correspond à :",
+          "opts": [
+            "L'équateur",
+            "Le pôle Nord",
+            "Le pôle Sud",
+            "Le tropique du Capricorne"
+          ],
+          "ans": 2,
+          "hint": "90°S = latitude maximale vers le Sud = pôle Sud (Antarctique). 90°N = pôle Nord.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque terme géographique à sa définition.",
+          "pairs": [
+            {
+              "g": "Latitude",
+              "d": "Distance angulaire au nord ou au sud de l'équateur"
+            },
+            {
+              "g": "Longitude",
+              "d": "Distance angulaire à l'est ou à l'ouest du méridien 0°"
+            },
+            {
+              "g": "Méridien",
+              "d": "Demi-cercle reliant les deux pôles"
+            },
+            {
+              "g": "Parallèle",
+              "d": "Cercle parallèle à l'équateur"
+            }
+          ],
+          "hint": "La maîtrise de ces termes est essentielle pour utiliser les coordonnées géographiques.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -34,26 +261,256 @@
       "label": "Représentation du monde : planisphère et projections",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Qu'est-ce qu'un planisphère ?","opts":["Une carte de la planète Mars","Une représentation plane de la totalité de la surface terrestre","Une photo satellite de la Terre","Un globe en 3D"],"ans":1,"hint":"Un planisphère est une carte plate représentant l'ensemble de la Terre (les deux hémisphères).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Toutes les cartes déforment la réalité car il est impossible de représenter une sphère sur un plan sans distorsion.","ans":true,"hint":"C'est le problème fondamental de la cartographie : toute projection déforme les formes, les surfaces ou les distances.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'un globe terrestre ?","opts":["Une carte plate","Une représentation sphérique de la Terre en réduction","Un satellite","Une projection de Mercator"],"ans":1,"hint":"Le globe terrestre est la représentation la plus fidèle de la Terre car il préserve sa forme sphérique. Il ne peut pas être utilisé comme carte plate.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la projection cartographique la plus répandue, qui déforme les surfaces mais préserve les angles ?","answer":"Mercator","hint":"La projection de Mercator (1569) est très utilisée (Google Maps, cartes marines) mais déforme les surfaces aux hautes latitudes.","tolerance":["Mercator","projection Mercator","Mercator (1569)"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Sur une carte de Mercator, le Groenland semble aussi grand que l'Afrique, alors que l'Afrique est 14 fois plus grande.","ans":true,"hint":"La projection Mercator agrandit les régions proches des pôles. L'Afrique (30 M km²) semble plus petite que le Groenland (2 M km²).","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'une légende sur une carte ?","opts":["Le titre de la carte","L'explication des symboles et couleurs utilisés","L'échelle","Le nom du cartographe"],"ans":1,"hint":"La légende explique la signification des symboles, hachures, couleurs de la carte. Indispensable pour lire une carte.","difficulty":"easy"},
-        {"type":"texte","q":"Qu'est-ce que l'échelle d'une carte ? (réponds en une phrase courte)","answer":"le rapport entre la distance sur la carte et la distance réelle","hint":"Échelle = rapport entre mesure sur la carte et mesure réelle. Ex : 1/1 000 000 = 1 cm sur carte = 10 km en réalité.","tolerance":["rapport entre distance carte et réelle","rapport entre la carte et la réalité","proportionnalité"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque outil cartographique à son usage.","pairs":[{"g":"Globe terrestre","d":"Représentation sphérique, sans déformation"},{"g":"Planisphère","d":"Vue d'ensemble de la Terre en plan"},{"g":"Carte topographique","d":"Représente le relief avec des courbes de niveau"},{"g":"Carte thématique","d":"Représente un phénomène précis (population, climat...)"}],"hint":"Chaque outil cartographique répond à un besoin spécifique de représentation.","difficulty":"medium"},
-        {"type":"texte","q":"Si l'échelle d'une carte est 1/500 000 et qu'une distance mesure 4 cm sur la carte, quelle est la distance réelle ?","answer":"20 km","hint":"Distance réelle = distance carte × dénominateur = 4 × 500 000 = 2 000 000 cm = 20 000 m = 20 km.","tolerance":["20 km","20","20 000 m","20000 m"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'orient (est) était traditionnellement placé en haut des cartes médiévales (d'où le mot 'orientation').","ans":true,"hint":"'Orient' vient du latin oriens (levant, là où le soleil se lève). Les cartes médiévales avaient l'est en haut (vers Jérusalem).","difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'une projection cartographique ?","opts":["Une photo satellite","Une méthode de transformation de la sphère terrestre en surface plane","Un agrandissement d'une carte","Une mesure de distance sur une carte"],"ans":1,"hint":"Projeter = 'aplatir' la sphère sur un plan. Chaque projection fait des choix de déformation (surface, forme, distance).","difficulty":"medium"},
-        {"type":"texte","q":"Qu'est-ce que le nord géographique (pôle Nord) ?","answer":"le pôle Nord géographique","hint":"Le nord géographique est l'extrémité nord de l'axe de rotation de la Terre (pôle Nord). À distinguer du nord magnétique (boussole).","tolerance":["le pôle Nord","pôle Nord géographique","nord vrai"],"difficulty":"medium"},
-        {"type":"qcm","q":"Sur une carte à l'échelle 1/25 000, 1 cm représente :","opts":["25 m","250 m","2,5 km","25 km"],"ans":1,"hint":"1 cm × 25 000 = 25 000 cm = 250 m. Cette échelle est courante pour les cartes de randonnée (IGN).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Une carte thématique représente un seul phénomène géographique (ex : la densité de population).","ans":true,"hint":"Carte thématique : représente un thème précis (population, climat, végétation, risques...). Complète les cartes topographiques.","difficulty":"medium"},
-        {"type":"texte","q":"Quel instrument de navigation indique le nord magnétique et aide à s'orienter sur le terrain ?","answer":"boussole","hint":"La boussole est un instrument qui utilise le champ magnétique terrestre pour indiquer le nord magnétique.","tolerance":["boussole","la boussole","compas"],"difficulty":"medium"},
-        {"type":"qcm","q":"Pourquoi les cartes marines utilisent-elles souvent la projection de Mercator ?","opts":["Car elle est la plus belle","Car elle préserve les angles (rhumb), utile pour la navigation à cap constant","Car elle est la seule sans déformation","Car elle montre bien les pôles"],"ans":1,"hint":"La projection Mercator préserve les angles (conforme). Une droite sur la carte Mercator = cap constant à la boussole (loxodromie).","difficulty":"hard"},
-        {"type":"vrai_faux","q":"L'Europe est souvent placée au centre des planisphères européens, ce qui est un choix culturel et non géographique.","ans":true,"hint":"Le choix du méridien central est conventionnel. Un planisphère centré sur le Pacifique place les Amériques et l'Asie différemment.","difficulty":"hard"},
-        {"type":"texte","q":"Comment lit-on les courbes de niveau sur une carte topographique ? Que représentent-elles ?","answer":"l'altitude","hint":"Les courbes de niveau relient les points de même altitude. Plus elles sont rapprochées, plus la pente est forte.","tolerance":["l'altitude","altitude","des points de même altitude","lignes d'égale altitude"],"difficulty":"hard"},
-        {"type":"qcm","q":"Quelle projection préserve les surfaces (équivalente) mais déforme les formes ?","opts":["Projection de Mercator","Projection de Peters (Gall-Peters)","Projection polaire","Projection conique"],"ans":1,"hint":"La projection de Peters préserve les surfaces relatives des continents. L'Afrique y semble bien plus grande que sur Mercator.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque élément d'une carte à sa fonction.","pairs":[{"g":"Titre","d":"Indique le sujet représenté"},{"g":"Échelle","d":"Donne le rapport entre carte et réalité"},{"g":"Légende","d":"Explique les symboles utilisés"},{"g":"Orientation (flèche Nord)","d":"Indique la direction du nord"}],"hint":"Ces quatre éléments sont obligatoires pour qu'une carte soit correctement lisible et utilisable.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un planisphère ?",
+          "opts": [
+            "Une carte de la planète Mars",
+            "Une représentation plane de la totalité de la surface terrestre",
+            "Une photo satellite de la Terre",
+            "Un globe en 3D"
+          ],
+          "ans": 1,
+          "hint": "Un planisphère est une carte plate représentant l'ensemble de la Terre (les deux hémisphères).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Toutes les cartes peuvent représenter la Terre sans aucune déformation, à condition d'utiliser la bonne projection.",
+          "ans": false,
+          "hint": "Faux ! Il est mathématiquement impossible de représenter une sphère sur un plan sans déformer les formes, surfaces ou distances. Toute carte déforme la réalité d'une façon ou d'une autre.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un globe terrestre ?",
+          "opts": [
+            "Une carte plate",
+            "Une représentation sphérique de la Terre en réduction",
+            "Un satellite",
+            "Une projection de Mercator"
+          ],
+          "ans": 1,
+          "hint": "Le globe terrestre est la représentation la plus fidèle de la Terre car il préserve sa forme sphérique. Il ne peut pas être utilisé comme carte plate.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la projection cartographique la plus répandue, qui déforme les surfaces mais préserve les angles ?",
+          "answer": "Mercator",
+          "hint": "La projection de Mercator (1569) est très utilisée (Google Maps, cartes marines) mais déforme les surfaces aux hautes latitudes.",
+          "tolerance": [
+            "Mercator",
+            "projection Mercator",
+            "Mercator (1569)"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Sur une carte de Mercator, le Groenland semble aussi grand que l'Afrique, alors que l'Afrique est 14 fois plus grande.",
+          "ans": true,
+          "hint": "La projection Mercator agrandit les régions proches des pôles. L'Afrique (30 M km²) semble plus petite que le Groenland (2 M km²).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une légende sur une carte ?",
+          "opts": [
+            "Le titre de la carte",
+            "L'explication des symboles et couleurs utilisés",
+            "L'échelle",
+            "Le nom du cartographe"
+          ],
+          "ans": 1,
+          "hint": "La légende explique la signification des symboles, hachures, couleurs de la carte. Indispensable pour lire une carte.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'échelle d'une carte ?",
+          "opts": [
+            "Le titre qui indique le sujet de la carte",
+            "Le rapport entre la distance sur la carte et la distance réelle",
+            "La liste des symboles et couleurs utilisés",
+            "La date de création de la carte"
+          ],
+          "ans": 1,
+          "hint": "Échelle = rapport entre mesure sur la carte et mesure réelle. Ex : 1/1 000 000 = 1 cm sur carte = 10 km en réalité.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque outil cartographique à son usage.",
+          "pairs": [
+            {
+              "g": "Globe terrestre",
+              "d": "Représentation sphérique, sans déformation"
+            },
+            {
+              "g": "Planisphère",
+              "d": "Vue d'ensemble de la Terre en plan"
+            },
+            {
+              "g": "Carte topographique",
+              "d": "Représente le relief avec des courbes de niveau"
+            },
+            {
+              "g": "Carte thématique",
+              "d": "Représente un phénomène précis (population, climat...)"
+            }
+          ],
+          "hint": "Chaque outil cartographique répond à un besoin spécifique de représentation.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Si l'échelle d'une carte est 1/500 000 et qu'une distance mesure 4 cm sur la carte, quelle est la distance réelle ?",
+          "answer": "20 km",
+          "hint": "Distance réelle = distance carte × dénominateur = 4 × 500 000 = 2 000 000 cm = 20 000 m = 20 km.",
+          "tolerance": [
+            "20 km",
+            "20",
+            "20 000 m",
+            "20000 m"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le nord était traditionnellement placé en haut des cartes médiévales (d'où le mot 'orientation').",
+          "ans": false,
+          "hint": "Faux ! C'est l'orient (est) qui était en haut des cartes médiévales, d'où le mot 'orientation'. 'Orient' vient du latin oriens (là où le Soleil se lève).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une projection cartographique ?",
+          "opts": [
+            "Une photo satellite",
+            "Une méthode de transformation de la sphère terrestre en surface plane",
+            "Un agrandissement d'une carte",
+            "Une mesure de distance sur une carte"
+          ],
+          "ans": 1,
+          "hint": "Projeter = 'aplatir' la sphère sur un plan. Chaque projection fait des choix de déformation (surface, forme, distance).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le nord géographique ?",
+          "opts": [
+            "L'extrémité nord du champ magnétique terrestre (nord de la boussole)",
+            "L'extrémité nord de l'axe de rotation de la Terre (pôle Nord)",
+            "Le point le plus au nord de l'Europe",
+            "Le centre de la Voie Lactée"
+          ],
+          "ans": 1,
+          "hint": "Le nord géographique (pôle Nord) est l'extrémité nord de l'axe de rotation de la Terre. À distinguer du nord magnétique, indiqué par la boussole, qui est légèrement décalé.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Sur une carte à l'échelle 1/25 000, 1 cm représente :",
+          "opts": [
+            "25 m",
+            "250 m",
+            "2,5 km",
+            "25 km"
+          ],
+          "ans": 1,
+          "hint": "1 cm × 25 000 = 25 000 cm = 250 m. Cette échelle est courante pour les cartes de randonnée (IGN).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Une carte thématique représente un seul phénomène géographique (ex : la densité de population).",
+          "ans": true,
+          "hint": "Carte thématique : représente un thème précis (population, climat, végétation, risques...). Complète les cartes topographiques.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quel instrument de navigation indique le nord magnétique et aide à s'orienter sur le terrain ?",
+          "answer": "boussole",
+          "hint": "La boussole est un instrument qui utilise le champ magnétique terrestre pour indiquer le nord magnétique.",
+          "tolerance": [
+            "boussole",
+            "la boussole",
+            "compas"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Pourquoi les cartes marines utilisent-elles souvent la projection de Mercator ?",
+          "opts": [
+            "Car elle est la plus belle",
+            "Car elle préserve les angles (rhumb), utile pour la navigation à cap constant",
+            "Car elle est la seule sans déformation",
+            "Car elle montre bien les pôles"
+          ],
+          "ans": 1,
+          "hint": "La projection Mercator préserve les angles (conforme). Une droite sur la carte Mercator = cap constant à la boussole (loxodromie).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'Europe est placée au centre des planisphères parce que c'est le centre géographique naturel de la Terre.",
+          "ans": false,
+          "hint": "Faux ! Placer l'Europe au centre des planisphères est un choix culturel et conventionnel, non géographique. Un planisphère centré sur le Pacifique est tout aussi valide.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment lit-on les courbes de niveau sur une carte topographique ? Que représentent-elles ?",
+          "answer": "l'altitude",
+          "hint": "Les courbes de niveau relient les points de même altitude. Plus elles sont rapprochées, plus la pente est forte.",
+          "tolerance": [
+            "l'altitude",
+            "altitude",
+            "des points de même altitude",
+            "lignes d'égale altitude"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle projection préserve les surfaces (équivalente) mais déforme les formes ?",
+          "opts": [
+            "Projection de Mercator",
+            "Projection de Peters (Gall-Peters)",
+            "Projection polaire",
+            "Projection conique"
+          ],
+          "ans": 1,
+          "hint": "La projection de Peters préserve les surfaces relatives des continents. L'Afrique y semble bien plus grande que sur Mercator.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque élément d'une carte à sa fonction.",
+          "pairs": [
+            {
+              "g": "Titre",
+              "d": "Indique le sujet représenté"
+            },
+            {
+              "g": "Échelle",
+              "d": "Donne le rapport entre carte et réalité"
+            },
+            {
+              "g": "Légende",
+              "d": "Explique les symboles utilisés"
+            },
+            {
+              "g": "Orientation (flèche Nord)",
+              "d": "Indique la direction du nord"
+            }
+          ],
+          "hint": "Ces quatre éléments sont obligatoires pour qu'une carte soit correctement lisible et utilisable.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -61,26 +518,255 @@
       "label": "Grandes zones climatiques et biomes",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Quelle zone climatique se situe autour de l'équateur, avec des pluies abondantes toute l'année ?","opts":["Zone polaire","Zone tempérée","Zone équatoriale (tropicale humide)","Zone désertique"],"ans":2,"hint":"La zone équatoriale (entre les Tropiques) = forêt tropicale humide, chaleur et pluies abondantes toute l'année.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un biome est un ensemble d'écosystèmes caractérisé par un climat et une végétation similaires.","ans":true,"hint":"Biome = grande zone écologique : forêt tropicale, savane, désert, taïga, toundra... définie par le climat et la végétation dominante.","difficulty":"easy"},
-        {"type":"qcm","q":"Quel biome couvre les zones polaires arctiques et antarctiques ?","opts":["La taïga","La savane","La toundra","La steppe"],"ans":2,"hint":"La toundra est le biome des zones péri-polaires : sol gelé (pergélisol), végétation rase (mousses, lichens), été très court.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la grande forêt de conifères (épicéas, pins, sapins) qui couvre les hautes latitudes de l'hémisphère Nord ?","answer":"taïga","hint":"La taïga (ou forêt boréale) est le plus grand biome terrestre, couvrant le Canada, la Russie et la Scandinavie.","tolerance":["taïga","taiga","forêt boréale","forêt de conifères"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Le désert est uniquement défini par la chaleur extrême.","ans":false,"hint":"Un désert est défini par la sécheresse (peu de précipitations < 250 mm/an). Le désert de l'Antarctique est froid mais aussi un désert.","difficulty":"easy"},
-        {"type":"qcm","q":"La savane est un biome caractérisé par :","opts":["Une forêt dense toute l'année","Une végétation herbacée avec arbres isolés et deux saisons (sèche/humide)","Un désert sans végétation","Une forêt de conifères"],"ans":1,"hint":"La savane (Afrique subsaharienne, Brésil) : herbes hautes, acacias, baobabs, deux saisons contrastées.","difficulty":"easy"},
-        {"type":"texte","q":"Quel est le plus grand désert chaud du monde ?","answer":"Sahara","hint":"Le Sahara (9 millions de km², Afrique du Nord) est le plus grand désert chaud. Le plus grand désert est l'Antarctique (froid).","tolerance":["Sahara","le Sahara"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque zone climatique à sa végétation dominante.","pairs":[{"g":"Zone équatoriale","d":"Forêt tropicale dense"},{"g":"Zone méditerranéenne","d":"Maquis, garrigue, oliviers"},{"g":"Zone polaire","d":"Toundra (mousses, lichens)"},{"g":"Zone tempérée","d":"Forêt de feuillus (chênes, hêtres)"}],"hint":"Le climat détermine la végétation. Chaque zone climatique a un biome végétal caractéristique.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la végétation caractéristique du bassin méditerranéen : arbustes bas et résistants à la sécheresse ?","answer":"garrigue","hint":"Garrigue (calcaire, Languedoc) et maquis (silice, Corse, Provence) désignent la végétation méditerranéenne basse et épineuse.","tolerance":["garrigue","maquis","la garrigue","le maquis"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La déforestation de la forêt amazonienne menace l'un des biomes les plus riches en biodiversité.","ans":true,"hint":"L'Amazonie abrite ~10% des espèces animales et végétales mondiales. La déforestation est une menace majeure pour la biodiversité.","difficulty":"medium"},
-        {"type":"qcm","q":"Le climat de type méditerranéen se caractérise par :","opts":["Des étés frais et des hivers très froids","Des étés chauds et secs, des hivers doux et pluvieux","Des pluies toute l'année","Un froid permanent"],"ans":1,"hint":"Climat méditerranéen : sécheresse estivale, douceur hivernale, pluies en automne/printemps. Bassin méditerranéen, Californie, Australie du Sud.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le phénomène d'avancée du désert dans les zones semi-arides ?","answer":"désertification","hint":"La désertification : dégradation des terres arides sous l'effet du changement climatique et des activités humaines (surpâturage, déforestation).","tolerance":["désertification","la désertification"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quel facteur principal détermine la répartition des grandes zones climatiques sur Terre ?","opts":["L'altitude","La latitude (distance à l'équateur)","La proximité des océans uniquement","La nature des sols"],"ans":1,"hint":"La latitude détermine l'angle d'incidence des rayons solaires → quantité d'énergie reçue → température → climat.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le réchauffement climatique actuel menace de faire disparaître certains biomes comme la toundra arctique.","ans":true,"hint":"Le réchauffement climatique provoque la fonte du pergélisol arctique, menaçant la toundra et libérant du méthane.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la région de l'Amérique du Sud abritant la plus grande forêt tropicale du monde ?","answer":"Amazonie","hint":"L'Amazonie (Brésil principalement) abrite la plus grande forêt tropicale du monde (5,5 millions de km²).","tolerance":["Amazonie","l'Amazonie","forêt amazonienne","bassin amazonien"],"difficulty":"medium"},
-        {"type":"qcm","q":"La steppe est un biome de quel type ?","opts":["Forêt dense","Prairie herbeuse des zones tempérées continentales (Eurasie, Amériques)","Désert chaud","Forêt de conifères"],"ans":1,"hint":"Steppe : prairies à herbes courtes des zones tempérées continentales à faibles précipitations (Ukraine, Mongolie, Grandes Plaines).","difficulty":"hard"},
-        {"type":"vrai_faux","q":"L'altitude, comme la latitude, crée des étages de végétation : on retrouve des biomes comparables aux zones polaires en haute montagne.","ans":true,"hint":"La végétation varie avec l'altitude : forêt → alpages → toundra alpine → neige permanente. Similaire aux zones climatiques du nord.","difficulty":"hard"},
-        {"type":"texte","q":"Quel biome couvre la majeure partie du continent africain entre la forêt équatoriale et les déserts ?","answer":"savane","hint":"La savane tropicale couvre environ 40% de l'Afrique, entre la forêt équatoriale au centre et le Sahara au nord.","tolerance":["savane","la savane","savane africaine"],"difficulty":"hard"},
-        {"type":"qcm","q":"Le phénomène El Niño correspond à :","opts":["Un vent polaire","Un réchauffement périodique des eaux du Pacifique tropical affectant le climat mondial","Un courant marin froid","Une éruption volcanique sous-marine"],"ans":1,"hint":"El Niño = réchauffement anormal des eaux du Pacifique équatorial tous les 2-7 ans → perturbations climatiques mondiales.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque continent à son biome dominant.","pairs":[{"g":"Afrique subsaharienne","d":"Savane"},{"g":"Sibérie (Russie)","d":"Taïga (forêt boréale)"},{"g":"Sahara","d":"Désert chaud"},{"g":"Amazonie (Brésil)","d":"Forêt tropicale humide"}],"hint":"Ces associations continent/biome illustrent la diversité des environnements naturels terrestres.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelle zone climatique se situe autour de l'équateur, avec des pluies abondantes toute l'année ?",
+          "opts": [
+            "Zone polaire",
+            "Zone tempérée",
+            "Zone équatoriale (tropicale humide)",
+            "Zone désertique"
+          ],
+          "ans": 2,
+          "hint": "La zone équatoriale (entre les Tropiques) = forêt tropicale humide, chaleur et pluies abondantes toute l'année.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un biome est un ensemble d'écosystèmes caractérisé par un climat et une végétation similaires.",
+          "ans": true,
+          "hint": "Biome = grande zone écologique : forêt tropicale, savane, désert, taïga, toundra... définie par le climat et la végétation dominante.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel biome couvre les zones polaires arctiques et antarctiques ?",
+          "opts": [
+            "La taïga",
+            "La savane",
+            "La toundra",
+            "La steppe"
+          ],
+          "ans": 2,
+          "hint": "La toundra est le biome des zones péri-polaires : sol gelé (pergélisol), végétation rase (mousses, lichens), été très court.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la grande forêt de conifères (épicéas, pins, sapins) qui couvre les hautes latitudes de l'hémisphère Nord ?",
+          "answer": "taïga",
+          "hint": "La taïga (ou forêt boréale) est le plus grand biome terrestre, couvrant le Canada, la Russie et la Scandinavie.",
+          "tolerance": [
+            "taïga",
+            "taiga",
+            "forêt boréale",
+            "forêt de conifères"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le désert est uniquement défini par la chaleur extrême.",
+          "ans": false,
+          "hint": "Un désert est défini par la sécheresse (peu de précipitations < 250 mm/an). Le désert de l'Antarctique est froid mais aussi un désert.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "La savane est un biome caractérisé par :",
+          "opts": [
+            "Une forêt dense toute l'année",
+            "Une végétation herbacée avec arbres isolés et deux saisons (sèche/humide)",
+            "Un désert sans végétation",
+            "Une forêt de conifères"
+          ],
+          "ans": 1,
+          "hint": "La savane (Afrique subsaharienne, Brésil) : herbes hautes, acacias, baobabs, deux saisons contrastées.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel est le plus grand désert chaud du monde ?",
+          "answer": "Sahara",
+          "hint": "Le Sahara (9 millions de km², Afrique du Nord) est le plus grand désert chaud. Le plus grand désert est l'Antarctique (froid).",
+          "tolerance": [
+            "Sahara",
+            "le Sahara"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque zone climatique à sa végétation dominante.",
+          "pairs": [
+            {
+              "g": "Zone équatoriale",
+              "d": "Forêt tropicale dense"
+            },
+            {
+              "g": "Zone méditerranéenne",
+              "d": "Maquis, garrigue, oliviers"
+            },
+            {
+              "g": "Zone polaire",
+              "d": "Toundra (mousses, lichens)"
+            },
+            {
+              "g": "Zone tempérée",
+              "d": "Forêt de feuillus (chênes, hêtres)"
+            }
+          ],
+          "hint": "Le climat détermine la végétation. Chaque zone climatique a un biome végétal caractéristique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la végétation caractéristique du bassin méditerranéen : arbustes bas et résistants à la sécheresse ?",
+          "answer": "garrigue",
+          "hint": "Garrigue (calcaire, Languedoc) et maquis (silice, Corse, Provence) désignent la végétation méditerranéenne basse et épineuse.",
+          "tolerance": [
+            "garrigue",
+            "garigue",
+            "maquis",
+            "la garrigue",
+            "le maquis"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La forêt amazonienne n'abrite qu'environ 1% des espèces animales et végétales mondiales, car elle est trop humide pour permettre une grande biodiversité.",
+          "ans": false,
+          "hint": "Faux ! L'Amazonie abrite environ 10% des espèces animales et végétales mondiales. C'est précisément l'humidité et la chaleur constantes qui font de ce biome l'un des plus riches du monde.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Le climat de type méditerranéen se caractérise par :",
+          "opts": [
+            "Des étés frais et des hivers très froids",
+            "Des étés chauds et secs, des hivers doux et pluvieux",
+            "Des pluies toute l'année",
+            "Un froid permanent"
+          ],
+          "ans": 1,
+          "hint": "Climat méditerranéen : sécheresse estivale, douceur hivernale, pluies en automne/printemps. Bassin méditerranéen, Californie, Australie du Sud.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le phénomène d'avancée du désert dans les zones semi-arides ?",
+          "answer": "désertification",
+          "hint": "La désertification : dégradation des terres arides sous l'effet du changement climatique et des activités humaines (surpâturage, déforestation).",
+          "tolerance": [
+            "désertification",
+            "desertification",
+            "la désertification"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel facteur principal détermine la répartition des grandes zones climatiques sur Terre ?",
+          "opts": [
+            "L'altitude",
+            "La latitude (distance à l'équateur)",
+            "La proximité des océans uniquement",
+            "La nature des sols"
+          ],
+          "ans": 1,
+          "hint": "La latitude détermine l'angle d'incidence des rayons solaires → quantité d'énergie reçue → température → climat.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le réchauffement climatique actuel menace de faire disparaître certains biomes comme la toundra arctique.",
+          "ans": true,
+          "hint": "Le réchauffement climatique provoque la fonte du pergélisol arctique, menaçant la toundra et libérant du méthane.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la région de l'Amérique du Sud abritant la plus grande forêt tropicale du monde ?",
+          "answer": "Amazonie",
+          "hint": "L'Amazonie (Brésil principalement) abrite la plus grande forêt tropicale du monde (5,5 millions de km²).",
+          "tolerance": [
+            "Amazonie",
+            "l'Amazonie",
+            "forêt amazonienne",
+            "bassin amazonien"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La steppe est un biome de quel type ?",
+          "opts": [
+            "Forêt dense",
+            "Prairie herbeuse des zones tempérées continentales (Eurasie, Amériques)",
+            "Désert chaud",
+            "Forêt de conifères"
+          ],
+          "ans": 1,
+          "hint": "Steppe : prairies à herbes courtes des zones tempérées continentales à faibles précipitations (Ukraine, Mongolie, Grandes Plaines).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'altitude crée des étages de végétation qui n'ont aucun rapport avec les zones climatiques liées à la latitude.",
+          "ans": false,
+          "hint": "Faux ! L'altitude crée des étages de végétation comparables aux zones climatiques de la latitude : forêt → alpages → toundra alpine → neige, comme quand on monte vers les pôles.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Quel biome couvre la majeure partie du continent africain entre la forêt équatoriale et les déserts ?",
+          "answer": "savane",
+          "hint": "La savane tropicale couvre environ 40% de l'Afrique, entre la forêt équatoriale au centre et le Sahara au nord.",
+          "tolerance": [
+            "savane",
+            "la savane",
+            "savane africaine"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Le phénomène El Niño correspond à :",
+          "opts": [
+            "Un vent polaire",
+            "Un réchauffement périodique des eaux du Pacifique tropical affectant le climat mondial",
+            "Un courant marin froid",
+            "Une éruption volcanique sous-marine"
+          ],
+          "ans": 1,
+          "hint": "El Niño = réchauffement anormal des eaux du Pacifique équatorial tous les 2-7 ans → perturbations climatiques mondiales.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque continent à son biome dominant.",
+          "pairs": [
+            {
+              "g": "Afrique subsaharienne",
+              "d": "Savane"
+            },
+            {
+              "g": "Sibérie (Russie)",
+              "d": "Taïga (forêt boréale)"
+            },
+            {
+              "g": "Sahara",
+              "d": "Désert chaud"
+            },
+            {
+              "g": "Amazonie (Brésil)",
+              "d": "Forêt tropicale humide"
+            }
+          ],
+          "hint": "Ces associations continent/biome illustrent la diversité des environnements naturels terrestres.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -88,26 +774,256 @@
       "label": "Reliefs majeurs de la Terre",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Quelle est la plus haute montagne du monde ?","opts":["Le K2","Le Mont Blanc","L'Everest","L'Aconcagua"],"ans":2,"hint":"L'Everest (8 849 m) est le point culminant de la Terre. Il se situe dans l'Himalaya, à la frontière Népal/Chine.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la plus longue chaîne de montagnes du monde, en Amérique du Sud ?","answer":"Cordillère des Andes","hint":"Les Andes (7 000 km de long) traversent 7 pays d'Amérique du Sud, du Venezuela jusqu'à la Terre de Feu.","tolerance":["Cordillère des Andes","Andes","les Andes","la cordillère des Andes"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les plaines sont des zones de basse altitude à topographie peu accidentée.","ans":true,"hint":"Une plaine = terrain plat ou faiblement ondulé, généralement en dessous de 200 m d'altitude. Propice à l'agriculture.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle est la différence entre une montagne et un plateau ?","opts":["Aucune différence","La montagne a un sommet pointu, le plateau a une surface élevée et plane","La montagne est plus haute","Le plateau est toujours en bord de mer"],"ans":1,"hint":"Le plateau est une zone élevée mais plane (ex : plateau tibétain). La montagne est caractérisée par ses reliefs variés et ses pentes.","difficulty":"easy"},
-        {"type":"texte","q":"Quelle est l'altitude du Mont Blanc, point culminant de l'Europe occidentale ?","answer":"4808","hint":"Le Mont Blanc (4 808 m) se trouve à la frontière franco-italienne (Alpes). C'est le point le plus haut de l'Europe occidentale.","tolerance":["4808","4 808","4808 m","4 808 m"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La plupart des grandes chaînes de montagnes se sont formées lors de la collision de plaques tectoniques.","ans":true,"hint":"Himalaya (collision Inde-Eurasie), Alpes (Afrique-Europe), Andes (subduction) → tectonique des plaques forme les reliefs.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment s'appelle une plaine d'alluvions fertile déposée à l'embouchure d'un fleuve ?","opts":["Un plateau","Un delta","Une dépression","Un isthme"],"ans":1,"hint":"Le delta est une zone de dépôt d'alluvions à l'embouchure d'un fleuve (delta du Nil, du Mississippi, du Gange).","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque relief à son exemple.","pairs":[{"g":"Chaîne de montagnes","d":"Himalaya (8 849 m)"},{"g":"Plaine","d":"Plaine de Beauce (France)"},{"g":"Désert","d":"Sahara (Afrique du Nord)"},{"g":"Plateau","d":"Plateau tibétain (~4 500 m)"}],"hint":"Ces exemples illustrent la diversité des reliefs terrestres à grande échelle.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le point le plus bas de la surface terrestre émergée, situé en Israël et Jordanie ?","answer":"mer Morte","hint":"La mer Morte (-430 m environ) est le point le plus bas des terres émergées. Son eau est ultra-salée, les baigneurs y flottent.","tolerance":["mer Morte","la mer Morte","Mer Morte"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'Himalaya est la plus haute chaîne de montagnes du monde et est situé en Asie.","ans":true,"hint":"L'Himalaya (Asie du Sud) abrite les 14 sommets de plus de 8 000 m, dont l'Everest. Né de la collision Inde-Eurasie.","difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'une dorsale océanique ?","opts":["Un plateau sous-marin","Une chaîne de montagnes volcanique au fond des océans","Une fosse océanique","Un courant marin chaud"],"ans":1,"hint":"La dorsale médio-atlantique est une chaîne de volcans sous-marins au fond de l'Atlantique → lieu d'expansion des fonds marins.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la plus profonde fosse océanique du monde, dans l'océan Pacifique ?","answer":"fosse des Mariannes","hint":"La fosse des Mariannes (11 034 m de profondeur) est le point le plus profond de la Terre. Elle est plus profonde que l'Everest est haut.","tolerance":["fosse des Mariannes","les Mariannes","fosse Mariannes"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quelle est la principale cause de la formation des volcans ?","opts":["L'érosion des montagnes","Le mouvement des plaques tectoniques (subduction ou points chauds)","Les tremblements de terre","Les pluies acides"],"ans":1,"hint":"Les volcans se forment principalement en zones de subduction (ex : Vésuve) ou sur des points chauds (ex : Hawaï).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les Alpes séparent l'Europe du Nord et l'Europe méditerranéenne.","ans":true,"hint":"Les Alpes (France, Italie, Suisse, Autriche...) constituent une barrière naturelle entre l'Europe tempérée et la Méditerranée.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on le modelé caractéristique des régions karstiques (roches calcaires), avec grottes et avens ?","answer":"karst","hint":"Le karst désigne les reliefs creusés par dissolution du calcaire : lapiaz, dolines, gouffres, grottes (ex : Ardèche, Causses).","tolerance":["karst","relief karstique","relief calcaire","lapiaz"],"difficulty":"medium"},
-        {"type":"qcm","q":"Lequel de ces reliefs est typique des zones de décrochement (failles transformantes) comme la faille de San Andreas ?","opts":["Une chaîne de montagnes haute","Des fosses océaniques profondes","Des rifts et vallées effondrées","Des volcans boucliers"],"ans":2,"hint":"Les failles transformantes créent des rifts (fossés d'effondrement). La faille de San Andreas (Californie) provoque des séismes.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le relief influence le climat : les montagnes bloquent les masses d'air humide et créent des zones sèches sous le vent (effet de foehn).","ans":true,"hint":"L'effet d'abri (ou de foehn) : l'air monte et se refroidit côté vent → pluie. Côté sous le vent : air chaud et sec.","difficulty":"hard"},
-        {"type":"texte","q":"Comment appelle-t-on une dépression tectonique occupée par un lac (ex : lac Baïkal, mer Rouge) ?","answer":"rift","hint":"Un rift est une faille tectonique créant un fossé d'effondrement. Le lac Baïkal et la mer Rouge sont des rifts actifs.","tolerance":["rift","fossé d'effondrement","graben"],"difficulty":"hard"},
-        {"type":"qcm","q":"Le plateau tibétain est surnommé 'le toit du monde'. Quelle en est la cause ?","opts":["C'est le plus grand plateau du monde","Il est le résultat de la collision entre les plaques indienne et eurasienne, qui l'a soulevé à ~4 500 m","Il est le plus froid du monde","Il domine la mer de Chine"],"ans":1,"hint":"La collision Inde-Eurasie (depuis 50 Ma) a créé l'Himalaya ET soulevé tout le plateau tibétain à plus de 4 000 m.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque chaîne de montagnes à son continent.","pairs":[{"g":"Himalaya","d":"Asie"},{"g":"Andes","d":"Amérique du Sud"},{"g":"Alpes","d":"Europe"},{"g":"Rocheuses","d":"Amérique du Nord"}],"hint":"Ces quatre chaînes sont les plus importantes de leurs continents respectifs.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelle est la plus haute montagne du monde ?",
+          "opts": [
+            "Le K2",
+            "Le Mont Blanc",
+            "L'Everest",
+            "L'Aconcagua"
+          ],
+          "ans": 2,
+          "hint": "L'Everest (8 849 m) est le point culminant de la Terre. Il se situe dans l'Himalaya, à la frontière Népal/Chine.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la plus longue chaîne de montagnes du monde, qui longe la côte ouest de l'Amérique du Sud ?",
+          "opts": [
+            "Les Rocheuses",
+            "Les Appalaches",
+            "Les Andes",
+            "Les Carpates"
+          ],
+          "ans": 2,
+          "hint": "Les Andes (ou Cordillère des Andes) s'étendent sur 7 000 km le long de la côte ouest de l'Amérique du Sud, du Venezuela à la Terre de Feu.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les plaines sont des zones de basse altitude à topographie peu accidentée.",
+          "ans": true,
+          "hint": "Une plaine = terrain plat ou faiblement ondulé, généralement en dessous de 200 m d'altitude. Propice à l'agriculture.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la différence entre une montagne et un plateau ?",
+          "opts": [
+            "Aucune différence",
+            "La montagne a un sommet pointu, le plateau a une surface élevée et plane",
+            "La montagne est plus haute",
+            "Le plateau est toujours en bord de mer"
+          ],
+          "ans": 1,
+          "hint": "Le plateau est une zone élevée mais plane (ex : plateau tibétain). La montagne est caractérisée par ses reliefs variés et ses pentes.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle est l'altitude du Mont Blanc, point culminant de l'Europe occidentale ?",
+          "answer": "4808",
+          "hint": "Le Mont Blanc (4 808 m) se trouve à la frontière franco-italienne (Alpes). C'est le point le plus haut de l'Europe occidentale.",
+          "tolerance": [
+            "4808",
+            "4 808",
+            "4808 m",
+            "4 808 m"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La plupart des grandes chaînes de montagnes se sont formées par l'érosion progressive de hauts plateaux.",
+          "ans": false,
+          "hint": "Faux ! Les grandes chaînes de montagnes se forment lors de la collision de plaques tectoniques : Himalaya (Inde-Eurasie), Alpes (Afrique-Europe), Andes (subduction).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle une plaine d'alluvions fertile déposée à l'embouchure d'un fleuve ?",
+          "opts": [
+            "Un plateau",
+            "Un delta",
+            "Une dépression",
+            "Un isthme"
+          ],
+          "ans": 1,
+          "hint": "Le delta est une zone de dépôt d'alluvions à l'embouchure d'un fleuve (delta du Nil, du Mississippi, du Gange).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque relief à son exemple.",
+          "pairs": [
+            {
+              "g": "Chaîne de montagnes",
+              "d": "Himalaya (8 849 m)"
+            },
+            {
+              "g": "Plaine",
+              "d": "Plaine de Beauce (France)"
+            },
+            {
+              "g": "Désert",
+              "d": "Sahara (Afrique du Nord)"
+            },
+            {
+              "g": "Plateau",
+              "d": "Plateau tibétain (~4 500 m)"
+            }
+          ],
+          "hint": "Ces exemples illustrent la diversité des reliefs terrestres à grande échelle.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le point le plus bas de la surface terrestre émergée, situé en Israël et Jordanie ?",
+          "answer": "mer Morte",
+          "hint": "La mer Morte (-430 m environ) est le point le plus bas des terres émergées. Son eau est ultra-salée, les baigneurs y flottent.",
+          "tolerance": [
+            "mer Morte",
+            "la mer Morte",
+            "Mer Morte"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'Himalaya est la plus haute chaîne de montagnes du monde et est situé en Afrique.",
+          "ans": false,
+          "hint": "Faux ! L'Himalaya est bien la plus haute chaîne du monde, mais elle est située en Asie du Sud (à la frontière Népal/Chine/Inde), et non en Afrique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une dorsale océanique ?",
+          "opts": [
+            "Un plateau sous-marin",
+            "Une chaîne de montagnes volcanique au fond des océans",
+            "Une fosse océanique",
+            "Un courant marin chaud"
+          ],
+          "ans": 1,
+          "hint": "La dorsale médio-atlantique est une chaîne de volcans sous-marins au fond de l'Atlantique → lieu d'expansion des fonds marins.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la plus profonde fosse océanique du monde, dans l'océan Pacifique ?",
+          "opts": [
+            "La fosse de Porto Rico",
+            "La fosse des Mariannes",
+            "La fosse de Java",
+            "La fosse de Tonga"
+          ],
+          "ans": 1,
+          "hint": "La fosse des Mariannes (11 034 m de profondeur) est le point le plus profond de la Terre. Elle est plus profonde que l'Everest est haut.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la principale cause de la formation des volcans ?",
+          "opts": [
+            "L'érosion des montagnes",
+            "Le mouvement des plaques tectoniques (subduction ou points chauds)",
+            "Les tremblements de terre",
+            "Les pluies acides"
+          ],
+          "ans": 1,
+          "hint": "Les volcans se forment principalement en zones de subduction (ex : Vésuve) ou sur des points chauds (ex : Hawaï).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les Alpes séparent l'Europe du Nord et l'Europe méditerranéenne.",
+          "ans": true,
+          "hint": "Les Alpes (France, Italie, Suisse, Autriche...) constituent une barrière naturelle entre l'Europe tempérée et la Méditerranée.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le modelé typique des régions à roches calcaires, avec grottes, gouffres et avens ?",
+          "opts": [
+            "Relief volcanique",
+            "Relief karstique",
+            "Relief glaciaire",
+            "Relief dunaire"
+          ],
+          "ans": 1,
+          "hint": "Le karst (relief karstique) se forme par dissolution du calcaire par l'eau. Il produit des grottes, dolines, avens et lapiaz. Exemples : Ardèche, Causses.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces reliefs est typique des zones de décrochement (failles transformantes) comme la faille de San Andreas ?",
+          "opts": [
+            "Une chaîne de montagnes haute",
+            "Des fosses océaniques profondes",
+            "Des rifts et vallées effondrées",
+            "Des volcans boucliers"
+          ],
+          "ans": 2,
+          "hint": "Les failles transformantes créent des rifts (fossés d'effondrement). La faille de San Andreas (Californie) provoque des séismes.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le relief n'a aucune influence sur le climat : les montagnes ne modifient pas la circulation des masses d'air.",
+          "ans": false,
+          "hint": "Faux ! Le relief influence fortement le climat. Les montagnes bloquent les masses d'air humide et créent des zones sèches sous le vent (effet de foehn).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on une dépression tectonique occupée par un lac (ex : lac Baïkal, mer Rouge) ?",
+          "answer": "rift",
+          "hint": "Un rift est une faille tectonique créant un fossé d'effondrement. Le lac Baïkal et la mer Rouge sont des rifts actifs.",
+          "tolerance": [
+            "rift",
+            "fossé d'effondrement",
+            "graben"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Le plateau tibétain est surnommé 'le toit du monde'. Quelle en est la cause ?",
+          "opts": [
+            "C'est le plus grand plateau du monde",
+            "Il est le résultat de la collision entre les plaques indienne et eurasienne, qui l'a soulevé à ~4 500 m",
+            "Il est le plus froid du monde",
+            "Il domine la mer de Chine"
+          ],
+          "ans": 1,
+          "hint": "La collision Inde-Eurasie (depuis 50 Ma) a créé l'Himalaya ET soulevé tout le plateau tibétain à plus de 4 000 m.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque chaîne de montagnes à son continent.",
+          "pairs": [
+            {
+              "g": "Himalaya",
+              "d": "Asie"
+            },
+            {
+              "g": "Andes",
+              "d": "Amérique du Sud"
+            },
+            {
+              "g": "Alpes",
+              "d": "Europe"
+            },
+            {
+              "g": "Rocheuses",
+              "d": "Amérique du Nord"
+            }
+          ],
+          "hint": "Ces quatre chaînes sont les plus importantes de leurs continents respectifs.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -115,26 +1031,253 @@
       "label": "La France : régions, relief, fleuves",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Combien de régions métropolitaines la France compte-t-elle depuis 2016 ?","opts":["13","22","27","18"],"ans":0,"hint":"La réforme territoriale de 2016 a réduit le nombre de régions métropolitaines de 22 à 13 (plus 5 régions d'outre-mer).","difficulty":"easy"},
-        {"type":"texte","q":"Quel est le plus long fleuve de France ?","answer":"Loire","hint":"La Loire (1 012 km) est le plus long fleuve de France. Elle traverse le Massif central puis coule vers l'ouest jusqu'à Nantes.","tolerance":["Loire","la Loire"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Paris est la capitale de la France et se trouve sur les bords de la Seine.","ans":true,"hint":"Paris est traversée par la Seine. La ville est née sur l'île de la Cité, au milieu de la Seine.","difficulty":"easy"},
-        {"type":"qcm","q":"Quel massif montagneux sépare la France de l'Espagne ?","opts":["Les Alpes","Les Pyrénées","Le Jura","Les Vosges"],"ans":1,"hint":"Les Pyrénées (3 404 m au Pic d'Aneto) séparent la France de l'Espagne, de l'Atlantique à la Méditerranée.","difficulty":"easy"},
-        {"type":"texte","q":"Quel est le point culminant de la France métropolitaine ?","answer":"Mont Blanc","hint":"Le Mont Blanc (4 808 m), dans les Alpes, est le point culminant de la France et de l'Europe occidentale.","tolerance":["Mont Blanc","le Mont Blanc","Mont-Blanc"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La Corse est la plus grande île française et se trouve en Méditerranée.","ans":true,"hint":"La Corse (8 680 km²) est la plus grande île française, située en mer Méditerranée, à 170 km de Nice.","difficulty":"easy"},
-        {"type":"qcm","q":"Lequel de ces fleuves se jette dans la Manche ?","opts":["La Garonne","Le Rhône","La Loire","La Seine"],"ans":3,"hint":"La Seine (775 km) prend sa source en Bourgogne, traverse Paris et se jette dans la Manche à l'estuaire du Havre.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque fleuve français à la mer ou l'océan où il se jette.","pairs":[{"g":"La Seine","d":"Manche"},{"g":"La Loire","d":"Atlantique"},{"g":"La Garonne","d":"Atlantique (Gironde)"},{"g":"Le Rhône","d":"Méditerranée"}],"hint":"La France métropolitaine a 4 grands fleuves qui se jettent dans des mers différentes.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le vieux massif montagneux du centre de la France (altitude modérée) ?","answer":"Massif central","hint":"Le Massif central est un vieux massif hercynien (altitudes : 1 000-1 886 m) occupant le centre-sud de la France.","tolerance":["Massif central","le Massif central","massif central"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La France possède des territoires ultramarins sur tous les océans du monde.","ans":true,"hint":"La Guadeloupe/Martinique (Atlantique/Caraïbes), La Réunion/Mayotte (Indien), Polynésie/Nouvelle-Calédonie (Pacifique), Guyane (Amérique).","difficulty":"medium"},
-        {"type":"qcm","q":"Quelle mer borde la côte méditerranéenne française ?","opts":["Mer du Nord","Manche","Mer Méditerranée","Golfe de Gascogne"],"ans":2,"hint":"La côte française méditerranéenne (Côte d'Azur, Languedoc-Roussillon) borde la mer Méditerranée.","difficulty":"medium"},
-        {"type":"texte","q":"Dans quelle région française se trouve Strasbourg, capitale de l'Alsace et siège du Parlement européen ?","answer":"Grand Est","hint":"Strasbourg est dans la région Grand Est (créée en 2016 par fusion d'Alsace, Champagne-Ardenne et Lorraine).","tolerance":["Grand Est","Alsace","région Grand Est","Alsace (Grand Est)"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quel relief sépare la France et la Suisse dans le nord-est ?","opts":["Les Alpes","Les Vosges","Le Jura","Les Ardennes"],"ans":2,"hint":"Le Jura (mont Blanc de Gex : 1 720 m) est le massif entre Franche-Comté (France) et la Suisse. Les Alpes séparent France/Italie.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La France est le pays le plus visité au monde (environ 90 millions de touristes par an avant la pandémie).","ans":true,"hint":"La France est régulièrement classée 1ère destination touristique mondiale : ~89 millions de visiteurs internationaux en 2018.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle l'estuaire commun de la Garonne et de la Dordogne qui se jette dans l'Atlantique ?","answer":"Gironde","hint":"La Gironde est le plus grand estuaire d'Europe occidentale, formé par la confluence de la Garonne et de la Dordogne.","tolerance":["Gironde","la Gironde","estuaire de la Gironde"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quelle façade maritime française est la plus longue (en kilomètres de côtes) ?","opts":["La Méditerranée","La Manche","L'Atlantique","La mer du Nord"],"ans":2,"hint":"La façade atlantique française est la plus longue, des Pyrénées à la Bretagne (Golfe de Gascogne et Bretagne).","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le bassin parisien est une vaste plaine sédimentaire autour de Paris, très favorable à l'agriculture.","ans":true,"hint":"Le Bassin parisien (Beauce, Brie, Picardie) : plaines fertiles aux sols argileux et limoneux = premier espace agricole français.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le département français le plus peuplé (hors Paris intra-muros) ?","answer":"Nord","hint":"Le Nord (59) est le département le plus peuplé de France hors Paris : 2,6 millions d'habitants (métropole lilloise).","tolerance":["Nord","le Nord","département du Nord","Nord (59)"],"difficulty":"hard"},
-        {"type":"qcm","q":"Quelle chaîne de montagnes sépare l'Alsace du reste de la France à l'est ?","opts":["Les Alpes","Le Massif central","Les Vosges","Le Jura"],"ans":2,"hint":"Les Vosges (1 424 m au Grand Ballon) séparent l'Alsace (versant rhénan) de la Lorraine. Versant occidental = Lorraine.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque région française à une ville importante.","pairs":[{"g":"Île-de-France","d":"Paris"},{"g":"Occitanie","d":"Toulouse"},{"g":"Auvergne-Rhône-Alpes","d":"Lyon"},{"g":"Nouvelle-Aquitaine","d":"Bordeaux"}],"hint":"Ces quatre grandes métropoles régionales structurent le territoire français avec Paris.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Combien de régions métropolitaines la France compte-t-elle depuis 2016 ?",
+          "opts": [
+            "13",
+            "22",
+            "27",
+            "18"
+          ],
+          "ans": 0,
+          "hint": "La réforme territoriale de 2016 a réduit le nombre de régions métropolitaines de 22 à 13 (plus 5 régions d'outre-mer).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel est le plus long fleuve de France ?",
+          "answer": "Loire",
+          "hint": "La Loire (1 012 km) est le plus long fleuve de France. Elle traverse le Massif central puis coule vers l'ouest jusqu'à Nantes.",
+          "tolerance": [
+            "Loire",
+            "la Loire"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Paris est la capitale de la France et se trouve sur les bords de la Seine.",
+          "ans": true,
+          "hint": "Paris est traversée par la Seine. La ville est née sur l'île de la Cité, au milieu de la Seine.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel massif montagneux sépare la France de l'Espagne ?",
+          "opts": [
+            "Les Alpes",
+            "Les Pyrénées",
+            "Le Jura",
+            "Les Vosges"
+          ],
+          "ans": 1,
+          "hint": "Les Pyrénées (3 404 m au Pic d'Aneto) séparent la France de l'Espagne, de l'Atlantique à la Méditerranée.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel est le point culminant de la France métropolitaine ?",
+          "answer": "Mont Blanc",
+          "hint": "Le Mont Blanc (4 808 m), dans les Alpes, est le point culminant de la France et de l'Europe occidentale.",
+          "tolerance": [
+            "Mont Blanc",
+            "le Mont Blanc",
+            "Mont-Blanc"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La Corse est la plus grande île française et se trouve dans l'océan Atlantique.",
+          "ans": false,
+          "hint": "Faux ! La Corse est bien la plus grande île française, mais elle se trouve en mer Méditerranée (à 170 km de Nice), et non dans l'Atlantique.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Lequel de ces fleuves se jette dans la Manche ?",
+          "opts": [
+            "La Garonne",
+            "Le Rhône",
+            "La Loire",
+            "La Seine"
+          ],
+          "ans": 3,
+          "hint": "La Seine (775 km) prend sa source en Bourgogne, traverse Paris et se jette dans la Manche à l'estuaire du Havre.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque fleuve français à la mer ou l'océan où il se jette.",
+          "pairs": [
+            {
+              "g": "La Seine",
+              "d": "Manche"
+            },
+            {
+              "g": "La Loire",
+              "d": "Atlantique"
+            },
+            {
+              "g": "La Garonne",
+              "d": "Atlantique (Gironde)"
+            },
+            {
+              "g": "Le Rhône",
+              "d": "Méditerranée"
+            }
+          ],
+          "hint": "La France métropolitaine a 4 grands fleuves qui se jettent dans des mers différentes.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le vieux massif montagneux du centre de la France (altitude modérée) ?",
+          "answer": "Massif central",
+          "hint": "Le Massif central est un vieux massif hercynien (altitudes : 1 000-1 886 m) occupant le centre-sud de la France.",
+          "tolerance": [
+            "Massif central",
+            "le Massif central",
+            "massif central"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La France possède des territoires ultramarins sur tous les océans du monde.",
+          "ans": true,
+          "hint": "La Guadeloupe/Martinique (Atlantique/Caraïbes), La Réunion/Mayotte (Indien), Polynésie/Nouvelle-Calédonie (Pacifique), Guyane (Amérique).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle mer borde la côte méditerranéenne française ?",
+          "opts": [
+            "Mer du Nord",
+            "Manche",
+            "Mer Méditerranée",
+            "Golfe de Gascogne"
+          ],
+          "ans": 2,
+          "hint": "La côte française méditerranéenne (Côte d'Azur, Languedoc-Roussillon) borde la mer Méditerranée.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Dans quelle région française se trouve Strasbourg, capitale de l'Alsace et siège du Parlement européen ?",
+          "answer": "Grand Est",
+          "hint": "Strasbourg est dans la région Grand Est (créée en 2016 par fusion d'Alsace, Champagne-Ardenne et Lorraine).",
+          "tolerance": [
+            "Grand Est",
+            "Alsace",
+            "région Grand Est",
+            "Alsace (Grand Est)"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel relief sépare la France et la Suisse dans le nord-est ?",
+          "opts": [
+            "Les Alpes",
+            "Les Vosges",
+            "Le Jura",
+            "Les Ardennes"
+          ],
+          "ans": 2,
+          "hint": "Le Jura (mont Blanc de Gex : 1 720 m) est le massif entre Franche-Comté (France) et la Suisse. Les Alpes séparent France/Italie.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'Espagne est le pays le plus visité au monde devant la France.",
+          "ans": false,
+          "hint": "Faux ! La France est régulièrement classée 1ère destination touristique mondiale (~89 millions de visiteurs en 2018). L'Espagne est derrière.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle l'estuaire commun de la Garonne et de la Dordogne qui se jette dans l'Atlantique ?",
+          "answer": "Gironde",
+          "hint": "La Gironde est le plus grand estuaire d'Europe occidentale, formé par la confluence de la Garonne et de la Dordogne.",
+          "tolerance": [
+            "Gironde",
+            "la Gironde",
+            "estuaire de la Gironde"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle façade maritime française est la plus longue (en kilomètres de côtes) ?",
+          "opts": [
+            "La Méditerranée",
+            "La Manche",
+            "L'Atlantique",
+            "La mer du Nord"
+          ],
+          "ans": 2,
+          "hint": "La façade atlantique française est la plus longue, des Pyrénées à la Bretagne (Golfe de Gascogne et Bretagne).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le bassin parisien est une vaste plaine sédimentaire autour de Paris, très favorable à l'agriculture.",
+          "ans": true,
+          "hint": "Le Bassin parisien (Beauce, Brie, Picardie) : plaines fertiles aux sols argileux et limoneux = premier espace agricole français.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le département français le plus peuplé (hors Paris intra-muros) ?",
+          "answer": "Nord",
+          "hint": "Le Nord (59) est le département le plus peuplé de France hors Paris : 2,6 millions d'habitants (métropole lilloise).",
+          "tolerance": [
+            "Nord",
+            "le Nord",
+            "département du Nord",
+            "Nord (59)"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle chaîne de montagnes sépare l'Alsace du reste de la France à l'est ?",
+          "opts": [
+            "Les Alpes",
+            "Le Massif central",
+            "Les Vosges",
+            "Le Jura"
+          ],
+          "ans": 2,
+          "hint": "Les Vosges (1 424 m au Grand Ballon) séparent l'Alsace (versant rhénan) de la Lorraine. Versant occidental = Lorraine.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque région française à une ville importante.",
+          "pairs": [
+            {
+              "g": "Île-de-France",
+              "d": "Paris"
+            },
+            {
+              "g": "Occitanie",
+              "d": "Toulouse"
+            },
+            {
+              "g": "Auvergne-Rhône-Alpes",
+              "d": "Lyon"
+            },
+            {
+              "g": "Nouvelle-Aquitaine",
+              "d": "Bordeaux"
+            }
+          ],
+          "hint": "Ces quatre grandes métropoles régionales structurent le territoire français avec Paris.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -142,26 +1285,248 @@
       "label": "L'Europe : pays, capitales, Union européenne",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Combien de pays composent l'Union européenne (depuis 2020, après le Brexit) ?","opts":["25","27","28","30"],"ans":1,"hint":"Depuis le Brexit (sortie du Royaume-Uni en janvier 2020), l'UE compte 27 États membres.","difficulty":"easy"},
-        {"type":"texte","q":"Quelle est la capitale de l'Allemagne ?","answer":"Berlin","hint":"Berlin est la capitale et la plus grande ville d'Allemagne. Elle a été réunifiée après la chute du mur (1989).","tolerance":["Berlin"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La monnaie officielle de tous les pays de l'Union européenne est l'euro.","ans":false,"hint":"Seule la zone euro utilise l'euro (20 pays en 2023). Des pays de l'UE comme la Pologne, la Suède ou la Hongrie gardent leur monnaie nationale.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle est la capitale de l'Espagne ?","opts":["Barcelone","Valence","Madrid","Séville"],"ans":2,"hint":"Madrid est la capitale et la plus grande ville d'Espagne. Elle se situe au centre de la péninsule ibérique.","difficulty":"easy"},
-        {"type":"texte","q":"Dans quelle ville belge se trouvent les institutions principales de l'Union européenne ?","answer":"Bruxelles","hint":"Bruxelles (capitale de la Belgique) accueille la Commission européenne et le Conseil de l'UE. Le Parlement est à Strasbourg.","tolerance":["Bruxelles","Brussels"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'Europe est le plus petit des 7 continents.","ans":false,"hint":"L'Océanie est le plus petit continent. L'Europe est le deuxième plus petit (10,5 millions de km²).","difficulty":"easy"},
-        {"type":"qcm","q":"Quel pays est le plus grand d'Europe (superficie totale) ?","opts":["France","Allemagne","Russie","Ukraine"],"ans":2,"hint":"La Russie est le plus grand pays du monde (17 millions de km²). Si on considère la Russie comme européenne, elle dépasse tous les autres.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque pays européen à sa capitale.","pairs":[{"g":"Italie","d":"Rome"},{"g":"Pologne","d":"Varsovie"},{"g":"Pays-Bas","d":"Amsterdam"},{"g":"Portugal","d":"Lisbonne"}],"hint":"Ces quatre capitales sont des repères géographiques fondamentaux de l'Europe.","difficulty":"medium"},
-        {"type":"texte","q":"Quel pays possède la plus grande superficie parmi les États membres de l'Union européenne ?","answer":"France","hint":"La France (543 000 km²) est le plus grand pays de l'Union européenne en superficie métropolitaine.","tolerance":["France","la France"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"La mer Baltique est un bras de mer situé au nord de l'Europe, bordé par les pays scandinaves et la Pologne.","ans":true,"hint":"La mer Baltique est une mer intérieure nord-européenne bordée par : Suède, Finlande, Estonie, Lettonie, Lituanie, Pologne, Allemagne, Danemark.","difficulty":"medium"},
-        {"type":"qcm","q":"Quel fleuve traverse plusieurs capitales européennes dont Vienne, Bratislava et Budapest ?","opts":["Le Rhin","La Volga","Le Danube","La Seine"],"ans":2,"hint":"Le Danube (2 860 km) est le 2ème plus long fleuve d'Europe. Il traverse 10 pays et 4 capitales (Vienne, Bratislava, Budapest, Belgrade).","difficulty":"medium"},
-        {"type":"texte","q":"Quelle est la capitale de la Grèce, berceau de la civilisation européenne ?","answer":"Athènes","hint":"Athènes est la capitale de la Grèce. Elle abrite l'Acropole et le Parthénon, symboles de la civilisation grecque antique.","tolerance":["Athènes","Athens"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quel est le rôle principal du Parlement européen ?","opts":["Faire la guerre","Voter les lois européennes","Gérer les armées nationales","Fixer les prix des produits"],"ans":1,"hint":"Le Parlement européen (siège à Strasbourg et Bruxelles) est l'assemblée législative de l'UE, élue au suffrage universel.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La péninsule ibérique comprend l'Espagne et le Portugal.","ans":true,"hint":"La péninsule ibérique, au sud-ouest de l'Europe, est occupée par l'Espagne, le Portugal et la principauté d'Andorre.","difficulty":"medium"},
-        {"type":"texte","q":"Quel bras de mer sépare la France du Royaume-Uni ?","answer":"Manche","hint":"La Manche sépare le nord de la France (Normandie, Pas-de-Calais) des côtes anglaises. Le Tunnel sous la Manche la traverse.","tolerance":["Manche","la Manche","Channel"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quel symbole visible dans l'espace représente l'Union européenne ?","opts":["Une croix rouge","12 étoiles dorées sur fond bleu","Un soleil jaune","Un aigle noir"],"ans":1,"hint":"Le drapeau européen : 12 étoiles dorées sur fond bleu (les 12 étoiles symbolisent la perfection, pas le nombre de membres).","difficulty":"hard"},
-        {"type":"vrai_faux","q":"L'Union européenne a été fondée en 1993 avec le traité de Maastricht.","ans":true,"hint":"Le traité de Maastricht (1992, entré en vigueur en 1993) crée l'Union européenne. Avant : Communauté économique européenne (CEE, 1957).","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la monnaie unique européenne et en quelle année a-t-elle été introduite pour le grand public ?","answer":"euro","hint":"L'euro est introduit sous forme scripturale en 1999 et en pièces/billets le 1er janvier 2002 dans 12 pays.","tolerance":["euro","l'euro","Euro","2002"],"difficulty":"hard"},
-        {"type":"qcm","q":"Quel accord européen permet la libre circulation des personnes entre ses États membres ?","opts":["Traité de Rome","Accord de Schengen","Traité de Maastricht","Accord de Lisbonne"],"ans":1,"hint":"L'espace Schengen (1985/1995) supprime les contrôles aux frontières intérieures entre ses 27 membres (dont des non-membres de l'UE).","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque institution européenne à son rôle.","pairs":[{"g":"Commission européenne","d":"Propose les lois et veille à leur application"},{"g":"Parlement européen","d":"Vote les lois, contrôle le budget"},{"g":"Conseil de l'UE","d":"Représente les gouvernements des États membres"},{"g":"Cour de justice de l'UE","d":"Tranche les litiges liés au droit européen"}],"hint":"Ces quatre institutions forment le cœur du système décisionnel de l'Union européenne.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Combien de pays composent l'Union européenne (depuis 2020, après le Brexit) ?",
+          "opts": [
+            "25",
+            "27",
+            "28",
+            "30"
+          ],
+          "ans": 1,
+          "hint": "Depuis le Brexit (sortie du Royaume-Uni en janvier 2020), l'UE compte 27 États membres.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle est la capitale de l'Allemagne ?",
+          "answer": "Berlin",
+          "hint": "Berlin est la capitale et la plus grande ville d'Allemagne. Elle a été réunifiée après la chute du mur (1989).",
+          "tolerance": [
+            "Berlin"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La monnaie officielle de tous les pays de l'Union européenne est l'euro.",
+          "ans": false,
+          "hint": "Seule la zone euro utilise l'euro (20 pays en 2023). Des pays de l'UE comme la Pologne, la Suède ou la Hongrie gardent leur monnaie nationale.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la capitale de l'Espagne ?",
+          "opts": [
+            "Barcelone",
+            "Valence",
+            "Madrid",
+            "Séville"
+          ],
+          "ans": 2,
+          "hint": "Madrid est la capitale et la plus grande ville d'Espagne. Elle se situe au centre de la péninsule ibérique.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Dans quelle ville belge se trouvent les institutions principales de l'Union européenne ?",
+          "answer": "Bruxelles",
+          "hint": "Bruxelles (capitale de la Belgique) accueille la Commission européenne et le Conseil de l'UE. Le Parlement est à Strasbourg.",
+          "tolerance": [
+            "Bruxelles",
+            "Brussels"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'Océanie est le plus petit des 7 continents, devant l'Europe.",
+          "ans": true,
+          "hint": "L'Océanie (9 millions de km²) est le plus petit continent. L'Europe (10,5 millions de km²) est le deuxième plus petit.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel pays est le plus grand d'Europe (superficie totale) ?",
+          "opts": [
+            "France",
+            "Allemagne",
+            "Russie",
+            "Ukraine"
+          ],
+          "ans": 2,
+          "hint": "La Russie est le plus grand pays du monde (17 millions de km²). Si on considère la Russie comme européenne, elle dépasse tous les autres.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque pays européen à sa capitale.",
+          "pairs": [
+            {
+              "g": "Italie",
+              "d": "Rome"
+            },
+            {
+              "g": "Pologne",
+              "d": "Varsovie"
+            },
+            {
+              "g": "Pays-Bas",
+              "d": "Amsterdam"
+            },
+            {
+              "g": "Portugal",
+              "d": "Lisbonne"
+            }
+          ],
+          "hint": "Ces quatre capitales sont des repères géographiques fondamentaux de l'Europe.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quel pays possède la plus grande superficie parmi les États membres de l'Union européenne ?",
+          "answer": "France",
+          "hint": "La France (543 000 km²) est le plus grand pays de l'Union européenne en superficie métropolitaine.",
+          "tolerance": [
+            "France",
+            "la France"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La mer Baltique est un bras de mer situé au sud de l'Europe, bordé par les pays méditerranéens.",
+          "ans": false,
+          "hint": "Faux ! La mer Baltique est au NORD de l'Europe, bordée par les pays scandinaves, la Pologne, les États baltes et l'Allemagne.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel fleuve traverse plusieurs capitales européennes dont Vienne, Bratislava et Budapest ?",
+          "opts": [
+            "Le Rhin",
+            "La Volga",
+            "Le Danube",
+            "La Seine"
+          ],
+          "ans": 2,
+          "hint": "Le Danube (2 860 km) est le 2ème plus long fleuve d'Europe. Il traverse 10 pays et 4 capitales (Vienne, Bratislava, Budapest, Belgrade).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle est la capitale de la Grèce, berceau de la civilisation européenne ?",
+          "answer": "Athènes",
+          "hint": "Athènes est la capitale de la Grèce. Elle abrite l'Acropole et le Parthénon, symboles de la civilisation grecque antique.",
+          "tolerance": [
+            "Athènes",
+            "Athens"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel est le rôle principal du Parlement européen ?",
+          "opts": [
+            "Faire la guerre",
+            "Voter les lois européennes",
+            "Gérer les armées nationales",
+            "Fixer les prix des produits"
+          ],
+          "ans": 1,
+          "hint": "Le Parlement européen (siège à Strasbourg et Bruxelles) est l'assemblée législative de l'UE, élue au suffrage universel.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La péninsule ibérique comprend l'Espagne et le Portugal.",
+          "ans": true,
+          "hint": "La péninsule ibérique, au sud-ouest de l'Europe, est occupée par l'Espagne, le Portugal et la principauté d'Andorre.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quel bras de mer sépare la France du Royaume-Uni ?",
+          "answer": "Manche",
+          "hint": "La Manche sépare le nord de la France (Normandie, Pas-de-Calais) des côtes anglaises. Le Tunnel sous la Manche la traverse.",
+          "tolerance": [
+            "Manche",
+            "la Manche",
+            "Channel"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel symbole visible dans l'espace représente l'Union européenne ?",
+          "opts": [
+            "Une croix rouge",
+            "12 étoiles dorées sur fond bleu",
+            "Un soleil jaune",
+            "Un aigle noir"
+          ],
+          "ans": 1,
+          "hint": "Le drapeau européen : 12 étoiles dorées sur fond bleu (les 12 étoiles symbolisent la perfection, pas le nombre de membres).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "C'est le traité de Maastricht (1993) qui a officiellement créé l'Union européenne, et non le traité de Rome (1957).",
+          "ans": true,
+          "hint": "Le traité de Rome (1957) a créé la CEE (Communauté économique européenne). L'Union européenne proprement dite est née avec le traité de Maastricht, entré en vigueur le 1er novembre 1993.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la monnaie unique européenne et en quelle année a-t-elle été introduite pour le grand public ?",
+          "answer": "euro",
+          "hint": "L'euro est introduit sous forme scripturale en 1999 et en pièces/billets le 1er janvier 2002 dans 12 pays.",
+          "tolerance": [
+            "euro",
+            "l'euro",
+            "Euro",
+            "2002"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel accord européen permet la libre circulation des personnes entre ses États membres ?",
+          "opts": [
+            "Traité de Rome",
+            "Accord de Schengen",
+            "Traité de Maastricht",
+            "Accord de Lisbonne"
+          ],
+          "ans": 1,
+          "hint": "L'espace Schengen (1985/1995) supprime les contrôles aux frontières intérieures entre ses 27 membres (dont des non-membres de l'UE).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque institution européenne à son rôle.",
+          "pairs": [
+            {
+              "g": "Commission européenne",
+              "d": "Propose les lois et veille à leur application"
+            },
+            {
+              "g": "Parlement européen",
+              "d": "Vote les lois, contrôle le budget"
+            },
+            {
+              "g": "Conseil de l'UE",
+              "d": "Représente les gouvernements des États membres"
+            },
+            {
+              "g": "Cour de justice de l'UE",
+              "d": "Tranche les litiges liés au droit européen"
+            }
+          ],
+          "hint": "Ces quatre institutions forment le cœur du système décisionnel de l'Union européenne.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -169,26 +1534,259 @@
       "label": "Paysages : rural, urbain, littoral, montagnard",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Comment appelle-t-on un paysage dominé par des champs, villages et activités agricoles ?","opts":["Urbain","Rural","Littoral","Montagnard"],"ans":1,"hint":"Paysage rural : espace dominé par l'agriculture, l'élevage, de faibles densités de population et des villages.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un paysage urbain est caractérisé par une forte densité de bâtiments, de population et d'activités économiques.","ans":true,"hint":"Le paysage urbain : immeubles, infrastructures, transports en commun, services, forte densité humaine. Opposé au rural.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'un littoral ?","opts":["Une zone de montagne","La zone de contact entre la terre et la mer","Une plaine agricole","Un plateau élevé"],"ans":1,"hint":"Le littoral est la zone de contact entre la terre et la mer : plages, falaises, estuaires, deltas, mangroves...","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on une grande agglomération urbaine regroupant plusieurs villes fusionnées ?","answer":"mégalopole","hint":"Mégalopole = immense zone urbaine continue. Megalopolis (côte est USA), BanaNa Banana Banana (Europe). Métropole = grande ville centre.","tolerance":["mégalopole","métropole","agglomération","conurbation","mégapole"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les paysages montagnards sont caractérisés par un relief escarpé, un climat froid en altitude et des activités liées au tourisme et à l'élevage.","ans":true,"hint":"Les paysages de montagne : alpages, forêts, prairies, torrents, stations de ski, élevage bovin/ovin... Altitude = contrainte et richesse.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'une zone périurbaine ?","opts":["Le centre historique d'une ville","La zone à la périphérie des villes, mélange d'urbain et de rural (pavillons, zones commerciales)","Un quartier industriel","Un village isolé"],"ans":1,"hint":"La zone périurbaine (rurbaine) : espaces autour des villes marqués par l'urbanisation diffuse. Phénomène de périurbanisation.","difficulty":"easy"},
-        {"type":"qcm","q":"Quel type de paysage se caractérise par des falaises, dunes, plages et activités touristiques et maritimes ?","opts":["Rural","Montagnard","Littoral","Industriel"],"ans":2,"hint":"Le paysage littoral comprend les côtes rocheuses (falaises), sableuses (dunes, plages) et leurs activités : tourisme, pêche, port.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque paysage à ses caractéristiques principales.","pairs":[{"g":"Paysage rural","d":"Champs, haies, fermes, faible densité"},{"g":"Paysage urbain","d":"Immeubles, rues, forte densité, commerce"},{"g":"Paysage littoral","d":"Plages, ports, falaises, tourisme balnéaire"},{"g":"Paysage montagnard","d":"Sommets, alpages, stations de ski, torrents"}],"hint":"Chaque type de paysage reflète à la fois les conditions naturelles et l'activité humaine.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le déplacement de populations des campagnes vers les villes, phénomène mondial depuis le XIXe siècle ?","answer":"exode rural","hint":"L'exode rural : départ massif des habitants des campagnes vers les villes (urbanisation). Il a transformé les sociétés industrielles.","tolerance":["exode rural","l'exode rural","urbanisation","rural exodus"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les littoraux sont parmi les espaces les plus densément peuplés et les plus convoités au monde.","ans":true,"hint":"~60% de la population mondiale vit à moins de 60 km des côtes. Les littoraux concentrent ports, villes, tourisme, industrie.","difficulty":"medium"},
-        {"type":"qcm","q":"La mangrove est un écosystème littoral caractéristique des zones :","opts":["Polaires","Tropicales (littoraux tropicaux humides)","Méditerranéennes","Montagnardes"],"ans":1,"hint":"La mangrove = forêt de palétuviers sur les côtes tropicales (Sénégal, Brésil, Asie du Sud-Est). Zone de nurserie pour poissons.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on le processus par lequel les espaces ruraux se transforment sous l'influence de la ville voisine (résidents, commerces, transports) ?","answer":"périurbanisation","hint":"La périurbanisation (ou rurbanisation) = extension de la ville dans les campagnes proches. Création de zones pavillonnaires autour des villes.","tolerance":["périurbanisation","rurbanisation","étalement urbain"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'un quartier CBD (Central Business District) ?","opts":["Un quartier résidentiel de banlieue","Le centre-ville des affaires avec gratte-ciel et sièges sociaux","Un espace industriel en périphérie","Un quartier historique protégé"],"ans":1,"hint":"Le CBD est le cœur économique et commercial d'une grande ville américaine (Manhattan à New York, La Défense à Paris...).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les activités agricoles en montagne se pratiquent en altitude pendant l'été (estivage/transhumance).","ans":true,"hint":"La transhumance (déplacement saisonnier des troupeaux) permet d'utiliser les alpages l'été. En hiver, les bêtes descendent en vallée.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on l'aménagement des littoraux pour l'agriculture grâce au drainage de terres inondées (Pays-Bas, Camargue) ?","answer":"polders","hint":"Les polders sont des terres gagnées sur la mer par endiguement et pompage. Les Pays-Bas en sont le plus grand exemple mondial.","tolerance":["polders","polder","les polders"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que l'étalement urbain (urban sprawl) ?","opts":["La construction de gratte-ciel","L'extension horizontale des villes sur les espaces naturels et agricoles","Le regroupement de populations en centre-ville","La désindustrialisation"],"ans":1,"hint":"L'étalement urbain = expansion des villes vers la périphérie, consommant terres agricoles et naturelles. Problème environnemental majeur.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Les parcs nationaux et régionaux en France protègent des paysages naturels menacés par l'urbanisation et le tourisme de masse.","ans":true,"hint":"La France compte 11 parcs nationaux et 58 parcs naturels régionaux, qui protègent la biodiversité et les paysages caractéristiques.","difficulty":"hard"},
-        {"type":"texte","q":"Comment appelle-t-on les risques liés à la montée des eaux qui menacent les paysages et populations littoraux ?","answer":"submersion marine","hint":"La submersion marine (inondation côtière) est aggravée par la montée du niveau des mers liée au réchauffement climatique.","tolerance":["submersion marine","inondation côtière","montée des eaux","érosion côtière","risque littoral"],"difficulty":"hard"},
-        {"type":"qcm","q":"La Ruhr (Allemagne) est un exemple de paysage :","opts":["Rural dynamique","Littoral touristique","Industriel en reconversion","Montagnard"],"ans":2,"hint":"La Ruhr est un bassin industriel (acier, charbon) en déclin depuis les années 1970, reconverti vers les services et la culture.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque type d'aménagement à son objectif.","pairs":[{"g":"Port de commerce","d":"Faciliter les échanges maritimes"},{"g":"Station de ski","d":"Développer le tourisme montagnard"},{"g":"Zone industrielle","d":"Regrouper les activités de production"},{"g":"Zone naturelle protégée","d":"Préserver la biodiversité et les paysages"}],"hint":"Ces aménagements illustrent comment les sociétés humaines transforment et organisent leurs territoires.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on un paysage dominé par des champs, villages et activités agricoles ?",
+          "opts": [
+            "Urbain",
+            "Rural",
+            "Littoral",
+            "Montagnard"
+          ],
+          "ans": 1,
+          "hint": "Paysage rural : espace dominé par l'agriculture, l'élevage, de faibles densités de population et des villages.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un paysage urbain est caractérisé par une forte densité de bâtiments, de population et d'activités économiques.",
+          "ans": true,
+          "hint": "Le paysage urbain : immeubles, infrastructures, transports en commun, services, forte densité humaine. Opposé au rural.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un littoral ?",
+          "opts": [
+            "Une zone de montagne",
+            "La zone de contact entre la terre et la mer",
+            "Une plaine agricole",
+            "Un plateau élevé"
+          ],
+          "ans": 1,
+          "hint": "Le littoral est la zone de contact entre la terre et la mer : plages, falaises, estuaires, deltas, mangroves...",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on une grande agglomération urbaine regroupant plusieurs villes fusionnées ?",
+          "answer": "mégalopole",
+          "hint": "Mégalopole = immense zone urbaine continue. Megalopolis (côte est USA), BanaNa Banana Banana (Europe). Métropole = grande ville centre.",
+          "tolerance": [
+            "mégalopole",
+            "megalopole",
+            "métropole",
+            "agglomération",
+            "conurbation",
+            "mégapole"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les paysages montagnards sont caractérisés par un relief escarpé, un climat froid en altitude et des activités liées au tourisme et à l'élevage.",
+          "ans": true,
+          "hint": "Les paysages de montagne : alpages, forêts, prairies, torrents, stations de ski, élevage bovin/ovin... Altitude = contrainte et richesse.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une zone périurbaine ?",
+          "opts": [
+            "Le centre historique d'une ville",
+            "La zone à la périphérie des villes, mélange d'urbain et de rural (pavillons, zones commerciales)",
+            "Un quartier industriel",
+            "Un village isolé"
+          ],
+          "ans": 1,
+          "hint": "La zone périurbaine (rurbaine) : espaces autour des villes marqués par l'urbanisation diffuse. Phénomène de périurbanisation.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel type de paysage se caractérise par des falaises, dunes, plages et activités touristiques et maritimes ?",
+          "opts": [
+            "Rural",
+            "Montagnard",
+            "Littoral",
+            "Industriel"
+          ],
+          "ans": 2,
+          "hint": "Le paysage littoral comprend les côtes rocheuses (falaises), sableuses (dunes, plages) et leurs activités : tourisme, pêche, port.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque paysage à ses caractéristiques principales.",
+          "pairs": [
+            {
+              "g": "Paysage rural",
+              "d": "Champs, haies, fermes, faible densité"
+            },
+            {
+              "g": "Paysage urbain",
+              "d": "Immeubles, rues, forte densité, commerce"
+            },
+            {
+              "g": "Paysage littoral",
+              "d": "Plages, ports, falaises, tourisme balnéaire"
+            },
+            {
+              "g": "Paysage montagnard",
+              "d": "Sommets, alpages, stations de ski, torrents"
+            }
+          ],
+          "hint": "Chaque type de paysage reflète à la fois les conditions naturelles et l'activité humaine.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le déplacement de populations des campagnes vers les villes, phénomène mondial depuis le XIXe siècle ?",
+          "answer": "exode rural",
+          "hint": "L'exode rural : départ massif des habitants des campagnes vers les villes (urbanisation). Il a transformé les sociétés industrielles.",
+          "tolerance": [
+            "exode rural",
+            "l'exode rural",
+            "urbanisation",
+            "rural exodus"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les littoraux sont parmi les espaces les plus densément peuplés et les plus convoités au monde.",
+          "ans": true,
+          "hint": "~60% de la population mondiale vit à moins de 60 km des côtes. Les littoraux concentrent ports, villes, tourisme, industrie.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "La mangrove est un écosystème littoral caractéristique des zones :",
+          "opts": [
+            "Polaires",
+            "Tropicales (littoraux tropicaux humides)",
+            "Méditerranéennes",
+            "Montagnardes"
+          ],
+          "ans": 1,
+          "hint": "La mangrove = forêt de palétuviers sur les côtes tropicales (Sénégal, Brésil, Asie du Sud-Est). Zone de nurserie pour poissons.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le processus par lequel les espaces ruraux proches d'une ville se transforment sous son influence (pavillons, commerces, transports) ?",
+          "opts": [
+            "Métropolisation",
+            "Désindustrialisation",
+            "Périurbanisation",
+            "Exode rural"
+          ],
+          "ans": 2,
+          "hint": "La périurbanisation (ou rurbanisation) = extension de la ville dans les campagnes proches. Elle crée des zones pavillonnaires autour des grandes villes.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un quartier CBD (Central Business District) ?",
+          "opts": [
+            "Un quartier résidentiel de banlieue",
+            "Le centre-ville des affaires avec gratte-ciel et sièges sociaux",
+            "Un espace industriel en périphérie",
+            "Un quartier historique protégé"
+          ],
+          "ans": 1,
+          "hint": "Le CBD est le cœur économique et commercial d'une grande ville américaine (Manhattan à New York, La Défense à Paris...).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La transhumance désigne le déplacement permanent et définitif des troupeaux vers les alpages, sans retour en vallée.",
+          "ans": false,
+          "hint": "Faux ! La transhumance est un déplacement SAISONNIER : les troupeaux montent en alpage en été, puis redescendent en vallée en automne/hiver. Ce mouvement est cyclique et non définitif.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on l'aménagement des littoraux pour l'agriculture grâce au drainage de terres inondées (Pays-Bas, Camargue) ?",
+          "answer": "polders",
+          "hint": "Les polders sont des terres gagnées sur la mer par endiguement et pompage. Les Pays-Bas en sont le plus grand exemple mondial.",
+          "tolerance": [
+            "polders",
+            "polder",
+            "les polders"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'étalement urbain (urban sprawl) ?",
+          "opts": [
+            "La construction de gratte-ciel",
+            "L'extension horizontale des villes sur les espaces naturels et agricoles",
+            "Le regroupement de populations en centre-ville",
+            "La désindustrialisation"
+          ],
+          "ans": 1,
+          "hint": "L'étalement urbain = expansion des villes vers la périphérie, consommant terres agricoles et naturelles. Problème environnemental majeur.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La France compte environ 5 parcs nationaux, ce qui en fait un des pays européens avec le moins de zones protégées.",
+          "ans": false,
+          "hint": "Faux ! La France compte 11 parcs nationaux et 58 parcs naturels régionaux. C'est l'un des pays d'Europe avec le plus grand nombre d'espaces protégés.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on les risques liés à la montée des eaux qui menacent les populations et paysages littoraux ?",
+          "opts": [
+            "Érosion fluviale",
+            "Submersion marine",
+            "Tsunamis uniquement",
+            "Salinisation des sols"
+          ],
+          "ans": 1,
+          "hint": "La submersion marine (inondation côtière) est aggravée par la montée du niveau des mers due au réchauffement climatique. Elle menace de nombreux littoraux bas.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "La Ruhr (Allemagne) est un exemple de paysage :",
+          "opts": [
+            "Rural dynamique",
+            "Littoral touristique",
+            "Industriel en reconversion",
+            "Montagnard"
+          ],
+          "ans": 2,
+          "hint": "La Ruhr est un bassin industriel (acier, charbon) en déclin depuis les années 1970, reconverti vers les services et la culture.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque type d'aménagement à son objectif.",
+          "pairs": [
+            {
+              "g": "Port de commerce",
+              "d": "Faciliter les échanges maritimes"
+            },
+            {
+              "g": "Station de ski",
+              "d": "Développer le tourisme montagnard"
+            },
+            {
+              "g": "Zone industrielle",
+              "d": "Regrouper les activités de production"
+            },
+            {
+              "g": "Zone naturelle protégée",
+              "d": "Préserver la biodiversité et les paysages"
+            }
+          ],
+          "hint": "Ces aménagements illustrent comment les sociétés humaines transforment et organisent leurs territoires.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -196,26 +1794,255 @@
       "label": "Population mondiale : répartition et densité",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Quelle est approximativement la population mondiale en 2024 ?","opts":["5 milliards","6 milliards","8 milliards","10 milliards"],"ans":2,"hint":"La population mondiale a atteint 8 milliards en novembre 2022 et continue de croître, principalement en Afrique et Asie du Sud.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'Asie est le continent le plus peuplé avec plus de 4 milliards d'habitants.","ans":true,"hint":"L'Asie abrite ~60% de la population mondiale : Chine (~1,4 Md), Inde (~1,4 Md), Asie du Sud-Est, Japon...","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que la densité de population ?","opts":["Le nombre total d'habitants d'un pays","Le nombre d'habitants par km²","La vitesse de croissance de la population","Le nombre de naissances par an"],"ans":1,"hint":"Densité = nombre d'habitants / superficie (en km²). Monaco a une densité de ~25 000 hab/km², Mongolie ~2 hab/km².","difficulty":"easy"},
-        {"type":"texte","q":"Quel pays est le plus peuplé du monde en 2024 ?","answer":"Inde","hint":"L'Inde a dépassé la Chine en 2023 pour devenir le pays le plus peuplé du monde (~1,44 milliard d'habitants).","tolerance":["Inde","l'Inde","India"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les zones polaires, les déserts et les hautes montagnes sont des espaces vides ou presque vides.","ans":true,"hint":"Les contraintes naturelles (froid, sécheresse, altitude) expliquent les faibles densités dans ces espaces peu habitables.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle est la ville la plus peuplée du monde en 2024 ?","opts":["New York","Pékin","Tokyo","Mumbai"],"ans":2,"hint":"Tokyo (aire urbaine) est la plus grande métropole mondiale avec ~37 millions d'habitants dans l'agglomération.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on la population d'une ville et de ses banlieues (espace urbain total) ?","answer":"aire urbaine","hint":"L'aire urbaine = ville-centre + communes périphériques dont une forte proportion des actifs travaille en ville-centre.","tolerance":["aire urbaine","agglomération","métropole","conurbation"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque région mondiale à sa densité de population (faible/forte).","pairs":[{"g":"Asie du Sud (Bangladesh, Inde du Gange)","d":"Très forte densité"},{"g":"Sahara (Afrique du Nord)","d":"Très faible densité (quasi vide)"},{"g":"Sibérie (Russie)","d":"Très faible densité"},{"g":"Europe occidentale","d":"Forte densité"}],"hint":"La répartition de la population mondiale est très inégale selon les conditions naturelles et historiques.","difficulty":"medium"},
-        {"type":"texte","q":"Quel continent connaît la plus forte croissance démographique au XXIe siècle ?","answer":"Afrique","hint":"L'Afrique subsaharienne connaît le plus fort taux de natalité mondial. Sa population devrait doubler d'ici 2050.","tolerance":["Afrique","l'Afrique","Afrique subsaharienne"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le taux de natalité est en baisse dans les pays développés (Europe, Japon, Canada...).","ans":true,"hint":"Le vieillissement de la population et la baisse de la fécondité sont des tendances fortes dans les pays riches. Certains ont un taux de fécondité < 2 enfants/femme.","difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'une mégapole ?","opts":["Une ville de plus de 100 000 habitants","Une ville de plus de 10 millions d'habitants","La capitale d'un pays","Un pays très densément peuplé"],"ans":1,"hint":"Mégapole ou mégalopole désigne une ville de plus de 10 millions d'habitants. Il en existe environ 35 dans le monde.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on le phénomène par lequel une proportion croissante de la population mondiale vit dans des villes ?","answer":"urbanisation","hint":"L'urbanisation : en 2007, pour la 1ère fois, plus de 50% de l'humanité vivait en ville. Ce taux devrait atteindre 68% en 2050.","tolerance":["urbanisation","l'urbanisation","croissance urbaine"],"difficulty":"medium"},
-        {"type":"qcm","q":"Le Bangladesh est l'un des pays les plus densément peuplés au monde. Pourquoi ?","opts":["Car il est très grand","Car il est petit (144 000 km²) et très peuplé (~170 millions d'habitants)","Car il a peu de naissances","Car les gens y vivent très longtemps"],"ans":1,"hint":"Bangladesh : ~1 200 hab/km² = l'un des plus fortes densités mondiales. Delta fertile du Gange-Brahmapoutre = agriculture intensive.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La majorité de la population mondiale vit désormais dans des zones urbaines.","ans":true,"hint":"Depuis 2007-2008, la population urbaine mondiale dépasse la population rurale. L'urbanisation est le phénomène démographique majeur du XXIe s.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le solde entre naissances et décès dans une population ?","answer":"accroissement naturel","hint":"Accroissement naturel = naissances - décès. S'il est positif : la population augmente (sans migration). Taux de natalité > taux de mortalité.","tolerance":["accroissement naturel","solde naturel","croissance naturelle","croissance démographique"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quel facteur explique principalement les fortes densités du delta du Gange (Bangladesh, Inde) ?","opts":["L'industrie pétrolière","Des sols fertiles liés aux alluvions du fleuve et une longue histoire agricole","Le tourisme","La proximité de la mer uniquement"],"ans":1,"hint":"Les deltas fluviaux offrent des sols riches (alluvions) et de l'eau → agriculture intensive → peuplement dense depuis des millénaires.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le vieillissement de la population est un défi majeur pour les pays d'Europe de l'Ouest et le Japon.","ans":true,"hint":"Vieillissement = augmentation de la proportion de personnes âgées (baisse natalité + allongement de la vie). Pression sur les retraites et la santé.","difficulty":"hard"},
-        {"type":"texte","q":"Comment appelle-t-on le seuil en dessous duquel une société ne peut pas remplacer sa génération (en nombre d'enfants par femme) ?","answer":"seuil de renouvellement","hint":"Le taux de fécondité de remplacement est environ 2,1 enfants par femme. En dessous : la population diminue à terme (sans immigration).","tolerance":["seuil de renouvellement","taux de renouvellement","2,1","2.1 enfants par femme","taux de fécondité de remplacement"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce que la transition démographique ?","opts":["Le passage d'une économie agricole à industrielle","Le passage d'une forte natalité/forte mortalité à une faible natalité/faible mortalité avec accroissement puis stabilisation","La migration des populations","L'urbanisation rapide"],"ans":1,"hint":"La transition démographique : 1ère phase = mortalité baisse, natalité stable → boom. 2ème phase = natalité baisse → stabilisation.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque indicateur démographique à sa définition.","pairs":[{"g":"Taux de natalité","d":"Nombre de naissances pour 1 000 habitants/an"},{"g":"Taux de mortalité","d":"Nombre de décès pour 1 000 habitants/an"},{"g":"Taux de fécondité","d":"Nombre moyen d'enfants par femme"},{"g":"Espérance de vie","d":"Durée de vie moyenne à la naissance"}],"hint":"Ces indicateurs permettent de comparer les dynamiques démographiques entre pays et régions.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelle est approximativement la population mondiale en 2024 ?",
+          "opts": [
+            "5 milliards",
+            "6 milliards",
+            "8 milliards",
+            "10 milliards"
+          ],
+          "ans": 2,
+          "hint": "La population mondiale a atteint 8 milliards en novembre 2022 et continue de croître, principalement en Afrique et Asie du Sud.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'Afrique est le continent le plus peuplé du monde avec plus de 4 milliards d'habitants.",
+          "ans": false,
+          "hint": "Faux ! C'est l'Asie qui est le continent le plus peuplé (~60% de la population mondiale). L'Afrique est le 2ème continent le plus peuplé.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la densité de population ?",
+          "opts": [
+            "Le nombre total d'habitants d'un pays",
+            "Le nombre d'habitants par km²",
+            "La vitesse de croissance de la population",
+            "Le nombre de naissances par an"
+          ],
+          "ans": 1,
+          "hint": "Densité = nombre d'habitants / superficie (en km²). Monaco a une densité de ~25 000 hab/km², Mongolie ~2 hab/km².",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel pays est le plus peuplé du monde en 2024 ?",
+          "answer": "Inde",
+          "hint": "L'Inde a dépassé la Chine en 2023 pour devenir le pays le plus peuplé du monde (~1,44 milliard d'habitants).",
+          "tolerance": [
+            "Inde",
+            "l'Inde",
+            "India"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les zones polaires, les déserts et les hautes montagnes sont des espaces vides ou presque vides.",
+          "ans": true,
+          "hint": "Les contraintes naturelles (froid, sécheresse, altitude) expliquent les faibles densités dans ces espaces peu habitables.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la ville la plus peuplée du monde en 2024 ?",
+          "opts": [
+            "New York",
+            "Pékin",
+            "Tokyo",
+            "Mumbai"
+          ],
+          "ans": 2,
+          "hint": "Tokyo (aire urbaine) est la plus grande métropole mondiale avec ~37 millions d'habitants dans l'agglomération.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la population d'une ville et de ses banlieues (espace urbain total) ?",
+          "answer": "aire urbaine",
+          "hint": "L'aire urbaine = ville-centre + communes périphériques dont une forte proportion des actifs travaille en ville-centre.",
+          "tolerance": [
+            "aire urbaine",
+            "agglomération",
+            "métropole",
+            "conurbation"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque région mondiale à sa densité de population (faible/forte).",
+          "pairs": [
+            {
+              "g": "Asie du Sud (Bangladesh, Inde du Gange)",
+              "d": "Très forte densité"
+            },
+            {
+              "g": "Sahara (Afrique du Nord)",
+              "d": "Très faible densité (quasi vide)"
+            },
+            {
+              "g": "Sibérie (Russie)",
+              "d": "Très faible densité"
+            },
+            {
+              "g": "Europe occidentale",
+              "d": "Forte densité"
+            }
+          ],
+          "hint": "La répartition de la population mondiale est très inégale selon les conditions naturelles et historiques.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quel continent connaît la plus forte croissance démographique au XXIe siècle ?",
+          "answer": "Afrique",
+          "hint": "L'Afrique subsaharienne connaît le plus fort taux de natalité mondial. Sa population devrait doubler d'ici 2050.",
+          "tolerance": [
+            "Afrique",
+            "l'Afrique",
+            "Afrique subsaharienne"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le taux de natalité est en hausse dans les pays développés (Europe, Japon, Canada...).",
+          "ans": false,
+          "hint": "Faux ! Le taux de natalité est en BAISSE dans les pays développés. Vieillissement et baisse de la fécondité (< 2 enfants/femme) sont des tendances fortes dans les pays riches.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une mégapole ?",
+          "opts": [
+            "Une ville de plus de 100 000 habitants",
+            "Une ville de plus de 10 millions d'habitants",
+            "La capitale d'un pays",
+            "Un pays très densément peuplé"
+          ],
+          "ans": 1,
+          "hint": "Mégapole ou mégalopole désigne une ville de plus de 10 millions d'habitants. Il en existe environ 35 dans le monde.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le phénomène par lequel une proportion croissante de la population mondiale vit dans des villes ?",
+          "answer": "urbanisation",
+          "hint": "L'urbanisation : en 2007, pour la 1ère fois, plus de 50% de l'humanité vivait en ville. Ce taux devrait atteindre 68% en 2050.",
+          "tolerance": [
+            "urbanisation",
+            "l'urbanisation",
+            "croissance urbaine"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Le Bangladesh est l'un des pays les plus densément peuplés au monde. Pourquoi ?",
+          "opts": [
+            "Car il est très grand",
+            "Car il est petit (144 000 km²) et très peuplé (~170 millions d'habitants)",
+            "Car il a peu de naissances",
+            "Car les gens y vivent très longtemps"
+          ],
+          "ans": 1,
+          "hint": "Bangladesh : ~1 200 hab/km² = l'un des plus fortes densités mondiales. Delta fertile du Gange-Brahmapoutre = agriculture intensive.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La majorité de la population mondiale vit encore dans des zones rurales.",
+          "ans": false,
+          "hint": "Faux ! Depuis 2007-2008, la population URBAINE dépasse la population rurale. Plus de la moitié de l'humanité vit désormais en ville.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le solde entre le nombre de naissances et le nombre de décès dans une population ?",
+          "opts": [
+            "Le solde migratoire",
+            "L'accroissement naturel",
+            "Le taux de fécondité",
+            "L'espérance de vie"
+          ],
+          "ans": 1,
+          "hint": "Accroissement naturel = naissances − décès. S'il est positif, la population augmente (sans compter les migrations). Taux de natalité > taux de mortalité.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel facteur explique principalement les fortes densités du delta du Gange (Bangladesh, Inde) ?",
+          "opts": [
+            "L'industrie pétrolière",
+            "Des sols fertiles liés aux alluvions du fleuve et une longue histoire agricole",
+            "Le tourisme",
+            "La proximité de la mer uniquement"
+          ],
+          "ans": 1,
+          "hint": "Les deltas fluviaux offrent des sols riches (alluvions) et de l'eau → agriculture intensive → peuplement dense depuis des millénaires.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le vieillissement de la population est un défi majeur pour les pays d'Europe de l'Ouest et le Japon.",
+          "ans": true,
+          "hint": "Vieillissement = augmentation de la proportion de personnes âgées (baisse natalité + allongement de la vie). Pression sur les retraites et la santé.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel est le taux de fécondité minimum (enfants par femme) pour qu'une population se renouvelle sans immigration ?",
+          "opts": [
+            "1,5 enfant par femme",
+            "2,1 enfants par femme",
+            "3 enfants par femme",
+            "1 enfant par femme"
+          ],
+          "ans": 1,
+          "hint": "Le seuil de renouvellement des générations est d'environ 2,1 enfants par femme. En dessous, la population diminue à terme sans apport migratoire.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la transition démographique ?",
+          "opts": [
+            "Le passage d'une économie agricole à industrielle",
+            "Le passage d'une forte natalité/forte mortalité à une faible natalité/faible mortalité avec accroissement puis stabilisation",
+            "La migration des populations",
+            "L'urbanisation rapide"
+          ],
+          "ans": 1,
+          "hint": "La transition démographique : 1ère phase = mortalité baisse, natalité stable → boom. 2ème phase = natalité baisse → stabilisation.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque indicateur démographique à sa définition.",
+          "pairs": [
+            {
+              "g": "Taux de natalité",
+              "d": "Nombre de naissances pour 1 000 habitants/an"
+            },
+            {
+              "g": "Taux de mortalité",
+              "d": "Nombre de décès pour 1 000 habitants/an"
+            },
+            {
+              "g": "Taux de fécondité",
+              "d": "Nombre moyen d'enfants par femme"
+            },
+            {
+              "g": "Espérance de vie",
+              "d": "Durée de vie moyenne à la naissance"
+            }
+          ],
+          "hint": "Ces indicateurs permettent de comparer les dynamiques démographiques entre pays et régions.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -223,26 +2050,258 @@
       "label": "Migrations internationales",
       "section": "Géographie",
       "questions": [
-        {"type":"qcm","q":"Qu'est-ce qu'une migration ?","opts":["Un voyage touristique","Un déplacement durable d'une personne d'un lieu à un autre","Un mouvement saisonnier d'animaux","Un commerce international"],"ans":1,"hint":"Une migration est un déplacement d'une personne (migrant) entraînant un changement de résidence durable.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les migrations peuvent être internes (à l'intérieur d'un pays) ou internationales (entre pays).","ans":true,"hint":"Migration interne : ex. exode rural. Migration internationale : traversée d'une frontière nationale. Les deux types sont très fréquents.","difficulty":"easy"},
-        {"type":"qcm","q":"Comment appelle-t-on une personne qui fuit son pays en raison de persécutions ou de conflits ?","opts":["Migrant économique","Touriste","Réfugié","Expatrié"],"ans":2,"hint":"Un réfugié est reconnu par le droit international (Convention de Genève, 1951) : fuit des persécutions ou conflits.","difficulty":"easy"},
-        {"type":"texte","q":"Quelles sont les deux principales causes des migrations dans le monde ? (deux mots)","answer":"économique et politique","hint":"Les causes des migrations : économiques (chercher du travail, meilleures conditions), politiques (fuir persécutions, guerres), environnementales.","tolerance":["économique et politique","économie et politique","travail et persécutions","conflits et pauvreté"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les pays riches du Nord sont principalement des pays d'accueil de migrants venant du Sud.","ans":true,"hint":"Les flux migratoires vont majoritairement des pays pauvres (Afrique, Asie, Amérique latine) vers les pays riches (Europe, Amérique du Nord).","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'une diaspora ?","opts":["Un flux de migration saisonnière","La communauté d'un peuple dispersée dans le monde entier en dehors de son pays d'origine","Une zone de réfugiés","Un accord migratoire"],"ans":1,"hint":"La diaspora désigne une communauté dispersée hors de son pays d'origine : diaspora chinoise, indienne, africaine, arménienne...","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on le pays que quitte un migrant ?","answer":"pays d'émigration","hint":"Pays d'émigration = pays de départ. Pays d'immigration = pays d'arrivée. Émigrer = quitter. Immigrer = arriver.","tolerance":["pays d'émigration","pays de départ","pays source","pays d'origine"],"difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque type de migrant à sa définition.","pairs":[{"g":"Réfugié","d":"Fuit des persécutions ou conflits"},{"g":"Migrant économique","d":"Cherche de meilleures conditions de vie et de travail"},{"g":"Migrant climatique","d":"Fuit les effets du changement climatique"},{"g":"Expatrié","d":"Professionnel envoyé à l'étranger par son entreprise"}],"hint":"Les migrations recouvrent des réalités très diverses selon les motivations et statuts juridiques.","difficulty":"medium"},
-        {"type":"texte","q":"Quelle organisation internationale est chargée de protéger les réfugiés dans le monde ?","answer":"HCR","hint":"Le HCR (Haut Commissariat des Nations Unies pour les Réfugiés / UNHCR) est l'agence de l'ONU chargée des réfugiés depuis 1950.","tolerance":["HCR","UNHCR","Haut Commissariat pour les Réfugiés","hcr"],"difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les transferts d'argent des migrants vers leur pays d'origine (remittances) constituent une ressource importante pour les pays en développement.","ans":true,"hint":"Les remises (remittances) des migrants représentent souvent plus que l'aide au développement pour des pays comme le Mexique, les Philippines, le Sénégal.","difficulty":"medium"},
-        {"type":"qcm","q":"Quel continent est la principale région de départ de migrants vers l'Europe ?","opts":["Amérique du Nord","Asie de l'Est","Afrique et Moyen-Orient","Amérique du Sud"],"ans":2,"hint":"L'Afrique subsaharienne, le Maghreb et le Moyen-Orient sont les principales régions de départ de migrants vers l'Europe.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le canal de migration utilisé par des migrants subsahariens pour rejoindre l'Europe via la Libye et la Méditerranée ?","answer":"Méditerranée","hint":"La route méditerranéenne centrale (Libye → Italie) est l'une des plus meurtrières. Des milliers de migrants y meurent chaque année.","tolerance":["Méditerranée","route méditerranéenne","la Méditerranée centrale"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que le regroupement familial ?","opts":["L'accueil de réfugiés de guerre","La procédure permettant à un migrant de faire venir sa famille dans son pays d'accueil","La fusion de deux diasporas","Un accord d'émigration"],"ans":1,"hint":"Le regroupement familial permet à un migrant résidant légalement d'obtenir un visa pour ses proches (conjoint, enfants mineurs).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les migrations sont un phénomène récent, apparu au XXe siècle.","ans":false,"hint":"Les migrations sont aussi vieilles que l'humanité : Homo sapiens migre d'Afrique dès 70 000 av. J.-C. Les migrations modernes s'accélèrent avec la mondialisation.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on les mouvements migratoires liés à la recherche d'un emploi saisonnier (agriculture, construction) ?","answer":"migrations saisonnières","hint":"Les migrations saisonnières : travailleurs qui se déplacent pour des récoltes ou travaux saisonniers, puis rentrent chez eux.","tolerance":["migrations saisonnières","migration saisonnière","saisonniers","travailleurs saisonniers"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quelle est la principale région du monde qui accueille le plus de réfugiés (2023) ?","opts":["Europe occidentale","Amérique du Nord","Pays voisins des zones de conflit (Turquie, Pakistan, Iran...)","Australie"],"ans":2,"hint":"Les pays voisins des zones de conflit accueillent la majorité des réfugiés : Turquie (4M de Syriens), Pakistan (1,5M d'Afghans)...","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le changement climatique devrait provoquer de nouvelles vagues massives de migrations climatiques au XXIe siècle.","ans":true,"hint":"La montée des eaux, les sécheresses et les événements extrêmes pourraient forcer entre 200 millions et 1 milliard de personnes à migrer d'ici 2050.","difficulty":"hard"},
-        {"type":"texte","q":"Comment appelle-t-on la politique par laquelle un pays contrôle et limite l'entrée d'immigrants sur son territoire ?","answer":"politique d'immigration","hint":"La politique d'immigration = ensemble des règles fixant les conditions d'entrée, de séjour et de retour des migrants. Elle varie selon les pays.","tolerance":["politique d'immigration","contrôle migratoire","restriction migratoire","politique migratoire"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce que la fuite des cerveaux (brain drain) ?","opts":["La migration de travailleurs non qualifiés","L'émigration des personnes les plus qualifiées (médecins, ingénieurs) de pays pauvres vers des pays riches","La migration de réfugiés politique","Un type de migration saisonnière"],"ans":1,"hint":"La fuite des cerveaux appauvrit les pays en développement qui perdent leurs élites formées et profite aux pays d'accueil riches.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque flux migratoire à son sens dominant.","pairs":[{"g":"Mexique → États-Unis","d":"Migration économique (travail)"},{"g":"Syrie → Turquie / Europe","d":"Migration de réfugiés (conflit)"},{"g":"Philippines → Arabie Saoudite","d":"Migration de travail (domestique)"},{"g":"Sahel → Côte d'Ivoire","d":"Migration régionale (économique)"}],"hint":"Les flux migratoires sont très divers selon les régions : motivations économiques, politiques, culturelles ou environnementales.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une migration ?",
+          "opts": [
+            "Un voyage touristique",
+            "Un déplacement durable d'une personne d'un lieu à un autre",
+            "Un mouvement saisonnier d'animaux",
+            "Un commerce international"
+          ],
+          "ans": 1,
+          "hint": "Une migration est un déplacement d'une personne (migrant) entraînant un changement de résidence durable.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les migrations peuvent être internes (à l'intérieur d'un pays) ou internationales (entre pays).",
+          "ans": true,
+          "hint": "Migration interne : ex. exode rural. Migration internationale : traversée d'une frontière nationale. Les deux types sont très fréquents.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment appelle-t-on une personne qui fuit son pays en raison de persécutions ou de conflits ?",
+          "opts": [
+            "Migrant économique",
+            "Touriste",
+            "Réfugié",
+            "Expatrié"
+          ],
+          "ans": 2,
+          "hint": "Un réfugié est reconnu par le droit international (Convention de Genève, 1951) : fuit des persécutions ou conflits.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelles sont les deux principales causes des migrations dans le monde ?",
+          "opts": [
+            "Touristique et sportive",
+            "Économique (travail, conditions de vie) et politique (persécutions, guerres)",
+            "Culturelle et religieuse uniquement",
+            "Climatique et alimentaire uniquement"
+          ],
+          "ans": 1,
+          "hint": "Les deux causes principales des migrations sont économiques (chercher du travail, de meilleures conditions de vie) et politiques (fuir persécutions ou conflits). Les causes environnementales sont croissantes mais encore secondaires.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les pays pauvres du Sud sont principalement des pays d'accueil de migrants venant du Nord.",
+          "ans": false,
+          "hint": "Faux ! Les flux migratoires vont majoritairement des pays pauvres (Afrique, Asie, Amérique latine) vers les pays riches (Europe, Amérique du Nord), et non l'inverse.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une diaspora ?",
+          "opts": [
+            "Un flux de migration saisonnière",
+            "La communauté d'un peuple dispersée dans le monde entier en dehors de son pays d'origine",
+            "Une zone de réfugiés",
+            "Un accord migratoire"
+          ],
+          "ans": 1,
+          "hint": "La diaspora désigne une communauté dispersée hors de son pays d'origine : diaspora chinoise, indienne, africaine, arménienne...",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le pays que quitte un migrant ?",
+          "answer": "pays d'émigration",
+          "hint": "Pays d'émigration = pays de départ. Pays d'immigration = pays d'arrivée. Émigrer = quitter. Immigrer = arriver.",
+          "tolerance": [
+            "pays d'émigration",
+            "pays de départ",
+            "pays source",
+            "pays d'origine"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque type de migrant à sa définition.",
+          "pairs": [
+            {
+              "g": "Réfugié",
+              "d": "Fuit des persécutions ou conflits"
+            },
+            {
+              "g": "Migrant économique",
+              "d": "Cherche de meilleures conditions de vie et de travail"
+            },
+            {
+              "g": "Migrant climatique",
+              "d": "Fuit les effets du changement climatique"
+            },
+            {
+              "g": "Expatrié",
+              "d": "Professionnel envoyé à l'étranger par son entreprise"
+            }
+          ],
+          "hint": "Les migrations recouvrent des réalités très diverses selon les motivations et statuts juridiques.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle organisation internationale est chargée de protéger les réfugiés dans le monde ?",
+          "answer": "HCR",
+          "hint": "Le HCR (Haut Commissariat des Nations Unies pour les Réfugiés / UNHCR) est l'agence de l'ONU chargée des réfugiés depuis 1950.",
+          "tolerance": [
+            "HCR",
+            "hcr",
+            "UNHCR",
+            "unhcr",
+            "Haut Commissariat pour les Réfugiés"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les transferts d'argent des migrants vers leur pays d'origine (remittances) constituent une ressource importante pour les pays en développement.",
+          "ans": true,
+          "hint": "Les remises (remittances) des migrants représentent souvent plus que l'aide au développement pour des pays comme le Mexique, les Philippines, le Sénégal.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel continent est la principale région de départ de migrants vers l'Europe ?",
+          "opts": [
+            "Amérique du Nord",
+            "Asie de l'Est",
+            "Afrique et Moyen-Orient",
+            "Amérique du Sud"
+          ],
+          "ans": 2,
+          "hint": "L'Afrique subsaharienne, le Maghreb et le Moyen-Orient sont les principales régions de départ de migrants vers l'Europe.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le canal de migration utilisé par des migrants subsahariens pour rejoindre l'Europe via la Libye et la Méditerranée ?",
+          "answer": "Méditerranée",
+          "hint": "La route méditerranéenne centrale (Libye → Italie) est l'une des plus meurtrières. Des milliers de migrants y meurent chaque année.",
+          "tolerance": [
+            "Méditerranée",
+            "route méditerranéenne",
+            "la Méditerranée centrale"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le regroupement familial ?",
+          "opts": [
+            "L'accueil de réfugiés de guerre",
+            "La procédure permettant à un migrant de faire venir sa famille dans son pays d'accueil",
+            "La fusion de deux diasporas",
+            "Un accord d'émigration"
+          ],
+          "ans": 1,
+          "hint": "Le regroupement familial permet à un migrant résidant légalement d'obtenir un visa pour ses proches (conjoint, enfants mineurs).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les migrations sont un phénomène récent, apparu au XXe siècle.",
+          "ans": false,
+          "hint": "Les migrations sont aussi vieilles que l'humanité : Homo sapiens migre d'Afrique dès 70 000 av. J.-C. Les migrations modernes s'accélèrent avec la mondialisation.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on les mouvements migratoires liés à la recherche d'un emploi saisonnier (agriculture, construction) ?",
+          "answer": "migrations saisonnières",
+          "hint": "Les migrations saisonnières : travailleurs qui se déplacent pour des récoltes ou travaux saisonniers, puis rentrent chez eux.",
+          "tolerance": [
+            "migrations saisonnières",
+            "migration saisonnière",
+            "saisonniers",
+            "travailleurs saisonniers"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle est la principale région du monde qui accueille le plus de réfugiés (2023) ?",
+          "opts": [
+            "Europe occidentale",
+            "Amérique du Nord",
+            "Pays voisins des zones de conflit (Turquie, Pakistan, Iran...)",
+            "Australie"
+          ],
+          "ans": 2,
+          "hint": "Les pays voisins des zones de conflit accueillent la majorité des réfugiés : Turquie (4M de Syriens), Pakistan (1,5M d'Afghans)...",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le changement climatique n'aura pas d'impact sur les migrations au XXIe siècle.",
+          "ans": false,
+          "hint": "Faux ! Le changement climatique devrait provoquer de nouvelles vagues massives de migrations : la montée des eaux, les sécheresses et les événements extrêmes pourraient forcer entre 200 millions et 1 milliard de personnes à migrer d'ici 2050.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle l'ensemble des règles par lesquelles un État contrôle et limite l'entrée d'immigrants sur son territoire ?",
+          "opts": [
+            "Le droit d'asile",
+            "La politique d'immigration",
+            "Le regroupement familial",
+            "La diaspora"
+          ],
+          "ans": 1,
+          "hint": "La politique d'immigration fixe les conditions d'entrée, de séjour et d'expulsion des migrants. Elle varie selon les pays et les gouvernements.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la fuite des cerveaux (brain drain) ?",
+          "opts": [
+            "La migration de travailleurs non qualifiés",
+            "L'émigration des personnes les plus qualifiées (médecins, ingénieurs) de pays pauvres vers des pays riches",
+            "La migration de réfugiés politique",
+            "Un type de migration saisonnière"
+          ],
+          "ans": 1,
+          "hint": "La fuite des cerveaux appauvrit les pays en développement qui perdent leurs élites formées et profite aux pays d'accueil riches.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque flux migratoire à son sens dominant.",
+          "pairs": [
+            {
+              "g": "Mexique → États-Unis",
+              "d": "Migration économique (travail)"
+            },
+            {
+              "g": "Syrie → Turquie / Europe",
+              "d": "Migration de réfugiés (conflit)"
+            },
+            {
+              "g": "Philippines → Arabie Saoudite",
+              "d": "Migration de travail (domestique)"
+            },
+            {
+              "g": "Sahel → Côte d'Ivoire",
+              "d": "Migration régionale (économique)"
+            }
+          ],
+          "hint": "Les flux migratoires sont très divers selon les régions : motivations économiques, politiques, culturelles ou environnementales.",
+          "difficulty": "hard"
+        }
       ]
     }
   ]

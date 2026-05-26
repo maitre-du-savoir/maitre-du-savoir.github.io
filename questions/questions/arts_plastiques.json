@@ -7,26 +7,254 @@
       "label": "Couleurs primaires, secondaires et cercle chromatique",
       "section": "Couleurs",
       "questions": [
-        {"type":"qcm","q":"Quelles sont les trois couleurs primaires en peinture (synthèse soustractive) ?","opts":["Rouge, vert, bleu","Rouge, jaune, bleu","Cyan, magenta, jaune","Orange, vert, violet"],"ans":1,"hint":"Couleurs primaires en peinture : rouge, jaune, bleu (RJB). On ne peut pas les obtenir en mélangeant d'autres couleurs. Elles permettent d'obtenir toutes les autres.","difficulty":"easy"},
-        {"type":"texte","q":"Quelle couleur obtient-on en mélangeant le rouge et le jaune ?","answer":"orange","hint":"Rouge + jaune = orange. Rouge + bleu = violet. Jaune + bleu = vert. Ces mélanges donnent les couleurs secondaires.","tolerance":["orange","de l'orange","couleur orange"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Les couleurs secondaires sont obtenues en mélangeant deux couleurs primaires.","ans":true,"hint":"Couleurs secondaires : orange (rouge + jaune), vert (jaune + bleu), violet (rouge + bleu). Elles sont au nombre de trois.","difficulty":"easy"},
-        {"type":"qcm","q":"Quelle couleur est complémentaire du rouge ?","opts":["Orange","Jaune","Violet","Vert"],"ans":3,"hint":"Couleurs complémentaires = couleurs opposées sur le cercle chromatique. Rouge ↔ vert. Bleu ↔ orange. Jaune ↔ violet.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on les couleurs situées à l'opposé l'une de l'autre sur le cercle chromatique ?","answer":"complémentaires","hint":"Les couleurs complémentaires s'opposent et se valorisent mutuellement. Placées côte à côte, elles créent un contraste maximal.","tolerance":["complémentaires","couleurs complémentaires"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Le blanc et le noir sont des couleurs primaires.","ans":false,"hint":"Blanc et noir ne sont pas des couleurs primaires. En peinture, le blanc = lumière, le noir = absence de lumière. Ils modifient la valeur (clair/foncé) des couleurs.","difficulty":"easy"},
-        {"type":"qcm","q":"Quels sont les couleurs dites 'chaudes' parmi celles-ci ?","opts":["Bleu, vert, violet","Rouge, orange, jaune","Blanc, gris, noir","Bleu, cyan, turquoise"],"ans":1,"hint":"Couleurs chaudes : rouge, orange, jaune → évoquent le feu, le soleil, la chaleur. Couleurs froides : bleu, vert, violet → évoquent l'eau, la nuit, le froid.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque mélange de couleurs primaires à la couleur secondaire obtenue.","pairs":[{"g":"Rouge + Jaune","d":"Orange"},{"g":"Jaune + Bleu","d":"Vert"},{"g":"Bleu + Rouge","d":"Violet"},{"g":"Rouge + Jaune + Bleu","d":"Brun / gris (couleur rompue)"}],"hint":"Ces mélanges sont les bases de la couleur en peinture. Les quantités relatives modifient les nuances obtenues.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on l'ajout de blanc à une couleur ?","answer":"teinte","hint":"Ajouter du blanc → teinte (couleur plus claire, plus pastel). Ajouter du noir → ton ou ombre (couleur plus foncée). Modifier la saturation = ajouter du gris.","tolerance":["teinte","une teinte","tinte","ton clair"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que la saturation d'une couleur ?","opts":["La luminosité","L'intensité ou la pureté d'une couleur (du terne au vif)","La température (chaud/froid)","La quantité de blanc"],"ans":1,"hint":"Saturation = intensité / vivacité de la couleur. Couleur saturée = vive, pure. Couleur désaturée = terne, grisée. Ajouter du gris désature.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les couleurs froides font paraître les objets plus proches que les couleurs chaudes.","ans":false,"hint":"Effet de profondeur : couleurs chaudes (rouge, orange) semblent avancer. Couleurs froides (bleu, vert) semblent reculer. Effet utilisé en peinture pour créer la perspective.","difficulty":"medium"},
-        {"type":"texte","q":"Quel terme désigne une nuance (variation légère) d'une même couleur de base ?","answer":"nuance","hint":"Une nuance = variation légère d'une couleur (bleu clair, bleu cobalt, bleu marine = nuances de bleu). Une gamme chromatique = série de nuances progressives.","tolerance":["nuance","une nuance","variante","tons"],"difficulty":"medium"},
-        {"type":"qcm","q":"En lumière (synthèse additive), quelles sont les trois couleurs primaires ?","opts":["Rouge, jaune, bleu","Rouge, vert, bleu","Cyan, magenta, jaune","Orange, violet, vert"],"ans":1,"hint":"Synthèse additive (lumière) : Rouge + Vert + Bleu = blanc (RVB). Synthèse soustractive (peinture) : Rouge + Jaune + Bleu = noir. Systèmes inverses.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Le cercle chromatique permet de visualiser les relations entre les couleurs (complémentaires, analogues, triadiques).","ans":true,"hint":"Cercle chromatique (Itten, 1961) = représentation circulaire des 12 couleurs (3 primaires, 3 secondaires, 6 tertiaires). Outil fondamental en arts plastiques.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la valeur d'une couleur (sa clarté ou obscurité, du clair au sombre) ?","answer":"valeur","hint":"Valeur = degré de clarté ou d'obscurité d'une couleur. Valeur claire = proche du blanc. Valeur sombre = proche du noir. La valeur crée le modelé et le volume.","tolerance":["valeur","la valeur","luminosité","clarté"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'une harmonie de couleurs analogues ?","opts":["Des couleurs complémentaires très contrastées","Des couleurs voisines sur le cercle chromatique (ex : rouge, orange, jaune)","Des couleurs primaires uniquement","Du noir, blanc et gris"],"ans":1,"hint":"Couleurs analogues = couleurs voisines sur le cercle (3-5 couleurs adjacentes). Créent une harmonie douce et cohérente. Ex : verts et bleus ensemble.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"En imprimerie (CMJN), les couleurs primaires sont : cyan, magenta, jaune et noir.","ans":true,"hint":"CMJN (ou CMYK) = Cyan, Magenta, Jaune, Noir (Key). Synthèse soustractive industrielle. Avec ces 4 couleurs on reproduit toutes les couleurs imprimées.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle le phénomène où deux couleurs complémentaires côte à côte semblent plus intenses ?","answer":"contraste simultané","hint":"Contraste simultané (Chevreul, 1839) : deux couleurs complémentaires s'intensifient mutuellement quand placées côte à côte. Utilisé par les impressionnistes.","tolerance":["contraste simultané","contraste des complémentaires","simultaneous contrast"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce qu'une couleur 'rompue' ?","opts":["Une couleur très vive","Une couleur obtenue en ajoutant sa complémentaire (ou du gris/brun) pour la désaturer","Une couleur primaire","Une couleur noire"],"ans":1,"hint":"Couleur rompue = couleur désaturée, ternie, atténuée par l'ajout de sa complémentaire, de gris ou de brun. Donne des tons plus naturels et moins criards.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque terme chromatique à sa définition.","pairs":[{"g":"Teinte","d":"Nom de la couleur (rouge, bleu, jaune...)"},{"g":"Valeur","d":"Degré de clarté ou d'obscurité"},{"g":"Saturation","d":"Intensité ou pureté de la couleur"},{"g":"Ton","d":"Couleur modifiée par ajout de noir ou blanc"}],"hint":"Ces quatre paramètres (teinte, valeur, saturation) définissent complètement une couleur. C'est le modèle TSV/HSV en informatique.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelles sont les trois couleurs primaires en peinture (synthèse soustractive) ?",
+          "opts": [
+            "Rouge, vert, bleu",
+            "Rouge, jaune, bleu",
+            "Cyan, magenta, jaune",
+            "Orange, vert, violet"
+          ],
+          "ans": 1,
+          "hint": "Couleurs primaires en peinture : rouge, jaune, bleu (RJB). On ne peut pas les obtenir en mélangeant d'autres couleurs. Elles permettent d'obtenir toutes les autres.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quelle couleur obtient-on en mélangeant le rouge et le jaune ?",
+          "answer": "orange",
+          "hint": "Rouge + jaune = orange. Rouge + bleu = violet. Jaune + bleu = vert. Ces mélanges donnent les couleurs secondaires.",
+          "tolerance": [
+            "orange",
+            "de l'orange",
+            "couleur orange"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les couleurs secondaires sont obtenues en mélangeant deux couleurs primaires.",
+          "ans": true,
+          "hint": "Couleurs secondaires : orange (rouge + jaune), vert (jaune + bleu), violet (rouge + bleu). Elles sont au nombre de trois.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle couleur est complémentaire du rouge ?",
+          "opts": [
+            "Orange",
+            "Jaune",
+            "Violet",
+            "Vert"
+          ],
+          "ans": 3,
+          "hint": "Couleurs complémentaires = couleurs opposées sur le cercle chromatique. Rouge ↔ vert. Bleu ↔ orange. Jaune ↔ violet.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on les couleurs situées à l'opposé l'une de l'autre sur le cercle chromatique ?",
+          "answer": "complémentaires",
+          "hint": "Les couleurs complémentaires s'opposent et se valorisent mutuellement. Placées côte à côte, elles créent un contraste maximal.",
+          "tolerance": [
+            "complémentaires",
+            "couleurs complémentaires"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le blanc et le noir sont des couleurs primaires.",
+          "ans": false,
+          "hint": "Blanc et noir ne sont pas des couleurs primaires. En peinture, le blanc = lumière, le noir = absence de lumière. Ils modifient la valeur (clair/foncé) des couleurs.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quels sont les couleurs dites 'chaudes' parmi celles-ci ?",
+          "opts": [
+            "Bleu, vert, violet",
+            "Rouge, orange, jaune",
+            "Blanc, gris, noir",
+            "Bleu, cyan, turquoise"
+          ],
+          "ans": 1,
+          "hint": "Couleurs chaudes : rouge, orange, jaune → évoquent le feu, le soleil, la chaleur. Couleurs froides : bleu, vert, violet → évoquent l'eau, la nuit, le froid.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque mélange de couleurs primaires à la couleur secondaire obtenue.",
+          "pairs": [
+            {
+              "g": "Rouge + Jaune",
+              "d": "Orange"
+            },
+            {
+              "g": "Jaune + Bleu",
+              "d": "Vert"
+            },
+            {
+              "g": "Bleu + Rouge",
+              "d": "Violet"
+            },
+            {
+              "g": "Rouge + Jaune + Bleu",
+              "d": "Brun / gris (couleur rompue)"
+            }
+          ],
+          "hint": "Ces mélanges sont les bases de la couleur en peinture. Les quantités relatives modifient les nuances obtenues.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on l'ajout de blanc à une couleur ?",
+          "answer": "teinte",
+          "hint": "Ajouter du blanc → teinte (couleur plus claire, plus pastel). Ajouter du noir → ton ou ombre (couleur plus foncée). Modifier la saturation = ajouter du gris.",
+          "tolerance": [
+            "teinte",
+            "une teinte",
+            "tinte",
+            "ton clair"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la saturation d'une couleur ?",
+          "opts": [
+            "La luminosité",
+            "L'intensité ou la pureté d'une couleur (du terne au vif)",
+            "La température (chaud/froid)",
+            "La quantité de blanc"
+          ],
+          "ans": 1,
+          "hint": "Saturation = intensité / vivacité de la couleur. Couleur saturée = vive, pure. Couleur désaturée = terne, grisée. Ajouter du gris désature.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les couleurs froides font paraître les objets plus proches que les couleurs chaudes.",
+          "ans": false,
+          "hint": "Effet de profondeur : couleurs chaudes (rouge, orange) semblent avancer. Couleurs froides (bleu, vert) semblent reculer. Effet utilisé en peinture pour créer la perspective.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Quel terme désigne une nuance (variation légère) d'une même couleur de base ?",
+          "answer": "nuance",
+          "hint": "Une nuance = variation légère d'une couleur (bleu clair, bleu cobalt, bleu marine = nuances de bleu). Une gamme chromatique = série de nuances progressives.",
+          "tolerance": [
+            "nuance",
+            "une nuance",
+            "variante",
+            "tons"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "En lumière (synthèse additive), quelles sont les trois couleurs primaires ?",
+          "opts": [
+            "Rouge, jaune, bleu",
+            "Rouge, vert, bleu",
+            "Cyan, magenta, jaune",
+            "Orange, violet, vert"
+          ],
+          "ans": 1,
+          "hint": "Synthèse additive (lumière) : Rouge + Vert + Bleu = blanc (RVB). Synthèse soustractive (peinture) : Rouge + Jaune + Bleu = noir. Systèmes inverses.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le cercle chromatique permet de visualiser les relations entre les couleurs (complémentaires, analogues, triadiques).",
+          "ans": true,
+          "hint": "Cercle chromatique (Itten, 1961) = représentation circulaire des 12 couleurs (3 primaires, 3 secondaires, 6 tertiaires). Outil fondamental en arts plastiques.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la valeur d'une couleur (sa clarté ou obscurité, du clair au sombre) ?",
+          "answer": "valeur",
+          "hint": "Valeur = degré de clarté ou d'obscurité d'une couleur. Valeur claire = proche du blanc. Valeur sombre = proche du noir. La valeur crée le modelé et le volume.",
+          "tolerance": [
+            "valeur",
+            "la valeur",
+            "luminosité",
+            "clarté"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une harmonie de couleurs analogues ?",
+          "opts": [
+            "Des couleurs complémentaires très contrastées",
+            "Des couleurs voisines sur le cercle chromatique (ex : rouge, orange, jaune)",
+            "Des couleurs primaires uniquement",
+            "Du noir, blanc et gris"
+          ],
+          "ans": 1,
+          "hint": "Couleurs analogues = couleurs voisines sur le cercle (3-5 couleurs adjacentes). Créent une harmonie douce et cohérente. Ex : verts et bleus ensemble.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "En imprimerie (CMJN), les couleurs primaires sont : cyan, magenta, jaune et noir.",
+          "ans": true,
+          "hint": "CMJN (ou CMYK) = Cyan, Magenta, Jaune, Noir (Key). Synthèse soustractive industrielle. Avec ces 4 couleurs on reproduit toutes les couleurs imprimées.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le phénomène où deux couleurs complémentaires côte à côte semblent plus intenses ?",
+          "answer": "contraste simultané",
+          "hint": "Contraste simultané (Chevreul, 1839) : deux couleurs complémentaires s'intensifient mutuellement quand placées côte à côte. Utilisé par les impressionnistes.",
+          "tolerance": [
+            "contraste simultané",
+            "contraste des complémentaires",
+            "simultaneous contrast"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une couleur 'rompue' ?",
+          "opts": [
+            "Une couleur très vive",
+            "Une couleur obtenue en ajoutant sa complémentaire (ou du gris/brun) pour la désaturer",
+            "Une couleur primaire",
+            "Une couleur noire"
+          ],
+          "ans": 1,
+          "hint": "Couleur rompue = couleur désaturée, ternie, atténuée par l'ajout de sa complémentaire, de gris ou de brun. Donne des tons plus naturels et moins criards.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque terme chromatique à sa définition.",
+          "pairs": [
+            {
+              "g": "Teinte",
+              "d": "Nom de la couleur (rouge, bleu, jaune...)"
+            },
+            {
+              "g": "Valeur",
+              "d": "Degré de clarté ou d'obscurité"
+            },
+            {
+              "g": "Saturation",
+              "d": "Intensité ou pureté de la couleur"
+            },
+            {
+              "g": "Ton",
+              "d": "Couleur modifiée par ajout de noir ou blanc"
+            }
+          ],
+          "hint": "Ces quatre paramètres (teinte, valeur, saturation) définissent complètement une couleur. C'est le modèle TSV/HSV en informatique.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -34,26 +262,257 @@
       "label": "Techniques et matériaux artistiques",
       "section": "Techniques et matériaux",
       "questions": [
-        {"type":"qcm","q":"Quelle technique artistique utilise des pigments dilués dans de l'eau, appliqués sur papier humide ou sec ?","opts":["Gouache","Huile","Aquarelle","Acrylique"],"ans":2,"hint":"Aquarelle = pigments transparents dilués à l'eau. La lumière vient du papier blanc. Translucide, légère. Différente de la gouache (opaque).","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on la technique qui consiste à assembler des éléments disparates (papier, tissu, photos...) sur un support ?","answer":"collage","hint":"Collage = technique consistant à coller des éléments (papiers, journaux, photos, matières) sur un support. Picasso et Braque l'ont introduit en art.","tolerance":["collage","le collage","papier collé"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La peinture à l'huile est plus rapide à sécher que la peinture acrylique.","ans":false,"hint":"Peinture à l'huile = séchage lent (heures à jours → corrections faciles). Acrylique = séchage rapide (minutes). C'est l'inverse !","difficulty":"easy"},
-        {"type":"qcm","q":"Quel matériau souple et malléable est utilisé pour la sculpture et le modelage en classe d'arts plastiques ?","opts":["Le marbre","Le bronze","L'argile (terre glaise)","Le granit"],"ans":2,"hint":"L'argile (terre glaise) = matière naturelle, malléable à l'état frais, durcissant après cuisson (céramique). Idéale pour le modelage en classe.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la technique d'impression où on découpe un dessin dans du bois et on l'encre pour le reproduire ?","answer":"gravure sur bois","hint":"Gravure sur bois (xylographie) = taille d'un motif dans un bloc de bois → encrage → impression sur papier. Utilisée depuis le Xe siècle en Asie.","tolerance":["gravure sur bois","xylographie","linogravure","gravure"],"difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que le fusain ?","opts":["Un pinceau en poil naturel","Un bâton de charbon de bois utilisé pour le dessin","Un type de peinture à l'eau","Un support rigide pour la peinture"],"ans":1,"hint":"Fusain = bâton de charbon de bois (branche de fusain carbonisée). Donne un trait souple, facile à estomper et corriger. Technique de dessin fondamentale.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"L'encre de Chine est un liquide noir opaque utilisé pour le dessin à la plume ou au pinceau.","ans":true,"hint":"Encre de Chine = pigment noir en suspension, très opaque et imperméable après séchage. Utilisée pour les lavis, les dessins à la plume, la calligraphie.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque technique à son support principal.","pairs":[{"g":"Aquarelle","d":"Papier aquarelle (épais et grainé)"},{"g":"Peinture à l'huile","d":"Toile (lin ou coton) ou bois entoilé"},{"g":"Fresque","d":"Enduit de plâtre frais (mur)"},{"g":"Pastel","d":"Papier grainé ou vélours"}],"hint":"Le choix du support est essentiel pour chaque technique. Le support interagit avec le médium et détermine le rendu final.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la technique qui consiste à gratter ou estomper du fusain, de la sanguine ou du pastel pour créer des effets de fondu ?","answer":"estompage","hint":"Estompage = technique consistant à frotter/étaler le matériau (fusain, pastel) avec le doigt, un estompe (rouleau de papier) ou un chiffon pour adoucir les traits.","tolerance":["estompage","l'estompage","sfumato","fondu","blending"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que la technique du monotype ?","opts":["Dessiner plusieurs exemplaires identiques","Imprimer à partir d'une plaque peinte (unique, non gravée) → un seul exemplaire","Photographier une œuvre","Copier une peinture"],"ans":1,"hint":"Monotype = impression unique : on peint sur une plaque lisse, on pose le papier dessus, on tire. Un seul exemplaire possible (ou tirage très limité).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La gouache est une peinture à l'eau opaque (elle couvre ce qui est en dessous).","ans":true,"hint":"Gouache = peinture à l'eau opaque (couvre bien). Aquarelle = transparente (ne couvre pas). La gouache peut s'éclaircir avec de l'eau mais reste opaque sur le papier.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la technique de sculpture consistant à enlever de la matière (taille directe dans le marbre) ?","answer":"taille directe","hint":"Taille directe = sculpter en enlevant de la matière (dans la pierre, le bois, le marbre). Opposé : modelage (ajouter de la matière, ex : argile).","tolerance":["taille directe","taille","sculpture par soustraction","enlever de la matière"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'une estampe ?","opts":["Une peinture sur soie","Une image obtenue par impression à partir d'une matrice (gravée, dessinée ou peinte)","Un type de sculpture","Un grand tableau"],"ans":1,"hint":"Estampe = image imprimée à partir d'une matrice (planche gravée dans du bois, du métal, du linoléum...). Permet la reproduction en plusieurs exemplaires.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'acrylique est une peinture synthétique soluble à l'eau mais imperméable après séchage.","ans":true,"hint":"Acrylique = peinture synthétique (polymères acryliques). Avantages : séchage rapide, imperméable après séchage, polyvalente (épaisse comme huile ou liquide comme aquarelle).","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on la préparation appliquée sur un support avant la peinture à l'huile (pour éviter que l'huile n'abîme le support) ?","answer":"gesso","hint":"Le gesso (ou apprêt) = préparation blanche (plâtre + colle ou acrylique) appliquée sur la toile avant de peindre à l'huile. Imperméabilise et blanchit le support.","tolerance":["gesso","apprêt","l'apprêt","fond blanc"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que la technique du trompe-l'œil ?","opts":["Peindre à l'envers","Représenter des objets avec un tel réalisme qu'ils semblent vrais et en relief","Mélanger plusieurs styles","Peindre à la manière des enfants"],"ans":1,"hint":"Trompe-l'œil = peinture en 2D imitant si parfaitement la réalité (perspective, ombres, textures) qu'on est 'trompé' → croit voir une 3D réelle.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La fresque est une peinture murale réalisée sur de l'enduit encore frais (les pigments s'incorporent à la chaux).","ans":true,"hint":"Fresque (buon fresco) = pigments dilués à l'eau appliqués sur enduit frais de chaux → s'incorporent chimiquement → très durables. Ex : Chapelle Sixtine (Michel-Ange).","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la technique de tissage décoratif, typique du Moyen Âge, où on tisse une image dans un tissu ?","answer":"tapisserie","hint":"La tapisserie = tissu décoratif tissé avec des fils de couleur formant une image. Célèbres : tapisseries de Bayeux (récit brodé, XIe s.), La Dame à la Licorne.","tolerance":["tapisserie","tapisserie médiévale","la tapisserie"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce que l'installation artistique ?","opts":["Monter une exposition","Œuvre d'art qui investit un espace de manière tridimensionnelle, souvent avec plusieurs éléments","Une œuvre de grand format","Une sculpture classique"],"ans":1,"hint":"Installation = œuvre qui occupe et transforme un espace (galerie, espace public). Peut inclure objets, lumières, sons, vidéos. Art contemporain majeur.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque technique d'impression à son principe.","pairs":[{"g":"Sérigraphie","d":"Impression à travers un écran (pochoir)"},{"g":"Lithographie","d":"Impression à partir d'une pierre calcaire (attraction/répulsion eau-gras)"},{"g":"Gravure sur cuivre","d":"Taille du métal, encrage des creux"},{"g":"Linogravure","d":"Taille du linoléum, impression en relief"}],"hint":"Ces techniques d'impression (estampe) permettent la reproduction multiple d'une image à partir d'une matrice.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quelle technique artistique utilise des pigments dilués dans de l'eau, appliqués sur papier humide ou sec ?",
+          "opts": [
+            "Gouache",
+            "Huile",
+            "Aquarelle",
+            "Acrylique"
+          ],
+          "ans": 2,
+          "hint": "Aquarelle = pigments transparents dilués à l'eau. La lumière vient du papier blanc. Translucide, légère. Différente de la gouache (opaque).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la technique qui consiste à assembler des éléments disparates (papier, tissu, photos...) sur un support ?",
+          "answer": "collage",
+          "hint": "Collage = technique consistant à coller des éléments (papiers, journaux, photos, matières) sur un support. Picasso et Braque l'ont introduit en art.",
+          "tolerance": [
+            "collage",
+            "le collage",
+            "papier collé"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La peinture à l'huile est plus rapide à sécher que la peinture acrylique.",
+          "ans": false,
+          "hint": "Peinture à l'huile = séchage lent (heures à jours → corrections faciles). Acrylique = séchage rapide (minutes). C'est l'inverse !",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel matériau souple et malléable est utilisé pour la sculpture et le modelage en classe d'arts plastiques ?",
+          "opts": [
+            "Le marbre",
+            "Le bronze",
+            "L'argile (terre glaise)",
+            "Le granit"
+          ],
+          "ans": 2,
+          "hint": "L'argile (terre glaise) = matière naturelle, malléable à l'état frais, durcissant après cuisson (céramique). Idéale pour le modelage en classe.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la technique d'impression où on découpe un dessin dans du bois et on l'encre pour le reproduire ?",
+          "opts": [
+            "Lithographie",
+            "Gravure sur bois (xylographie)",
+            "Sérigraphie",
+            "Monotype"
+          ],
+          "ans": 1,
+          "hint": "Gravure sur bois (xylographie) = taille d'un motif dans un bloc de bois → encrage → impression sur papier. Utilisée depuis le Xe siècle en Asie.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le fusain ?",
+          "opts": [
+            "Un pinceau en poil naturel",
+            "Un bâton de charbon de bois utilisé pour le dessin",
+            "Un type de peinture à l'eau",
+            "Un support rigide pour la peinture"
+          ],
+          "ans": 1,
+          "hint": "Fusain = bâton de charbon de bois (branche de fusain carbonisée). Donne un trait souple, facile à estomper et corriger. Technique de dessin fondamentale.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'encre de Chine est un liquide de couleur bleue utilisé pour la calligraphie.",
+          "ans": false,
+          "hint": "Faux ! L'encre de Chine est un liquide noir (et non bleu) opaque, imperméable après séchage. Utilisée pour les lavis, les dessins à la plume et la calligraphie.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque technique à son support principal.",
+          "pairs": [
+            {
+              "g": "Aquarelle",
+              "d": "Papier aquarelle (épais et grainé)"
+            },
+            {
+              "g": "Peinture à l'huile",
+              "d": "Toile (lin ou coton) ou bois entoilé"
+            },
+            {
+              "g": "Fresque",
+              "d": "Enduit de plâtre frais (mur)"
+            },
+            {
+              "g": "Pastel",
+              "d": "Papier grainé ou vélours"
+            }
+          ],
+          "hint": "Le choix du support est essentiel pour chaque technique. Le support interagit avec le médium et détermine le rendu final.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la technique qui consiste à gratter ou estomper du fusain, de la sanguine ou du pastel pour créer des effets de fondu ?",
+          "answer": "estompage",
+          "hint": "Estompage = technique consistant à frotter/étaler le matériau (fusain, pastel) avec le doigt, un estompe (rouleau de papier) ou un chiffon pour adoucir les traits.",
+          "tolerance": [
+            "estompage",
+            "l'estompage",
+            "sfumato",
+            "fondu",
+            "blending"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la technique du monotype ?",
+          "opts": [
+            "Dessiner plusieurs exemplaires identiques",
+            "Imprimer à partir d'une plaque peinte (unique, non gravée) → un seul exemplaire",
+            "Photographier une œuvre",
+            "Copier une peinture"
+          ],
+          "ans": 1,
+          "hint": "Monotype = impression unique : on peint sur une plaque lisse, on pose le papier dessus, on tire. Un seul exemplaire possible (ou tirage très limité).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La gouache est une peinture transparente, comme l'aquarelle.",
+          "ans": false,
+          "hint": "Faux ! La gouache est une peinture à l'eau OPAQUE (elle couvre ce qui est en dessous). C'est l'aquarelle qui est transparente. La gouache peut s'éclaircir avec de l'eau mais reste opaque sur le papier.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la technique de sculpture consistant à enlever de la matière (taille directe dans le marbre) ?",
+          "answer": "taille directe",
+          "hint": "Taille directe = sculpter en enlevant de la matière (dans la pierre, le bois, le marbre). Opposé : modelage (ajouter de la matière, ex : argile).",
+          "tolerance": [
+            "taille directe",
+            "taille",
+            "sculpture par soustraction",
+            "enlever de la matière"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une estampe ?",
+          "opts": [
+            "Une peinture sur soie",
+            "Une image obtenue par impression à partir d'une matrice (gravée, dessinée ou peinte)",
+            "Un type de sculpture",
+            "Un grand tableau"
+          ],
+          "ans": 1,
+          "hint": "Estampe = image imprimée à partir d'une matrice (planche gravée dans du bois, du métal, du linoléum...). Permet la reproduction en plusieurs exemplaires.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'acrylique reste soluble à l'eau même après séchage.",
+          "ans": false,
+          "hint": "Faux ! L'acrylique est soluble à l'eau AVANT séchage (nettoyage des pinceaux facile), mais devient imperméable et indélébile après séchage. C'est l'une de ses propriétés principales.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la préparation appliquée sur un support avant la peinture à l'huile (pour éviter que l'huile n'abîme le support) ?",
+          "answer": "gesso",
+          "hint": "Le gesso (ou apprêt) = préparation blanche (plâtre + colle ou acrylique) appliquée sur la toile avant de peindre à l'huile. Imperméabilise et blanchit le support.",
+          "tolerance": [
+            "gesso",
+            "apprêt",
+            "l'apprêt",
+            "fond blanc"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la technique du trompe-l'œil ?",
+          "opts": [
+            "Peindre à l'envers",
+            "Représenter des objets avec un tel réalisme qu'ils semblent vrais et en relief",
+            "Mélanger plusieurs styles",
+            "Peindre à la manière des enfants"
+          ],
+          "ans": 1,
+          "hint": "Trompe-l'œil = peinture en 2D imitant si parfaitement la réalité (perspective, ombres, textures) qu'on est 'trompé' → croit voir une 3D réelle.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La fresque est une peinture murale réalisée sur de l'enduit encore frais (les pigments s'incorporent à la chaux).",
+          "ans": true,
+          "hint": "Fresque (buon fresco) = pigments dilués à l'eau appliqués sur enduit frais de chaux → s'incorporent chimiquement → très durables. Ex : Chapelle Sixtine (Michel-Ange).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la technique de tissage décoratif, typique du Moyen Âge, où on tisse une image dans un tissu ?",
+          "answer": "tapisserie",
+          "hint": "La tapisserie = tissu décoratif tissé avec des fils de couleur formant une image. Célèbres : tapisseries de Bayeux (récit brodé, XIe s.), La Dame à la Licorne.",
+          "tolerance": [
+            "tapisserie",
+            "tapisserie médiévale",
+            "la tapisserie"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'installation artistique ?",
+          "opts": [
+            "Monter une exposition",
+            "Œuvre d'art qui investit un espace de manière tridimensionnelle, souvent avec plusieurs éléments",
+            "Une œuvre de grand format",
+            "Une sculpture classique"
+          ],
+          "ans": 1,
+          "hint": "Installation = œuvre qui occupe et transforme un espace (galerie, espace public). Peut inclure objets, lumières, sons, vidéos. Art contemporain majeur.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque technique d'impression à son principe.",
+          "pairs": [
+            {
+              "g": "Sérigraphie",
+              "d": "Impression à travers un écran (pochoir)"
+            },
+            {
+              "g": "Lithographie",
+              "d": "Impression à partir d'une pierre calcaire (attraction/répulsion eau-gras)"
+            },
+            {
+              "g": "Gravure sur cuivre",
+              "d": "Taille du métal, encrage des creux"
+            },
+            {
+              "g": "Linogravure",
+              "d": "Taille du linoléum, impression en relief"
+            }
+          ],
+          "hint": "Ces techniques d'impression (estampe) permettent la reproduction multiple d'une image à partir d'une matrice.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -61,26 +520,257 @@
       "label": "Composition, espace et perspective",
       "section": "Composition et espace",
       "questions": [
-        {"type":"qcm","q":"Qu'est-ce que la composition d'une image ?","opts":["Le choix des couleurs uniquement","L'organisation des éléments (formes, lignes, couleurs) dans l'espace du tableau","La technique utilisée","La taille du tableau"],"ans":1,"hint":"Composition = organisation intentionnelle des éléments visuels (formes, couleurs, lignes, espace) dans un format. La composition guide le regard du spectateur.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on le rapport entre la hauteur et la largeur d'un tableau ou d'une image ?","answer":"format","hint":"Le format = dimensions du support (horizontal, vertical, carré). Format paysage = horizontal. Format portrait = vertical. Format carré. Le format influe sur la composition.","tolerance":["format","le format","proportion","rapport largeur/hauteur"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La règle des tiers consiste à diviser l'image en 9 parties égales pour placer les sujets importants aux intersections.","ans":true,"hint":"Règle des tiers = diviser l'image en 3 × 3. Placer les éléments importants sur les lignes ou intersections = composition dynamique et équilibrée.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que le premier plan dans une image ?","opts":["Ce qui est le plus loin dans l'image","Ce qui est le plus proche du spectateur","Le ciel dans un paysage","L'arrière-plan"],"ans":1,"hint":"Premier plan = partie la plus proche du spectateur (avant). Deuxième plan = milieu. Arrière-plan = fond (horizon, ciel...). La profondeur crée l'illusion du 3D.","difficulty":"easy"},
-        {"type":"texte","q":"Comment s'appelle la ligne qui sépare le ciel et la terre (ou l'eau et le ciel) dans un paysage ?","answer":"ligne d'horizon","hint":"La ligne d'horizon = ligne de limite entre ciel et sol (ou mer). Sa position détermine si le spectateur est 'en dessus' ou 'en dessous'. Liée à la perspective.","tolerance":["ligne d'horizon","l'horizon","la ligne d'horizon"],"difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que le cadrage en art et photographie ?","opts":["Choisir les couleurs","Délimiter la zone visible de l'image (ce qu'on inclut ou exclut)","Corriger une œuvre","La mise en couleur"],"ans":1,"hint":"Cadrage = choix de ce qu'on inclut dans l'image et comment. Le cadre détermine le point de vue, la composition, ce qu'on voit et ce qu'on ne voit pas.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Un dessin symétrique a la même composition de chaque côté d'un axe central.","ans":true,"hint":"Symétrie = miroir par rapport à un axe. Très fréquente dans l'art (architecture, tapisseries, art islamique). Donne un sentiment d'équilibre et de stabilité.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque terme de composition à sa définition.","pairs":[{"g":"Point de fuite","d":"Point où les lignes parallèles semblent converger à l'horizon"},{"g":"Ligne de force","d":"Ligne qui guide le regard dans l'image"},{"g":"Profondeur de champ","d":"Zone de netteté entre le premier et l'arrière-plan"},{"g":"Contre-plongée","d":"Vue de bas en haut (le sujet semble grand et dominant)"}],"hint":"Ces termes de composition et de cadrage sont utilisés en peinture, photographie et cinéma.","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on la représentation de l'espace en 3D sur une surface plane, avec des lignes qui convergent vers un point ?","answer":"perspective","hint":"Perspective = technique de représentation de la profondeur sur une surface plane. Inventée/codifiée à la Renaissance (Brunelleschi, Alberti, 1420-1436).","tolerance":["perspective","la perspective","perspective linéaire","représentation en perspective"],"difficulty":"medium"},
-        {"type":"qcm","q":"Que signifie une composition en 'diagonale' ?","opts":["La composition est symétrique","Les éléments principaux sont alignés en diagonale → crée du dynamisme","La composition est centrée","Tout est horizontal"],"ans":1,"hint":"Composition diagonale = éléments disposés selon une diagonale → sentiment de mouvement, de dynamisme. Opposé : horizontale (calme) ou verticale (force).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"En perspective à un point de fuite, toutes les lignes parallèles semblent converger vers le même point sur l'horizon.","ans":true,"hint":"Perspective à 1 point de fuite (frontale) : toutes les lignes de profondeur convergent vers un seul point (PF) sur la ligne d'horizon. Ex : rue vue en face.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le format vertical, plus haut que large, souvent utilisé pour les portraits ?","answer":"portrait","hint":"Format portrait = vertical (plus haut que large). Format paysage = horizontal. Format carré. Ces termes viennent des sujets traditionnellement peints dans ces formats.","tolerance":["portrait","format portrait","vertical","à la française"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que la loi de proximité (Gestalt) appliquée à la composition ?","opts":["Les éléments identiques semblent liés","Les éléments proches les uns des autres sont perçus comme un groupe","Les éléments les plus grands dominent","Les couleurs semblables se groupent"],"ans":1,"hint":"Loi de proximité (Gestalt) : des éléments proches sont perçus comme un ensemble. Principe utilisé en design, typographie et composition artistique.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'espace négatif est la zone vide autour et entre les formes principales (fond).","ans":true,"hint":"Espace négatif = espace vide autour des formes (foreground / sujet). Espace positif = les formes elles-mêmes. L'espace négatif est aussi important que le sujet.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le point de vue où la caméra (ou l'œil) est placée plus haute que le sujet, qui semble alors dominé et petit ?","answer":"plongée","hint":"Plongée = vue de haut en bas (sujet semble petit, dominé). Contre-plongée = vue de bas en haut (sujet semble grand, imposant, dominant).","tolerance":["plongée","vue en plongée","plan en plongée"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que la perspective atmosphérique (ou aérienne) ?","opts":["La perspective avec deux points de fuite","L'effet de brume/bleuissement des éléments éloignés dû à l'atmosphère","La représentation de l'air","Une technique cubiste"],"ans":1,"hint":"Perspective aérienne : les éléments éloignés semblent plus flous, plus bleutés et plus clairs. Utilisée par Léonard de Vinci (sfumato) et les paysagistes.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La section d'or (nombre d'or φ ≈ 1,618) est un rapport de proportions considéré comme esthétiquement idéal depuis l'Antiquité.","ans":true,"hint":"Le nombre d'or (φ = 1,618...) est présent dans les proportions du Parthénon, la spirale de Fibonacci, les tableaux de la Renaissance. Ratio a/b = (a+b)/a = φ.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la technique de peinture où on applique des couches successives de peinture translucide (lavis) pour créer de la profondeur et de la lumière ?","answer":"glacis","hint":"Glacis = couche mince translucide de peinture appliquée sur une couche sèche. Donne profondeur, transparence et luminosité. Utilisé en peinture à l'huile classique.","tolerance":["glacis","le glacis","lavis","velatura"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce qu'un tryptique ?","opts":["Un tableau très large","Une œuvre en trois panneaux","Un tableau à trois couleurs","Une gravure en trois étapes"],"ans":1,"hint":"Triptyque (ou tryptique) = œuvre composée de 3 panneaux. Le panneau central est souvent plus grand. Très répandu dans l'art religieux médiéval.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque type de perspective à sa description.","pairs":[{"g":"Perspective à 1 point de fuite","d":"Vue frontale, toutes les lignes convergent vers un point"},{"g":"Perspective à 2 points de fuite","d":"Vue de coin, 2 points sur l'horizon"},{"g":"Perspective atmosphérique","d":"Éléments lointains flous et bleutés"},{"g":"Perspective isométrique","d":"Lignes parallèles restent parallèles (pas de PF)"}],"hint":"Ces différents systèmes de perspective sont des conventions pour représenter l'espace en 3D sur une surface plane.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la composition d'une image ?",
+          "opts": [
+            "Le choix des couleurs uniquement",
+            "L'organisation des éléments (formes, lignes, couleurs) dans l'espace du tableau",
+            "La technique utilisée",
+            "La taille du tableau"
+          ],
+          "ans": 1,
+          "hint": "Composition = organisation intentionnelle des éléments visuels (formes, couleurs, lignes, espace) dans un format. La composition guide le regard du spectateur.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on le rapport entre la hauteur et la largeur d'un tableau ou d'une image ?",
+          "answer": "format",
+          "hint": "Le format = dimensions du support (horizontal, vertical, carré). Format paysage = horizontal. Format portrait = vertical. Format carré. Le format influe sur la composition.",
+          "tolerance": [
+            "format",
+            "le format",
+            "proportion",
+            "rapport largeur/hauteur"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La règle des tiers consiste à diviser l'image en 4 parties égales pour placer les sujets au centre.",
+          "ans": false,
+          "hint": "Faux ! La règle des tiers divise l'image en 9 parties (3 × 3), pas en 4. Les sujets importants se placent aux intersections (et non au centre), pour une composition plus dynamique.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le premier plan dans une image ?",
+          "opts": [
+            "Ce qui est le plus loin dans l'image",
+            "Ce qui est le plus proche du spectateur",
+            "Le ciel dans un paysage",
+            "L'arrière-plan"
+          ],
+          "ans": 1,
+          "hint": "Premier plan = partie la plus proche du spectateur (avant). Deuxième plan = milieu. Arrière-plan = fond (horizon, ciel...). La profondeur crée l'illusion du 3D.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la ligne qui sépare le ciel et la terre (ou l'eau et le ciel) dans un paysage ?",
+          "opts": [
+            "Ligne de force",
+            "Ligne de fuite",
+            "Ligne d'horizon",
+            "Ligne de composition"
+          ],
+          "ans": 2,
+          "hint": "La ligne d'horizon = limite entre ciel et sol (ou mer). Sa position détermine si le spectateur est 'en dessus' ou 'en dessous'. Liée à la perspective.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le cadrage en art et photographie ?",
+          "opts": [
+            "Choisir les couleurs",
+            "Délimiter la zone visible de l'image (ce qu'on inclut ou exclut)",
+            "Corriger une œuvre",
+            "La mise en couleur"
+          ],
+          "ans": 1,
+          "hint": "Cadrage = choix de ce qu'on inclut dans l'image et comment. Le cadre détermine le point de vue, la composition, ce qu'on voit et ce qu'on ne voit pas.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Un dessin symétrique a des compositions différentes de chaque côté d'un axe central.",
+          "ans": false,
+          "hint": "Faux ! Un dessin symétrique a la MÊME composition de chaque côté d'un axe central (effet miroir). Des compositions différentes de part et d'autre créent de l'asymétrie.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque terme de composition à sa définition.",
+          "pairs": [
+            {
+              "g": "Point de fuite",
+              "d": "Point où les lignes parallèles semblent converger à l'horizon"
+            },
+            {
+              "g": "Ligne de force",
+              "d": "Ligne qui guide le regard dans l'image"
+            },
+            {
+              "g": "Profondeur de champ",
+              "d": "Zone de netteté entre le premier et l'arrière-plan"
+            },
+            {
+              "g": "Contre-plongée",
+              "d": "Vue de bas en haut (le sujet semble grand et dominant)"
+            }
+          ],
+          "hint": "Ces termes de composition et de cadrage sont utilisés en peinture, photographie et cinéma.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la représentation de l'espace en 3D sur une surface plane, avec des lignes qui convergent vers un point ?",
+          "answer": "perspective",
+          "hint": "Perspective = technique de représentation de la profondeur sur une surface plane. Inventée/codifiée à la Renaissance (Brunelleschi, Alberti, 1420-1436).",
+          "tolerance": [
+            "perspective",
+            "la perspective",
+            "perspective linéaire",
+            "représentation en perspective"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Que signifie une composition en 'diagonale' ?",
+          "opts": [
+            "La composition est symétrique",
+            "Les éléments principaux sont alignés en diagonale → crée du dynamisme",
+            "La composition est centrée",
+            "Tout est horizontal"
+          ],
+          "ans": 1,
+          "hint": "Composition diagonale = éléments disposés selon une diagonale → sentiment de mouvement, de dynamisme. Opposé : horizontale (calme) ou verticale (force).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "En perspective à un point de fuite, toutes les lignes parallèles semblent converger vers le même point sur l'horizon.",
+          "ans": true,
+          "hint": "Perspective à 1 point de fuite (frontale) : toutes les lignes de profondeur convergent vers un seul point (PF) sur la ligne d'horizon. Ex : rue vue en face.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le format vertical, plus haut que large, souvent utilisé pour les portraits ?",
+          "answer": "portrait",
+          "hint": "Format portrait = vertical (plus haut que large). Format paysage = horizontal. Format carré. Ces termes viennent des sujets traditionnellement peints dans ces formats.",
+          "tolerance": [
+            "portrait",
+            "format portrait",
+            "vertical",
+            "à la française"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la loi de proximité (Gestalt) appliquée à la composition ?",
+          "opts": [
+            "Les éléments identiques semblent liés",
+            "Les éléments proches les uns des autres sont perçus comme un groupe",
+            "Les éléments les plus grands dominent",
+            "Les couleurs semblables se groupent"
+          ],
+          "ans": 1,
+          "hint": "Loi de proximité (Gestalt) : des éléments proches sont perçus comme un ensemble. Principe utilisé en design, typographie et composition artistique.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'espace négatif est la zone vide autour et entre les formes principales (fond).",
+          "ans": true,
+          "hint": "Espace négatif = espace vide autour des formes (foreground / sujet). Espace positif = les formes elles-mêmes. L'espace négatif est aussi important que le sujet.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le point de vue où la caméra (ou l'œil) est placée plus haute que le sujet, qui semble alors dominé et petit ?",
+          "answer": "plongée",
+          "hint": "Plongée = vue de haut en bas (sujet semble petit, dominé). Contre-plongée = vue de bas en haut (sujet semble grand, imposant, dominant).",
+          "tolerance": [
+            "plongée",
+            "vue en plongée",
+            "plan en plongée"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que la perspective atmosphérique (ou aérienne) ?",
+          "opts": [
+            "La perspective avec deux points de fuite",
+            "L'effet de brume/bleuissement des éléments éloignés dû à l'atmosphère",
+            "La représentation de l'air",
+            "Une technique cubiste"
+          ],
+          "ans": 1,
+          "hint": "Perspective aérienne : les éléments éloignés semblent plus flous, plus bleutés et plus clairs. Utilisée par Léonard de Vinci (sfumato) et les paysagistes.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La section d'or (nombre d'or φ ≈ 1,618) est un rapport de proportions considéré comme esthétiquement idéal depuis l'Antiquité.",
+          "ans": true,
+          "hint": "Le nombre d'or (φ = 1,618...) est présent dans les proportions du Parthénon, la spirale de Fibonacci, les tableaux de la Renaissance. Ratio a/b = (a+b)/a = φ.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la technique de peinture où on applique des couches successives de peinture translucide (lavis) pour créer de la profondeur et de la lumière ?",
+          "answer": "glacis",
+          "hint": "Glacis = couche mince translucide de peinture appliquée sur une couche sèche. Donne profondeur, transparence et luminosité. Utilisé en peinture à l'huile classique.",
+          "tolerance": [
+            "glacis",
+            "le glacis",
+            "lavis",
+            "velatura"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un triptyque ?",
+          "opts": [
+            "Un tableau très large",
+            "Une œuvre en trois panneaux",
+            "Un tableau à trois couleurs",
+            "Une gravure en trois étapes"
+          ],
+          "ans": 1,
+          "hint": "Triptyque (ou tryptique) = œuvre composée de 3 panneaux. Le panneau central est souvent plus grand. Très répandu dans l'art religieux médiéval.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque type de perspective à sa description.",
+          "pairs": [
+            {
+              "g": "Perspective à 1 point de fuite",
+              "d": "Vue frontale, toutes les lignes convergent vers un point"
+            },
+            {
+              "g": "Perspective à 2 points de fuite",
+              "d": "Vue de coin, 2 points sur l'horizon"
+            },
+            {
+              "g": "Perspective atmosphérique",
+              "d": "Éléments lointains flous et bleutés"
+            },
+            {
+              "g": "Perspective isométrique",
+              "d": "Lignes parallèles restent parallèles (pas de PF)"
+            }
+          ],
+          "hint": "Ces différents systèmes de perspective sont des conventions pour représenter l'espace en 3D sur une surface plane.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -88,26 +778,258 @@
       "label": "Histoire de l'art : Préhistoire, Antiquité et Moyen Âge",
       "section": "Histoire de l'art",
       "questions": [
-        {"type":"qcm","q":"Dans quelle grotte française, découverte en 1940, trouve-t-on des peintures rupestres vieilles de 17 000 ans ?","opts":["Altamira","Chauvet","Font-de-Gaume","Lascaux"],"ans":3,"hint":"Lascaux (Dordogne) découverte en 1940 par Marcel Ravidat. ~17 000 ans. Bisons, chevaux, taureaux. Fermée en 1963 (algues). Lascaux IV (réplique) ouvert en 2016.","difficulty":"easy"},
-        {"type":"texte","q":"Comment appelle-t-on les peintures réalisées sur les parois des grottes préhistoriques ?","answer":"peintures rupestres","hint":"Peintures rupestres (ou pariétales) = art sur les parois des grottes. Technique : ocre, charbon, argile. Représentent surtout des animaux et des mains.","tolerance":["peintures rupestres","art pariétal","art rupestre","peintures pariétales"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La sculpture grecque antique classique cherchait à représenter l'idéal de beauté du corps humain.","ans":true,"hint":"L'art grec classique (Ve-IVe s. av. J.-C.) : idéalisation du corps humain, harmonie, proportion (canon de Polyclète). Le Discobole, Vénus de Milo.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'une mosaïque ?","opts":["Une peinture sur soie","Assemblage de petits éléments colorés (tessères) formant une image","Un type de sculpture","Une fresque"],"ans":1,"hint":"Mosaïque = image formée de petits éléments colorés (tessères) de pierre, verre ou céramique. Technique romaine et byzantine par excellence.","difficulty":"easy"},
-        {"type":"texte","q":"Quel type d'architecture médiévale est caractérisé par ses arcs-boutants, ses vitraux et ses flèches pointues ?","answer":"gothique","hint":"Architecture gothique (XIIe-XVe s.) : arcs-boutants, voûtes en ogives, grandes fenêtres et vitraux, verticalité. Cathédrale de Chartres, Notre-Dame de Paris.","tolerance":["gothique","l'architecture gothique","style gothique","art gothique"],"difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce qu'une enluminure ?","opts":["Une sculpture de pierre","Un dessin décoratif et illustré dans un manuscrit médiéval","Une tapisserie","Une fresque"],"ans":1,"hint":"Enluminure = illustration peinte dans un manuscrit médiéval (parchemin). De 'lumina' = lumière (or et couleurs vives qui 'illuminent' la page).","difficulty":"easy"},
-        {"type":"vrai_faux","q":"La tapisserie de Bayeux est en réalité une broderie, pas une tapisserie tissée.","ans":true,"hint":"La tapisserie de Bayeux (XIe s.) est techniquement une broderie de laine sur toile de lin, de 70 m de long. Elle raconte la conquête de l'Angleterre par Guillaume.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque œuvre à sa période historique.","pairs":[{"g":"Peintures de Lascaux","d":"Paléolithique (~17 000 av. J.-C.)"},{"g":"Pyramides de Gizeh","d":"Égypte antique (~2560 av. J.-C.)"},{"g":"Cathédrale de Chartres","d":"Moyen Âge (XIIe-XIIIe siècle)"},{"g":"Vénus de Milo","d":"Grèce antique (IIe siècle av. J.-C.)"}],"hint":"Ces œuvres sont des jalons fondamentaux de l'histoire de l'art occidental, de la préhistoire au Moyen Âge.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le style architectural de l'Antiquité grecque et romaine (colonnes, frontons, ordres dorique, ionique, corinthien) ?","answer":"classique","hint":"Style classique ou antique : colonnes (dorique, ionique, corinthien), frontons triangulaires, proportions harmonieuses. Héritage grec repris par Rome puis par la Renaissance.","tolerance":["classique","style antique","gréco-romain","ordres architecturaux"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce qu'un vitrail ?","opts":["Une peinture sur verre","Fenêtre composée de morceaux de verre colorés assemblés par du plomb","Une mosaïque murale","Un dessin au crayon de verre"],"ans":1,"hint":"Vitrail = fenêtre décorative constituée de pièces de verre colorées assemblées par des résilles de plomb. Caractéristique des cathédrales gothiques (lumière colorée).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"L'art byzantin (Constantinople) est connu pour ses icônes et ses mosaïques aux fonds d'or.","ans":true,"hint":"Art byzantin (IVe-XVe s.) : icônes (images sacrées peintes sur bois), mosaïques aux tessères d'or, hiératisme (personnages frontaux et rigides), symbolisme fort.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la grande sculpture égyptienne à tête humaine et corps de lion, gardienne de la nécropole de Gizeh ?","answer":"Sphinx","hint":"Le Grand Sphinx de Gizeh = sculpture colossale (~73m de long) à tête humaine (pharaon Khéphren ?) et corps de lion. Date d'environ 2500 av. J.-C.","tolerance":["Sphinx","le Sphinx","Grand Sphinx","le grand Sphinx"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que le style roman en architecture médiévale (avant le gothique) ?","opts":["Arcs brisés et flèches pointues","Arcs en plein cintre, murs épais, petites fenêtres et robustesse","Colonnes grecques et frontons","Dômes et mosaïques"],"ans":1,"hint":"Art roman (Xe-XIIe s.) : arcs en plein cintre (demi-cercle), murs épais, petites fenêtres, chapiteaux sculptés, sobriété. Précède le gothique plus élancé.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Les hiéroglyphes égyptiens servaient à la fois d'écriture et d'images décoratives.","ans":true,"hint":"Hiéroglyphes = écriture pictographique égyptienne avec double fonction : écriture sacrée et décoration. Combinés aux peintures dans les temples et tombeaux.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le type d'architecture avec voûtes en croisée d'ogives et arcs-boutants, développé en France au XIIe siècle ?","answer":"gothique","hint":"L'architecture gothique (né à Saint-Denis, 1144, abbé Suger) : voûtes sur croisées d'ogives, arcs-boutants (décharge les murs) → murs minces → grandes fenêtres/vitraux.","tolerance":["gothique","style gothique","art gothique","ogival"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qui a réalisé la célèbre statue 'Le Discobole' (athlète lançant le disque) dans la Grèce antique ?","opts":["Praxitèle","Phidias","Myron","Polyclète"],"ans":2,"hint":"Le Discobole = sculpture de Myron (Ve s. av. J.-C.), connue par des copies romaines. Capture l'instant de tension avant le lancer → mouvement figé.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"La peinture murale de la Domus Aurea (palais de Néron à Rome) a inspiré le style dit 'grotesque' à la Renaissance.","ans":true,"hint":"En explorant les grottes/ruines (grotte → grotesque), les artistes de la Renaissance ont découvert les décors muraux romains → style grotesque (arabesques, créatures fantastiques).","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la tête sculptée qui semble avoir l'expression de vie dans la tradition africaine, et particulièrement dans la culture Yoruba du Bénin ?","answer":"Tête d'Ifé","hint":"Les têtes en bronze et en terre cuite d'Ifé (Nigeria, XIIe-XVe s.) sont parmi les plus belles sculptures africaines. Réalisme et naturalisme exceptionnel pour l'époque.","tolerance":["Tête d'Ifé","bronze du Bénin","art d'Ifé","sculpture Yoruba"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce que le canon de Polyclète en sculpture grecque ?","opts":["Un type d'arme","Un système de proportions idéales du corps humain (la tête = 1/7 ou 1/8 du corps)","Un style décoratif","Un type de colonne"],"ans":1,"hint":"Polyclète (Ve s. av. J.-C.) codifie le canon : proportions idéales du corps humain. La tête = 1/7 de la hauteur totale. Le Doryphore illustre ce canon.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque style artistique à ses caractéristiques principales.","pairs":[{"g":"Art égyptien","d":"Profil de face, hiérarchie des tailles, hiéroglyphes"},{"g":"Art grec classique","d":"Idéalisation, proportion, contrapposto"},{"g":"Art byzantin","d":"Icônes, fond d'or, frontalité, hiératisme"},{"g":"Art roman","d":"Arcs en plein cintre, sculpture narrative, sobriété"}],"hint":"Chaque période et style artistique a des codes visuels spécifiques qui permettent de les reconnaître et de les analyser.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Dans quelle grotte française, découverte en 1940, trouve-t-on des peintures rupestres vieilles de 17 000 ans ?",
+          "opts": [
+            "Altamira",
+            "Chauvet",
+            "Font-de-Gaume",
+            "Lascaux"
+          ],
+          "ans": 3,
+          "hint": "Lascaux (Dordogne) découverte en 1940 par Marcel Ravidat. ~17 000 ans. Bisons, chevaux, taureaux. Fermée en 1963 (algues). Lascaux IV (réplique) ouvert en 2016.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on les peintures réalisées sur les parois des grottes préhistoriques ?",
+          "answer": "peintures rupestres",
+          "hint": "Peintures rupestres (ou pariétales) = art sur les parois des grottes. Technique : ocre, charbon, argile. Représentent surtout des animaux et des mains.",
+          "tolerance": [
+            "peintures rupestres",
+            "art pariétal",
+            "art rupestre",
+            "peintures pariétales"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La sculpture grecque antique classique cherchait à représenter des divinités de manière abstraite et géométrique.",
+          "ans": false,
+          "hint": "Faux ! La sculpture grecque classique cherchait à représenter l'idéal de beauté du corps humain (réalisme et idéalisation). Canon de Polyclète, harmonie des proportions. Le Discobole, Vénus de Milo.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une mosaïque ?",
+          "opts": [
+            "Une peinture sur soie",
+            "Assemblage de petits éléments colorés (tessères) formant une image",
+            "Un type de sculpture",
+            "Une fresque"
+          ],
+          "ans": 1,
+          "hint": "Mosaïque = image formée de petits éléments colorés (tessères) de pierre, verre ou céramique. Technique romaine et byzantine par excellence.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel type d'architecture médiévale est caractérisé par ses arcs-boutants, ses vitraux et ses flèches pointues ?",
+          "answer": "gothique",
+          "hint": "Architecture gothique (XIIe-XVe s.) : arcs-boutants, voûtes en ogives, grandes fenêtres et vitraux, verticalité. Cathédrale de Chartres, Notre-Dame de Paris.",
+          "tolerance": [
+            "gothique",
+            "l'architecture gothique",
+            "style gothique",
+            "art gothique"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'une enluminure ?",
+          "opts": [
+            "Une sculpture de pierre",
+            "Un dessin décoratif et illustré dans un manuscrit médiéval",
+            "Une tapisserie",
+            "Une fresque"
+          ],
+          "ans": 1,
+          "hint": "Enluminure = illustration peinte dans un manuscrit médiéval (parchemin). De 'lumina' = lumière (or et couleurs vives qui 'illuminent' la page).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La tapisserie de Bayeux est une tapisserie tissée sur métier à tisser, de 10 mètres de long.",
+          "ans": false,
+          "hint": "Faux ! La tapisserie de Bayeux est techniquement une BRODERIE (laine sur toile de lin), pas une tapisserie tissée. Et elle mesure 70 mètres de long (pas 10). Elle raconte la conquête de l'Angleterre par Guillaume.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque œuvre à sa période historique.",
+          "pairs": [
+            {
+              "g": "Peintures de Lascaux",
+              "d": "Paléolithique (~17 000 av. J.-C.)"
+            },
+            {
+              "g": "Pyramides de Gizeh",
+              "d": "Égypte antique (~2560 av. J.-C.)"
+            },
+            {
+              "g": "Cathédrale de Chartres",
+              "d": "Moyen Âge (XIIe-XIIIe siècle)"
+            },
+            {
+              "g": "Vénus de Milo",
+              "d": "Grèce antique (IIe siècle av. J.-C.)"
+            }
+          ],
+          "hint": "Ces œuvres sont des jalons fondamentaux de l'histoire de l'art occidental, de la préhistoire au Moyen Âge.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le style architectural de l'Antiquité grecque et romaine (colonnes, frontons, ordres dorique, ionique, corinthien) ?",
+          "answer": "classique",
+          "hint": "Style classique ou antique : colonnes (dorique, ionique, corinthien), frontons triangulaires, proportions harmonieuses. Héritage grec repris par Rome puis par la Renaissance.",
+          "tolerance": [
+            "classique",
+            "style antique",
+            "gréco-romain",
+            "ordres architecturaux"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce qu'un vitrail ?",
+          "opts": [
+            "Une peinture sur verre",
+            "Fenêtre composée de morceaux de verre colorés assemblés par du plomb",
+            "Une mosaïque murale",
+            "Un dessin au crayon de verre"
+          ],
+          "ans": 1,
+          "hint": "Vitrail = fenêtre décorative constituée de pièces de verre colorées assemblées par des résilles de plomb. Caractéristique des cathédrales gothiques (lumière colorée).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "L'art byzantin (Constantinople) est connu pour ses icônes et ses mosaïques aux fonds d'or.",
+          "ans": true,
+          "hint": "Art byzantin (IVe-XVe s.) : icônes (images sacrées peintes sur bois), mosaïques aux tessères d'or, hiératisme (personnages frontaux et rigides), symbolisme fort.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la grande sculpture égyptienne à tête humaine et corps de lion, gardienne de la nécropole de Gizeh ?",
+          "answer": "Sphinx",
+          "hint": "Le Grand Sphinx de Gizeh = sculpture colossale (~73m de long) à tête humaine (pharaon Khéphren ?) et corps de lion. Date d'environ 2500 av. J.-C.",
+          "tolerance": [
+            "Sphinx",
+            "le Sphinx",
+            "Grand Sphinx",
+            "le grand Sphinx"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le style roman en architecture médiévale (avant le gothique) ?",
+          "opts": [
+            "Arcs brisés et flèches pointues",
+            "Arcs en plein cintre, murs épais, petites fenêtres et robustesse",
+            "Colonnes grecques et frontons",
+            "Dômes et mosaïques"
+          ],
+          "ans": 1,
+          "hint": "Art roman (Xe-XIIe s.) : arcs en plein cintre (demi-cercle), murs épais, petites fenêtres, chapiteaux sculptés, sobriété. Précède le gothique plus élancé.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Les hiéroglyphes égyptiens servaient à la fois d'écriture et d'images décoratives.",
+          "ans": true,
+          "hint": "Hiéroglyphes = écriture pictographique égyptienne avec double fonction : écriture sacrée et décoration. Combinés aux peintures dans les temples et tombeaux.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le type d'architecture avec voûtes en croisée d'ogives et arcs-boutants, développé en France au XIIe siècle ?",
+          "answer": "gothique",
+          "hint": "L'architecture gothique (né à Saint-Denis, 1144, abbé Suger) : voûtes sur croisées d'ogives, arcs-boutants (décharge les murs) → murs minces → grandes fenêtres/vitraux.",
+          "tolerance": [
+            "gothique",
+            "style gothique",
+            "art gothique",
+            "ogival"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qui a réalisé la célèbre statue 'Le Discobole' (athlète lançant le disque) dans la Grèce antique ?",
+          "opts": [
+            "Praxitèle",
+            "Phidias",
+            "Myron",
+            "Polyclète"
+          ],
+          "ans": 2,
+          "hint": "Le Discobole = sculpture de Myron (Ve s. av. J.-C.), connue par des copies romaines. Capture l'instant de tension avant le lancer → mouvement figé.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La peinture murale de la Domus Aurea (palais de Néron à Rome) a inspiré le style dit 'grotesque' à la Renaissance.",
+          "ans": true,
+          "hint": "En explorant les grottes/ruines (grotte → grotesque), les artistes de la Renaissance ont découvert les décors muraux romains → style grotesque (arabesques, créatures fantastiques).",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appellent les célèbres sculptures en bronze de la culture Yoruba (Nigeria, XIIe-XVe s.) remarquables pour leur réalisme ?",
+          "opts": [
+            "Masques Dogon",
+            "Têtes d'Ifé",
+            "Bronzes du Bénin",
+            "Statues Nok"
+          ],
+          "ans": 1,
+          "hint": "Les têtes en bronze et terre cuite d'Ifé (Nigeria, XIIe-XVe s.) sont parmi les plus belles sculptures africaines. Réalisme et naturalisme exceptionnels pour l'époque.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le canon de Polyclète en sculpture grecque ?",
+          "opts": [
+            "Un type d'arme",
+            "Un système de proportions idéales du corps humain (la tête = 1/7 ou 1/8 du corps)",
+            "Un style décoratif",
+            "Un type de colonne"
+          ],
+          "ans": 1,
+          "hint": "Polyclète (Ve s. av. J.-C.) codifie le canon : proportions idéales du corps humain. La tête = 1/7 de la hauteur totale. Le Doryphore illustre ce canon.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque style artistique à ses caractéristiques principales.",
+          "pairs": [
+            {
+              "g": "Art égyptien",
+              "d": "Profil de face, hiérarchie des tailles, hiéroglyphes"
+            },
+            {
+              "g": "Art grec classique",
+              "d": "Idéalisation, proportion, contrapposto"
+            },
+            {
+              "g": "Art byzantin",
+              "d": "Icônes, fond d'or, frontalité, hiératisme"
+            },
+            {
+              "g": "Art roman",
+              "d": "Arcs en plein cintre, sculpture narrative, sobriété"
+            }
+          ],
+          "hint": "Chaque période et style artistique a des codes visuels spécifiques qui permettent de les reconnaître et de les analyser.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -115,26 +1037,255 @@
       "label": "Histoire de l'art : Renaissance et XVIIe siècle",
       "section": "Histoire de l'art",
       "questions": [
-        {"type":"qcm","q":"Quel peintre a peint la Joconde (Mona Lisa) ?","opts":["Michel-Ange","Raphaël","Léonard de Vinci","Botticelli"],"ans":2,"hint":"La Joconde (v. 1503-1519) est une œuvre de Léonard de Vinci. Elle est exposée au Louvre (Paris). Célèbre pour son sourire énigmatique et la technique du sfumato.","difficulty":"easy"},
-        {"type":"texte","q":"Quel artiste de la Renaissance a peint le plafond de la Chapelle Sixtine ?","answer":"Michel-Ange","hint":"Michel-Ange (1508-1512) a peint le plafond de la Chapelle Sixtine au Vatican. Scènes de la Genèse, dont la Création d'Adam. 4 ans de travail.","tolerance":["Michel-Ange","Michelangelo","Michel Ange"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"La Renaissance a débuté en Italie au XVe siècle.","ans":true,"hint":"Renaissance = mouvement culturel et artistique né en Italie (Florence, XIVe-XVe s.). Retour à l'Antiquité, humanisme, perspective, réalisme. Se diffuse en Europe au XVIe s.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que le sfumato, technique de Léonard de Vinci ?","opts":["Une technique de sculpture","Des transitions graduelles entre zones claires et sombres, sans contours nets (effet brumeux)","Un type de perspective","Une couleur"],"ans":1,"hint":"Sfumato (it. = fumé) = transitions très douces entre lumière et ombre, sans contour net. Donne l'impression de brume, de profondeur. Typique de Léonard.","difficulty":"easy"},
-        {"type":"texte","q":"Quel peintre hollandais du XVIIe siècle est célèbre pour ses autoportraits et son utilisation du clair-obscur ?","answer":"Rembrandt","hint":"Rembrandt van Rijn (1606-1669) = maître hollandais. Célèbre pour ses autoportraits (~100), La Ronde de nuit et sa maîtrise du clair-obscur (chiaroscuro).","tolerance":["Rembrandt","Rembrandt van Rijn"],"difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que le clair-obscur en peinture ?","opts":["Un style de couleurs vives","Technique contrastant fortement lumière et ombre pour donner du volume","Un type de paysage","La peinture en blanc et noir"],"ans":1,"hint":"Clair-obscur (chiaroscuro) = fort contraste lumière/ombre qui modèle les formes. Maîtrisé par le Caravage, Rembrandt. Donne profondeur et dramatisme.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Jan Vermeer est un peintre hollandais du XVIIe siècle connu pour ses scènes intérieures lumineuses.","ans":true,"hint":"Vermeer (1632-1675) = maître hollandais de la lumière. Scènes intimistes (La jeune fille à la perle, La laitière). Maîtrise exceptionnelle de la lumière naturelle.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque artiste de la Renaissance à son domaine.","pairs":[{"g":"Léonard de Vinci","d":"Peinture, science, inventions (génie universel)"},{"g":"Michel-Ange","d":"Peinture, sculpture, architecture (Chapelle Sixtine, David)"},{"g":"Raphaël","d":"Peinture (L'École d'Athènes, Madones)"},{"g":"Brunelleschi","d":"Architecture (dôme de Florence, perspective)"}],"hint":"Ces quatre artistes incarnent l'idéal de la Renaissance : beauté, harmonie, maîtrise des arts et des sciences.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la technique artistique du XVIIe siècle, exubérante et dramatique, qui succède à la Renaissance ?","answer":"baroque","hint":"Le Baroque (XVIIe-début XVIIIe s.) = style dramatique, exubérant, mouvement. Rupture avec l'équilibre classique de la Renaissance. Caravage, Rubens, Bernin.","tolerance":["baroque","le baroque","style baroque","art baroque"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quel artiste baroque est connu pour ses tableaux au clair-obscur dramatique et ses personnages du peuple (La Vocation de Saint Matthieu) ?","opts":["Rubens","Bernin","Le Caravage","Poussin"],"ans":2,"hint":"Le Caravage (1571-1610) = maître du clair-obscur dramatique (ténébrisme). Révolutionne la peinture en montrant des personnages du peuple dans des scènes religieuses.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Raphaël est surtout connu pour son tableau 'L'École d'Athènes' peint dans les Chambres du Vatican.","ans":true,"hint":"L'École d'Athènes (1510-1511) de Raphaël : fresque des Chambres du Vatican représentant les grands philosophes de l'Antiquité (Platon, Aristote, Pythagore...).","difficulty":"medium"},
-        {"type":"texte","q":"Comment appelle-t-on la représentation idéalisée de la Vierge Marie dans la peinture chrétienne ?","answer":"Madone","hint":"Madone = représentation de la Vierge Marie, souvent avec l'Enfant Jésus. Genre très répandu dans la peinture religieuse italienne (Raphaël en est le maître).","tolerance":["Madone","la Madone","Vierge à l'enfant","Madonna"],"difficulty":"medium"},
-        {"type":"qcm","q":"Quelle technique architecturale de la Renaissance est attribuée à Filippo Brunelleschi ?","opts":["Les arcs brisés gothiques","La perspective linéaire codifiée et le dôme de Florence","Le clair-obscur","La mosaïque"],"ans":1,"hint":"Brunelleschi (1377-1446) = inventeur de la perspective linéaire codifiée (1420). Il a aussi construit le dôme de la cathédrale de Florence (Santa Maria del Fiore).","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Peter Paul Rubens est un peintre flamand baroque connu pour ses figures robustes et colorées.","ans":true,"hint":"Rubens (1577-1640) = grand maître baroque flamand. Compositions dynamiques, couleurs chaudes, figures robustes et charnelles. A peint la galerie de Marie de Médicis (Louvre).","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle la vaste fresque de Michel-Ange représentant le Jugement dernier, peinte derrière l'autel de la Chapelle Sixtine ?","answer":"Le Jugement dernier","hint":"Le Jugement Dernier (1534-1541) de Michel-Ange = fresque de 200 m² sur le mur d'autel de la Chapelle Sixtine. Peinte 20 ans après le plafond.","tolerance":["Le Jugement dernier","Jugement dernier","Le Jugement Dernier"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que l'humanisme de la Renaissance ?","opts":["Un mouvement religieux","Une philosophie qui place l'homme au centre de la pensée et valorise la raison et les arts","Un type de sculpture","Un style architectural"],"ans":1,"hint":"Humanisme = philosophie Renaissance qui place l'Homme (humanitas) au centre. Retour aux textes antiques, valorisation de la raison, de l'éducation et des arts.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le trompe-l'œil était une technique très prisée dans la peinture baroque (Versailles, plafonds italiens).","ans":true,"hint":"Trompe-l'œil baroque : plafonds peints qui semblent s'ouvrir sur le ciel (Andrea Pozzo, Rome). Illusion parfaite de l'architecture et du volume. Très répandu en Italie.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la vaste peinture de Véronèse (v. 1562), représentant 130 personnages lors des Noces de Cana, exposée au Louvre ?","answer":"Les Noces de Cana","hint":"Les Noces de Cana (1562-1563) de Paolo Véronèse = tableau monumental (6,77m × 9,94m). Exposé au Louvre face à la Joconde. 130 personnages dont des contemporains.","tolerance":["Les Noces de Cana","Noces de Cana","les noces de cana"],"difficulty":"hard"},
-        {"type":"qcm","q":"Le manierisme est un style artistique qui :","opts":["Revient au style médiéval","S'affranchit des règles classiques de la Renaissance (allongement, poses tordues, couleurs acides)","Imite exactement la Renaissance","Précède la Renaissance"],"ans":1,"hint":"Maniérisme (1520-1600) = art entre Renaissance et Baroque. Style élaboré, artificiel, allongements, poses en S (figura serpentinata), couleurs étranges. Pontormo, Bronzino, Arcimboldo.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque tableau célèbre à son auteur.","pairs":[{"g":"La Joconde","d":"Léonard de Vinci"},{"g":"La Jeune Fille à la perle","d":"Vermeer"},{"g":"La Ronde de Nuit","d":"Rembrandt"},{"g":"La Naissance de Vénus","d":"Botticelli"}],"hint":"Ces quatre tableaux parmi les plus célèbres du monde occidental couvrent la période Renaissance-Baroque.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "Quel peintre a peint la Joconde (Mona Lisa) ?",
+          "opts": [
+            "Michel-Ange",
+            "Raphaël",
+            "Léonard de Vinci",
+            "Botticelli"
+          ],
+          "ans": 2,
+          "hint": "La Joconde (v. 1503-1519) est une œuvre de Léonard de Vinci. Elle est exposée au Louvre (Paris). Célèbre pour son sourire énigmatique et la technique du sfumato.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel artiste de la Renaissance a peint le plafond de la Chapelle Sixtine ?",
+          "answer": "Michel-Ange",
+          "hint": "Michel-Ange (1508-1512) a peint le plafond de la Chapelle Sixtine au Vatican. Scènes de la Genèse, dont la Création d'Adam. 4 ans de travail.",
+          "tolerance": [
+            "Michel-Ange",
+            "Michelangelo",
+            "Michel Ange"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La Renaissance a débuté en France au XVe siècle.",
+          "ans": false,
+          "hint": "Faux ! La Renaissance est née en Italie (Florence, XIVe-XVe siècle), et non en France. Elle se diffuse ensuite en France et dans toute l'Europe au XVIe siècle. Retour à l'Antiquité, humanisme, perspective.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le sfumato, technique de Léonard de Vinci ?",
+          "opts": [
+            "Une technique de sculpture",
+            "Des transitions graduelles entre zones claires et sombres, sans contours nets (effet brumeux)",
+            "Un type de perspective",
+            "Une couleur"
+          ],
+          "ans": 1,
+          "hint": "Sfumato (it. = fumé) = transitions très douces entre lumière et ombre, sans contour net. Donne l'impression de brume, de profondeur. Typique de Léonard.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel peintre hollandais du XVIIe siècle est célèbre pour ses autoportraits et son utilisation du clair-obscur ?",
+          "answer": "Rembrandt",
+          "hint": "Rembrandt van Rijn (1606-1669) = maître hollandais. Célèbre pour ses autoportraits (~100), La Ronde de nuit et sa maîtrise du clair-obscur (chiaroscuro).",
+          "tolerance": [
+            "Rembrandt",
+            "Rembrandt van Rijn"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le clair-obscur en peinture ?",
+          "opts": [
+            "Un style de couleurs vives",
+            "Technique contrastant fortement lumière et ombre pour donner du volume",
+            "Un type de paysage",
+            "La peinture en blanc et noir"
+          ],
+          "ans": 1,
+          "hint": "Clair-obscur (chiaroscuro) = fort contraste lumière/ombre qui modèle les formes. Maîtrisé par le Caravage, Rembrandt. Donne profondeur et dramatisme.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Jan Vermeer est un peintre espagnol du XVIIe siècle connu pour ses batailles et scènes de cour.",
+          "ans": false,
+          "hint": "Faux ! Vermeer (1632-1675) est un peintre HOLLANDAIS (et non espagnol), connu pour ses scènes intérieures intimistes et lumineuses (La jeune fille à la perle, La laitière). L'espagnol célèbre de cette époque est Velázquez.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque artiste de la Renaissance à son domaine.",
+          "pairs": [
+            {
+              "g": "Léonard de Vinci",
+              "d": "Peinture, science, inventions (génie universel)"
+            },
+            {
+              "g": "Michel-Ange",
+              "d": "Peinture, sculpture, architecture (Chapelle Sixtine, David)"
+            },
+            {
+              "g": "Raphaël",
+              "d": "Peinture (L'École d'Athènes, Madones)"
+            },
+            {
+              "g": "Brunelleschi",
+              "d": "Architecture (dôme de Florence, perspective)"
+            }
+          ],
+          "hint": "Ces quatre artistes incarnent l'idéal de la Renaissance : beauté, harmonie, maîtrise des arts et des sciences.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la technique artistique du XVIIe siècle, exubérante et dramatique, qui succède à la Renaissance ?",
+          "answer": "baroque",
+          "hint": "Le Baroque (XVIIe-début XVIIIe s.) = style dramatique, exubérant, mouvement. Rupture avec l'équilibre classique de la Renaissance. Caravage, Rubens, Bernin.",
+          "tolerance": [
+            "baroque",
+            "le baroque",
+            "style baroque",
+            "art baroque"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel artiste baroque est connu pour ses tableaux au clair-obscur dramatique et ses personnages du peuple (La Vocation de Saint Matthieu) ?",
+          "opts": [
+            "Rubens",
+            "Bernin",
+            "Le Caravage",
+            "Poussin"
+          ],
+          "ans": 2,
+          "hint": "Le Caravage (1571-1610) = maître du clair-obscur dramatique (ténébrisme). Révolutionne la peinture en montrant des personnages du peuple dans des scènes religieuses.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Raphaël est surtout connu pour son tableau 'L'École d'Athènes' peint dans les Chambres du Vatican.",
+          "ans": true,
+          "hint": "L'École d'Athènes (1510-1511) de Raphaël : fresque des Chambres du Vatican représentant les grands philosophes de l'Antiquité (Platon, Aristote, Pythagore...).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment appelle-t-on la représentation idéalisée de la Vierge Marie dans la peinture chrétienne ?",
+          "answer": "Madone",
+          "hint": "Madone = représentation de la Vierge Marie, souvent avec l'Enfant Jésus. Genre très répandu dans la peinture religieuse italienne (Raphaël en est le maître).",
+          "tolerance": [
+            "Madone",
+            "la Madone",
+            "Vierge à l'enfant",
+            "Madonna"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Quelle technique architecturale de la Renaissance est attribuée à Filippo Brunelleschi ?",
+          "opts": [
+            "Les arcs brisés gothiques",
+            "La perspective linéaire codifiée et le dôme de Florence",
+            "Le clair-obscur",
+            "La mosaïque"
+          ],
+          "ans": 1,
+          "hint": "Brunelleschi (1377-1446) = inventeur de la perspective linéaire codifiée (1420). Il a aussi construit le dôme de la cathédrale de Florence (Santa Maria del Fiore).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Peter Paul Rubens est un peintre flamand baroque connu pour ses figures robustes et colorées.",
+          "ans": true,
+          "hint": "Rubens (1577-1640) = grand maître baroque flamand. Compositions dynamiques, couleurs chaudes, figures robustes et charnelles. A peint la galerie de Marie de Médicis (Louvre).",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle la vaste fresque de Michel-Ange représentant le Jugement dernier, peinte derrière l'autel de la Chapelle Sixtine ?",
+          "opts": [
+            "La Création d'Adam",
+            "Le Jugement dernier",
+            "L'École d'Athènes",
+            "Les Noces de Cana"
+          ],
+          "ans": 1,
+          "hint": "Le Jugement Dernier (1534-1541) de Michel-Ange = fresque de 200 m² sur le mur d'autel de la Chapelle Sixtine. Peinte 20 ans après le plafond.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'humanisme de la Renaissance ?",
+          "opts": [
+            "Un mouvement religieux",
+            "Une philosophie qui place l'homme au centre de la pensée et valorise la raison et les arts",
+            "Un type de sculpture",
+            "Un style architectural"
+          ],
+          "ans": 1,
+          "hint": "Humanisme = philosophie Renaissance qui place l'Homme (humanitas) au centre. Retour aux textes antiques, valorisation de la raison, de l'éducation et des arts.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le trompe-l'œil était une technique très prisée dans la peinture baroque (Versailles, plafonds italiens).",
+          "ans": true,
+          "hint": "Trompe-l'œil baroque : plafonds peints qui semblent s'ouvrir sur le ciel (Andrea Pozzo, Rome). Illusion parfaite de l'architecture et du volume. Très répandu en Italie.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Comment s'appelle le tableau monumental de Véronèse (~1562) avec 130 personnages, exposé au Louvre face à la Joconde ?",
+          "opts": [
+            "Le Repas chez Lévi",
+            "La Cène",
+            "Les Noces de Cana",
+            "Le Festin d'Hérode"
+          ],
+          "ans": 2,
+          "hint": "Les Noces de Cana (1562-1563) de Paolo Véronèse = tableau monumental (6,77 m × 9,94 m). Exposé au Louvre face à la Joconde. 130 personnages dont des contemporains.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Le manierisme est un style artistique qui :",
+          "opts": [
+            "Revient au style médiéval",
+            "S'affranchit des règles classiques de la Renaissance (allongement, poses tordues, couleurs acides)",
+            "Imite exactement la Renaissance",
+            "Précède la Renaissance"
+          ],
+          "ans": 1,
+          "hint": "Maniérisme (1520-1600) = art entre Renaissance et Baroque. Style élaboré, artificiel, allongements, poses en S (figura serpentinata), couleurs étranges. Pontormo, Bronzino, Arcimboldo.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque tableau célèbre à son auteur.",
+          "pairs": [
+            {
+              "g": "La Joconde",
+              "d": "Léonard de Vinci"
+            },
+            {
+              "g": "La Jeune Fille à la perle",
+              "d": "Vermeer"
+            },
+            {
+              "g": "La Ronde de Nuit",
+              "d": "Rembrandt"
+            },
+            {
+              "g": "La Naissance de Vénus",
+              "d": "Botticelli"
+            }
+          ],
+          "hint": "Ces quatre tableaux parmi les plus célèbres du monde occidental couvrent la période Renaissance-Baroque.",
+          "difficulty": "hard"
+        }
       ]
     },
     {
@@ -142,26 +1293,251 @@
       "label": "Histoire de l'art : XIXe et XXe siècles",
       "section": "Histoire de l'art",
       "questions": [
-        {"type":"qcm","q":"À quel mouvement appartient Claude Monet et ses peintures de nymphéas ?","opts":["Réalisme","Cubisme","Impressionnisme","Surréalisme"],"ans":2,"hint":"Monet (1840-1926) est le chef de file de l'impressionnisme. Les Nymphéas (séries de peintures de son jardin à Giverny). Le terme 'impressionnisme' vient de son tableau Impression, soleil levant.","difficulty":"easy"},
-        {"type":"texte","q":"Quel mouvement artistique du XXe siècle, fondé par Picasso et Braque, représente les objets de plusieurs points de vue simultanément ?","answer":"cubisme","hint":"Cubisme (1907-1920) : Picasso et Braque décomposent les formes en facettes géométriques, montrant plusieurs angles simultanément. Les Demoiselles d'Avignon (Picasso, 1907).","tolerance":["cubisme","le cubisme","l'art cubiste"],"difficulty":"easy"},
-        {"type":"vrai_faux","q":"Salvador Dalí est un peintre surréaliste espagnol connu pour La Persistance de la mémoire (les montres molles).","ans":true,"hint":"Dalí (1904-1989) = figure du surréalisme. La Persistance de la mémoire (1931) = montres molles dans un paysage désertique. Influence de Freud et des rêves.","difficulty":"easy"},
-        {"type":"qcm","q":"Qu'est-ce que l'art abstrait ?","opts":["L'art qui représente la nature fidèlement","L'art qui ne représente pas la réalité visible (formes, couleurs, sans sujet reconnaissable)","L'art du portrait","L'art numérique"],"ans":1,"hint":"Art abstrait = ne représente pas de sujet réel identifiable. Basé sur les formes pures, les couleurs, les lignes. Kandinsky, Mondrian, Malevitch (début XXe s.).","difficulty":"easy"},
-        {"type":"texte","q":"Quel artiste américain des années 1960, figure du Pop Art, a représenté des boîtes de soupe Campbell et Marilyn Monroe ?","answer":"Andy Warhol","hint":"Andy Warhol (1928-1987) = figure du Pop Art américain. Sérigraphies de Marilyn Monroe, boîtes de soupe Campbell, bananes (pochette du Velvet Underground).","tolerance":["Andy Warhol","Warhol","Andy warhol"],"difficulty":"easy"},
-        {"type":"qcm","q":"Quel peintre post-impressionniste néerlandais, auteur de La Nuit étoilée, a eu une vie tragique marquée par la folie ?","opts":["Gauguin","Cézanne","Van Gogh","Seurat"],"ans":2,"hint":"Vincent van Gogh (1853-1890) : La Nuit étoilée, Les Tournesols. Style expressif, touches dynamiques. S'est coupé une oreille. A vendu un seul tableau de son vivant.","difficulty":"easy"},
-        {"type":"vrai_faux","q":"Le surréalisme cherche à représenter le monde des rêves, de l'inconscient et du fantastique.","ans":true,"hint":"Surréalisme (André Breton, 1924) = dépasser la réalité en explorant l'inconscient, les rêves, le hasard. Dalí, Magritte, Ernst, Miró. Influencé par Freud.","difficulty":"easy"},
-        {"type":"appariement","q":"Associe chaque mouvement artistique à son siècle et ses représentants.","pairs":[{"g":"Impressionnisme","d":"XIXe s. — Monet, Renoir, Degas"},{"g":"Cubisme","d":"XXe s. — Picasso, Braque"},{"g":"Surréalisme","d":"XXe s. — Dalí, Magritte"},{"g":"Pop Art","d":"XXe s. — Warhol, Lichtenstein"}],"hint":"Ces mouvements définissent les grandes étapes de la rupture avec la représentation traditionnelle dans l'art moderne.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le mouvement artistique de la fin du XIXe siècle qui s'oppose à l'impressionnisme et utilise des aplats de couleurs pures (Gauguin, Van Gogh, Cézanne) ?","answer":"post-impressionnisme","hint":"Post-impressionnisme = terme générique pour les artistes qui dépassent l'impressionnisme : Van Gogh (expressivité), Cézanne (géométrisation), Gauguin (couleurs symboliques).","tolerance":["post-impressionnisme","les post-impressionnistes"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que le mouvement Dada ?","opts":["Un mouvement romantique du XIXe s.","Un mouvement anti-art né en 1916, nihiliste, qui conteste les valeurs bourgeoises","Un style de photographie","Un type de sculpture classique"],"ans":1,"hint":"Dada (Zurich, 1916) : mouvement de provocation anti-bourgeois, anti-art, né de l'absurdité de la Première Guerre mondiale. Duchamp (Fontaine/urinoir), Tzara, Picabia.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"La fontaine de Marcel Duchamp (1917) est un urinoir signé et présenté comme œuvre d'art, questionnant la définition de l'art.","ans":true,"hint":"La Fontaine (1917) de Duchamp = urinoir signé 'R. Mutt'. Premier ready-made. Pose la question : un objet ordinaire peut-il être de l'art si l'artiste le décide ?","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le peintre expressionniste norvégien auteur du célèbre tableau 'Le Cri' ?","answer":"Edvard Munch","hint":"Le Cri (1893) d'Edvard Munch (1863-1944) = figure symboliste/expressionniste. Angoisse existentielle. Figure aux mains sur les oreilles devant un ciel rouge.","tolerance":["Edvard Munch","Munch","edvard munch"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que l'Op Art (Optical Art) ?","opts":["Art utilisant des illusions d'optique (mouvements, profondeur) créées par des motifs géométriques","Art inspiré de l'opéra","Art sur ordinateur","Art populaire américain"],"ans":0,"hint":"Op Art (Optical Art, années 1960) : crée des illusions d'optique (vibration, mouvement) à partir de motifs géométriques précis. Vasarely, Bridget Riley.","difficulty":"medium"},
-        {"type":"vrai_faux","q":"Kandinsky est considéré comme l'un des pères de l'art abstrait.","ans":true,"hint":"Wassily Kandinsky (1866-1944) = pionnier de l'abstraction. Première aquarelle abstraite (1910). Théoricien : Du Spirituel dans l'art. Professeur au Bauhaus.","difficulty":"medium"},
-        {"type":"texte","q":"Comment s'appelle le célèbre tableau de Picasso (1937) représentant les horreurs du bombardement d'une ville basque pendant la guerre civile espagnole ?","answer":"Guernica","hint":"Guernica (1937) de Picasso = huile sur toile monumentale (3,49m × 7,76m). Dénonce le bombardement de la ville de Guernica par les nazis. Exposé au Musée Reina Sofia (Madrid).","tolerance":["Guernica","guernica","la Guernica"],"difficulty":"medium"},
-        {"type":"qcm","q":"Qu'est-ce que le Street Art (art urbain) ?","opts":["L'art pratiqué dans les rues uniquement","Art créé dans l'espace public (murs, rues) : graffiti, pochoir, affiche","Art pour les passants","Art sans technique"],"ans":1,"hint":"Street Art = art dans l'espace public. Graffiti, pochoir (Banksy), affiche (Shepard Fairey), mosaïque (Invader). Banksy est l'artiste le plus médiatique actuellement.","difficulty":"hard"},
-        {"type":"vrai_faux","q":"Le mouvement Fluxus des années 1960 cherchait à abolir les frontières entre l'art et la vie quotidienne.","ans":true,"hint":"Fluxus (George Maciunas, 1962) : art événementiel, quotidien, anti-institutionnel. Performances, partitions musicales, objets. Joseph Beuys, Yoko Ono.","difficulty":"hard"},
-        {"type":"texte","q":"Comment s'appelle la technique de Seurat consistant à appliquer de petites touches de couleurs pures côte à côte pour créer la couleur par mélange optique ?","answer":"pointillisme","hint":"Pointillisme (Seurat, Signac) = divisionnisme chromatique. Petits points de couleurs pures → mélange optique dans l'œil du spectateur. Un Dimanche après-midi à l'île de la Grande Jatte.","tolerance":["pointillisme","divisionnisme","pointillisme ou divisionnisme"],"difficulty":"hard"},
-        {"type":"qcm","q":"Qu'est-ce que l'expressionnisme abstrait américain des années 1940-50 ?","opts":["Art figuratif expressif","Mouvement américain où la peinture explore l'émotion à travers le geste (action painting) et les grands formats","Art minimal géométrique","Art populaire américain"],"ans":1,"hint":"Expressionnisme abstrait (New York, 1945-60) : Jackson Pollock (dripping), Mark Rothko (champs de couleurs), De Kooning. Premier mouvement américain influençant l'Europe.","difficulty":"hard"},
-        {"type":"appariement","q":"Associe chaque œuvre contemporaine à son artiste.","pairs":[{"g":"Guernica (1937)","d":"Pablo Picasso"},{"g":"La Nuit étoilée (1889)","d":"Vincent van Gogh"},{"g":"La Persistance de la mémoire (1931)","d":"Salvador Dalí"},{"g":"Fontaine (urinoir, 1917)","d":"Marcel Duchamp"}],"hint":"Ces quatre œuvres sont parmi les plus importantes et symboliques de l'art moderne. Chacune a révolutionné la perception de l'art.","difficulty":"hard"}
+        {
+          "type": "qcm",
+          "q": "À quel mouvement appartient Claude Monet et ses peintures de nymphéas ?",
+          "opts": [
+            "Réalisme",
+            "Cubisme",
+            "Impressionnisme",
+            "Surréalisme"
+          ],
+          "ans": 2,
+          "hint": "Monet (1840-1926) est le chef de file de l'impressionnisme. Les Nymphéas (séries de peintures de son jardin à Giverny). Le terme 'impressionnisme' vient de son tableau Impression, soleil levant.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel mouvement artistique du XXe siècle, fondé par Picasso et Braque, représente les objets de plusieurs points de vue simultanément ?",
+          "answer": "cubisme",
+          "hint": "Cubisme (1907-1920) : Picasso et Braque décomposent les formes en facettes géométriques, montrant plusieurs angles simultanément. Les Demoiselles d'Avignon (Picasso, 1907).",
+          "tolerance": [
+            "cubisme",
+            "le cubisme",
+            "l'art cubiste"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Salvador Dalí est un peintre impressionniste français connu pour La Persistance de la mémoire.",
+          "ans": false,
+          "hint": "Faux ! Salvador Dalí est un peintre SURRÉALISTE ESPAGNOL (et non impressionniste français). La Persistance de la mémoire (1931) = les montres molles. L'impressionnisme est un courant français du XIXe siècle (Monet).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'art abstrait ?",
+          "opts": [
+            "L'art qui représente la nature fidèlement",
+            "L'art qui ne représente pas la réalité visible (formes, couleurs, sans sujet reconnaissable)",
+            "L'art du portrait",
+            "L'art numérique"
+          ],
+          "ans": 1,
+          "hint": "Art abstrait = ne représente pas de sujet réel identifiable. Basé sur les formes pures, les couleurs, les lignes. Kandinsky, Mondrian, Malevitch (début XXe s.).",
+          "difficulty": "easy"
+        },
+        {
+          "type": "texte",
+          "q": "Quel artiste américain des années 1960, figure du Pop Art, a représenté des boîtes de soupe Campbell et Marilyn Monroe ?",
+          "answer": "Andy Warhol",
+          "hint": "Andy Warhol (1928-1987) = figure du Pop Art américain. Sérigraphies de Marilyn Monroe, boîtes de soupe Campbell, bananes (pochette du Velvet Underground).",
+          "tolerance": [
+            "Andy Warhol",
+            "Warhol",
+            "Andy warhol"
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "type": "qcm",
+          "q": "Quel peintre post-impressionniste néerlandais, auteur de La Nuit étoilée, a eu une vie tragique marquée par la folie ?",
+          "opts": [
+            "Gauguin",
+            "Cézanne",
+            "Van Gogh",
+            "Seurat"
+          ],
+          "ans": 2,
+          "hint": "Vincent van Gogh (1853-1890) : La Nuit étoilée, Les Tournesols. Style expressif, touches dynamiques. S'est coupé une oreille. A vendu un seul tableau de son vivant.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le surréalisme cherche à représenter la réalité observable avec le plus de précision photographique possible.",
+          "ans": false,
+          "hint": "Faux ! Le surréalisme cherche à DÉPASSER la réalité, en explorant l'inconscient, les rêves et le fantastique. C'est l'hyperréalisme qui cherche la précision photographique. Dalí, Magritte. Influencé par Freud.",
+          "difficulty": "easy"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque mouvement artistique à son siècle et ses représentants.",
+          "pairs": [
+            {
+              "g": "Impressionnisme",
+              "d": "XIXe s. — Monet, Renoir, Degas"
+            },
+            {
+              "g": "Cubisme",
+              "d": "XXe s. — Picasso, Braque"
+            },
+            {
+              "g": "Surréalisme",
+              "d": "XXe s. — Dalí, Magritte"
+            },
+            {
+              "g": "Pop Art",
+              "d": "XXe s. — Warhol, Lichtenstein"
+            }
+          ],
+          "hint": "Ces mouvements définissent les grandes étapes de la rupture avec la représentation traditionnelle dans l'art moderne.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le mouvement artistique de la fin du XIXe siècle qui s'oppose à l'impressionnisme et utilise des aplats de couleurs pures (Gauguin, Van Gogh, Cézanne) ?",
+          "answer": "post-impressionnisme",
+          "hint": "Post-impressionnisme = terme générique pour les artistes qui dépassent l'impressionnisme : Van Gogh (expressivité), Cézanne (géométrisation), Gauguin (couleurs symboliques).",
+          "tolerance": [
+            "post-impressionnisme",
+            "les post-impressionnistes"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le mouvement Dada ?",
+          "opts": [
+            "Un mouvement romantique du XIXe s.",
+            "Un mouvement anti-art né en 1916, nihiliste, qui conteste les valeurs bourgeoises",
+            "Un style de photographie",
+            "Un type de sculpture classique"
+          ],
+          "ans": 1,
+          "hint": "Dada (Zurich, 1916) : mouvement de provocation anti-bourgeois, anti-art, né de l'absurdité de la Première Guerre mondiale. Duchamp (Fontaine/urinoir), Tzara, Picabia.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "La fontaine de Marcel Duchamp (1917) est un urinoir signé et présenté comme œuvre d'art, questionnant la définition de l'art.",
+          "ans": true,
+          "hint": "La Fontaine (1917) de Duchamp = urinoir signé 'R. Mutt'. Premier ready-made. Pose la question : un objet ordinaire peut-il être de l'art si l'artiste le décide ?",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le peintre expressionniste norvégien auteur du célèbre tableau 'Le Cri' ?",
+          "answer": "Edvard Munch",
+          "hint": "Le Cri (1893) d'Edvard Munch (1863-1944) = figure symboliste/expressionniste. Angoisse existentielle. Figure aux mains sur les oreilles devant un ciel rouge.",
+          "tolerance": [
+            "Edvard Munch",
+            "Munch",
+            "edvard munch"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'Op Art (Optical Art) ?",
+          "opts": [
+            "Art utilisant des illusions d'optique (mouvements, profondeur) créées par des motifs géométriques",
+            "Art inspiré de l'opéra",
+            "Art sur ordinateur",
+            "Art populaire américain"
+          ],
+          "ans": 0,
+          "hint": "Op Art (Optical Art, années 1960) : crée des illusions d'optique (vibration, mouvement) à partir de motifs géométriques précis. Vasarely, Bridget Riley.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Kandinsky est surtout connu pour ses portraits réalistes et non pour l'art abstrait.",
+          "ans": false,
+          "hint": "Faux ! Wassily Kandinsky (1866-1944) est un pionnier de l'ABSTRACTION, pas du réalisme. Première aquarelle abstraite (1910). Théoricien : Du Spirituel dans l'art. Professeur au Bauhaus.",
+          "difficulty": "medium"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle le célèbre tableau de Picasso (1937) représentant les horreurs du bombardement d'une ville basque pendant la guerre civile espagnole ?",
+          "answer": "Guernica",
+          "hint": "Guernica (1937) de Picasso = huile sur toile monumentale (3,49m × 7,76m). Dénonce le bombardement de la ville de Guernica par les nazis. Exposé au Musée Reina Sofia (Madrid).",
+          "tolerance": [
+            "Guernica",
+            "guernica",
+            "la Guernica"
+          ],
+          "difficulty": "medium"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que le Street Art (art urbain) ?",
+          "opts": [
+            "L'art pratiqué dans les rues uniquement",
+            "Art créé dans l'espace public (murs, rues) : graffiti, pochoir, affiche",
+            "Art pour les passants",
+            "Art sans technique"
+          ],
+          "ans": 1,
+          "hint": "Street Art = art dans l'espace public. Graffiti, pochoir (Banksy), affiche (Shepard Fairey), mosaïque (Invader). Banksy est l'artiste le plus médiatique actuellement.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "vrai_faux",
+          "q": "Le mouvement Fluxus des années 1960 cherchait à abolir les frontières entre l'art et la vie quotidienne.",
+          "ans": true,
+          "hint": "Fluxus (George Maciunas, 1962) : art événementiel, quotidien, anti-institutionnel. Performances, partitions musicales, objets. Joseph Beuys, Yoko Ono.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "texte",
+          "q": "Comment s'appelle la technique de Seurat consistant à appliquer de petites touches de couleurs pures côte à côte pour créer la couleur par mélange optique ?",
+          "answer": "pointillisme",
+          "hint": "Pointillisme (Seurat, Signac) = divisionnisme chromatique. Petits points de couleurs pures → mélange optique dans l'œil du spectateur. Un Dimanche après-midi à l'île de la Grande Jatte.",
+          "tolerance": [
+            "pointillisme",
+            "divisionnisme",
+            "pointillisme ou divisionnisme"
+          ],
+          "difficulty": "hard"
+        },
+        {
+          "type": "qcm",
+          "q": "Qu'est-ce que l'expressionnisme abstrait américain des années 1940-50 ?",
+          "opts": [
+            "Art figuratif expressif",
+            "Mouvement américain où la peinture explore l'émotion à travers le geste (action painting) et les grands formats",
+            "Art minimal géométrique",
+            "Art populaire américain"
+          ],
+          "ans": 1,
+          "hint": "Expressionnisme abstrait (New York, 1945-60) : Jackson Pollock (dripping), Mark Rothko (champs de couleurs), De Kooning. Premier mouvement américain influençant l'Europe.",
+          "difficulty": "hard"
+        },
+        {
+          "type": "appariement",
+          "q": "Associe chaque œuvre contemporaine à son artiste.",
+          "pairs": [
+            {
+              "g": "Guernica (1937)",
+              "d": "Pablo Picasso"
+            },
+            {
+              "g": "La Nuit étoilée (1889)",
+              "d": "Vincent van Gogh"
+            },
+            {
+              "g": "La Persistance de la mémoire (1931)",
+              "d": "Salvador Dalí"
+            },
+            {
+              "g": "Fontaine (urinoir, 1917)",
+              "d": "Marcel Duchamp"
+            }
+          ],
+          "hint": "Ces quatre œuvres sont parmi les plus importantes et symboliques de l'art moderne. Chacune a révolutionné la perception de l'art.",
+          "difficulty": "hard"
+        }
       ]
     }
   ]
