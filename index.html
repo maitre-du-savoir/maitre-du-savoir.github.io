@@ -843,10 +843,8 @@ function addCoffre(scorePct){
 
 function checkCoffre(scorePct,earnedPts){
   G.coffres.ptsAccum=(G.coffres.ptsAccum||0)+earnedPts;
-  const chests=[];
-  while(G.coffres.ptsAccum>=150){G.coffres.ptsAccum-=150;chests.push(scorePct);}
-  chests.forEach(s=>addCoffre(s));
-  return chests.length>0;
+  if(G.coffres.ptsAccum>=80){G.coffres.ptsAccum-=80;addCoffre(scorePct);return true;}
+  return false;
 }
 
 function checkPendingChest(){
