@@ -1235,7 +1235,9 @@ function finishQuiz(){
   qstate.bonusDiversite=bonusDiversite;
   if(bonusDiversite>0){G.joueur.etoiles+=bonusDiversite;qstate.etoilesGagnes+=bonusDiversite;}
   // Alimenter l'historique pour Challenge 1 (Zéro fautes)
-  if(G.quiz&&G.quiz.historiqueQuestionsParMatiere&&qcfg.subject){
+  if(G.quiz&&qcfg.subject){
+    if(!G.quiz.historiqueQuestionsParMatiere)G.quiz.historiqueQuestionsParMatiere={};
+    if(!Array.isArray(G.quiz.historiqueQuestionsParMatiere[qcfg.subject]))G.quiz.historiqueQuestionsParMatiere[qcfg.subject]=[];
     const hist=G.quiz.historiqueQuestionsParMatiere[qcfg.subject];
     if(Array.isArray(hist)){
       (qstate.questions||[]).forEach(q=>{
@@ -1377,10 +1379,17 @@ async function startChallenge(mat,num){
   sc='challenge';rnd();
   try{
     if(num===1){
+      await loadJsonForSubject(mat);
       const hist=(G.quiz&&G.quiz.historiqueQuestionsParMatiere&&G.quiz.historiqueQuestionsParMatiere[mat])||[];
       const eligible=hist.filter(q=>q.type==='qcm'||q.type==='vrai_faux');
-      if(eligible.length<5){cstate.phase='blocked';rnd();return;}
-      cstate.questions=[...eligible].sort(()=>Math.random()-.5).slice(0,8);
+      let pool=[...eligible];
+      if(pool.length<8){
+        const bankQ=(JSON_CACHE[mat]||[]).flatMap(c=>c.questions||[])
+          .filter(q=>(q.type==='qcm'||q.type==='vrai_faux')&&!pool.some(e=>(e.q||'').slice(0,40)===(q.q||'').slice(0,40)));
+        pool=[...pool,...bankQ.sort(()=>Math.random()-.5)].slice(0,8);
+      }
+      if(pool.length<3){cstate.phase='blocked';rnd();return;}
+      cstate.questions=pool.sort(()=>Math.random()-.5).slice(0,Math.min(8,pool.length));
     }else{
       const file=CHALLENGE_FILE[mat];
       if(!file){cstate.phase='error';rnd();return;}
