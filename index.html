@@ -999,6 +999,7 @@ function showApiKeyModal(onDone){
 }
 
 async function launchQuiz(){
+  await loadJsonForSubject(qcfg.subject);
   let qs=null;
   if(qcfg.useAI&&getApiKey()){
     sc='quiz_loading';rnd();
@@ -1023,10 +1024,31 @@ async function launchQuiz(){
     eliminatedOptions:[],hintText:null,showAnswer:false,flashAnswer:false,timerFrozen:false};
   sc='quiz';rnd();
 }
+const JSON_CACHE={};
+const QJSON_MAP={
+  'maths':['questions/maths_nombres_calculs.json','questions/maths_geometrie.json','questions/maths_grandeurs_mesures.json','questions/maths_donnees.json'],
+  'francais':['questions/francais_grammaire.json','questions/francais_conjugaison.json','questions/francais_orthographe.json','questions/francais_vocabulaire.json','questions/francais_lecture_litterature.json'],
+  'histoire-geo':['questions/histgeo_histoire.json','questions/histgeo_geographie.json'],
+  'svt':['questions/svt_vivant_nutrition.json','questions/svt_repro_geo_eco.json'],
+  'physique-chimie':['questions/pc_etats_melanges.json','questions/pc_electricite_lumiere_masse.json'],
+  'anglais':['questions/anglais.json'],
+  'allemand':['questions/allemand.json'],
+  'musique':['questions/musique.json'],
+  'arts-plastiques':['questions/arts_plastiques.json']
+};
+async function loadJsonForSubject(subject){
+  if(JSON_CACHE[subject])return;
+  const files=QJSON_MAP[subject]||[];
+  const chapitres=[];
+  for(const f of files){
+    try{const r=await fetch(f);if(r.ok){const d=await r.json();if(d.chapitres)chapitres.push(...d.chapitres);}}catch(e){}
+  }
+  if(chapitres.length>0)JSON_CACHE[subject]=chapitres;
+}
 function getLocalQuestions(){
   const mat=qcfg.subject,chapLabel=qcfg.chapter,diff=qcfg.diff,count=qcfg.count;
   const matMap={'physique-chimie':'physique','histoire-geo':'histgeo','arts-plastiques':'arts'};
-  const qbMat=QBANK[matMap[mat]||mat]||[];
+  const qbMat=JSON_CACHE[mat]||QBANK[matMap[mat]||mat]||[];
   let chapQ=[];
   const ch=qbMat.find(c=>c.label===chapLabel||c.id===chapLabel);
   if(ch)chapQ=ch.questions||[];else qbMat.forEach(c=>chapQ=chapQ.concat(c.questions||[]));
