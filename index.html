@@ -1870,6 +1870,18 @@ function renderQuizConfig(){
 }
 
 /* ═══════════════════════════════════════════════════
+   ASTUCES DE SAISIE (par matière / chapitre)
+═══════════════════════════════════════════════════ */
+function tipHTML(subj,chap,answered){
+  if(answered)return'';
+  var s='<div style="font-size:11px;color:#6B7280;margin-top:7px">💡 ';
+  if(subj==='maths')return s+'Fractions&nbsp;: <b>3/4</b> &mdash; Grands nombres avec espace&nbsp;: <b>47&nbsp;300</b></div>';
+  if(subj==='allemand')return s+'<b>ß</b> peut s\'écrire <b>ss</b> &mdash; ou taper <b>Alt+0223</b> (Windows) / <b>⌥S</b> (Mac)</div>';
+  if(subj==='francais'&&/indicatif|compos|conditionnel|imp.ratif|subjonctif|participe/i.test(chap||''))return s+'Écris le pronom avec le verbe&nbsp;: <b>je mange</b>, <b>nous avons</b>, <b>ils finissent</b>...</div>';
+  return'';
+}
+
+/* ═══════════════════════════════════════════════════
    QUIZ LOADING
 ═══════════════════════════════════════════════════ */
 function renderQuizLoading(){return '<div class="screen active" style="background:linear-gradient(160deg,#1a0a3d,#3b1c6e);display:flex;align-items:center;justify-content:center"><div style="text-align:center;color:white"><div style="font-size:48px;margin-bottom:16px">📚</div><div style="font-family:Boogaloo,cursive;font-size:22px">Chargement...</div></div></div>';}
@@ -1922,7 +1934,7 @@ function renderQuiz(){
   else if(q.type==='texte'){
     qHTML='<div style="font-size:16px;font-weight:500;color:#1F1A14;line-height:1.55;margin-bottom:16px">'+q.question+'</div>'
       +'<input id="ti" type="text" placeholder="Ta réponse..." autocomplete="off"'+(qstate.answered?' disabled value="'+qstate.textGiven+'"':'')+' style="width:100%;border:2px solid '+(qstate.answered?qstate.isCorrect?'#059669':'#DC2626':f.c)+';border-radius:12px;padding:12px 16px;font-size:16px;background:'+(qstate.answered?qstate.isCorrect?'#D1FAE5':'#FEE2E2':'white')+';color:'+(qstate.answered?qstate.isCorrect?'#065F46':'#991B1B':'#1F1A14')+';outline:none">'
-      +(qcfg.subject==='maths'&&!qstate.answered?'<div style="font-size:11px;color:#6B7280;margin-top:7px">\ud83d\udca1 Fractions&nbsp;: <b>3/4</b> &mdash; Grands nombres avec espace&nbsp;: <b>47&nbsp;300</b></div>':'')
+      +tipHTML(qcfg.subject,qcfg.chapter,qstate.answered)
       +(!qstate.answered?'<button data-a="validate" style="width:100%;margin-top:10px;background:linear-gradient(160deg,'+f.c+','+f.dk+');border:none;border-radius:12px;padding:13px;font-family:Boogaloo,cursive;font-size:17px;color:white;cursor:pointer">Valider \u2713</button>':'');
   }
   /* ORDRE */
