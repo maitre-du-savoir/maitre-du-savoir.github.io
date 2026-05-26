@@ -1201,7 +1201,7 @@ function finishQuiz(){
   if(isPerfect)G.stats.perfectQuiz=(G.stats.perfectQuiz||0)+1;
   if(qcfg.diff==='difficile')G.stats.hardQuiz=(G.stats.hardQuiz||0)+1;
   const f=FA[qcfg.fi],oldNv=G.familles[f.id].nv;
-  G.familles[f.id].t++;G.familles[f.id].m[qcfg.subject]=(G.familles[f.id].m[qcfg.subject]||0)+1;
+  if(pct>=70){G.familles[f.id].t++;G.familles[f.id].m[qcfg.subject]=(G.familles[f.id].m[qcfg.subject]||0)+1;}
   // [Les challenges boss sont gérés via les écrans dédiés, pas via les quiz normaux]
   qstate.countedForProgress=true;
   if(!G.stats.histMatiere)G.stats.histMatiere=[];
