@@ -1512,9 +1512,16 @@ function renderChallengeResult(f,cname){
   const bigSub=allCorrect&&isFinalChallenge?'Tu as révélé un Maître Historique !':allCorrect?'Continue demain pour le challenge '+(cstate.num+1)+' !':'Score : '+score+'/'+total+' — Reviens demain pour réessayer !';
   const bigColor=allCorrect?f.dk:'#991B1B';
   const boss=BOSSES.find(b=>b.mat===cstate.mat);
-  const actionBtn=allCorrect&&isFinalChallenge&&boss
-    ?'<button data-a="challenge-boss-anim" data-v="'+boss.id+'" style="width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(160deg,#FFD700,#F59E0B);color:white;font-family:Boogaloo,cursive;font-size:18px;box-shadow:0 4px 0 #D97706;margin-top:14px">🎬 Découvrir le Maître !</button>'
-    :'<button data-a="challenge-back" style="width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(160deg,'+f.c+','+f.dk+');color:white;font-family:Boogaloo,cursive;font-size:18px;box-shadow:0 4px 0 '+f.dk+'88;margin-top:14px">← Retour</button>';
+  let actionBtn;
+  if(allCorrect&&isFinalChallenge&&boss){
+    actionBtn='<button data-a="challenge-boss-anim" data-v="'+boss.id+'" style="width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(160deg,#FFD700,#F59E0B);color:white;font-family:Boogaloo,cursive;font-size:18px;box-shadow:0 4px 0 #D97706;margin-top:14px">🎬 Découvrir le Maître !</button>';
+  }else if(allCorrect){
+    actionBtn='<div style="font-size:12px;color:#92400E;background:#FEF3C7;border-radius:10px;padding:9px 12px;margin-top:12px;border:1px solid #FDE68A;line-height:1.5">⏳ Ta progression est sauvegardée — mais si tu n’ouvres plus l’appli pendant <strong>7 jours</strong>, elle repart à zéro !</div>'
+      +'<button data-a="start-challenge" data-v="'+cstate.mat+'" data-v2="'+(cstate.num+1)+'" style="width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(160deg,'+f.c+','+f.dk+');color:white;font-family:Boogaloo,cursive;font-size:18px;box-shadow:0 4px 0 '+f.dk+'88;margin-top:10px">Challenge '+(cstate.num+1)+' →</button>'
+      +'<button data-a="challenge-back" style="width:100%;padding:11px;border:2px solid '+f.c+'55;border-radius:12px;background:transparent;color:'+f.dk+';font-family:Boogaloo,cursive;font-size:16px;margin-top:8px">← Revenir plus tard</button>';
+  }else{
+    actionBtn='<button data-a="challenge-back" style="width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(160deg,'+f.c+','+f.dk+');color:white;font-family:Boogaloo,cursive;font-size:18px;box-shadow:0 4px 0 '+f.dk+'88;margin-top:14px">← Retour</button>';
+  }
   return '<div class="screen active" style="background:#F5F0E8"><div style="background:linear-gradient(160deg,'+f.dk+','+f.c+');padding:14px 16px;color:white"><div class="boog" style="font-size:18px">'+f.e+' '+cname+' — Résultat</div></div><div class="content" style="padding-bottom:20px"><div style="text-align:center;padding:20px 0 14px"><div style="font-size:52px">'+bigIcon+'</div><div class="boog" style="font-size:26px;color:'+bigColor+';margin-top:8px">'+bigMsg+'</div><div style="font-size:14px;color:#7A6F65;margin-top:4px">'+bigSub+'</div></div><div style="background:white;border-radius:14px;padding:12px 14px;border:2px solid #E5E0D8;box-shadow:0 3px 0 #D5D0C8"><div style="font-size:13px;font-weight:600;color:#9A8E85;margin-bottom:4px">Détail des réponses</div>'+resultLines+'</div>'+actionBtn+'</div></div>';
 }
 
