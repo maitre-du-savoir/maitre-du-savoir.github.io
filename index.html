@@ -1465,8 +1465,9 @@ function renderChallengeQuestion(f,cname){
   const dots=[...Array(total)].map((_,i)=>'<div style="flex:1;height:6px;border-radius:3px;background:'+(i<cstate.stepIdx?f.c:i===cstate.stepIdx?f.c+'88':'#E5E0D8')+';transition:background .3s"></div>').join('');
   let mediaHTML='';
   if(q.media){
-    if(q.media.type==='audio')mediaHTML='<div style="margin-bottom:12px;background:#F3F4F6;border-radius:10px;padding:12px;text-align:center"><audio controls style="width:100%;max-width:300px" src="assets/media/'+q.media.ref+'.mp3"></audio><div style="font-size:11px;color:#9A8E85;margin-top:4px">'+q.media.label+'</div></div>';
-    else if(q.media.type==='image')mediaHTML='<div style="margin-bottom:12px;text-align:center"><img src="assets/media/'+q.media.ref+'.jpg" style="max-width:100%;max-height:180px;border-radius:10px;border:1px solid #E5E0D8"><div style="font-size:11px;color:#9A8E85;margin-top:4px">'+q.media.label+'</div></div>';
+    const _mfb=q.media.description_fallback?'<div style="font-size:13px;color:#5A5054;font-style:italic;margin-top:6px;padding:8px 10px;background:#F9FAFB;border-radius:8px;border-left:3px solid #D1D5DB">'+q.media.description_fallback+'</div>':'';
+    if(q.media.type==='audio')mediaHTML='<div style="margin-bottom:12px;background:#F3F4F6;border-radius:10px;padding:12px;text-align:center"><audio controls style="width:100%;max-width:300px" src="assets/media/'+q.media.ref+'.mp3"></audio><div style="font-size:11px;color:#9A8E85;margin-top:4px">🎵 '+q.media.label+'</div>'+_mfb+'</div>';
+    else if(q.media.type==='image')mediaHTML='<div style="margin-bottom:12px;text-align:center"><img src="assets/media/'+q.media.ref+'.jpg" onerror="this.style.display=\'none\'" style="max-width:100%;max-height:180px;border-radius:10px;border:1px solid #E5E0D8"><div style="font-size:11px;color:#9A8E85;margin-top:4px">🖼️ '+q.media.label+'</div>'+_mfb+'</div>';
   }
   let optionsHTML='';
   if(q.type==='vrai_faux'){
@@ -1528,21 +1529,20 @@ function DQ(fi,mi){
   else if(unlock)showUnlock(unlock.fi,unlock.pi);else rnd();
 }
 function DBG_MAITRISE(fi){
+  // Déverrouille la famille (5 persos + couronne) SANS compléter les challenges → pour tester les challenges
   const f=FA[fi],fd=G.familles[f.id];
   fd.ma=true;
   for(let pi=0;pi<5;pi++){const uid=f.id+'_'+pi;if(!G.db.includes(uid))G.db.push(uid);}
   fd.nv=5;
-  // Simuler 4 challenges réussis sur chaque matière de la famille
   if(!G.boss)G.boss=makeBossDS();
   f.mat.forEach(m=>{
     if(!G.boss[m])G.boss[m]={debloque:false,challengesReussis:0,derniereActivite:null,derniereTentativeParChallenge:{'1':null,'2':null,'3':null,'4':null}};
-    G.boss[m].challengesReussis=4;G.boss[m].derniereActivite=todayStr();
-    G.boss[m].debloque=true;
+    // Reset challenges à 0 pour pouvoir les tester
+    G.boss[m].challengesReussis=0;G.boss[m].debloque=false;
+    G.boss[m].derniereActivite=null;G.boss[m].derniereTentativeParChallenge={'1':null,'2':null,'3':null,'4':null};
   });
   saveG();
-  const bossUnlocks=checkBossUnlock(fi);
-  if(bossUnlocks&&bossUnlocks.length){qstate.bossUnlocks=bossUnlocks;qstate.bossUnlockShown=false;showNextBossUnlock();}
-  else{nt('\u{1F451} Mode Maîtrise activé');rnd();}
+  nt('\u{1F451} Mode Maîtrise activé — challenges disponibles');rnd();
 }
 function ADDSTARS(){G.joueur.etoiles+=50;saveG();nt('\u2b50 +50 \u00e9toiles')}
 function BUY(fi,si,vi){
