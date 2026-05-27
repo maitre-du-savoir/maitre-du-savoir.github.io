@@ -6,9 +6,9 @@
         "q": "La phrase 'Les enfants jouent dans la cour.' est correcte. Quelle règle est appliquée sur le verbe ?",
         "opts": [
           "Accord du verbe avec son sujet au pluriel",
-          "Accord du verbe avec le complément d'objet",
-          "Accord du verbe avec l'attribut du sujet",
-          "Accord du verbe avec le complément circonstanciel"
+          "Accord du verbe avec le complément d'objet direct placé après le verbe",
+          "Accord du verbe avec l'attribut du sujet exprimé plus loin dans la phrase",
+          "Accord du verbe avec le complément circonstanciel de lieu 'dans la cour'"
         ],
         "ans": 0,
         "hint": "Le sujet 'les enfants' est au pluriel, donc le verbe s'accorde au pluriel."
@@ -18,9 +18,9 @@
         "q": "On lit : 'Elle est partie tôt ce matin.' Pourquoi l'auxiliaire est 'être' ?",
         "opts": [
           "Le verbe 'partir' se conjugue avec être car c'est un verbe de mouvement",
-          "Le verbe 'partir' est irrégulier",
-          "La phrase décrit une action future",
-          "Tous les verbes se conjuguent avec être"
+          "Le verbe 'partir' est irrégulier et prend automatiquement l'auxiliaire être pour tous ses temps composés",
+          "La phrase décrit une action future au moment du récit, ce qui impose l'auxiliaire être",
+          "Tous les verbes se conjuguent avec être lorsque le sujet est féminin"
         ],
         "ans": 0,
         "hint": "Les verbes de mouvement (partir, aller, venir, sortir…) se conjuguent avec être au passé composé."
@@ -30,9 +30,9 @@
         "q": "'Les belles fleurs rouges parfument le jardin.' — GN sujet au pluriel féminin. Quelle règle explique 'belles' ?",
         "opts": [
           "L'adjectif qualificatif s'accorde en genre et en nombre avec le nom qu'il qualifie",
-          "L'adjectif s'accorde avec le verbe",
-          "L'adjectif reste invariable avant le nom",
-          "L'adjectif s'accorde uniquement en nombre"
+          "L'adjectif s'accorde avec le verbe de la proposition principale qu'il contribue à décrire",
+          "L'adjectif reste invariable quand il est placé avant le nom auquel il se rapporte",
+          "L'adjectif s'accorde uniquement en nombre mais jamais en genre avec le nom"
         ],
         "ans": 0,
         "hint": "L'adjectif qualificatif suit toujours le genre et le nombre du nom auquel il se rapporte."
@@ -42,9 +42,9 @@
         "q": "'Mange tes légumes !' — Quelle règle explique l'absence de sujet ?",
         "opts": [
           "À l'impératif, le sujet est sous-entendu et ne s'écrit pas",
-          "Le sujet est supprimé pour alléger la phrase",
-          "La phrase négative supprime toujours le sujet",
-          "C'est une règle du discours indirect"
+          "Le sujet est supprimé pour alléger la phrase et la rendre plus dynamique à l'écrit",
+          "La phrase négative supprime toujours le sujet pour indiquer qu'il n'y a pas de responsable",
+          "C'est une règle du discours indirect qui efface le sujet lors du passage à l'oral"
         ],
         "ans": 0,
         "hint": "L'impératif est le seul mode où le sujet n'est jamais exprimé."
@@ -54,9 +54,9 @@
         "q": "'Le livre que tu lis est passionnant.' Quel est le rôle de 'que' ?",
         "opts": [
           "Pronom relatif COD introduisant une subordonnée relative",
-          "Conjonction de coordination",
-          "Pronom relatif sujet",
-          "Adverbe interrogatif"
+          "Conjonction de coordination reliant deux propositions de même niveau grammatical",
+          "Pronom relatif sujet remplaçant 'le livre' devant le verbe 'lis'",
+          "Adverbe interrogatif indiquant que la phrase cache une question implicite"
         ],
         "ans": 0,
         "hint": "'Que' remplace 'le livre' et est COD du verbe 'lis' dans la subordonnée."
@@ -66,9 +66,9 @@
         "q": "'Il dit qu'il viendra demain.' — Quelle transformation du discours direct est visible ?",
         "opts": [
           "Les deux points et guillemets sont remplacés par 'que'",
-          "Le verbe principal a changé de temps",
-          "Le pronom sujet a été supprimé",
-          "Le futur est devenu imparfait"
+          "Le verbe principal a changé de temps pour s'aligner sur le discours indirect",
+          "Le pronom sujet a été supprimé car il est devenu inutile dans la nouvelle structure",
+          "Le futur est devenu imparfait pour respecter la concordance des temps"
         ],
         "ans": 0,
         "hint": "Au discours indirect, les deux points et guillemets sont remplacés par 'que'."
@@ -78,9 +78,9 @@
         "q": "'Nous aurions gagné si nous avions travaillé.' Quelle règle explique 'aurions gagné' ?",
         "opts": [
           "Conditionnel passé exprimant un fait hypothétique non réalisé dans le passé",
-          "Futur antérieur",
-          "Passé composé",
-          "Imparfait d'habitude"
+          "Futur antérieur exprimant une action qui sera accomplie avant une autre dans le futur",
+          "Passé composé exprimant une action terminée et révolue dans un passé récent",
+          "Imparfait d'habitude exprimant une action qui se répétait régulièrement dans le passé"
         ],
         "ans": 0,
         "hint": "Structure : si + plus-que-parfait → conditionnel passé. Hypothèse irréelle dans le passé."
@@ -90,9 +90,9 @@
         "q": "'Les chats dorment.' devient 'Les chats ne dorment pas.' Quelle règle est appliquée ?",
         "opts": [
           "La négation encadre le verbe avec 'ne' avant et 'pas' après",
-          "La négation supprime le sujet",
-          "La négation déplace le verbe en fin de phrase",
-          "La négation fusionne avec l'auxiliaire"
+          "La négation supprime le sujet et le remplace par un pronom négatif spécial",
+          "La négation déplace le verbe en fin de phrase pour mettre l'accent sur l'action refusée",
+          "La négation fusionne avec l'auxiliaire pour former un seul mot négatif"
         ],
         "ans": 0,
         "hint": "Structure : sujet + ne + verbe + pas."
@@ -102,9 +102,9 @@
         "q": "'Rapide comme l'éclair.' — Quelle figure de style est utilisée ?",
         "opts": [
           "Une comparaison — elle utilise 'comme' pour rapprocher deux éléments",
-          "Une métaphore — identification sans outil",
-          "Une personnification",
-          "Une hyperbole"
+          "Une métaphore — elle identifie directement deux éléments sans outil de comparaison",
+          "Une personnification — elle attribue à un objet inanimé des qualités humaines",
+          "Une hyperbole — elle exagère volontairement la réalité pour frapper l'imagination"
         ],
         "ans": 0,
         "hint": "La comparaison utilise un outil (comme, tel…). La métaphore n'en a pas."
@@ -114,9 +114,9 @@
         "q": "'Finir' est un verbe du 2ème groupe. Quelle règle le confirme ?",
         "opts": [
           "Infinitif en -ir et il fait -issons à la 1ère personne du pluriel",
-          "Infinitif en -ir et il est irrégulier",
-          "Infinitif en -er",
-          "Il se conjugue avec être"
+          "Infinitif en -ir et il est irrégulier car sa conjugaison ne suit aucun modèle",
+          "Infinitif en -er avec une terminaison modifiée en -ir dans certains contextes",
+          "Il se conjugue avec être au passé composé, signe distinctif du 2ème groupe"
         ],
         "ans": 0,
         "hint": "2ème groupe : infinitif en -ir + présent en -issons. Exemple : nous finissons."
@@ -126,9 +126,9 @@
         "q": "Comment distinguer 'a' et 'à' ? La bonne règle est :",
         "opts": [
           "Si on peut remplacer par 'avait', c'est 'a' (verbe avoir), sinon 'à' (préposition)",
-          "Si on peut remplacer par 'est', c'est 'à'",
-          "'a' est toujours une préposition",
-          "Ils sont interchangeables"
+          "Si on peut remplacer par 'est', c'est 'à' car les deux sont des prépositions de même nature",
+          "'a' est toujours une préposition de lieu ou de temps, jamais un verbe",
+          "Ils sont interchangeables car la différence est purement orthographique et ne change pas le sens"
         ],
         "ans": 0,
         "hint": "Test : remplace par 'avait'. 'Il avait faim' → 'il a faim' ✓. 'Il allait avait Paris' ✗ → 'à'."
@@ -138,9 +138,9 @@
         "q": "'Les élèves ont rendu leurs copies.' — Le participe passé 'rendu' ne s'accorde pas. Pourquoi ?",
         "opts": [
           "Avec avoir, accord avec le COD seulement si placé AVANT le verbe — ici le COD est après",
-          "Avec avoir, le participe ne s'accorde jamais",
-          "Avec avoir, accord avec le sujet",
-          "Accord avec le COI"
+          "Avec avoir, le participe ne s'accorde jamais, quelle que soit la position du COD",
+          "Avec avoir, l'accord se fait avec le sujet, qui est masculin pluriel donc 'rendu' est correct",
+          "L'accord se fait avec le COI 'leurs' qui est au pluriel, mais ce cas ne déclenche pas d'accord"
         ],
         "ans": 0,
         "hint": "Le COD 'leurs copies' est après → pas d'accord. Si 'les copies qu'ils ont rendues' : COD avant → accord."
@@ -150,9 +150,9 @@
         "q": "'Le chien de mon voisin aboie.' — Quel est le sujet du verbe 'aboie' ?",
         "opts": [
           "'Le chien de mon voisin' — le groupe nominal entier",
-          "'Le chien' — uniquement le noyau",
-          "'Mon voisin' — plus proche du verbe",
-          "'De mon voisin' — complément du nom"
+          "'Le chien' — uniquement le noyau du GN, sans son complément du nom",
+          "'Mon voisin' — le nom le plus proche du verbe détermine l'accord",
+          "'De mon voisin' — le complément du nom fonctionne aussi comme sujet logique"
         ],
         "ans": 0,
         "hint": "Le sujet est le GN entier 'le chien de mon voisin'. 'De mon voisin' est complément du nom 'chien'."
@@ -162,9 +162,9 @@
         "q": "'Quelle belle journée !' — De quel type est cette phrase ?",
         "opts": [
           "Exclamative — elle exprime un sentiment fort",
-          "Interrogative — elle pose une question",
-          "Injonctive — elle donne un ordre",
-          "Déclarative — elle énonce un fait"
+          "Interrogative — elle pose une question sur la qualité de la journée",
+          "Injonctive — elle donne un ordre implicite d'apprécier la journée",
+          "Déclarative — elle énonce un fait en le présentant de manière enthousiaste"
         ],
         "ans": 0,
         "hint": "La phrase exclamative exprime admiration, surprise, joie et se termine par !"
@@ -174,9 +174,9 @@
         "q": "'Lentement, il ouvrit la porte.' — Quelle est la fonction de 'lentement' ?",
         "opts": [
           "Complément circonstanciel de manière — précise comment l'action est faite",
-          "COD du verbe",
-          "Attribut du sujet",
-          "Complément circonstanciel de temps"
+          "COD du verbe 'ouvrir' car il répond à la question 'il ouvrit quoi ?'",
+          "Attribut du sujet car il qualifie indirectement 'il' en décrivant sa façon d'être",
+          "Complément circonstanciel de temps car il précise à quel rythme l'action se déroule"
         ],
         "ans": 0,
         "hint": "Un adverbe de manière répond à 'comment ?'. Comment a-t-il ouvert ? Lentement."
@@ -188,9 +188,9 @@
         "q": "Trouve l'erreur : 'Le verbe s'accorde toujours avec le mot le plus proche dans la phrase.'",
         "opts": [
           "Faux — le verbe s'accorde avec son SUJET, pas avec le mot le plus proche",
-          "Faux — le verbe ne s'accorde jamais",
-          "Faux — le verbe s'accorde avec le COD",
-          "Il n'y a pas d'erreur"
+          "Faux — le verbe ne s'accorde jamais, il reste invariable quelle que soit la personne du sujet",
+          "Faux — le verbe s'accorde avec le COD qui est souvent le mot le plus proche du verbe",
+          "Il n'y a pas d'erreur, cette règle est correcte et s'applique à toutes les constructions"
         ],
         "ans": 0,
         "hint": "Exemple : 'Les fleurs de ce jardin sentent bon.' Sujet = 'les fleurs', pas 'jardin'."
@@ -200,9 +200,9 @@
         "q": "Trouve l'erreur : 'Au passé composé, tous les verbes se conjuguent avec avoir.'",
         "opts": [
           "Faux — les verbes de mouvement et pronominaux se conjuguent avec être",
-          "Faux — aucun verbe n'utilise avoir",
-          "Vrai — tous les verbes utilisent avoir",
-          "Faux — seuls les verbes du 1er groupe utilisent avoir"
+          "Faux — aucun verbe n'utilise avoir, tous se conjuguent avec être au passé composé",
+          "Vrai — tous les verbes utilisent avoir car c'est l'auxiliaire universel du passé composé",
+          "Faux — seuls les verbes du 1er groupe en -er utilisent avoir, les autres prennent être"
         ],
         "ans": 0,
         "hint": "Aller, venir, partir, sortir, naître, mourir… et tous les pronominaux utilisent être."
@@ -212,9 +212,9 @@
         "q": "Trouve l'erreur : 'Un adjectif placé avant le nom ne s'accorde pas.'",
         "opts": [
           "Faux — l'adjectif s'accorde toujours avec le nom, avant ou après",
-          "Vrai — l'adjectif antéposé est invariable",
-          "Vrai — seul l'adjectif attribut s'accorde",
-          "Faux — l'adjectif s'accorde uniquement en nombre"
+          "Vrai — l'adjectif antéposé est invariable car il est considéré comme un déterminant",
+          "Vrai — seul l'adjectif attribut du sujet, placé après le verbe, s'accorde vraiment",
+          "Faux — l'adjectif antéposé s'accorde uniquement en nombre mais jamais en genre"
         ],
         "ans": 0,
         "hint": "'Une belle maison' (féminin), 'de belles maisons' (pluriel féminin). L'accord s'applique dans tous les cas."
@@ -224,9 +224,9 @@
         "q": "Trouve l'erreur : 'La métaphore utilise un outil de comparaison comme 'comme' ou 'tel'.'",
         "opts": [
           "Faux — c'est la COMPARAISON qui utilise ces outils. La métaphore identifie sans outil",
-          "Vrai — métaphore et comparaison fonctionnent pareil",
-          "Faux — la métaphore n'existe pas en français",
-          "Vrai — 'comme' est obligatoire dans toute figure de style"
+          "Vrai — métaphore et comparaison fonctionnent exactement de la même façon dans les textes",
+          "Faux — la métaphore n'existe pas en français, c'est un terme uniquement utilisé en littérature anglaise",
+          "Vrai — 'comme' est obligatoire dans toute figure de style qui rapproche deux éléments"
         ],
         "ans": 0,
         "hint": "Comparaison : 'rapide comme l'éclair'. Métaphore : 'il est un éclair'. Pas d'outil de comparaison."
@@ -236,9 +236,9 @@
         "q": "Trouve l'erreur : 'Les verbes du 3ème groupe sont réguliers.'",
         "opts": [
           "Faux — les verbes du 3ème groupe sont irréguliers, sans modèle commun",
-          "Vrai — ils suivent le modèle de 'prendre'",
-          "Vrai — ils sont réguliers comme le 1er groupe",
-          "Faux — il n'existe pas de 3ème groupe"
+          "Vrai — ils suivent tous le modèle de 'prendre' avec des variations de radical prévisibles",
+          "Vrai — ils sont aussi réguliers que le 1er groupe, dont ils partagent les terminaisons",
+          "Faux — il n'existe pas de 3ème groupe en français, cette classification est dépassée"
         ],
         "ans": 0,
         "hint": "Le 3ème groupe : aller, faire, être, avoir, pouvoir, vouloir… Chacun a sa propre conjugaison."
@@ -248,9 +248,9 @@
         "q": "Trouve l'erreur : 'Dans une phrase négative, on place 'pas' avant le verbe et 'ne' après.'",
         "opts": [
           "Faux — c'est l'inverse : 'ne' AVANT et 'pas' APRÈS le verbe",
-          "Vrai — c'est la règle standard",
-          "Faux — 'ne' et 'pas' se placent tous les deux après",
-          "Vrai — sauf à l'impératif"
+          "Vrai — c'est la règle standard de la négation en français moderne et classique",
+          "Faux — 'ne' et 'pas' se placent tous les deux après le verbe à la forme négative",
+          "Vrai — sauf à l'impératif affirmatif où l'ordre change pour des raisons phonétiques"
         ],
         "ans": 0,
         "hint": "Structure correcte : sujet + ne + verbe + pas. Exemple : 'Il ne mange pas.'"
@@ -260,9 +260,9 @@
         "q": "Trouve l'erreur : 'Le COD répond à la question 'à qui ?' ou 'à quoi ?'.'",
         "opts": [
           "Faux — le COD répond à 'qui ?' ou 'quoi ?'. C'est le COI qui répond à 'à qui ?'",
-          "Vrai — COD et COI répondent aux mêmes questions",
-          "Faux — le COD ne se trouve jamais après le verbe",
-          "Vrai — 'à' est obligatoire pour le COD"
+          "Vrai — COD et COI répondent aux mêmes questions car ils ont la même fonction grammaticale",
+          "Faux — le COD ne se trouve jamais après le verbe, contrairement au COI qui peut le suivre",
+          "Vrai — 'à' est obligatoire pour introduire le COD dans toutes les constructions verbales"
         ],
         "ans": 0,
         "hint": "COD : je mange QUOI ? Une pomme. COI : je parle À QUI ? À mon ami."
@@ -272,9 +272,9 @@
         "q": "Trouve l'erreur : 'Le subjonctif exprime des faits certains et réels.'",
         "opts": [
           "Faux — le subjonctif exprime le doute, la volonté, la crainte",
-          "Vrai — le subjonctif décrit la réalité",
-          "Faux — le subjonctif n'existe pas en français moderne",
-          "Vrai — il est interchangeable avec l'indicatif"
+          "Vrai — le subjonctif décrit la réalité observable et les faits avérés dans le monde",
+          "Faux — le subjonctif n'existe pas en français moderne, il a été remplacé par le conditionnel",
+          "Vrai — il est interchangeable avec l'indicatif sans aucune différence de sens"
         ],
         "ans": 0,
         "hint": "On utilise le subjonctif après 'il faut que', 'je veux que', 'j'ai peur que'…"
@@ -284,9 +284,9 @@
         "q": "Trouve l'erreur : 'Un nom commun prend toujours une majuscule.'",
         "opts": [
           "Faux — seuls les noms propres prennent une majuscule",
-          "Vrai — tous les noms prennent une majuscule",
-          "Faux — aucun nom ne prend de majuscule",
-          "Vrai — sauf les noms d'animaux"
+          "Vrai — tous les noms, communs et propres, prennent obligatoirement une majuscule",
+          "Faux — aucun nom ne prend de majuscule, ni commun ni propre sauf en début de phrase",
+          "Vrai — sauf les noms d'animaux domestiques qui gardent la minuscule en toutes circonstances"
         ],
         "ans": 0,
         "hint": "Nom commun : chien, ville → minuscule. Nom propre : Rex, Paris → majuscule."
@@ -296,9 +296,9 @@
         "q": "Trouve l'erreur : 'La subordonnée relative est toujours introduite par 'que'.'",
         "opts": [
           "Faux — elle peut être introduite par qui, que, où, dont, lequel…",
-          "Vrai — 'que' est le seul pronom relatif",
-          "Faux — introduite par 'si'",
-          "Vrai — 'qui' et 'que' sont interchangeables"
+          "Vrai — 'que' est le seul pronom relatif utilisé en français contemporain",
+          "Faux — la subordonnée relative est toujours introduite par 'si' pour exprimer une condition",
+          "Vrai — 'qui' et 'que' sont parfaitement interchangeables sans aucune différence de sens"
         ],
         "ans": 0,
         "hint": "Exemples : le livre QUI est là, le livre QUE tu lis, la ville OÙ il habite, l'ami DONT je parle."
@@ -308,9 +308,9 @@
         "q": "Trouve l'erreur : 'Le futur simple de 'aller' est : je vais, tu vas, il va…'",
         "opts": [
           "Faux — 'je vais' est le PRÉSENT. Le futur est : j'irai, tu iras, il ira…",
-          "Vrai — c'est bien le futur simple",
-          "Faux — le futur de 'aller' est 'j'allerai'",
-          "Vrai — 'aller' est régulier au futur"
+          "Vrai — 'je vais' est bien le futur simple car 'aller' est le seul verbe à avoir un futur en -ais",
+          "Faux — le futur de 'aller' se forme régulièrement : j'allerai, tu ailleras, il aillera",
+          "Vrai — 'aller' est régulier au futur simple et prend les terminaisons standard des autres verbes"
         ],
         "ans": 0,
         "hint": "Le futur de 'aller' est irrégulier : j'irai, tu iras, il ira, nous irons, vous irez, ils iront."
@@ -320,9 +320,9 @@
         "q": "Trouve l'erreur : 'Dans 'Le soleil brille', 'brille' est le sujet.'",
         "opts": [
           "Faux — 'brille' est le VERBE. 'Le soleil' est le sujet",
-          "Vrai — le dernier mot est toujours le sujet",
-          "Faux — 'brille' est le COD",
-          "Vrai — le sujet peut être un verbe"
+          "Vrai — le dernier mot d'une phrase simple est toujours le sujet grammatical",
+          "Faux — 'brille' est le COD car il reçoit l'action de l'éclairage solaire",
+          "Vrai — le sujet peut être un verbe conjugué selon certaines règles de syntaxe avancée"
         ],
         "ans": 0,
         "hint": "Pour trouver le sujet : 'Qui est-ce qui brille ?' → Le soleil. 'Brille' est le verbe conjugué."
@@ -332,9 +332,9 @@
         "q": "Trouve l'erreur : 'L'imparfait s'utilise pour décrire des actions courtes et soudaines.'",
         "opts": [
           "Faux — l'imparfait décrit des actions longues, habituelles ou des états. Les actions soudaines utilisent le passé simple",
-          "Vrai — imparfait et passé simple sont synonymes",
-          "Faux — l'imparfait ne s'utilise pas dans les récits",
-          "Vrai — l'imparfait décrit des faits ponctuels"
+          "Vrai — imparfait et passé simple sont deux temps synonymes qu'on peut utiliser indifféremment",
+          "Faux — l'imparfait ne s'utilise jamais dans les récits, uniquement dans les descriptions",
+          "Vrai — l'imparfait décrit précisément les faits ponctuels et courts dans les textes littéraires"
         ],
         "ans": 0,
         "hint": "Imparfait : 'Chaque matin, il se levait tôt' (habitude). Passé simple : 'Soudain, il tomba' (action brève)."
@@ -344,9 +344,9 @@
         "q": "Trouve l'erreur : 'Un synonyme est un mot qui a le sens opposé.'",
         "opts": [
           "Faux — un synonyme a un sens PROCHE. C'est l'antonyme qui a le sens opposé",
-          "Vrai — synonyme et antonyme désignent la même chose",
-          "Faux — un synonyme est un mot de même famille",
-          "Vrai — les synonymes sont toujours interchangeables"
+          "Vrai — synonyme et antonyme désignent bien la même chose dans la grammaire française",
+          "Faux — un synonyme est un mot appartenant à la même famille morphologique",
+          "Vrai — les synonymes sont toujours totalement interchangeables sans aucune nuance de sens"
         ],
         "ans": 0,
         "hint": "Synonymes : content/heureux. Antonymes : content/triste."
@@ -356,9 +356,9 @@
         "q": "Trouve l'erreur : 'Dans 'Les filles que j'ai vues', l'accord de 'vues' est une erreur car avec avoir on n'accorde pas.'",
         "opts": [
           "Faux — l'accord est correct car le COD 'que' (= les filles, féminin pluriel) est placé AVANT le verbe",
-          "Vrai — avec avoir, jamais d'accord",
-          "Faux — l'accord devrait être 'vus'",
-          "Vrai — 'vues' est incorrect, il faut 'vu'"
+          "Vrai — avec avoir, on n'accorde jamais le participe passé, quelle que soit la position du COD",
+          "Faux — l'accord devrait être 'vus' car le masculin l'emporte toujours sur le féminin",
+          "Vrai — 'vues' est incorrect, il faut 'vu' car 'que' ne détermine pas l'accord du participe"
         ],
         "ans": 0,
         "hint": "Règle : avec avoir, accord avec le COD si celui-ci est AVANT. 'Que' = 'les filles' (fém. pl.) → 'vues'."
@@ -375,9 +375,9 @@
             "q": "Étape 1 — Quel est le verbe conjugué ?",
             "opts": [
               "mange",
-              "fille",
-              "pomme",
-              "rouge"
+              "fille — c'est le nom qui porte l'action principale de la phrase",
+              "pomme — c'est le mot autour duquel s'organise la phrase",
+              "rouge — c'est le mot qui exprime l'état de l'action"
             ],
             "ans": 0,
             "hint": "Le verbe conjugué peut changer de temps et de personne."
@@ -386,9 +386,9 @@
             "q": "Étape 2 — Quel est le sujet du verbe 'mange' ?",
             "opts": [
               "La petite fille",
-              "une pomme rouge",
-              "La petite",
-              "fille"
+              "une pomme rouge — c'est ce qui est mangé, donc ce qui déclenche l'action",
+              "La petite — c'est le déterminant et l'adjectif qui précèdent le nom principal",
+              "fille — c'est le nom noyau du groupe, le reste est un complément accessoire"
             ],
             "ans": 0,
             "hint": "'Qui est-ce qui mange ?' → La petite fille."
@@ -397,9 +397,9 @@
             "q": "Étape 3 — Quel est le COD du verbe 'mange' ?",
             "opts": [
               "une pomme rouge",
-              "La petite fille",
-              "rouge",
-              "petite"
+              "La petite fille — c'est l'élément principal qui réalise l'action de manger",
+              "rouge — c'est l'adjectif qui complète directement le sens du verbe",
+              "petite — c'est l'adjectif le plus proche du verbe dans la construction"
             ],
             "ans": 0,
             "hint": "'La petite fille mange QUOI ?' → une pomme rouge."
@@ -408,9 +408,9 @@
             "q": "Étape 4 — Quelle est la nature du mot 'rouge' ?",
             "opts": [
               "Adjectif qualificatif épithète",
-              "Nom commun",
-              "Verbe",
-              "Adverbe"
+              "Nom commun désignant une couleur utilisée comme objet du verbe",
+              "Verbe à l'infinitif décrivant l'action de rougir liée à la pomme",
+              "Adverbe de manière qui précise comment se fait l'action de manger"
             ],
             "ans": 0,
             "hint": "'Rouge' qualifie le nom 'pomme'. Adjectif qualificatif placé après le nom = épithète."
@@ -419,9 +419,9 @@
             "q": "Étape 5 — De quel type est cette phrase ?",
             "opts": [
               "Déclarative affirmative",
-              "Interrogative",
-              "Exclamative",
-              "Injonctive"
+              "Interrogative car elle porte implicitement une question sur qui mange quoi",
+              "Exclamative car elle exprime l'admiration devant l'action décrite",
+              "Injonctive car elle donne une instruction sur ce qu'il faut faire"
             ],
             "ans": 0,
             "hint": "Elle énonce un fait simple, se termine par un point. → Déclarative affirmative."
@@ -438,9 +438,9 @@
             "q": "Étape 1 — 'Finir' appartient à quel groupe ?",
             "opts": [
               "2ème groupe",
-              "1er groupe",
-              "3ème groupe",
-              "Groupe irrégulier"
+              "1er groupe car son radical 'fin-' se termine par une consonne comme les verbes en -er",
+              "3ème groupe car il est irrégulier et ne suit aucun modèle prévisible",
+              "Groupe irrégulier car son participe passé 'fini' n'a pas de terminaison standard"
             ],
             "ans": 0,
             "hint": "2ème groupe : infinitif en -ir + participe présent en -issant (finissant)."
@@ -449,9 +449,9 @@
             "q": "Étape 2 — Comment dit-on 'nous' au présent ?",
             "opts": [
               "Nous finissons",
-              "Nous finons",
-              "Nous finissez",
-              "Nous finissions"
+              "Nous finons — en supprimant simplement -ir et en ajoutant -ons",
+              "Nous finissez — la terminaison -ez s'utilise aussi pour la 1ère personne du pluriel",
+              "Nous finissions — cette forme est la plus complète et la plus correcte"
             ],
             "ans": 0,
             "hint": "2ème groupe au présent : radical + -issons pour 'nous'."
@@ -460,9 +460,9 @@
             "q": "Étape 3 — Quel auxiliaire utilise 'finir' au passé composé ?",
             "opts": [
               "Avoir",
-              "Être",
-              "Les deux",
-              "Aucun"
+              "Être car 'finir' exprime la fin d'un mouvement ou d'un déplacement",
+              "Les deux auxiliaires selon le contexte et le sens de la phrase",
+              "Aucun auxiliaire car le passé composé de 'finir' se forme directement"
             ],
             "ans": 0,
             "hint": "'Finir' n'est ni un verbe de mouvement ni pronominal → avoir."
@@ -471,9 +471,9 @@
             "q": "Étape 4 — Quel est le participe passé de 'finir' ?",
             "opts": [
               "fini",
-              "finit",
-              "finissant",
-              "finis"
+              "finit — avec un t final car le verbe est du 2ème groupe et se termine en -it",
+              "finissant — c'est la forme la plus courante du participe pour ce groupe",
+              "finis — avec un s final car le participe pluriel sert aussi de forme singulière"
             ],
             "ans": 0,
             "hint": "Participe passé du 2ème groupe : -i → fini, choisi, réussi…"
@@ -482,9 +482,9 @@
             "q": "Étape 5 — Dans 'Les devoirs que j'ai finis', pourquoi -s à 'finis' ?",
             "opts": [
               "Le COD 'que' (= les devoirs, masc. pluriel) est avant le verbe → accord",
-              "Le sujet 'je' est pluriel",
-              "Avec avoir, accord toujours au masc. pluriel",
-              "Le 2ème groupe prend toujours -s"
+              "Le sujet 'je' est sous-entendu au pluriel dans ce contexte familier",
+              "Avec avoir, on accorde toujours au masculin pluriel quand le COD est un objet",
+              "Le 2ème groupe prend toujours -s au participe passé pour marquer le pluriel"
             ],
             "ans": 0,
             "hint": "'Que' = 'les devoirs' (masc. pl.) placé avant le verbe → accord du participe."
@@ -501,9 +501,9 @@
             "q": "Étape 1 — Qui sont les deux personnages ?",
             "opts": [
               "Un loup et un agneau",
-              "Un loup et un berger",
-              "Un agneau et un chasseur",
-              "Un loup et un renard"
+              "Un loup et un berger qui surveille ses bêtes près de la rivière",
+              "Un agneau et un chasseur qui attend sa proie au bord de l'eau",
+              "Un loup et un renard qui chassent ensemble près de la rivière"
             ],
             "ans": 0,
             "hint": "Deux animaux sont mentionnés dans le texte."
@@ -512,9 +512,9 @@
             "q": "Étape 2 — Quels adjectifs décrivent le loup ?",
             "opts": [
               "'Vieux' et 'affamé' — il est âgé et n'a pas mangé depuis trois jours",
-              "'Lent' — il se déplace doucement",
-              "'Vieux' uniquement",
-              "'Affamé' uniquement"
+              "'Lent' — il se déplace doucement, ce qui le rend dangereux car discret",
+              "'Vieux' uniquement — l'adjectif 'affamé' décrit son état et non sa nature",
+              "'Affamé' uniquement — 'vieux' est un déterminant et non un adjectif qualificatif"
             ],
             "ans": 0,
             "hint": "Deux adjectifs qualifient le loup : 'vieux' et 'affamé'."
@@ -523,9 +523,9 @@
             "q": "Étape 3 — Pourquoi le loup s'approche-t-il lentement ?",
             "opts": [
               "Pour ne pas effrayer l'agneau",
-              "Parce qu'il est trop vieux",
-              "Parce qu'il hésite",
-              "Parce que la rivière est dangereuse"
+              "Parce qu'il est trop vieux et ses pattes le font souffrir",
+              "Parce qu'il hésite entre chasser et repartir sans manger",
+              "Parce que la rivière est dangereuse et le courant pourrait l'emporter"
             ],
             "ans": 0,
             "hint": "La réponse est dans le texte : 'pour ne pas l'effrayer'."
@@ -534,9 +534,9 @@
             "q": "Étape 4 — Ce texte ressemble à quel genre littéraire ?",
             "opts": [
               "Une fable — récit court avec des animaux illustrant une morale",
-              "Un poème — texte avec rimes",
-              "Un conte — récit merveilleux",
-              "Un roman — récit long"
+              "Un poème — texte court avec des rimes et un rythme régulier",
+              "Un conte — récit merveilleux avec des éléments fantastiques et magiques",
+              "Un roman — récit long avec des personnages qui évoluent sur de nombreuses pages"
             ],
             "ans": 0,
             "hint": "Animaux, récit court, leçon implicite = structure d'une fable (comme La Fontaine)."
@@ -545,9 +545,9 @@
             "q": "Étape 5 — Quel temps est principalement utilisé et pourquoi ?",
             "opts": [
               "Le passé simple — pour raconter des actions ponctuelles dans un récit",
-              "L'imparfait — pour des habitudes",
-              "Le futur simple",
-              "Le présent"
+              "L'imparfait — pour décrire des habitudes régulières du loup et de l'agneau",
+              "Le futur simple — pour anticiper ce qui va se passer entre les deux personnages",
+              "Le présent — pour rendre la scène vivante et donner l'impression d'y être"
             ],
             "ans": 0,
             "hint": "'Aperçut', 's'approcha' = passés simples. Ce temps raconte des actions brèves dans un récit au passé."
@@ -564,9 +564,9 @@
             "q": "Étape 1 — Comment distinguer 'ou' et 'où' ?",
             "opts": [
               "'Ou' peut être remplacé par 'ou bien' (conjonction). 'Où' est un adverbe de lieu",
-              "'Ou' s'utilise avec un verbe. 'Où' avec un nom",
-              "Ils sont interchangeables",
-              "'Où' s'utilise uniquement dans les questions"
+              "'Ou' s'utilise avec un verbe conjugué et 'où' uniquement avec un nom commun",
+              "Ils sont interchangeables, le contexte permet toujours de comprendre le sens",
+              "'Où' s'utilise uniquement dans les questions directes comme 'où es-tu ?'"
             ],
             "ans": 0,
             "hint": "Test : remplace par 'ou bien'. 'Tu viens ou bien tu restes' ✓ → 'ou'. 'La ville ou bien il habite' ✗ → 'où'."
@@ -575,9 +575,9 @@
             "q": "Étape 2 — Complète : 'Il ___ faim.' (a / à)",
             "opts": [
               "a",
-              "à",
-              "as",
-              "â"
+              "à — car 'faim' est un état et l'état se marque toujours avec la préposition à",
+              "as — car 'il' est la 3ème personne qui prend toujours le verbe avec un s final",
+              "â — car le verbe avoir prend un accent circonflexe à la 3ème personne du singulier"
             ],
             "ans": 0,
             "hint": "Remplace par 'avait' : 'Il avait faim' ✓ → verbe avoir → 'a'."
@@ -586,9 +586,9 @@
             "q": "Étape 3 — Complète : 'Elle va ___ l'école.' (a / à)",
             "opts": [
               "à",
-              "a",
-              "as",
-              "â"
+              "a — car 'aller' est suivi du verbe avoir qui indique la destination de l'action",
+              "as — car 'elle' dans certains contextes prend la terminaison -as pour marquer le lieu",
+              "â — car la préposition de lieu prend un accent circonflexe devant un nom de lieu"
             ],
             "ans": 0,
             "hint": "Remplace par 'avait' : 'Elle va avait l'école' ✗ → préposition → 'à'."
@@ -597,9 +597,9 @@
             "q": "Étape 4 — Complète : 'Les chiens ___ dans le jardin.' (sont / son)",
             "opts": [
               "sont",
-              "son",
-              "sons",
-              "sond"
+              "son — car l'adjectif possessif 'son' s'accorde avec le sujet pluriel 'les chiens'",
+              "sons — car le verbe être prend un s final quand le sujet est un animal",
+              "sond — car devant 'dans', le verbe être prend une terminaison spéciale -ond"
             ],
             "ans": 0,
             "hint": "Remplace par 'étaient' : 'Les chiens étaient dans le jardin' ✓ → verbe être → 'sont'."
@@ -608,9 +608,9 @@
             "q": "Étape 5 — Complète : '___ chien est adorable.' (sont / son)",
             "opts": [
               "son",
-              "sont",
-              "sons",
-              "sond"
+              "sont — car le sujet 'chien' peut être pluriel dans ce contexte d'admiration",
+              "sons — car l'adjectif possessif prend un s final devant un nom de compagnie",
+              "sond — car l'adjectif possessif devant 'ch-' prend une terminaison phonétique spéciale"
             ],
             "ans": 0,
             "hint": "Remplace par 'étaient' : 'étaient chien est adorable' ✗ → adjectif possessif → 'son'."
@@ -627,9 +627,9 @@
             "q": "Étape 1 — Quel indice montre que c'est du discours direct ?",
             "opts": [
               "Les guillemets et les deux points",
-              "Le verbe 'dire'",
-              "Le mot 'demain'",
-              "Le pronom 'je'"
+              "Le verbe 'dire' qui indique toujours que la phrase est au discours direct",
+              "Le mot 'demain' qui est un marqueur temporel propre au discours direct",
+              "Le pronom 'je' qui ne peut s'utiliser qu'en discours direct pour désigner le locuteur"
             ],
             "ans": 0,
             "hint": "Le discours direct se reconnaît aux guillemets, aux deux points, parfois aux tirets."
@@ -638,9 +638,9 @@
             "q": "Étape 2 — Que devient 'je' au discours indirect ?",
             "opts": [
               "il",
-              "nous",
-              "tu",
-              "on"
+              "nous — car le discours indirect regroupe tous les participants dans un seul pronom",
+              "tu — car la personne qui parle devient la personne à qui l'on parle",
+              "on — car le discours indirect neutralise toujours l'identité du locuteur original"
             ],
             "ans": 0,
             "hint": "Au discours indirect, le pronom s'adapte : 'Il dit que JE…' → 'il dit qu'IL…'"
@@ -649,9 +649,9 @@
             "q": "Étape 3 — Que devient 'viendrai' (futur) au discours indirect ?",
             "opts": [
               "viendrait (conditionnel)",
-              "vient (présent)",
-              "venait (imparfait)",
-              "est venu (passé composé)"
+              "vient (présent) car le discours indirect rapproche toujours l'action du moment présent",
+              "venait (imparfait) car le futur dans un récit au passé devient toujours imparfait",
+              "est venu (passé composé) car l'action rapportée est considérée comme accomplie"
             ],
             "ans": 0,
             "hint": "Concordance des temps : futur simple → conditionnel présent au discours indirect."
@@ -660,9 +660,9 @@
             "q": "Étape 4 — Quelle est la version correcte au discours indirect ?",
             "opts": [
               "Il dit qu'il viendrait le lendemain.",
-              "Il dit qu'il viendra demain.",
-              "Il dit : il viendrait demain.",
-              "Il dit que je viendrai demain."
+              "Il dit qu'il viendra demain — le futur et le marqueur 'demain' restent inchangés",
+              "Il dit : il viendrait demain — les deux points suffisent pour le discours indirect",
+              "Il dit que je viendrai demain — le pronom 'je' et le futur restent tels quels"
             ],
             "ans": 0,
             "hint": "'Demain' → 'le lendemain'. 'Je' → 'il'. 'Viendrai' → 'viendrait'. Les deux points → 'que'."
@@ -671,9 +671,9 @@
             "q": "Étape 5 — Quel connecteur relie les deux propositions au discours indirect ?",
             "opts": [
               "que",
-              "si",
-              "car",
-              "donc"
+              "si — car 'si' introduit toujours le discours indirect dans les phrases affirmatives",
+              "car — car ce connecteur relie une cause à une conséquence dans les paroles rapportées",
+              "donc — car il exprime le résultat logique de ce qui a été dit par le locuteur"
             ],
             "ans": 0,
             "hint": "Au discours indirect, les deux points et guillemets sont remplacés par la conjonction 'que'."
@@ -689,9 +689,9 @@
         "q": "Le résultat est 48 et c'est un multiple de 6. Quelle opération a produit ce résultat ?",
         "opts": [
           "6 × 8",
-          "6 + 8",
-          "48 - 6",
-          "48 ÷ 8"
+          "6 + 8 — car additionner deux facteurs d'un multiple donne toujours ce multiple",
+          "48 - 6 — car soustraire le plus petit facteur retrouve l'autre facteur du multiple",
+          "48 ÷ 8 — car diviser un multiple par l'un de ses facteurs redonne le multiple d'origine"
         ],
         "ans": 0,
         "hint": "48 = 6 × 8. Vérifie : 6+8=14, 48-6=42, 48÷8=6 (≠48)."
@@ -701,9 +701,9 @@
         "q": "L'aire d'un rectangle est 24 cm². Un côté mesure 4 cm. Comment retrouver l'autre côté ?",
         "opts": [
           "Longueur = Aire ÷ largeur = 24 ÷ 4 = 6 cm",
-          "Longueur = Aire × largeur = 96 cm",
-          "Longueur = Aire + largeur = 28 cm",
-          "Longueur = Aire - largeur = 20 cm"
+          "Longueur = Aire × largeur = 24 × 4 = 96 cm car on inverse la formule du périmètre",
+          "Longueur = Aire + largeur = 24 + 4 = 28 cm car on complète avec le côté manquant",
+          "Longueur = Aire - largeur = 24 - 4 = 20 cm car on retire le côté connu de la surface"
         ],
         "ans": 0,
         "hint": "Aire = L × l → L = Aire ÷ l."
@@ -713,9 +713,9 @@
         "q": "La moyenne de 4 notes est 12. Quelle est la somme des 4 notes ?",
         "opts": [
           "48",
-          "3",
-          "16",
-          "8"
+          "3 — car la somme est la moyenne divisée par le nombre de notes",
+          "16 — car la somme est la moyenne augmentée du nombre de notes",
+          "8 — car la somme est la moyenne diminuée de la moitié du nombre de notes"
         ],
         "ans": 0,
         "hint": "Moyenne = somme ÷ nombre → somme = moyenne × nombre = 12 × 4 = 48."
@@ -725,9 +725,9 @@
         "q": "Un nombre divisé par 7 donne 9. Quel est ce nombre ?",
         "opts": [
           "63",
-          "2",
-          "16",
-          "7"
+          "2 — car on soustrait le diviseur du quotient pour retrouver le dividende",
+          "16 — car on additionne le diviseur et le quotient pour retrouver le nombre de départ",
+          "7 — car le nombre de départ est toujours égal au diviseur dans une division exacte"
         ],
         "ans": 0,
         "hint": "Si nombre ÷ 7 = 9, alors nombre = 9 × 7 = 63."
@@ -737,9 +737,9 @@
         "q": "Le périmètre d'un carré est 28 cm. Quelle est la longueur d'un côté ?",
         "opts": [
           "7 cm",
-          "4 cm",
-          "14 cm",
-          "56 cm"
+          "4 cm — car on divise par le nombre de côtés d'un carré diminué d'un pour le centre",
+          "14 cm — car le côté est la moitié du périmètre d'un carré",
+          "56 cm — car on multiplie le périmètre par le nombre de côtés du carré"
         ],
         "ans": 0,
         "hint": "Périmètre = 4 × côté → côté = 28 ÷ 4 = 7 cm."
@@ -749,9 +749,9 @@
         "q": "Une fraction simplifiée donne 3/4. Laquelle de ces fractions peut l'avoir produit ?",
         "opts": [
           "9/12",
-          "3/8",
-          "6/10",
-          "4/3"
+          "3/8 — car cette fraction possède 3 au numérateur comme la fraction simplifiée",
+          "6/10 — car les deux termes sont divisibles par 2 et donnent 3/5 qui approche 3/4",
+          "4/3 — car c'est la fraction inverse de 3/4, obtenue en simplifiant par échange"
         ],
         "ans": 0,
         "hint": "9/12 ÷ 3 = 3/4 ✓. Les autres ne simplifient pas en 3/4."
@@ -761,9 +761,9 @@
         "q": "Volume d'un pavé = 60 cm³. Longueur = 5 cm, largeur = 4 cm. Quelle est la hauteur ?",
         "opts": [
           "3 cm",
-          "12 cm",
-          "51 cm",
-          "20 cm"
+          "12 cm — car on divise le volume par la plus petite des deux dimensions connues",
+          "51 cm — car on soustrait les deux dimensions connues du volume total",
+          "20 cm — car on divise le volume par la somme des deux dimensions connues"
         ],
         "ans": 0,
         "hint": "Volume = L × l × h → h = 60 ÷ (5×4) = 60 ÷ 20 = 3 cm."
@@ -773,9 +773,9 @@
         "q": "Un nombre augmenté de 15 donne 42. Quel est ce nombre ?",
         "opts": [
           "27",
-          "57",
-          "630",
-          "3"
+          "57 — car augmenter un nombre de 15 signifie le multiplier par 15 puis ajouter 42",
+          "630 — car on multiplie les deux données pour retrouver le nombre de départ",
+          "3 — car on divise le résultat 42 par la valeur ajoutée 15 pour retrouver le nombre"
         ],
         "ans": 0,
         "hint": "nombre + 15 = 42 → nombre = 42 - 15 = 27."
@@ -785,9 +785,9 @@
         "q": "Le diamètre d'un cercle est 10 cm. Quelle est son aire ? (π ≈ 3,14)",
         "opts": [
           "78,5 cm²",
-          "31,4 cm²",
-          "314 cm²",
-          "50 cm²"
+          "31,4 cm² — car l'aire d'un cercle est égale à π multiplié par le diamètre",
+          "314 cm² — car l'aire est égale à π multiplié par le diamètre au carré",
+          "50 cm² — car l'aire est la moitié du diamètre multiplié par π arrondi"
         ],
         "ans": 0,
         "hint": "Rayon = 10÷2 = 5 cm. Aire = π × r² = 3,14 × 25 = 78,5 cm²."
@@ -797,9 +797,9 @@
         "q": "Un élève a eu 3/5 de bonnes réponses sur 20 questions. Combien en a-t-il eu ?",
         "opts": [
           "12",
-          "15",
-          "8",
-          "6"
+          "15 — car les 3/5 correspondent aux trois premières parties sur cinq de l'épreuve",
+          "8 — car on soustrait le numérateur et le dénominateur de la fraction au total",
+          "6 — car on divise le nombre total de questions par le dénominateur de la fraction"
         ],
         "ans": 0,
         "hint": "3/5 de 20 = (3×20)÷5 = 60÷5 = 12."
@@ -809,9 +809,9 @@
         "q": "Deux angles d'un triangle mesurent 40° et 75°. Quel est le troisième ?",
         "opts": [
           "65°",
-          "115°",
-          "55°",
-          "45°"
+          "115° — car la somme des trois angles d'un triangle est de 360° comme pour un carré",
+          "55° — car on additionne les deux angles connus et on retranche la moitié à 180°",
+          "45° — car le troisième angle d'un triangle est toujours un diviseur de 180°"
         ],
         "ans": 0,
         "hint": "Somme des angles d'un triangle = 180°. 180 - 40 - 75 = 65°."
@@ -821,9 +821,9 @@
         "q": "Un robinet remplit 2/3 d'un réservoir en 4 heures. En combien de temps remplit-il tout ?",
         "opts": [
           "6 heures",
-          "3 heures",
-          "8 heures",
-          "2 heures"
+          "3 heures — car le tiers restant se remplit deux fois plus vite que les deux tiers",
+          "8 heures — car on multiplie le temps par le dénominateur de la fraction remplie",
+          "2 heures — car la vitesse de remplissage augmente quand le réservoir se remplit"
         ],
         "ans": 0,
         "hint": "2/3 → 4h. 1/3 → 2h. 3/3 → 6h."
@@ -833,9 +833,9 @@
         "q": "3 + 4 × 2 = 11, pas 14. Quelle règle explique ce résultat ?",
         "opts": [
           "La multiplication est prioritaire sur l'addition",
-          "On calcule de gauche à droite",
-          "L'addition est prioritaire",
-          "On fait d'abord les additions"
+          "On calcule de gauche à droite sans exception quelle que soit l'opération",
+          "L'addition est prioritaire car elle vient en premier dans l'expression",
+          "On fait d'abord les additions pour simplifier avant d'effectuer les multiplications"
         ],
         "ans": 0,
         "hint": "Règle des priorités : × et ÷ avant + et −. Donc 4×2=8, puis 3+8=11."
@@ -845,9 +845,9 @@
         "q": "Partie entière 7, 3 dixièmes et 5 centièmes. Quel est ce nombre décimal ?",
         "opts": [
           "7,35",
-          "7,53",
-          "73,5",
-          "0,735"
+          "7,53 — car les centièmes se placent avant les dixièmes dans l'écriture décimale",
+          "73,5 — car les dixièmes s'écrivent comme une dizaine entière avant la virgule",
+          "0,735 — car la partie entière 7 correspond à sept dixièmes en écriture décimale"
         ],
         "ans": 0,
         "hint": "7 + 0,3 + 0,05 = 7,35."
@@ -857,9 +857,9 @@
         "q": "Un axe de symétrie divise une figure. Que peut-on dire des deux parties ?",
         "opts": [
           "Elles sont superposables par pliage le long de l'axe",
-          "Même aire mais pas même forme",
-          "Toujours des rectangles",
-          "Égales uniquement si carré"
+          "Elles ont la même aire mais pas nécessairement la même forme géométrique",
+          "Elles forment toujours deux rectangles identiques quelle que soit la figure",
+          "Elles sont égales uniquement si la figure est un carré ou un cercle parfait"
         ],
         "ans": 0,
         "hint": "La symétrie axiale produit deux moitiés parfaitement superposables par pliage."
@@ -871,9 +871,9 @@
         "q": "Trouve l'erreur : 'La somme des angles d'un triangle est 360°.'",
         "opts": [
           "Faux — la somme est 180°. C'est le quadrilatère qui vaut 360°",
-          "Vrai — tout triangle vaut 360°",
-          "Faux — ça dépend du type de triangle",
-          "Vrai — sauf le triangle rectangle"
+          "Vrai — tout triangle a une somme d'angles de 360° comme n'importe quelle figure fermée",
+          "Faux — la somme des angles dépend du type de triangle, elle n'est pas fixe",
+          "Vrai — sauf pour le triangle rectangle dont la somme est 270° car il a un angle droit"
         ],
         "ans": 0,
         "hint": "Triangle = 180°. Quadrilatère = 360°. Règle fondamentale."
@@ -883,9 +883,9 @@
         "q": "Trouve l'erreur dans ce calcul : '3 + 4 × 2 = 14'",
         "opts": [
           "Erreur — il faut faire 4×2=8 d'abord, puis 3+8=11",
-          "Correct — on calcule de gauche à droite",
-          "Erreur — le résultat devrait être 10",
-          "Correct — multiplication et addition ont la même priorité"
+          "Correct — on calcule toujours de gauche à droite donc 3+4=7 puis 7×2=14",
+          "Erreur — le résultat devrait être 10 car la multiplication double uniquement le 4",
+          "Correct — multiplication et addition ont exactement la même priorité de calcul"
         ],
         "ans": 0,
         "hint": "Priorité des opérations : × avant +."
@@ -895,9 +895,9 @@
         "q": "Trouve l'erreur : 'Le périmètre d'un rectangle = longueur × largeur.'",
         "opts": [
           "Faux — P = 2×(L+l). L×l c'est l'AIRE",
-          "Vrai — c'est la bonne formule",
-          "Faux — P = L + l (sans multiplier par 2)",
-          "Vrai — sauf si c'est un carré"
+          "Vrai — c'est la formule correcte du périmètre, identique à celle de l'aire",
+          "Faux — P = L + l en additionnant les deux dimensions sans multiplier par 2",
+          "Vrai — sauf si c'est un carré, dont le périmètre se calcule différemment"
         ],
         "ans": 0,
         "hint": "Périmètre = tour complet = 2×(L+l). Aire = L×l. Deux formules différentes."
@@ -907,9 +907,9 @@
         "q": "Trouve l'erreur : '1/2 + 1/3 = 2/5'",
         "opts": [
           "Faux — on ne peut pas additionner directement. Il faut un dénominateur commun : 3/6 + 2/6 = 5/6",
-          "Vrai — on additionne numérateurs et dénominateurs",
-          "Faux — le résultat est 2/6",
-          "Vrai — c'est la règle"
+          "Vrai — on additionne les numérateurs entre eux et les dénominateurs entre eux",
+          "Faux — le résultat correct est 2/6 car on additionne les numérateurs et on garde le plus grand dénominateur",
+          "Vrai — c'est la règle standard d'addition des fractions en cours de 6ème"
         ],
         "ans": 0,
         "hint": "1/2 = 3/6 et 1/3 = 2/6 → 3/6 + 2/6 = 5/6."
@@ -919,9 +919,9 @@
         "q": "Trouve l'erreur : 'Un nombre est divisible par 3 si son dernier chiffre est divisible par 3.'",
         "opts": [
           "Faux — divisible par 3 si la SOMME DES CHIFFRES est divisible par 3",
-          "Vrai — c'est le critère de divisibilité par 3",
-          "Faux — divisible par 3 s'il est pair",
-          "Vrai — comme pour la divisibilité par 2"
+          "Vrai — c'est le critère de divisibilité par 3, identique à celui de la divisibilité par 2",
+          "Faux — un nombre est divisible par 3 s'il est pair et son chiffre des dizaines est pair",
+          "Vrai — comme pour la divisibilité par 2, seul le dernier chiffre compte"
         ],
         "ans": 0,
         "hint": "123 : somme = 1+2+3 = 6, divisible par 3 ✓. Le dernier chiffre seul ne suffit pas."
@@ -931,9 +931,9 @@
         "q": "Trouve l'erreur : 'Un triangle rectangle a deux angles droits.'",
         "opts": [
           "Faux — UN SEUL angle droit. Deux angles droits = 180°, il ne resterait rien pour le 3ème",
-          "Vrai — rectangle signifie deux angles droits",
-          "Faux — aucun angle droit",
-          "Vrai — les deux angles droits sont opposés à l'hypoténuse"
+          "Vrai — rectangle signifie deux angles droits situés de part et d'autre de l'hypoténuse",
+          "Faux — un triangle rectangle n'a aucun angle droit, seulement deux angles aigus",
+          "Vrai — les deux angles droits sont situés aux extrémités opposées à l'hypoténuse"
         ],
         "ans": 0,
         "hint": "90+90=180° → le 3ème angle serait 0°, impossible. Un seul angle droit dans un triangle rectangle."
@@ -943,9 +943,9 @@
         "q": "Trouve l'erreur : 'Le rayon d'un cercle est égal à son diamètre.'",
         "opts": [
           "Faux — le rayon est la MOITIÉ du diamètre. Diamètre = 2 × rayon",
-          "Vrai — rayon et diamètre mesurent la même chose",
-          "Faux — le rayon est deux fois le diamètre",
-          "Vrai — sauf pour les grands cercles"
+          "Vrai — rayon et diamètre mesurent la même chose car ils traversent tous les deux le cercle",
+          "Faux — le rayon est deux fois plus grand que le diamètre car il part du bord vers le centre",
+          "Vrai — sauf pour les très grands cercles où le rayon dépasse légèrement le diamètre"
         ],
         "ans": 0,
         "hint": "Rayon = centre au bord. Diamètre = traverse tout le cercle. D = 2×r."
@@ -955,9 +955,9 @@
         "q": "Trouve l'erreur : 'Moyenne de 10, 12, 14 : (10+12+14) ÷ 2 = 18'",
         "opts": [
           "Erreur — diviser par le NOMBRE de valeurs (3), pas par 2. Résultat : 36÷3 = 12",
-          "Correct — on divise toujours par 2",
-          "Erreur — la somme est fausse",
-          "Correct — 18 est bien la moyenne"
+          "Correct — on divise toujours par 2 pour trouver la moyenne de n'importe quelle série",
+          "Erreur — la somme 10+12+14 est incorrecte, elle devrait donner 34 et non 36",
+          "Correct — 18 est bien la moyenne car c'est la valeur centrale entre 14 et 20"
         ],
         "ans": 0,
         "hint": "Moyenne = somme ÷ nombre de valeurs = 36 ÷ 3 = 12."
@@ -967,9 +967,9 @@
         "q": "Trouve l'erreur : 'Les décimaux sont toujours plus petits que les entiers.'",
         "opts": [
           "Faux — 3,5 est décimal et plus grand que l'entier 2. Tout dépend des valeurs",
-          "Vrai — les décimaux ont une partie < 1",
-          "Faux — les décimaux sont toujours plus grands",
-          "Vrai — car ils ont une virgule"
+          "Vrai — les décimaux ont toujours une partie décimale inférieure à 1 donc ils sont plus petits",
+          "Faux — les décimaux sont toujours plus grands car ils contiennent plus d'informations",
+          "Vrai — car ils ont une virgule qui indique que leur valeur est incomplète"
         ],
         "ans": 0,
         "hint": "3,5 > 2 (décimal > entier). 0,5 < 1 (décimal < entier). Tout dépend des valeurs."
@@ -979,9 +979,9 @@
         "q": "Trouve l'erreur : 'L'aire d'un triangle = base × hauteur.'",
         "opts": [
           "Faux — Aire = (base × hauteur) ÷ 2. Il faut diviser par 2",
-          "Vrai — c'est la bonne formule",
-          "Faux — Aire = base + hauteur",
-          "Vrai — sauf pour le triangle rectangle"
+          "Vrai — c'est la bonne formule, identique à celle de l'aire d'un rectangle",
+          "Faux — Aire = base + hauteur car on additionne les deux dimensions principales",
+          "Vrai — sauf pour le triangle rectangle dont l'aire se calcule différemment"
         ],
         "ans": 0,
         "hint": "Un triangle = moitié d'un parallélogramme → A = (b×h)÷2."
@@ -991,9 +991,9 @@
         "q": "Trouve l'erreur : 'Tous les multiples de 4 sont aussi des multiples de 8.'",
         "opts": [
           "Faux — c'est l'inverse : les multiples de 8 sont multiples de 4. Exemple : 4 est multiple de 4 mais pas de 8",
-          "Vrai — 4 et 8 ont les mêmes multiples",
-          "Faux — aucun multiple de 4 n'est multiple de 8",
-          "Vrai — car 8 = 2×4"
+          "Vrai — 4 et 8 ont exactement les mêmes multiples car 4 est un facteur de 8",
+          "Faux — aucun multiple de 4 n'est multiple de 8 car ces deux tables sont indépendantes",
+          "Vrai — car 8 = 2×4, donc tout multiple de 4 est automatiquement multiple de 8"
         ],
         "ans": 0,
         "hint": "4 est multiple de 4 (4=4×1) mais 4÷8 n'est pas un entier → 4 n'est PAS multiple de 8."
@@ -1003,9 +1003,9 @@
         "q": "Trouve l'erreur : 'Pour convertir des km en m, on divise par 1000.'",
         "opts": [
           "Faux — on MULTIPLIE par 1000. 1 km = 1000 m",
-          "Vrai — division par 1000",
-          "Faux — on multiplie par 100",
-          "Vrai — car km est plus grand que m"
+          "Vrai — on divise toujours par 1000 pour passer d'une grande unité à une petite",
+          "Faux — on multiplie par 100 car le kilomètre contient 100 mètres",
+          "Vrai — car le km est plus grand que le m, donc on divise pour trouver la valeur plus petite"
         ],
         "ans": 0,
         "hint": "Grande unité → petite unité = on multiplie. 3 km = 3×1000 = 3000 m."
@@ -1015,9 +1015,9 @@
         "q": "Trouve l'erreur : 'Un nombre premier n'a aucun diviseur.'",
         "opts": [
           "Faux — il a EXACTEMENT DEUX diviseurs : 1 et lui-même",
-          "Vrai — les nombres premiers sont indivisibles",
-          "Faux — une infinité de diviseurs",
-          "Vrai — c'est la définition exacte"
+          "Vrai — les nombres premiers sont indivisibles par aucun autre nombre entier",
+          "Faux — un nombre premier a une infinité de diviseurs car il est très grand",
+          "Vrai — c'est la définition exacte qui permet de reconnaître les nombres premiers"
         ],
         "ans": 0,
         "hint": "7 est premier. Diviseurs : 1 et 7. Exactement deux, pas zéro."
@@ -1027,9 +1027,9 @@
         "q": "Trouve l'erreur : '120 km en 2h → vitesse = 120 + 2 = 122 km/h.'",
         "opts": [
           "Erreur — vitesse = distance ÷ temps = 120÷2 = 60 km/h",
-          "Correct — on additionne distance et temps",
-          "Erreur — vitesse = distance × temps = 240",
-          "Correct — 122 km/h est juste"
+          "Correct — on additionne distance et temps pour obtenir la vitesse en km/h",
+          "Erreur — vitesse = distance × temps = 120×2 = 240 km/h car plus de temps = plus vite",
+          "Correct — 122 km/h est juste car on arrondit la somme au dixième de kilomètre"
         ],
         "ans": 0,
         "hint": "Formule : v = d ÷ t. La vitesse = division, pas addition."
@@ -1039,9 +1039,9 @@
         "q": "Trouve l'erreur : 'Dans un diagramme circulaire, la somme des secteurs = 180°.'",
         "opts": [
           "Faux — la somme = 360°, car c'est un cercle entier représentant 100% des données",
-          "Vrai — le demi-cercle = 100% des données",
-          "Faux — la somme = 100°",
-          "Vrai — 180° = 50% des données"
+          "Vrai — le demi-cercle représente 100% des données et vaut donc 180°",
+          "Faux — la somme des secteurs vaut 100° car chaque secteur représente un pourcentage",
+          "Vrai — 180° correspond à 50% des données et le diagramme représente la moitié restante"
         ],
         "ans": 0,
         "hint": "Un cercle complet = 360°. Un diagramme circulaire représente 100% en 360°."
@@ -1058,9 +1058,9 @@
             "q": "Étape 1 — Calcule le périmètre.",
             "opts": [
               "26 cm",
-              "40 cm",
-              "13 cm",
-              "16 cm"
+              "40 cm — car le périmètre d'un rectangle est égal à la longueur multipliée par la largeur",
+              "13 cm — car le périmètre est la somme de la longueur et de la largeur",
+              "16 cm — car le périmètre est la somme des deux longueurs du rectangle"
             ],
             "ans": 0,
             "hint": "P = 2×(L+l) = 2×(8+5) = 2×13 = 26 cm."
@@ -1069,9 +1069,9 @@
             "q": "Étape 2 — Calcule l'aire.",
             "opts": [
               "40 cm²",
-              "26 cm²",
-              "13 cm²",
-              "80 cm²"
+              "26 cm² — car l'aire d'un rectangle est égale au double de la somme des côtés",
+              "13 cm² — car l'aire est la moitié de la somme des dimensions du rectangle",
+              "80 cm² — car l'aire est le double du produit de la longueur et de la largeur"
             ],
             "ans": 0,
             "hint": "A = L×l = 8×5 = 40 cm²."
@@ -1080,9 +1080,9 @@
             "q": "Étape 3 — On trace une diagonale. En combien de triangles coupe-t-elle le rectangle ?",
             "opts": [
               "2 triangles",
-              "3 triangles",
-              "4 triangles",
-              "1 triangle"
+              "3 triangles — car la diagonale d'un rectangle crée toujours trois parties distinctes",
+              "4 triangles — car la diagonale divise chaque côté du rectangle en deux parties",
+              "1 triangle — car la diagonale elle-même forme un seul grand triangle"
             ],
             "ans": 0,
             "hint": "Une diagonale coupe un rectangle en 2 triangles rectangles identiques."
@@ -1091,9 +1091,9 @@
             "q": "Étape 4 — Quelle est l'aire d'un de ces triangles ?",
             "opts": [
               "20 cm²",
-              "40 cm²",
-              "10 cm²",
-              "26 cm²"
+              "40 cm² — car chaque triangle garde la même aire que le rectangle d'origine",
+              "10 cm² — car l'aire d'un triangle est le quart de l'aire du rectangle",
+              "26 cm² — car l'aire du triangle est égale au périmètre du rectangle"
             ],
             "ans": 0,
             "hint": "Chaque triangle = moitié du rectangle = 40÷2 = 20 cm²."
@@ -1102,9 +1102,9 @@
             "q": "Étape 5 — Ces deux triangles sont-ils rectangles ? Pourquoi ?",
             "opts": [
               "Oui — les angles du rectangle sont droits et la diagonale crée un angle droit dans chaque triangle",
-              "Non — la diagonale crée des triangles équilatéraux",
-              "Oui — tous les triangles issus d'un rectangle sont rectangles",
-              "Non — un triangle rectangle a des côtés égaux"
+              "Non — la diagonale crée des triangles équilatéraux car les côtés du rectangle sont différents",
+              "Oui — tous les triangles issus d'un rectangle sont rectangles quelle que soit la coupe",
+              "Non — un triangle rectangle a obligatoirement deux côtés égaux et ce n'est pas le cas ici"
             ],
             "ans": 0,
             "hint": "Les angles du rectangle = 90°. La diagonale hérite de cet angle → triangle rectangle."
@@ -1121,9 +1121,9 @@
             "q": "Étape 1 — Quelle fraction représente 3 parts sur 4 parts égales ?",
             "opts": [
               "3/4",
-              "4/3",
-              "3/7",
-              "1/4"
+              "4/3 — car la fraction s'écrit avec le total au numérateur et les parts au dénominateur",
+              "3/7 — car on additionne les parts prises (3) avec les parts totales (4) pour le dénominateur",
+              "1/4 — car on représente les parts restantes plutôt que les parts déjà prises"
             ],
             "ans": 0,
             "hint": "Fraction = parts prises / parts totales = 3/4."
@@ -1132,9 +1132,9 @@
             "q": "Étape 2 — 3/4 est-elle supérieure à 1/2 ?",
             "opts": [
               "Oui — 3/4 = 6/8 et 1/2 = 4/8, donc 3/4 > 1/2",
-              "Non — 3 < 4",
-              "Non — elles sont égales",
-              "On ne peut pas comparer"
+              "Non — 3 est inférieur à 4 donc la fraction 3/4 est inférieure à toute fraction avec un numérateur plus grand",
+              "Non — elles sont égales car on peut simplifier les deux fractions par le même nombre",
+              "On ne peut pas comparer car leurs dénominateurs sont différents et la règle interdit la comparaison"
             ],
             "ans": 0,
             "hint": "Convertis au même dénominateur : 3/4=6/8 et 1/2=4/8. 6/8 > 4/8."
@@ -1143,9 +1143,9 @@
             "q": "Étape 3 — Calcule 3/4 + 1/4.",
             "opts": [
               "4/4 = 1",
-              "4/8",
-              "2/4",
-              "3/16"
+              "4/8 — car on additionne les numérateurs et les dénominateurs entre eux",
+              "2/4 — car on soustrait les numérateurs plutôt que de les additionner",
+              "3/16 — car on multiplie les numérateurs et les dénominateurs entre eux"
             ],
             "ans": 0,
             "hint": "Même dénominateur : 3/4 + 1/4 = 4/4 = 1."
@@ -1154,9 +1154,9 @@
             "q": "Étape 4 — Quelle est la valeur décimale de 3/4 ?",
             "opts": [
               "0,75",
-              "0,34",
-              "1,33",
-              "0,25"
+              "0,34 — car on juxtapose le numérateur et le dénominateur pour former le décimal",
+              "1,33 — car on divise le dénominateur par le numérateur pour convertir en décimal",
+              "0,25 — car 3/4 représente les trois quarts donc la valeur est proche d'un quart"
             ],
             "ans": 0,
             "hint": "3÷4 = 0,75. Ou : 3/4 = 75/100 = 0,75."
@@ -1165,9 +1165,9 @@
             "q": "Étape 5 — Dans une classe de 28 élèves, les 3/4 ont réussi. Combien ?",
             "opts": [
               "21",
-              "24",
-              "7",
-              "18"
+              "24 — car les 3/4 d'une classe de 28 correspondent aux élèves au-dessus de la moyenne",
+              "7 — car les 3/4 représentent le quart restant soit 28 divisé par 4",
+              "18 — car les 3/4 d'un nombre pair sont toujours les deux tiers du même nombre"
             ],
             "ans": 0,
             "hint": "3/4 de 28 = (3×28)÷4 = 84÷4 = 21."
@@ -1184,9 +1184,9 @@
             "q": "Étape 1 — Calcule la somme des 5 notes.",
             "opts": [
               "60",
-              "50",
-              "64",
-              "58"
+              "50 — car on additionne uniquement les trois premières notes de la série",
+              "64 — car on ajoute les notes au carré pour tenir compte de leur poids respectif",
+              "58 — car on soustrait la note la plus basse avant d'additionner les autres"
             ],
             "ans": 0,
             "hint": "8+12+14+10+16 = 60."
@@ -1195,9 +1195,9 @@
             "q": "Étape 2 — Calcule la moyenne.",
             "opts": [
               "12",
-              "10",
-              "15",
-              "8"
+              "10 — car la moyenne est la note qui apparaît le plus souvent dans la série",
+              "15 — car la moyenne est la note médiane après avoir trié les valeurs dans l'ordre",
+              "8 — car la moyenne est la note la plus basse qui représente le niveau minimal"
             ],
             "ans": 0,
             "hint": "Moyenne = 60÷5 = 12."
@@ -1206,9 +1206,9 @@
             "q": "Étape 3 — Quelle est la note la plus haute ?",
             "opts": [
               "16",
-              "14",
-              "12",
-              "10"
+              "14 — car c'est la note la plus proche de la moyenne et donc la plus représentative",
+              "12 — car c'est la valeur centrale de la série classée dans l'ordre croissant",
+              "10 — car c'est la note qui apparaît le plus souvent dans la série de contrôles"
             ],
             "ans": 0,
             "hint": "Maximum de la série : 8, 10, 12, 14, 16 → 16."
@@ -1217,9 +1217,9 @@
             "q": "Étape 4 — Quel est l'écart entre la note la plus haute et la plus basse ?",
             "opts": [
               "8",
-              "16",
-              "4",
-              "6"
+              "16 — car l'écart correspond à la note la plus haute de la série",
+              "4 — car l'écart est la moitié de la différence entre les deux valeurs extrêmes",
+              "6 — car l'écart est la différence entre la note la plus haute et la moyenne"
             ],
             "ans": 0,
             "hint": "Écart = max - min = 16 - 8 = 8."
@@ -1228,9 +1228,9 @@
             "q": "Étape 5 — Pour une moyenne de 13 sur 6 contrôles, quelle note faut-il au 6ème ?",
             "opts": [
               "18",
-              "13",
-              "15",
-              "20"
+              "13 — car pour atteindre une moyenne de 13 il suffit d'avoir exactement 13 au prochain contrôle",
+              "15 — car la note manquante est la différence entre la moyenne cible et la moyenne actuelle",
+              "20 — car il faut toujours une note maximale pour compenser les notes inférieures à la moyenne"
             ],
             "ans": 0,
             "hint": "Somme nécessaire = 13×6 = 78. Somme actuelle = 60. Note manquante = 78-60 = 18."
@@ -1247,9 +1247,9 @@
             "q": "Étape 1 — Combien de cm y a-t-il dans 1 m ?",
             "opts": [
               "100 cm",
-              "10 cm",
-              "1000 cm",
-              "1 cm"
+              "10 cm — car le préfixe 'centi-' signifie dix fois plus petit que l'unité de base",
+              "1000 cm — car le mètre est une unité intermédiaire entre le centimètre et le kilomètre",
+              "1 cm — car le centimètre et le mètre désignent la même unité dans des contextes différents"
             ],
             "ans": 0,
             "hint": "1 m = 100 cm."
@@ -1258,9 +1258,9 @@
             "q": "Étape 2 — Convertis 3,5 m en cm.",
             "opts": [
               "350 cm",
-              "35 cm",
-              "3500 cm",
-              "0,35 cm"
+              "35 cm — car on déplace la virgule d'un rang vers la droite pour convertir en cm",
+              "3500 cm — car on multiplie par 1000 comme pour la conversion des mètres en millimètres",
+              "0,35 cm — car on divise par 100 pour passer d'une grande unité à une plus petite"
             ],
             "ans": 0,
             "hint": "3,5 × 100 = 350 cm."
@@ -1269,9 +1269,9 @@
             "q": "Étape 3 — Convertis 2500 m en km.",
             "opts": [
               "2,5 km",
-              "25 km",
-              "250 km",
-              "0,25 km"
+              "25 km — car on divise par 100 pour passer des mètres aux kilomètres",
+              "250 km — car on déplace la virgule d'un seul rang vers la gauche",
+              "0,25 km — car on divise par 10 000 pour convertir les mètres en kilomètres"
             ],
             "ans": 0,
             "hint": "2500÷1000 = 2,5 km."
@@ -1280,9 +1280,9 @@
             "q": "Étape 4 — Un trajet fait 4,2 km. Combien de mètres ?",
             "opts": [
               "4200 m",
-              "420 m",
-              "42 m",
-              "0,42 m"
+              "420 m — car on multiplie par 100 pour passer des kilomètres aux mètres",
+              "42 m — car on multiplie par 10 pour passer des kilomètres aux mètres",
+              "0,42 m — car on divise par 10 000 pour convertir les kilomètres en mètres"
             ],
             "ans": 0,
             "hint": "4,2×1000 = 4200 m."
@@ -1291,9 +1291,9 @@
             "q": "Étape 5 — Un élève marche 800 m le matin et 1,2 km le soir. Distance totale en km ?",
             "opts": [
               "2 km",
-              "1,28 km",
-              "8 km",
-              "2000 km"
+              "1,28 km — car on additionne 800 et 1,2 sans convertir les unités",
+              "8 km — car on multiplie les deux distances pour obtenir la distance totale",
+              "2000 km — car on additionne 800 km et 1200 km sans convertir correctement"
             ],
             "ans": 0,
             "hint": "800 m = 0,8 km. Total = 0,8+1,2 = 2 km."
@@ -1310,9 +1310,9 @@
             "q": "Étape 1 — Quelle quantité de farine pour 8 personnes ?",
             "opts": [
               "400g",
-              "100g",
-              "800g",
-              "200g"
+              "100g — car en doublant le nombre de personnes on divise les quantités par deux",
+              "800g — car on multiplie la quantité de départ par le nombre total de personnes",
+              "200g — car la quantité de farine reste identique quelle que soit le nombre de personnes"
             ],
             "ans": 0,
             "hint": "8 personnes = 2×4. Donc 2×200 = 400g."
@@ -1321,9 +1321,9 @@
             "q": "Étape 2 — Quelle quantité de sucre pour 8 personnes ?",
             "opts": [
               "200g",
-              "50g",
-              "400g",
-              "100g"
+              "50g — car doubler le nombre de personnes divise la quantité de sucre par deux",
+              "400g — car on multiplie la quantité par le nombre total de personnes",
+              "100g — car la quantité de sucre ne change pas avec le nombre de convives"
             ],
             "ans": 0,
             "hint": "2×100 = 200g."
@@ -1332,9 +1332,9 @@
             "q": "Étape 3 — Combien d'œufs pour 12 personnes ?",
             "opts": [
               "9 œufs",
-              "6 œufs",
-              "12 œufs",
-              "3 œufs"
+              "6 œufs — car 12 personnes représentent le double de 4, donc 3×2=6 œufs",
+              "12 œufs — car on utilise autant d'œufs qu'il y a de personnes à nourrir",
+              "3 œufs — car la quantité d'œufs reste toujours de 3 quel que soit le nombre de personnes"
             ],
             "ans": 0,
             "hint": "12 personnes = 3×4. Donc 3×3 = 9 œufs."
@@ -1343,9 +1343,9 @@
             "q": "Étape 4 — Quelle quantité de farine pour 2 personnes ?",
             "opts": [
               "100g",
-              "50g",
-              "400g",
-              "200g"
+              "50g — car 2 personnes représentent un quart de 4 personnes donc 200÷4=50g",
+              "400g — car réduire le nombre de personnes augmente la quantité par convive",
+              "200g — car la quantité de farine est fixe et ne dépend pas du nombre de personnes"
             ],
             "ans": 0,
             "hint": "2 personnes = ½×4. Donc 200÷2 = 100g."
@@ -1354,9 +1354,9 @@
             "q": "Étape 5 — Le rapport farine/sucre est-il constant pour 4 et 8 personnes ?",
             "opts": [
               "Oui — 200/100 = 400/200 = 2. Rapport constant = proportionnalité",
-              "Non — le rapport change",
-              "Oui — uniquement pour les nombres pairs",
-              "Non — la proportionnalité ne s'applique qu'aux liquides"
+              "Non — le rapport change car les ingrédients n'augmentent pas à la même vitesse",
+              "Oui — uniquement pour les nombres pairs de personnes dans une recette",
+              "Non — la proportionnalité ne s'applique qu'aux liquides et jamais aux ingrédients solides"
             ],
             "ans": 0,
             "hint": "200/100=2 et 400/200=2. Rapport constant → proportionnalité."
