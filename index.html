@@ -1013,7 +1013,7 @@ async function launchQuiz(){
   }
   if(!qs||qs.length===0){nt('Aucune question !');sc='quiz_config';rnd();return;}
   // Pre-shuffle appariement right columns
-  qs.forEach(q=>{if(q.type==='appariement'){const i=[...Array(q.right.length).keys()];for(let x=i.length-1;x>0;x--){const y=Math.floor(Math.random()*(x+1));[i[x],i[y]]=[i[y],i[x]];}q._rs=i;}});
+  qs=shuffleOpts(qs);qs.forEach(q=>{if(q.type==='appariement'){const i=[...Array(q.right.length).keys()];for(let x=i.length-1;x>0;x--){const y=Math.floor(Math.random()*(x+1));[i[x],i[y]]=[i[y],i[x]];}q._rs=i;}});
   qstate={questions:qs,current:0,score:0,streak:0,correctCount:0,wrongQueue:[],retrying:false,
     answered:null,isCorrect:false,selQCM:null,selVF:null,selApL:null,selApP:{},
     ordreClicks:[],textGiven:null,pouvoirsUtilises:{},unlockShown:false,
@@ -1023,6 +1023,8 @@ async function launchQuiz(){
   sc='quiz';rnd();
 }
 const JSON_CACHE={};
+const MEDIA_URLS={'vinci_joconde':'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/400px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg','monet_nympheas':'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg/600px-Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg','monet_impression_soleil_levant':'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/600px-Monet_-_Impression%2C_Sunrise.jpg','monet_cathedrale_rouen':'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Rouen_Cathedral%2C_West_Facade%2C_Sunlight%2C_Claude_Monet%2C_1894.jpg/480px-Rouen_Cathedral%2C_West_Facade%2C_Sunlight%2C_Claude_Monet%2C_1894.jpg','delacroix_liberte_guidant_peuple':'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg/600px-Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg','vermeer_jeune_fille_perle':'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/480px-1665_Girl_with_a_Pearl_Earring.jpg','renoir_moulin_de_la_galette':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Auguste_Renoir_-_Bal_du_moulin_de_la_Galette.jpg/600px-Auguste_Renoir_-_Bal_du_moulin_de_la_Galette.jpg','renoir_dejeuner_canotiers':'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg/600px-Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg','van_gogh_chambre_arles':'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/600px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg','raphael_ecole_athenes':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/600px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg','parthenon_athenes':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/600px-The_Parthenon_in_Athens.jpg','cathedrale_notre_dame_paris':'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Notre_Dame_de_Paris_001.jpg/480px-Notre_Dame_de_Paris_001.jpg','lascaux_taureau':'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Lascaux_painting.jpg/600px-Lascaux_painting.jpg','lascaux_cheval':'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Lascaux_horses.jpg/600px-Lascaux_horses.jpg','sculpture_grecque_discobole':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Myron_Discobolus.jpg/400px-Myron_Discobolus.jpg','enluminure_medievale':'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/BNF_Lat9428_f013r.jpg/480px-BNF_Lat9428_f013r.jpg','picasso_demoiselles_avignon':'https://upload.wikimedia.org/wikipedia/en/4/4c/Les_Demoiselles_d%27Avignon.jpg','dali_persistance_memoire':'https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg','warhol_marilyn':'https://upload.wikimedia.org/wikipedia/en/5/54/Marilyn_diptych_by_Andy_Warhol.jpg','magritte_trahison_images':'https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg','kandinsky_composition_viii':'https://upload.wikimedia.org/wikipedia/en/2/20/Kandinsky_Composition_8%2C_1923.jpg','picasso_guernica':'https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg','braque_nature_morte_cubiste':'https://upload.wikimedia.org/wikipedia/en/7/7a/George_Braque%2C_1909-10%2C_Violin_and_Candlestick.jpg','mosaique_romaine':'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Mosaic_from_Pompeii%2C_Battle_of_Issus%2C_Naples_Museum.jpg/600px-Mosaic_from_Pompeii%2C_Battle_of_Issus%2C_Naples_Museum.jpg'};
+function shuffleOpts(qs){return qs.map(function(q){if(q.type!='qcm'||!Array.isArray(q.opts))return q;var idx=q.opts.map(function(_,i){return i;});for(var i=idx.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=idx[i];idx[i]=idx[j];idx[j]=t;}return Object.assign({},q,{opts:idx.map(function(i){return q.opts[i];}),ans:idx.indexOf(q.ans)});});}
 const QJSON_MAP={
   'maths':['questions/maths_nombres_calculs.json','questions/maths_geometrie.json','questions/maths_grandeurs_mesures.json','questions/maths_donnees.json'],
   'francais':['questions/francais_grammaire.json','questions/francais_conjugaison.json','questions/francais_orthographe.json','questions/francais_vocabulaire.json','questions/francais_lecture_litterature.json'],
@@ -1389,7 +1391,7 @@ async function startChallenge(mat,num){
         pool=[...pool,...bankQ.sort(()=>Math.random()-.5)].slice(0,8);
       }
       if(pool.length<3){cstate.phase='blocked';rnd();return;}
-      cstate.questions=pool.sort(()=>Math.random()-.5).slice(0,Math.min(8,pool.length));
+      cstate.questions=shuffleOpts(pool.sort(()=>Math.random()-.5).slice(0,Math.min(8,pool.length)));
     }else{
       const file=CHALLENGE_FILE[mat];
       if(!file){cstate.phase='error';rnd();return;}
@@ -1398,9 +1400,9 @@ async function startChallenge(mat,num){
       const data=await resp.json();
       const matData=data[mat];
       if(!matData){cstate.phase='error';rnd();return;}
-      if(num===2){const pool=matData.inverse||[];cstate.questions=[...pool].sort(()=>Math.random()-.5).slice(0,5);}
-      else if(num===3){const pool=matData.erreur||[];cstate.questions=[...pool].sort(()=>Math.random()-.5).slice(0,5);}
-      else if(num===4){const chains=matData.chaine||[];const chain=chains[Math.floor(Math.random()*chains.length)];cstate.chainCtx=chain;cstate.questions=chain.etapes||[];}
+      if(num===2){const pool=matData.inverse||[];cstate.questions=shuffleOpts([...pool].sort(()=>Math.random()-.5).slice(0,5));}
+      else if(num===3){const pool=matData.erreur||[];cstate.questions=shuffleOpts([...pool].sort(()=>Math.random()-.5).slice(0,5));}
+      else if(num===4){const chains=matData.chaine||[];const chain=chains[Math.floor(Math.random()*chains.length)];cstate.chainCtx=chain;cstate.questions=shuffleOpts(chain.etapes||[]);}
     }
     cstate.phase='question';rnd();
   }catch(err){cstate.phase='error';rnd();}
@@ -1467,7 +1469,7 @@ function renderChallengeQuestion(f,cname){
   if(q.media){
     const _mfb=q.media.description_fallback?'<div style="font-size:13px;color:#5A5054;font-style:italic;margin-top:6px;padding:8px 10px;background:#F9FAFB;border-radius:8px;border-left:3px solid #D1D5DB">'+q.media.description_fallback+'</div>':'';
     if(q.media.type==='audio')mediaHTML='<div style="margin-bottom:12px;background:#F3F4F6;border-radius:10px;padding:12px;text-align:center"><audio controls style="width:100%;max-width:300px" src="assets/media/'+q.media.ref+'.mp3"></audio><div style="font-size:11px;color:#9A8E85;margin-top:4px">🎵 '+q.media.label+'</div>'+_mfb+'</div>';
-    else if(q.media.type==='image')mediaHTML='<div style="margin-bottom:12px;text-align:center"><img src="assets/media/'+q.media.ref+'.jpg" onerror="this.style.display=\'none\'" style="max-width:100%;max-height:180px;border-radius:10px;border:1px solid #E5E0D8"><div style="font-size:11px;color:#9A8E85;margin-top:4px">🖼️ '+q.media.label+'</div>'+_mfb+'</div>';
+    else if(q.media.type==='image')mediaHTML='<div style="margin-bottom:12px;text-align:center"><img src="'+(MEDIA_URLS[q.media.ref]||'assets/media/'+q.media.ref+'.jpg)+" onerror="this.style.display=\'none\'" style="max-width:100%;max-height:180px;border-radius:10px;border:1px solid #E5E0D8"><div style="font-size:11px;color:#9A8E85;margin-top:4px">🖼️ '+q.media.label+'</div>'+_mfb+'</div>';
   }
   let optionsHTML='';
   if(q.type==='vrai_faux'){
