@@ -115,6 +115,7 @@ button{cursor:pointer;font-family:'Ubuntu',sans-serif}
 (function(){
   var CODE='1234';/* <- MODIFIER LE CODE ICI */
   var ov=document.getElementById('pin-overlay');
+  ov.style.display='none';return;/* <- COMMENTER CETTE LIGNE POUR RÉACTIVER LE PIN */
   if(localStorage.getItem('pin_v')===CODE){ov.style.display='none';return;}
   var dotsEl=document.getElementById('pin-dots');
   for(var i=0;i<4;i++){var d=document.createElement('div');d.className='pdot';dotsEl.appendChild(d);}
@@ -606,6 +607,10 @@ function fqKey(){return'acad_fq_'+(G?G._pid:'x')+'_'+qcfg.subject+'_'+(qcfg.chap
 function getFailedQ(){try{return JSON.parse(localStorage.getItem(fqKey())||'[]');}catch(e){return[]}}
 function addFailedQ(q){const k=fqKey(),f=getFailedQ(),h=(q.q||q.question||'').slice(0,40);if(!f.includes(h))f.push(h);try{localStorage.setItem(k,JSON.stringify(f.slice(-40)));}catch(e){}}
 function removeFailedQ(q){const k=fqKey(),f=getFailedQ(),h=(q.q||q.question||'').slice(0,40);const nf=f.filter(x=>x!==h);try{localStorage.setItem(k,JSON.stringify(nf));}catch(e){}}
+// Chapitres réussis (≥70%) — stocke par joueur+matière+chapitre+difficulté
+function cpKey(subj,chap,diff){return'acad_cp_'+(G?G._pid:'x')+'_'+(subj||qcfg.subject)+'_'+(chap||qcfg.chapter||'').slice(0,20).replace(/\s/g,'_')+'_'+(diff||qcfg.diff||'moyen')}
+function isChapterPassed(subj,chap){return['facile','moyen','difficile'].some(d=>{try{return localStorage.getItem(cpKey(subj,chap,d))==='1';}catch(e){return false;}});}
+function markChapterPassed(subj,chap,diff){try{localStorage.setItem(cpKey(subj,chap,diff),'1');}catch(e){}}
 
 /* ═══════════════════════════════════════════════════
    DÉBLOCAGE PERSO
@@ -1024,7 +1029,7 @@ async function launchQuiz(){
 }
 const JSON_CACHE={};
 const MEDIA_URLS={'vinci_joconde':'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/400px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg','monet_nympheas':'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg/600px-Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg','monet_impression_soleil_levant':'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/600px-Monet_-_Impression%2C_Sunrise.jpg','monet_cathedrale_rouen':'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Rouen_Cathedral%2C_West_Facade%2C_Sunlight%2C_Claude_Monet%2C_1894.jpg/480px-Rouen_Cathedral%2C_West_Facade%2C_Sunlight%2C_Claude_Monet%2C_1894.jpg','delacroix_liberte_guidant_peuple':'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg/600px-Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg','vermeer_jeune_fille_perle':'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/480px-1665_Girl_with_a_Pearl_Earring.jpg','renoir_moulin_de_la_galette':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Auguste_Renoir_-_Bal_du_moulin_de_la_Galette.jpg/600px-Auguste_Renoir_-_Bal_du_moulin_de_la_Galette.jpg','renoir_dejeuner_canotiers':'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg/600px-Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg','van_gogh_chambre_arles':'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/600px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg','raphael_ecole_athenes':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/600px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg','parthenon_athenes':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/600px-The_Parthenon_in_Athens.jpg','cathedrale_notre_dame_paris':'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Notre_Dame_de_Paris_001.jpg/480px-Notre_Dame_de_Paris_001.jpg','lascaux_taureau':'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Lascaux_painting.jpg/600px-Lascaux_painting.jpg','lascaux_cheval':'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Lascaux_horses.jpg/600px-Lascaux_horses.jpg','sculpture_grecque_discobole':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Myron_Discobolus.jpg/400px-Myron_Discobolus.jpg','enluminure_medievale':'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/BNF_Lat9428_f013r.jpg/480px-BNF_Lat9428_f013r.jpg','picasso_demoiselles_avignon':'https://upload.wikimedia.org/wikipedia/en/4/4c/Les_Demoiselles_d%27Avignon.jpg','dali_persistance_memoire':'https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg','warhol_marilyn':'https://upload.wikimedia.org/wikipedia/en/5/54/Marilyn_diptych_by_Andy_Warhol.jpg','magritte_trahison_images':'https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg','kandinsky_composition_viii':'https://upload.wikimedia.org/wikipedia/en/2/20/Kandinsky_Composition_8%2C_1923.jpg','picasso_guernica':'https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg','braque_nature_morte_cubiste':'https://upload.wikimedia.org/wikipedia/en/7/7a/George_Braque%2C_1909-10%2C_Violin_and_Candlestick.jpg','mosaique_romaine':'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Mosaic_from_Pompeii%2C_Battle_of_Issus%2C_Naples_Museum.jpg/600px-Mosaic_from_Pompeii%2C_Battle_of_Issus%2C_Naples_Museum.jpg'};
-function shuffleOpts(qs){return qs.map(function(q){if(q.type!='qcm'||!Array.isArray(q.opts))return q;var idx=q.opts.map(function(_,i){return i;});for(var i=idx.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=idx[i];idx[i]=idx[j];idx[j]=t;}return Object.assign({},q,{opts:idx.map(function(i){return q.opts[i];}),ans:idx.indexOf(q.ans)});});}
+function shuffleOpts(qs){return qs.map(function(q){var hO=Array.isArray(q.opts)&&q.opts.length>=2,hN=Array.isArray(q.options)&&q.options.length>=2;if(!hO&&!hN)return q;if(q.type&&q.type!='qcm')return q;var oK=hO?'opts':'options',aK=hO?'ans':'answer',opts=q[oK],ans=q[aK],idx=opts.map(function(_,i){return i;});for(var i=idx.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=idx[i];idx[i]=idx[j];idx[j]=t;}var r=Object.assign({},q);r[oK]=idx.map(function(i){return opts[i];});r[aK]=idx.indexOf(ans);return r;});}
 const QJSON_MAP={
   'maths':['questions/maths_nombres_calculs.json','questions/maths_geometrie.json','questions/maths_grandeurs_mesures.json','questions/maths_donnees.json'],
   'francais':['questions/francais_grammaire.json','questions/francais_conjugaison.json','questions/francais_orthographe.json','questions/francais_vocabulaire.json','questions/francais_lecture_litterature.json'],
@@ -1054,20 +1059,29 @@ function getLocalQuestions(){
   if(ch)chapQ=ch.questions||[];else qbMat.forEach(c=>chapQ=chapQ.concat(c.questions||[]));
   const dm={facile:'easy',moyen:'medium',difficile:'hard'};const td=dm[diff]||'medium';
   let f=chapQ.filter(q=>(q.difficulty||q.difficulte||'medium')===td);
-  if(f.length<3)f=chapQ;
+  // Bug fix 1 : si le pool filtré par difficulté est plus petit que count, on prend tout le chapitre
+  if(f.length<count)f=chapQ;
   const used=getUsedQ();
   const failed=getFailedQ();
   // Questions ratées en premier (priorité), puis fraîches (ni utilisées ni ratées)
   const failedQ=f.filter(q=>failed.includes((q.q||q.question||'').slice(0,40)));
   let freshQ=f.filter(q=>{const h=(q.q||q.question||'').slice(0,40);return!used.includes(h)&&!failed.includes(h);});
-  // Si pas assez de questions, on remet les utilisées dans le pool (sauf les ratées qui restent prioritaires)
+  // Si pas assez de questions, on remet les utilisées dans le pool
+  // Bug fix 2 : on mémorise les questions récemment vues pour les déprioritiser (variété maximale)
+  let recentlyUsed=[];
   if(failedQ.length+freshQ.length<count){
+    recentlyUsed=used.slice(); // garde la liste avant reset pour déprioritiser
     try{localStorage.removeItem(uqKey());}catch(e){}
     freshQ=f.filter(q=>!failed.includes((q.q||q.question||'').slice(0,40)));
   }
   const shuffledFailed=[...failedQ].sort(()=>Math.random()-0.5);
-  const shuffledFresh=[...freshQ].sort(()=>Math.random()-0.5);
-  const picked=[...shuffledFailed,...shuffledFresh].slice(0,Math.min(count,shuffledFailed.length+shuffledFresh.length));
+  // Sépare les fresh en "jamais vues dans ce cycle" et "déjà vues" → variété maximale
+  const notRecentFresh=freshQ.filter(q=>!recentlyUsed.includes((q.q||q.question||'').slice(0,40)));
+  const recentFresh=freshQ.filter(q=>recentlyUsed.includes((q.q||q.question||'').slice(0,40)));
+  const shuffledNew=[...notRecentFresh].sort(()=>Math.random()-0.5);
+  const shuffledOld=[...recentFresh].sort(()=>Math.random()-0.5);
+  // Ordre : ratées → nouvelles → déjà vues
+  const picked=[...shuffledFailed,...shuffledNew,...shuffledOld].slice(0,Math.min(count,shuffledFailed.length+notRecentFresh.length+recentFresh.length));
   picked.forEach(q=>markUsedQ({question:(q.q||q.question||'')}));
   return picked.map(normalizeQ);
 }
@@ -1101,6 +1115,19 @@ function normalizeQ(q){
     return{type:'appariement',question:q.q||q.question||'',left:left,right:right,pairs:left.map((_,i)=>i),explanation:q.hint||q.explanation||''};
   }
   return{type:'qcm',question:q.q||q.question||'?',options:q.opts||[],answer:0,explanation:''};
+}
+// Convertit une question normalisée (options/answer/question) → format brut (opts/ans/q)
+// utilisé par le challenge 1 pour relire l'historique
+function denormalizeQ(q){
+  if(q.q!==undefined)return q; // déjà brut
+  const r={};
+  r.type=(q.type==='vf'?'vrai_faux':q.type)||'qcm';
+  r.q=q.question||'';
+  if(q.hint!==undefined)r.hint=q.hint;
+  if(q.explanation!==undefined)r.hint=q.explanation;
+  if(q.options!==undefined){r.opts=q.options;r.ans=q.answer;}
+  else if(q.answer!==undefined){r.ans=q.answer;}
+  return r;
 }
 async function genQuestions(key){
   const used=getUsedQ();
@@ -1159,7 +1186,7 @@ function pickOrdre(idx){
   qstate.ordreClicks.push(idx);rnd();
 }
 function checkText(inp,q){
-  if(!inp||inp.trim().length<2)return false;
+  if(!inp||inp.trim().length<1)return false;
   const n=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()
     .replace(/['\u2019\u2018]/g,' ').replace(/[-\u2013\u2014]/g,' ')
     .replace(/[\u00d7]/g,'').replace(/[^a-z0-9\s/]/g,'').replace(/\s+/g,' ').replace(/(\d) (\d{3})(?!\d)/g,'$1$2').replace(/(\d) (\d{3})(?!\d)/g,'$1$2').trim();
@@ -1226,7 +1253,7 @@ function finishQuiz(){
   if(isPerfect)G.stats.perfectQuiz=(G.stats.perfectQuiz||0)+1;
   if(qcfg.diff==='difficile')G.stats.hardQuiz=(G.stats.hardQuiz||0)+1;
   const f=FA[qcfg.fi],oldNv=G.familles[f.id].nv;
-  if(pct>=70){G.familles[f.id].t++;G.familles[f.id].m[qcfg.subject]=(G.familles[f.id].m[qcfg.subject]||0)+1;}
+  if(pct>=70){G.familles[f.id].t++;G.familles[f.id].m[qcfg.subject]=(G.familles[f.id].m[qcfg.subject]||0)+1;markChapterPassed(qcfg.subject,qcfg.chapter,qcfg.diff);}
   // [Les challenges boss sont gérés via les écrans dédiés, pas via les quiz normaux]
   qstate.countedForProgress=true;
   if(!G.stats.histMatiere)G.stats.histMatiere=[];
@@ -1383,14 +1410,15 @@ async function startChallenge(mat,num){
     if(num===1){
       await loadJsonForSubject(mat);
       const hist=(G.quiz&&G.quiz.historiqueQuestionsParMatiere&&G.quiz.historiqueQuestionsParMatiere[mat])||[];
-      const eligible=hist.filter(q=>q.type==='qcm'||q.type==='vrai_faux');
+      const eligible=hist.filter(q=>q.type==='qcm'||q.type==='vrai_faux'||q.type==='vf').map(denormalizeQ);
       let pool=[...eligible];
       if(pool.length<8){
-        const bankQ=(JSON_CACHE[mat]||[]).flatMap(c=>c.questions||[])
+        const qbKey={'physique-chimie':'physique','histoire-geo':'histgeo','arts-plastiques':'arts'};
+        const bankQ=(JSON_CACHE[mat]||(QBANK[qbKey[mat]||mat]||[])).flatMap(c=>c.questions||[])
           .filter(q=>(q.type==='qcm'||q.type==='vrai_faux')&&!pool.some(e=>(e.q||'').slice(0,40)===(q.q||'').slice(0,40)));
         pool=[...pool,...bankQ.sort(()=>Math.random()-.5)].slice(0,8);
       }
-      if(pool.length<3){cstate.phase='blocked';rnd();return;}
+      if(pool.length<(dbg?1:3)){cstate.phase='blocked';rnd();return;}
       cstate.questions=shuffleOpts(pool.sort(()=>Math.random()-.5).slice(0,Math.min(8,pool.length)));
     }else{
       const file=CHALLENGE_FILE[mat];
@@ -1469,7 +1497,7 @@ function renderChallengeQuestion(f,cname){
   if(q.media){
     const _mfb=q.media.description_fallback?'<div style="font-size:13px;color:#5A5054;font-style:italic;margin-top:6px;padding:8px 10px;background:#F9FAFB;border-radius:8px;border-left:3px solid #D1D5DB">'+q.media.description_fallback+'</div>':'';
     if(q.media.type==='audio')mediaHTML='<div style="margin-bottom:12px;background:#F3F4F6;border-radius:10px;padding:12px;text-align:center"><audio controls style="width:100%;max-width:300px" src="assets/media/'+q.media.ref+'.mp3"></audio><div style="font-size:11px;color:#9A8E85;margin-top:4px">🎵 '+q.media.label+'</div>'+_mfb+'</div>';
-    else if(q.media.type==='image')mediaHTML='<div style="margin-bottom:12px;text-align:center"><img src="'+(MEDIA_URLS[q.media.ref]||'assets/media/'+q.media.ref+'.jpg)+" onerror="this.style.display=\'none\'" style="max-width:100%;max-height:180px;border-radius:10px;border:1px solid #E5E0D8"><div style="font-size:11px;color:#9A8E85;margin-top:4px">🖼️ '+q.media.label+'</div>'+_mfb+'</div>';
+    else if(q.media.type==='image')mediaHTML='<div style="margin-bottom:12px;text-align:center"><img src="'+(MEDIA_URLS[q.media.ref]||'assets/media/'+q.media.ref+'.jpg')+'" onerror="this.style.display=\'none\'" style="max-width:100%;max-height:180px;border-radius:10px;border:1px solid #E5E0D8"><div style="font-size:11px;color:#9A8E85;margin-top:4px">🖼️ '+q.media.label+'</div>'+_mfb+'</div>';
   }
   let optionsHTML='';
   if(q.type==='vrai_faux'){
@@ -1592,7 +1620,7 @@ document.addEventListener('click',function(e){
     case 'ap-right': if(!qstate.answered)apparRight(parseInt(v));break;
     case 'validate': validateAnswer();break;
     case 'valider-ordre': if(!qstate.answered){const q=curQ();if(qstate.ordreClicks.length===q.items.length){_setResult(qstate.ordreClicks.every((idx,pos)=>q.solution[idx]===pos));}}break;
-    case 'valider-ap': if(!qstate.answered){const q=curQ();if(Object.keys(qstate.selApP).length===q.left.length){_setResult(q.left.every((_,li)=>qstate.selApP[li]===q.pairs[li]));}}break;
+    case 'valider-ap': if(!qstate.answered){const q=curQ();if(Object.keys(qstate.selApP).length===q.left.length){_setResult(q.left.every((_,li)=>qstate.selApP[li]!==undefined&&q.right[qstate.selApP[li]]===q.right[q.pairs[li]]));}}break;
     case 'use-power': useCompanionPower(parseInt(v));break;
     case 'next-q': nextQuestion();break;
     case 'r-map': sc='map';rnd();break;
@@ -1757,7 +1785,7 @@ function renderFam(){
       +'</div></div>';
   });
   cards+='</div>';
-  const pct=gp(fi);
+  const pct=nv>=5?100:Math.min(100,Math.round(fd.t/(f.s[nv]||1)*100));
   const blockReason=gnBlockReason(fi);
   const bar=nv<5?'<div style="margin-top:14px;background:white;border-radius:12px;padding:13px;border:2px solid #E5E0D8;box-shadow:0 2px 0 #D5D0C8">'
     +'<div style="display:flex;justify-content:space-between;font-size:12px;color:#9A8E85;margin-bottom:6px"><span>Vers personnage '+(nv+1)+'</span><span style="font-family:Ubuntu Mono,monospace">'+fd.t+'/'+f.s[nv]+'</span></div>'
@@ -1861,7 +1889,7 @@ function renderQuizConfig(){
   }else if(qstep==='chapter'){
     const chs=CHAP[qcfg.subject]||['Cours g\u00e9n\u00e9ral'];
     body='<div class="boog" style="font-size:20px;color:#1F1A14;margin-bottom:14px">Quel chapitre ?</div><div style="display:flex;flex-direction:column;gap:8px">'
-      +chs.map((ch,i)=>'<button data-a="qcc" data-v="'+ch+'" style="background:white;border:2px solid #E5E0D8;border-radius:12px;padding:12px 16px;font-size:14px;color:#3D3228;text-align:left;box-shadow:0 2px 0 #D5D0C8">'+ch+'</button>').join('')
+      +chs.map((ch,i)=>{const passed=isChapterPassed(qcfg.subject,ch);return'<button data-a="qcc" data-v="'+ch+'" style="background:'+(passed?'#D1FAE5':'white')+';border:2px solid '+(passed?'#059669':'#E5E0D8')+';border-radius:12px;padding:12px 16px;font-size:14px;color:'+(passed?'#065F46':'#3D3228')+';text-align:left;box-shadow:0 2px 0 '+(passed?'#A7F3D0':'#D5D0C8')+'">'+(passed?'\u2705 ':'')+ch+'</button>';}).join('')
       +'</div>';
   }else if(qstep==='diff'){
     const diffs=[{k:'facile',l:'Facile',desc:'Je r\u00e9vise les bases',pts:'10 pts / bonne r\u00e9ponse',c:'#059669'},{k:'moyen',l:'Moyen',desc:'Je consolide mes connaissances',pts:'20 pts / bonne r\u00e9ponse',c:'#2563EB'},{k:'difficile',l:'Difficile',desc:'Je vise l\'excellence !',pts:'30 pts / bonne r\u00e9ponse',c:'#DC2626'}];
@@ -1931,7 +1959,7 @@ function renderMD(t){if(!t)return '';return t.replace(/\*\*([^*]+)\*\*/g,'<stron
 function renderQuiz(){
   const f=FA[qcfg.fi],q=curQ();
   const total=qstate.questions.length;
-  const pct=Math.round((qstate.current/total)*100);
+  const pct=Math.round(((qstate.current+1)/total)*100);
   const isRedo=qstate.retrying&&qstate.current>=qcfg.count;
   let qHTML='',feedHTML='';
   if(qstate.answered){
@@ -1956,7 +1984,11 @@ function renderQuiz(){
         else if(qstate.flashAnswer&&i===q.answer){bg='#FEF3C7';bdr='2px solid #F59E0B';tc='#92400E';}
         return '<div data-a="qcm-pick" data-v="'+i+'" style="background:'+bg+';border:'+bdr+';border-radius:12px;padding:12px 16px;font-size:14px;color:'+tc+';cursor:'+(qstate.answered?'default':'pointer')+';display:flex;align-items:center;gap:10px"><span style="font-family:Boogaloo,cursive;font-size:16px;color:'+(qstate.answered?tc:f.c)+'">'+'ABCD'[i]+'.</span>'+opt+'</div>';
       }).join('')+'</div>'
-      +(!qstate.answered&&qstate.selQCM!==null?'<button data-a="validate" style="width:100%;margin-top:12px;background:linear-gradient(160deg,'+f.c+','+f.dk+');border:none;border-radius:12px;padding:13px;font-family:Boogaloo,cursive;font-size:17px;color:white;cursor:pointer">Valider \u2713</button>':'');
+      +(!qstate.answered
+        ?(qstate.selQCM!==null
+          ?'<div style="font-size:11px;color:#7A6F65;text-align:center;margin-top:10px;margin-bottom:2px">\ud83d\udcac Tu peux encore changer ta r\u00e9ponse</div><button data-a="validate" style="width:100%;margin-top:6px;background:linear-gradient(160deg,'+f.c+','+f.dk+');border:none;border-radius:12px;padding:13px;font-family:Boogaloo,cursive;font-size:17px;color:white;box-shadow:0 4px 0 '+f.dk+'88;cursor:pointer">Valider \u2713</button>'
+          :'<div style="height:18px;margin-top:10px"></div><button style="width:100%;margin-top:6px;background:#E8E3DC;border:none;border-radius:12px;padding:13px;font-family:Boogaloo,cursive;font-size:17px;color:#B8B0A6;cursor:default">Choisis une r\u00e9ponse\u2026</button>')
+        :'');
   }
   /* VF */
   else if(q.type==='vf'){
@@ -2006,7 +2038,7 @@ function renderQuiz(){
       +q.left.map((item,li)=>{
         const hasPair=qstate.selApP[li]!==undefined,isSel=qstate.selApL===li;
         let bg=isSel?f.c:hasPair?f.c+'cc':'white',bdr=hasPair||isSel?'2px solid '+f.c:'2px solid #E5E0D8',tc=isSel||hasPair?'white':'#3D3228';
-        if(qstate.answered){bg=q.pairs[li]===qstate.selApP[li]?'#D1FAE5':'#FEE2E2';bdr='2px solid transparent';tc=q.pairs[li]===qstate.selApP[li]?'#065F46':'#991B1B';}
+        if(qstate.answered){const apCorr=qstate.selApP[li]!==undefined&&q.right[qstate.selApP[li]]===q.right[q.pairs[li]];bg=apCorr?'#D1FAE5':'#FEE2E2';bdr='2px solid transparent';tc=apCorr?'#065F46':'#991B1B';}
         return '<div data-a="ap-left" data-v="'+li+'" style="background:'+bg+';border:'+bdr+';border-radius:10px;padding:10px 8px;font-size:13px;color:'+tc+';text-align:center;cursor:'+(qstate.answered?'default':'pointer')+'">'+item+'</div>';
       }).join('')+'</div>'
       +'<div style="display:flex;flex-direction:column;gap:6px"><div style="font-size:10px;font-weight:700;color:#9A8E85;text-align:center;padding:2px">DROITE</div>'
@@ -2014,7 +2046,7 @@ function renderQuiz(){
         const si=q._rs?q._rs[ri]:ri;const realItem=q.right[si];const realRi=si;
         const isUsed=rightUsed.includes(realRi);
         let bg=isUsed?f.bg+'99':'white',bdr='2px solid '+(isUsed?f.c+'44':'#E5E0D8'),tc=isUsed?f.c:'#3D3228';
-        if(qstate.answered){const ownedBy=q.pairs.indexOf(realRi);const isCorr=ownedBy>=0&&qstate.selApP[ownedBy]===realRi;bg=isCorr?'#D1FAE5':'#FEE2E2';bdr='2px solid '+(isCorr?'#059669':'#DC2626');tc=isCorr?'#065F46':'#991B1B';}
+        if(qstate.answered){const ownedBy=q.pairs.indexOf(realRi);const isCorr=ownedBy>=0&&qstate.selApP[ownedBy]!==undefined&&q.right[qstate.selApP[ownedBy]]===q.right[realRi];bg=isCorr?'#D1FAE5':'#FEE2E2';bdr='2px solid '+(isCorr?'#059669':'#DC2626');tc=isCorr?'#065F46':'#991B1B';}
         return '<div data-a="ap-right" data-v="'+realRi+'" style="background:'+bg+';border:'+bdr+';border-radius:10px;padding:10px 8px;font-size:13px;color:'+tc+';text-align:center;cursor:'+(qstate.answered?'default':'pointer')+'">'+realItem+'</div>';
       }).join('')+'</div></div>'
       +(Object.keys(qstate.selApP).length===q.left.length&&!qstate.answered?'<button data-a="valider-ap" style="width:100%;margin-top:10px;background:linear-gradient(160deg,'+f.c+','+f.dk+');border:none;border-radius:12px;padding:13px;font-family:Boogaloo,cursive;font-size:17px;color:white;cursor:pointer">Valider ✓</button>':'');
